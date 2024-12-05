@@ -2,7 +2,7 @@
 <Defs>
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium</defName>
-		<label>make Starsteel</label>
+		<label>Make Starsteel</label>
 		<description>Create a binding agent for Cosmic Matter, to be filled to produce Starsteel.</description>
 		<ingredients>
 			<li>
@@ -47,7 +47,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium_Fiber</defName>
-		<label>make Starsteel 'Wool'</label>
+		<label>Make Starsteel 'Wool'</label>
 		<description>Weave fibers from Starsteel that can be used as a fabric in tailoring.</description>
 		<ingredients>
 			<li>
@@ -83,7 +83,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium_FiberCompress</defName>
-		<label>make Starsteel from Cosmic Weave</label>
+		<label>Make Starsteel from Cosmic Weave</label>
 		<description>Compress Cosmic Weave back into solid blocks of Starsteel.</description>
 		<ingredients>
 			<li>
@@ -119,7 +119,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Fuel</defName>
-		<label>make Cosmic Catalyst Fuel Cells</label>
+		<label>Make Cosmic Catalyst Fuel Cells</label>
 		<description>Create a fuel cell of Starsteel filled with crushed Uranium. The reaction between Uranium and the Starsteel within will create the perfect catalyst for energy generation.</description>
 		<ingredients>
 			<li>
@@ -164,7 +164,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenI</defName>
-		<label>make Stellar medicine (x1)</label>
+		<label>Make Stellar Medicine (x1)</label>
 		<description>Improve industrial-grade Medicine with Starsteel tools to create something on-par with Glitterworld medicine.</description>
 		<ingredients>
 			<li>
@@ -219,7 +219,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenI_bulk</defName>
-		<label>bulk make Stellar medicine (x5)</label>
+		<label>Make Stellar Medicine in bulk (x5)</label>
 		<description>Improve industrial-grade Medicine with Starsteel tools to create something on-par with Glitterworld medicine.\n\nCreating Stellar medicine in bulk is 15% faster than individually making five kits of Stellar medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
 			<li>
@@ -264,7 +264,7 @@
 			<Crafting>12</Crafting>
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
-		<jobString>Creating Stellar medicine</jobString>
+		<jobString>Creating Stellar Medicine</jobString>
 		<recipeUsers>
 			<li>Table_SNS_Unobtainer</li>
 		</recipeUsers>

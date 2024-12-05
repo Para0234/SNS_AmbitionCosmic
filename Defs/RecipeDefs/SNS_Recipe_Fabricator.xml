@@ -15,6 +15,7 @@
 			<li>Table_SNS_Constructor</li>
 		</recipeUsers>
 	</RecipeDef>
+	<!--Food-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MealSimple</defName>
 		<label>Pattern Simple Meal</label>
@@ -105,6 +106,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Medicine-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_HerbalMedicine</defName>
 		<label>Pattern Herbal Medicine</label>
@@ -177,6 +179,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Materials-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Neutroamine</defName>
 		<label>Pattern Neutroamine</label>
@@ -195,6 +198,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Drugs-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Lux</defName>
 		<label>Pattern Lux</label>
@@ -321,6 +325,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Vanilla Stuffables-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Silver</defName>
 		<label>Pattern Silver</label>
@@ -447,6 +452,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Components-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_ComponentIndustrial</defName>
 		<label>Pattern Component</label>
@@ -483,6 +489,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--Mech Serum-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MechSerumHealer</defName>
 		<label>Pattern Heal Serum</label>
@@ -519,6 +526,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--SNS Stuffables-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Unobtainium</defName>
 		<label>Pattern Starsteel</label>
@@ -591,6 +599,7 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<!--SNS Items-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_FuelCell</defName>
 		<label>Pattern Fuel Cells</label>

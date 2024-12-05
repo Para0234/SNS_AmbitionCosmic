@@ -193,7 +193,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenII</defName>
-		<label>make Cosmic medicine (x1)</label>
+		<label>Make Cosmic Medicine (x1)</label>
 		<description>Improve either Glitterworld medicine or Stellar medicine with Cosmic Matter and Cosmic Alloy to make an incredibly potent medicine kit.</description>
 		<ingredients>
 			<li>
@@ -254,7 +254,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenII_bulk</defName>
-		<label>bulk make Cosmic medicine (x5)</label>
+		<label>Make Cosmic Medicine in bulk (x5)</label>
 		<description>Bulk improve both/either Glitterworld medicine and/or Stellar medicine with Cosmic Matter and Cosmic Alloy to make an incredibly potent medicine kit.\n\nCreating Cosmic medicine in bulk is 15% faster than individually making five kits of Cosmic medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
 			<li>
@@ -315,7 +315,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenIII</defName>
-		<label>make enigmatic medicine (x1)</label>
+		<label>Make Enigmatic Medicine (x1)</label>
 		<description>Improve Cosmic medicine with Eternium to make the ultimate medicine.</description>
 		<ingredients>
 			<li>
@@ -348,7 +348,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Creating enigmatic medicine</jobString>
+		<jobString>Creating Enigmatic Medicine</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -359,7 +359,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenIII_bulk</defName>
-		<label>bulk make enigmatic medicine (x5)</label>
+		<label>Make Enigmatic Medicine in bulk(x5)</label>
 		<description>Bulk improve Cosmic medicine with Eternium to make the ultimate medicine\n\nCreating enigmatic medicine in bulk is 15% faster than individually making five kits of enigmatic medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
 			<li>
@@ -389,7 +389,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Creating enigmatic medicine</jobString>
+		<jobString>Creating Enigmatic Medicine</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -401,7 +401,7 @@
 	<RecipeDef>
 		<defName>SNS_Production_Aeterno</defName>
 		<label>make aeterno (x5)</label>
-		<description>Make five pills of aeterno.</description>
+		<description>Make five pills of Aeterno.</description>
 		<ingredients>
 			<li>
 				<filter>
@@ -430,7 +430,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Creating aeterno</jobString>
+		<jobString>Creating Aeterno</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -441,7 +441,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Aeterno_bulk</defName>
-		<label>bulk make aeterno (x25)</label>
+		<label>Make Aeterno in bulk (x25)</label>
 		<description>Make twenty-five pills of aeterno.\n\nBulk production of aeterno is 15% faster overall than the x3 producton.</description>
 		<ingredients>
 			<li>
@@ -482,7 +482,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Panacea</defName>
-		<label>make panacea (x25)</label>
+		<label>Make Panacea (x25)</label>
 		<description>Make twenty-five pills of panacea.</description>
 		<ingredients>
 			<li>
@@ -521,7 +521,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Creating panacea</jobString>
+		<jobString>Creating Panacea</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -532,7 +532,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Stim_II</defName>
-		<label>make STIM-VI (x3)</label>
+		<label>Make STIM-VI (x3)</label>
 		<description>Make three pills of STIM-VI.</description>
 		<ingredients>
 			<li>
@@ -573,7 +573,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Stim_II_bulk</defName>
-		<label>bulk make STIM-VI (x15)</label>
+		<label>Make STIM-VI in bulk (x15)</label>
 		<description>Make fifteen pills of STIM-VI.\n\nBulk production of STIM-VI is 15% faster overall than the x3 producton.</description>
 		<ingredients>
 			<li>
@@ -614,7 +614,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_StimIII</defName>
-		<label>make STIM-X (x25)</label>
+		<label>Make STIM-X (x25)</label>
 		<description>Make twenty-five pills of STIM-X.</description>
 		<ingredients>
 			<li>
@@ -655,7 +655,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenII</defName>
-		<label>make cosmic component</label>
+		<label>Make Cosmic Component</label>
 		<description>Make a generalist Generation 2 component from Cosmic Alloy and Cosmic Matter.</description>
 		<ingredients>
 			<li>
@@ -685,7 +685,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Making cosmic component</jobString>
+		<jobString>Making Cosmic Component</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -696,7 +696,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenII_bulk</defName>
-		<label>bulk make cosmic component (x5)</label>
+		<label>Make Cosmic Component in bulk (x5)</label>
 		<description>Bulk make five generalist Generation 2 components from Cosmic Alloy and Cosmic Matter.\n\nCreating cosmic components in bulk is 15% faster than individually making five of them, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
 			<li>
@@ -726,7 +726,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Making cosmic component</jobString>
+		<jobString>Making Cosmic Component</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -737,7 +737,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenIII</defName>
-		<label>make enigmatic component</label>
+		<label>Make Enigmatic Component</label>
 		<description>Make a generalist Generation 3 component from Cosmic Alloy and Eternium.</description>
 		<ingredients>
 			<li>
@@ -767,7 +767,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Making enigmatic component</jobString>
+		<jobString>Making Enigmatic Component</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -778,7 +778,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenIII_bulk</defName>
-		<label>bulk make enigmatic components (x5)</label>
+		<label>Make Enigmatic Components in bulk (x5)</label>
 		<description>Bulk make five generalist Generation 3 components from Cosmic Alloy and Eternium.\n\nCreating enigmatic components in bulk is 15% faster than individually making five of them, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
 			<li>
@@ -808,7 +808,7 @@
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<jobString>Making enigmatic component</jobString>
+		<jobString>Making Enigmatic Component</jobString>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
 		</recipeUsers>
@@ -819,7 +819,7 @@
 	</RecipeDef>
 	<RecipeDef>
 		<defName>SNS_Production_Hidden</defName>
-		<label>make Enigmatic Blueprint</label>
+		<label>Make Enigmatic Blueprint</label>
 		<description>There is a strange file loaded onto the Cosmic Manipulator, the file requiring an obscene amount of Cosmic-tier material to make. It appears to be a very intricuate and delicate device. Other than that, we're not sure what this is, but we've got a feeling that this is going to be really, really worth it in the end.</description>
 		<ingredients>
 			<li>
