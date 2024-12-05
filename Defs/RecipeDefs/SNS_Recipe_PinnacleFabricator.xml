@@ -1,340 +1,385 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<RecipeDef Abstract="True" Name="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Base</defName>
 		<jobString>Atomically Constructing</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
+		<skillRequirements/>
 		<workAmount>600</workAmount>
-        <workSkill>Intellectual</workSkill>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients/>
+		<fixedIngredientFilter/>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_PinnacleFabricator</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_PinnacleFabricator</li>
+		</recipeUsers>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_NutrientBarGenI</defName>
 		<label>Pattern Nutrient Bars</label>
 		<description>Pattern a stack of Nutrient Bars from nothingness.</description>
-		<products><SNS_Meal_Nutrient_GenI>25</SNS_Meal_Nutrient_GenI></products>
+		<products>
+			<SNS_Meal_Nutrient_GenI>25</SNS_Meal_Nutrient_GenI>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_MealGenII</defName>
 		<label>Pattern Decadent Meals</label>
 		<description>Pattern a stack of Decadent Meals from nothingness.</description>
-		<products><SNS_Meal_Normal_GenII>25</SNS_Meal_Normal_GenII></products>
+		<products>
+			<SNS_Meal_Normal_GenII>25</SNS_Meal_Normal_GenII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_NutrientBarGenII</defName>
 		<label>Pattern Advanced Nutrient Bars</label>
 		<description>Pattern a stack of Advanced Nutrient Bars from nothingness.</description>
-		<products><SNS_Meal_Nutrient_GenII>25</SNS_Meal_Nutrient_GenII></products>
+		<products>
+			<SNS_Meal_Nutrient_GenII>25</SNS_Meal_Nutrient_GenII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_MealGenIII</defName>
 		<label>Pattern Hedonistic Meals</label>
 		<description>Pattern a stack of Hedonistic Luxurious Meals from nothingness.</description>
-		<products><SNS_Meal_Normal_GenIII>25</SNS_Meal_Normal_GenIII></products>
+		<products>
+			<SNS_Meal_Normal_GenIII>25</SNS_Meal_Normal_GenIII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_NutrientBarGenIII</defName>
 		<label>Pattern Luxurious Nutrient Bars</label>
 		<description>Pattern a stack of Luxurious Nutrient Bars from nothingness.</description>
-		<products><SNS_Meal_Nutrient_GenIII>25</SNS_Meal_Nutrient_GenIII></products>
+		<products>
+			<SNS_Meal_Nutrient_GenIII>25</SNS_Meal_Nutrient_GenIII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Kibble</defName>
 		<label>Pattern Kibble</label>
 		<description>Pattern a large pile of Kibble from nothingness.</description>
-		<products><Kibble>100</Kibble></products>
+		<products>
+			<Kibble>100</Kibble>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_HerbalMedicine</defName>
 		<label>Pattern Herbal Medicine</label>
 		<description>Pattern 25 packages of Herbal Medicine from nothingness.</description>
-		<products><MedicineHerbal>25</MedicineHerbal></products>
+		<products>
+			<MedicineHerbal>25</MedicineHerbal>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Medicine</defName>
 		<label>Pattern Medicine</label>
 		<description>Pattern 25 packages of Industrial-Grade Medicine from nothingness.</description>
-		<products><MedicineIndustrial>25</MedicineIndustrial></products>
+		<products>
+			<MedicineIndustrial>25</MedicineIndustrial>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_GlitterworldMedicine</defName>
 		<label>Pattern Glitterworld Medicine</label>
 		<description>Pattern 25 packages of Glitterworld Medicine from nothingness.</description>
-		<products><MedicineUltratech>25</MedicineUltratech></products>
+		<products>
+			<MedicineUltratech>25</MedicineUltratech>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_SNS_Medicine_GenIII</defName>
 		<label>Pattern 25 Enigmatic Medicine</label>
 		<workAmount>3000</workAmount>
 		<description>Pattern 25 packages of Enigmatic Medicine from nothingness.</description>
-		<products><SNS_Medicine_GenIII>25</SNS_Medicine_GenIII></products>
+		<products>
+			<SNS_Medicine_GenIII>25</SNS_Medicine_GenIII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Lux</defName>
 		<label>Pattern Lux</label>
 		<description>Pattern 25 servings of Lux from nothingness.</description>
-		<products><SNS_Lux>25</SNS_Lux></products>
+		<products>
+			<SNS_Lux>25</SNS_Lux>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Hedonia</defName>
 		<label>Pattern Hedonia</label>
 		<workAmount>3000</workAmount>
 		<description>Pattern 25 servings of Hedonia from nothingness.</description>
-		<products><SNS_Hedonia>25</SNS_Hedonia></products>
+		<products>
+			<SNS_Hedonia>25</SNS_Hedonia>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Aegis</defName>
 		<label>Pattern Aegis</label>
 		<description>Pattern 150 pills of Aegis from nothingness.</description>
-		<products><SNS_Aegis>150</SNS_Aegis></products>
+		<products>
+			<SNS_Aegis>150</SNS_Aegis>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Aeterno</defName>
 		<label>Pattern Aeterno</label>
 		<description>Pattern 150 pills of Aeterno from nothingness.</description>
-		<products><SNS_Aeterno>150</SNS_Aeterno></products>
+		<products>
+			<SNS_Aeterno>150</SNS_Aeterno>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Panacea</defName>
 		<label>Pattern Panacea</label>
 		<workAmount>3000</workAmount>
 		<description>Pattern 150 pills of Panacea from nothingness.</description>
-		<products><SNS_Panacea>150</SNS_Panacea></products>
+		<products>
+			<SNS_Panacea>150</SNS_Panacea>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Stim_I</defName>
 		<label>Pattern STIM-IV</label>
 		<description>Pattern 150 pills of STIM-IV from nothingness.</description>
-		<products><SNS_Stim_I>150</SNS_Stim_I></products>
+		<products>
+			<SNS_Stim_I>150</SNS_Stim_I>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Stim_II</defName>
 		<label>Pattern STIM-VII</label>
 		<description>Pattern 150 pills of STIM-VII from nothingness.</description>
-		<products><SNS_Stim_II>150</SNS_Stim_II></products>
+		<products>
+			<SNS_Stim_II>150</SNS_Stim_II>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Stim_III</defName>
 		<label>Pattern STIM-X</label>
 		<workAmount>3000</workAmount>
 		<description>Pattern 150 pills of STIM-X from nothingness.</description>
-		<products><SNS_Stim_III>150</SNS_Stim_III></products>
+		<products>
+			<SNS_Stim_III>150</SNS_Stim_III>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Drug_Combat_I</defName>
 		<label>Pattern Boost</label>
 		<description>Pattern 150 injectors of Boost from nothingness.</description>
-		<products><SNS_Drug_Combat_I>150</SNS_Drug_Combat_I></products>
+		<products>
+			<SNS_Drug_Combat_I>150</SNS_Drug_Combat_I>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Drug_Combat_II</defName>
 		<label>Pattern Accelerant</label>
 		<description>Pattern 150 injectors of Accelerant from nothingness.</description>
-		<products><SNS_Drug_Combat_II>150</SNS_Drug_Combat_II></products>
+		<products>
+			<SNS_Drug_Combat_II>150</SNS_Drug_Combat_II>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Drug_Combat_III</defName>
 		<label>Pattern Ascendance</label>
 		<workAmount>3000</workAmount>
 		<description>Pattern 150 injectors of Ascendance from nothingness.</description>
-		<products><SNS_Drug_Combat_III>150</SNS_Drug_Combat_III></products>
+		<products>
+			<SNS_Drug_Combat_III>150</SNS_Drug_Combat_III>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Neutroamine</defName>
 		<label>Pattern Neutroamine</label>
 		<description>Pattern 75 units of Neutroamine from nothingness.</description>
-		<products><Neutroamine>75</Neutroamine></products>
+		<products>
+			<Neutroamine>75</Neutroamine>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Penoxycyline</defName>
 		<label>Pattern Penoxycyline</label>
 		<description>Pattern a full, sizeable container of 400 Penoxycyline pills from nothingness.</description>
-		<products><Penoxycyline>400</Penoxycyline></products>
+		<products>
+			<Penoxycyline>400</Penoxycyline>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Ambrosia</defName>
 		<label>Pattern Ambrosia</label>
 		<description>Pattern a massive pile of 400 Ambrosia fruits from nothingness.</description>
-		<products><Ambrosia>400</Ambrosia></products>
+		<products>
+			<Ambrosia>400</Ambrosia>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Luciferium</defName>
 		<label>Pattern Luciferium</label>
 		<description>Pattern a full, sizeable container of 400 Luciferium pills from nothingness.</description>
-		<products><Luciferium>400</Luciferium></products>
+		<products>
+			<Luciferium>400</Luciferium>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Silver</defName>
 		<label>Pattern Silver</label>
 		<description>Pattern a pile of 500 Silver pieces from nothingness.</description>
-		<products><Silver>500</Silver></products>
+		<products>
+			<Silver>500</Silver>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Gold</defName>
 		<label>Pattern Gold</label>
 		<description>Pattern a pile of 500 Gold pieces from nothingness.</description>
-		<products><Gold>500</Gold></products>
+		<products>
+			<Gold>500</Gold>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Steel</defName>
 		<label>Pattern Steel</label>
 		<description>Pattern a pile of 75 Steel ingots from nothingness.</description>
-		<products><Steel>75</Steel></products>
+		<products>
+			<Steel>75</Steel>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Plasteel</defName>
 		<label>Pattern Plasteel</label>
 		<description>Pattern 75 small sheets of Plasteel from nothingness.</description>
-		<products><Plasteel>75</Plasteel></products>
+		<products>
+			<Plasteel>75</Plasteel>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Uranium</defName>
 		<label>Pattern Uranium</label>
 		<description>Pattern 75 pieces of self-contained Uranium from nothingness.</description>
-		<products><Uranium>75</Uranium></products>
+		<products>
+			<Uranium>75</Uranium>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_BlocksGranite</defName>
 		<label>Pattern Granite Blocks</label>
 		<description>Pattern a neat stack of 75 Granite blocks from nothingness.</description>
-		<products><BlocksGranite>75</BlocksGranite></products>
+		<products>
+			<BlocksGranite>75</BlocksGranite>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Chemfuel</defName>
 		<label>Pattern Chemfuel</label>
 		<description>Pattern a full, large container filled with 150 units of Chemfuel from nothingness.</description>
-		<products><Chemfuel>150</Chemfuel></products>
+		<products>
+			<Chemfuel>150</Chemfuel>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_ComponentIndustrial</defName>
 		<label>Pattern Component</label>
 		<description>Pattern a pile of 25 generalist basic Components from nothingness.</description>
-		<products><ComponentIndustrial>25</ComponentIndustrial></products>
+		<products>
+			<ComponentIndustrial>25</ComponentIndustrial>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_AdvancedComponentIndustrial</defName>
 		<label>Pattern Advanced Component</label>
 		<description>Pattern a pile of 25 generalist advanced Components from nothingness.</description>
-		<products><ComponentSpacer>25</ComponentSpacer></products>
+		<products>
+			<ComponentSpacer>25</ComponentSpacer>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Component_GenII</defName>
 		<label>Pattern Cosmic Component</label>
 		<description>Pattern a pile of 25 Cosmic Components from nothingness.</description>
-		<products><SNS_Component_GenII>25</SNS_Component_GenII></products>
+		<products>
+			<SNS_Component_GenII>25</SNS_Component_GenII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Component_GenIII</defName>
 		<label>Pattern Enigmatic Component</label>
 		<description>Pattern a pile of 25 Enigmatic Components from nothingness.</description>
-		<products><SNS_Component_GenIII>25</SNS_Component_GenIII></products>
+		<products>
+			<SNS_Component_GenIII>25</SNS_Component_GenIII>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_MechSerumHealer</defName>
 		<label>Pattern Heal Serum</label>
 		<description>Pattern a single injector of Mech Heal Serum from nothingness.</description>
-		<products><MechSerumHealer>1</MechSerumHealer></products>
+		<products>
+			<MechSerumHealer>1</MechSerumHealer>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_MechSerumResurrector</defName>
 		<label>Pattern Resurrector Serum</label>
 		<description>Pattern a single injector of Mech Resurrector Serum from nothingness.</description>
-		<products><MechSerumResurrector>1</MechSerumResurrector></products>
+		<products>
+			<MechSerumResurrector>1</MechSerumResurrector>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Unobtainium</defName>
 		<label>Pattern Starsteel</label>
 		<description>Pattern 75 units of Starsteel from nothingness.</description>
-		<products><SNS_Unobtainium>75</SNS_Unobtainium></products>
+		<products>
+			<SNS_Unobtainium>75</SNS_Unobtainium>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Unobtainium_Fiber</defName>
 		<label>Pattern Starsteel 'Wool'</label>
 		<description>Pattern 75 units of Starsteel Wool from nothingness.</description>
-		<products><SNS_Unobtainium_Fiber>75</SNS_Unobtainium_Fiber></products>
+		<products>
+			<SNS_Unobtainium_Fiber>75</SNS_Unobtainium_Fiber>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_CosmicAlloy</defName>
 		<label>Pattern Cosmic Alloy</label>
 		<description>Pattern 75 units of Cosmic Alloy from nothingness.</description>
-		<products><SNS_CosmicAlloy>75</SNS_CosmicAlloy></products>
+		<products>
+			<SNS_CosmicAlloy>75</SNS_CosmicAlloy>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_CosmicAlloyWeave</defName>
 		<label>Pattern Cosmic Weave</label>
 		<description>Pattern 75 units of Cosmic Weave from nothingness.</description>
-		<products><SNS_CosmicAlloyWeave>75</SNS_CosmicAlloyWeave></products>
+		<products>
+			<SNS_CosmicAlloyWeave>75</SNS_CosmicAlloyWeave>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_FuelCell</defName>
 		<label>Pattern Fuel Cells</label>
 		<description>Pattern a stack of Cosmic Fuel Catalyst from nothingness.</description>
-		<products><SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel></products>
+		<products>
+			<SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_CosmicMatter</defName>
 		<label>Summon Cosmic Matter</label>
 		<description>Draw Cosmic Matter directly from the Eternal Plane.</description>
-		<products><SNS_CosmicMatter>500</SNS_CosmicMatter></products>
+		<products>
+			<SNS_CosmicMatter>500</SNS_CosmicMatter>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_Eternium</defName>
 		<workAmount>3000</workAmount>
 		<label>Draw Eternium</label>
 		<description>Draw Eternium directly from the Eternal Plane.</description>
-		<products><SNS_Eternium>75</SNS_Eternium></products>
+		<products>
+			<SNS_Eternium>75</SNS_Eternium>
+		</products>
 	</RecipeDef>
-
 </Defs>

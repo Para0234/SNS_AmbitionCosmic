@@ -4,107 +4,165 @@
 		<defName>SNS_Production_CosmicDrawer_DrawCosmicMatter_Base</defName>
 		<jobString>Drawing Cosmic Matter</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
+		<skillRequirements/>
 		<workAmount>45000</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients/>
+		<fixedIngredientFilter/>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="SNS_DrawCosmicMatter">
 		<defName>SNS_Production_DrawCosmicMatter</defName>
 		<label>Draw Cosmic Matter</label>
 		<description>Combine a lot of time and energy into drawing pure, stable Cosmic Matter.</description>
-		<products><SNS_CosmicMatter>100</SNS_CosmicMatter></products>
+		<products>
+			<SNS_CosmicMatter>100</SNS_CosmicMatter>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef Abstract="True" Name="SNS_CosmicDrawer_ForgeCosmicAlloy">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicAlloy_Base</defName>
 		<jobString>Forging Cosmic Alloy</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
-        <workSkill>Intellectual</workSkill>
+		<skillRequirements/>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients/>
+		<fixedIngredientFilter/>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_CosmicDrawer_ForgeCosmicAlloy">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicAlloy_fromstorage</defName>
 		<label>Forge and Infuse Cosmic Alloy</label>
 		<description>Enhance the properties of Starsteel using Uranium and infuse it with stored Cosmic Matter to create the ultimate material.\n\nThis is NOT overall faster than making Cosmic Alloy from scratch, you should only choose this if you've already got Cosmic Matter in storage.\n\nNote that the Uranium used in the process is not actually mixed with the metal and is actually used up in the infusion process.</description>
 		<workAmount>15000</workAmount>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>35</count></li>
-			<li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>75</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
 		</ingredients>
-		<products><SNS_CosmicAlloy>35</SNS_CosmicAlloy></products>
+		<products>
+			<SNS_CosmicAlloy>35</SNS_CosmicAlloy>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_CosmicDrawer_ForgeCosmicAlloy">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicAlloy_scratch</defName>
 		<label>Forge Cosmic Alloy from scratch</label>
 		<description>Enhance the properties of Starsteel using Uranium and infuse it with Cosmic Matter to create the ultimate material.\n\nNote that the Uranium used in the process is not actually mixed with the metal and is actually used up in the infusion process.</description>
 		<workAmount>60000</workAmount>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>35</count></li>
-			<li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>75</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>35</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
 		</ingredients>
-		<products><SNS_CosmicAlloy>35</SNS_CosmicAlloy></products>
+		<products>
+			<SNS_CosmicAlloy>35</SNS_CosmicAlloy>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_CosmicDrawer_ForgeCosmicAlloy">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicAlloy_fromweave</defName>
 		<label>Forge Cosmic Alloy from Weave</label>
 		<description>Compress Cosmic Weave back into Cosmic Alloy.</description>
 		<workAmount>3000</workAmount>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloyWeave</li></thingDefs></filter><count>50</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloyWeave</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
 		</ingredients>
-		<products><SNS_CosmicAlloy>25</SNS_CosmicAlloy></products>
+		<products>
+			<SNS_CosmicAlloy>25</SNS_CosmicAlloy>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef Abstract="True" Name="SNS_CosmicDrawer_ForgeCosmicWeave">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicWeave_Base</defName>
 		<jobString>Forging Cosmic Weave</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
+		<skillRequirements/>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients/>
+		<fixedIngredientFilter/>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_CosmicDrawer_ForgeCosmicWeave">
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicWeave</defName>
 		<label>Forge Cosmic Weave</label>
 		<description>Transform Cosmic Alloy into the ultimate fabric; Cosmic Weave.</description>
 		<workAmount>3000</workAmount>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
-		<products><SNS_CosmicAlloyWeave>50</SNS_CosmicAlloyWeave></products>
+		<products>
+			<SNS_CosmicAlloyWeave>50</SNS_CosmicAlloyWeave>
+		</products>
 	</RecipeDef>
-	
 	<RecipeDef Abstract="True" Name="SNS_CosmicDrawer_ForgeCatalystCells">
 		<defName>SNS_Production_CosmicDrawer_ForgeFuelCells_Base</defName>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
-        <workSkill>Intellectual</workSkill>
+		<skillRequirements/>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients/>
+		<fixedIngredientFilter/>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_CosmicDrawer_ForgeCatalystCells">
 		<defName>SNS_Production_CosmicDrawer_ForgeFuelCells</defName>
 		<label>Forge Cosmic Catalyst Fuel Cells</label>
@@ -112,21 +170,65 @@
 		<jobString>Forging Cosmic Catalyst Fuel Cells</jobString>
 		<workAmount>3000</workAmount>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>15</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>3</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
 		</ingredients>
-		<products><SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel></products>
+		<products>
+			<SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel>
+		</products>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenII</defName>
 		<label>make Cosmic medicine (x1)</label>
 		<description>Improve either Glitterworld medicine or Stellar medicine with Cosmic Matter and Cosmic Alloy to make an incredibly potent medicine kit.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>MedicineUltratech</li><li>SNS_Medicine_GenI</li></thingDefs></filter><count>1</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicAlloyWeave</li></thingDefs></filter><count>10</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>2.5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+						<li>SNS_Medicine_GenI</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloyWeave</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -138,24 +240,56 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>4500</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Cosmic medicine</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Medicine_GenII>1</SNS_Medicine_GenII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenII>1</SNS_Medicine_GenII>
+		</products>
 		<researchPrerequisite>SNS_Research_III_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenII_bulk</defName>
 		<label>bulk make Cosmic medicine (x5)</label>
 		<description>Bulk improve both/either Glitterworld medicine and/or Stellar medicine with Cosmic Matter and Cosmic Alloy to make an incredibly potent medicine kit.\n\nCreating Cosmic medicine in bulk is 15% faster than individually making five kits of Cosmic medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>MedicineUltratech</li><li>SNS_Medicine_GenI</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>25</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicAlloyWeave</li></thingDefs></filter><count>50</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>12.5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineUltratech</li>
+						<li>SNS_Medicine_GenI</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloyWeave</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>12.5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -167,22 +301,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>19125</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Cosmic medicine</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Medicine_GenII>5</SNS_Medicine_GenII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenII>5</SNS_Medicine_GenII>
+		</products>
 		<researchPrerequisite>SNS_Research_III_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenIII</defName>
 		<label>make enigmatic medicine (x1)</label>
 		<description>Improve Cosmic medicine with Eternium to make the ultimate medicine.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Medicine_GenII</li></thingDefs></filter><count>1</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Medicine_GenII</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -194,22 +345,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>9000</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating enigmatic medicine</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Medicine_GenIII>1</SNS_Medicine_GenIII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenIII>1</SNS_Medicine_GenIII>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenIII_bulk</defName>
 		<label>bulk make enigmatic medicine (x5)</label>
 		<description>Bulk improve Cosmic medicine with Eternium to make the ultimate medicine\n\nCreating enigmatic medicine in bulk is 15% faster than individually making five kits of enigmatic medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Medicine_GenII</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Medicine_GenII</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -218,22 +386,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>38250</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating enigmatic medicine</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Medicine_GenIII>5</SNS_Medicine_GenIII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenIII>5</SNS_Medicine_GenIII>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Aeterno</defName>
 		<label>make aeterno (x5)</label>
 		<description>Make five pills of aeterno.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>2</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>1</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -242,22 +427,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>3000</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating aeterno</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Aeterno>5</SNS_Aeterno></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Aeterno>5</SNS_Aeterno>
+		</products>
 		<researchPrerequisite>SNS_Research_III_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Aeterno_bulk</defName>
 		<label>bulk make aeterno (x25)</label>
 		<description>Make twenty-five pills of aeterno.\n\nBulk production of aeterno is 15% faster overall than the x3 producton.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>10</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -266,23 +468,47 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>12750</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating aeterno</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Aeterno>25</SNS_Aeterno></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Aeterno>25</SNS_Aeterno>
+		</products>
 		<researchPrerequisite>SNS_Research_III_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Panacea</defName>
 		<label>make panacea (x25)</label>
 		<description>Make twenty-five pills of panacea.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>8</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>1</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>8</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -292,22 +518,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>1500</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating panacea</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Panacea>25</SNS_Panacea></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Panacea>25</SNS_Panacea>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Stim_II</defName>
 		<label>make STIM-VI (x3)</label>
 		<description>Make three pills of STIM-VI.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>2</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>1</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -316,22 +559,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>3000</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM-VI</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Stim_II>3</SNS_Stim_II></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Stim_II>3</SNS_Stim_II>
+		</products>
 		<researchPrerequisite>SNS_Research_III_drugs</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Stim_II_bulk</defName>
 		<label>bulk make STIM-VI (x15)</label>
 		<description>Make fifteen pills of STIM-VI.\n\nBulk production of STIM-VI is 15% faster overall than the x3 producton.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>10</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -340,22 +600,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>12750</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM_VI</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Stim_II>15</SNS_Stim_II></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Stim_II>15</SNS_Stim_II>
+		</products>
 		<researchPrerequisite>SNS_Research_III_drugs</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_StimIII</defName>
 		<label>make STIM-X (x25)</label>
 		<description>Make twenty-five pills of STIM-X.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>1</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -364,22 +641,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>17500</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM-X</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Stim_III>25</SNS_Stim_III></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Stim_III>25</SNS_Stim_III>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_drugs</researchPrerequisite>
 	</RecipeDef>
-	
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenII</defName>
 		<label>make cosmic component</label>
 		<description>Make a generalist Generation 2 component from Cosmic Alloy and Cosmic Matter.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>1</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -388,22 +682,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>750</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making cosmic component</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Component_GenII>1</SNS_Component_GenII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Component_GenII>1</SNS_Component_GenII>
+		</products>
 		<researchPrerequisite>SNS_Research_III_base</researchPrerequisite>
 	</RecipeDef>
-	
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenII_bulk</defName>
 		<label>bulk make cosmic component (x5)</label>
 		<description>Bulk make five generalist Generation 2 components from Cosmic Alloy and Cosmic Matter.\n\nCreating cosmic components in bulk is 15% faster than individually making five of them, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>25</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -412,22 +723,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>3187</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making cosmic component</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Component_GenII>5</SNS_Component_GenII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Component_GenII>5</SNS_Component_GenII>
+		</products>
 		<researchPrerequisite>SNS_Research_III_base</researchPrerequisite>
 	</RecipeDef>
-	
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenIII</defName>
 		<label>make enigmatic component</label>
 		<description>Make a generalist Generation 3 component from Cosmic Alloy and Eternium.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -436,22 +764,39 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>1500</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making enigmatic component</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Component_GenIII>1</SNS_Component_GenIII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Component_GenIII>1</SNS_Component_GenIII>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_base</researchPrerequisite>
 	</RecipeDef>
-	
 	<RecipeDef>
 		<defName>SNS_Production_Component_GenIII_bulk</defName>
 		<label>bulk make enigmatic components (x5)</label>
 		<description>Bulk make five generalist Generation 3 components from Cosmic Alloy and Eternium.\n\nCreating enigmatic components in bulk is 15% faster than individually making five of them, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>25</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -460,23 +805,47 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>6375</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making enigmatic component</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Component_GenIII>5</SNS_Component_GenIII></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Component_GenIII>5</SNS_Component_GenIII>
+		</products>
 		<researchPrerequisite>SNS_Research_VI_base</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Hidden</defName>
 		<label>make Enigmatic Blueprint</label>
 		<description>There is a strange file loaded onto the Cosmic Manipulator, the file requiring an obscene amount of Cosmic-tier material to make. It appears to be a very intricuate and delicate device. Other than that, we're not sure what this is, but we've got a feeling that this is going to be really, really worth it in the end.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicAlloy</li></thingDefs></filter><count>2500</count></li>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>100</count></li>
-			<li><filter><thingDefs><li>SNS_Eternium</li></thingDefs></filter><count>500</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicAlloy</li>
+					</thingDefs>
+				</filter>
+				<count>2500</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</filter>
+				<count>500</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -486,14 +855,19 @@
 			</thingDefs>
 		</fixedIngredientFilter>
 		<workAmount>250000</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<skillRequirements><Crafting>20</Crafting></skillRequirements>
+		<skillRequirements>
+			<Crafting>20</Crafting>
+		</skillRequirements>
 		<jobString>Fabricating Enigmatic Blueprint</jobString>
-		<recipeUsers><li>Table_SNS_CosmicDrawer</li></recipeUsers>
-		<products><SNS_Hidden>1</SNS_Hidden></products>
+		<recipeUsers>
+			<li>Table_SNS_CosmicDrawer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Hidden>1</SNS_Hidden>
+		</products>
 		<researchPrerequisite>SNS_Research_VII</researchPrerequisite>
 	</RecipeDef>
-
 </Defs>
