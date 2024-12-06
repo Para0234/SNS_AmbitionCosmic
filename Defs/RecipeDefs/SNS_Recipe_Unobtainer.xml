@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium</defName>
-		<label>make Starsteel</label>
+		<label>Make Starsteel</label>
 		<description>Create a binding agent for Cosmic Matter, to be filled to produce Starsteel.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>Gold</li></thingDefs></filter><count>7</count></li>
-			<li><filter><thingDefs><li>Plasteel</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Gold</li>
+					</thingDefs>
+				</filter>
+				<count>7</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -20,19 +33,31 @@
 		<workAmount>1500</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<skillRequirements><Crafting>12</Crafting></skillRequirements>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
 		<jobString>Forging Starsteel</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Unobtainium>30</SNS_Unobtainium></products>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Unobtainium>30</SNS_Unobtainium>
+		</products>
 		<researchPrerequisite>SNS_Research_I</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium_Fiber</defName>
-		<label>make Starsteel 'Wool'</label>
+		<label>Make Starsteel 'Wool'</label>
 		<description>Weave fibers from Starsteel that can be used as a fabric in tailoring.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -44,19 +69,31 @@
 		<workAmount>1500</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<skillRequirements><Crafting>12</Crafting></skillRequirements>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
 		<jobString>Weaving Cosmic Weave.</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Unobtainium_Fiber>10</SNS_Unobtainium_Fiber></products>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Unobtainium_Fiber>10</SNS_Unobtainium_Fiber>
+		</products>
 		<researchPrerequisite>SNS_Research_I</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Unobtainium_FiberCompress</defName>
-		<label>make Starsteel from Cosmic Weave</label>
+		<label>Make Starsteel from Cosmic Weave</label>
 		<description>Compress Cosmic Weave back into solid blocks of Starsteel.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Unobtainium_Fiber</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -68,20 +105,39 @@
 		<workAmount>3000</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<skillRequirements><Crafting>12</Crafting></skillRequirements>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
 		<jobString>Compressing Cosmic Weave.</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Unobtainium>5</SNS_Unobtainium></products>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Unobtainium>5</SNS_Unobtainium>
+		</products>
 		<researchPrerequisite>SNS_Research_I</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Fuel</defName>
-		<label>make Cosmic Catalyst Fuel Cells</label>
+		<label>Make Cosmic Catalyst Fuel Cells</label>
 		<description>Create a fuel cell of Starsteel filled with crushed Uranium. The reaction between Uranium and the Starsteel within will create the perfect catalyst for energy generation.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>45</count></li>
-			<li><filter><thingDefs><li>Uranium</li></thingDefs></filter><count>50</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Uranium</li>
+					</thingDefs>
+				</filter>
+				<count>50</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -94,21 +150,47 @@
 		<workAmount>6000</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<skillRequirements><Crafting>12</Crafting></skillRequirements>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
 		<jobString>Creating Catalyst Cells.</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel></products>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel>
+		</products>
 		<researchPrerequisite>SNS_Research_II_pwr</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenI</defName>
-		<label>make Stellar medicine (x1)</label>
+		<label>Make Stellar Medicine (x1)</label>
 		<description>Improve industrial-grade Medicine with Starsteel tools to create something on-par with Glitterworld medicine.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>MedicineIndustrial</li></thingDefs></filter><count>1</count></li>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>3</count></li>
-			<li><filter><thingDefs><li>SNS_Unobtainium_Fiber</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>3</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -117,8 +199,8 @@
 				<li>SNS_Unobtainium_Fiber</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-        <workSkill>Crafting</workSkill>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workAmount>3000</workAmount>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
@@ -127,19 +209,43 @@
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
 		<jobString>Creating Stellar medicine</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Medicine_GenI>1</SNS_Medicine_GenI></products>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenI>1</SNS_Medicine_GenI>
+		</products>
 		<researchPrerequisite>SNS_Research_II_medicine</researchPrerequisite>
 	</RecipeDef>
-
 	<RecipeDef>
 		<defName>SNS_Production_Medicine_GenI_bulk</defName>
-		<label>bulk make Stellar medicine (x5)</label>
+		<label>Make Stellar Medicine in bulk (x5)</label>
 		<description>Improve industrial-grade Medicine with Starsteel tools to create something on-par with Glitterworld medicine.\n\nCreating Stellar medicine in bulk is 15% faster than individually making five kits of Stellar medicine, not counting however long it takes to get new materials for each individual craft.</description>
 		<ingredients>
-			<li><filter><thingDefs><li>MedicineIndustrial</li></thingDefs></filter><count>5</count></li>
-			<li><filter><thingDefs><li>SNS_Unobtainium</li></thingDefs></filter><count>15</count></li>
-			<li><filter><thingDefs><li>SNS_Unobtainium_Fiber</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>MedicineIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fiber</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 		<fixedIngredientFilter>
 			<thingDefs>
@@ -148,19 +254,23 @@
 				<li>SNS_Unobtainium_Fiber</li>
 			</thingDefs>
 		</fixedIngredientFilter>
-        <workSkill>Crafting</workSkill>
-        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-		<workAmount>12750</workAmount> <!-- 85% the work, so 15% faster overall -->
+		<workSkill>Crafting</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workAmount>12750</workAmount>
+		<!-- 85% the work, so 15% faster overall -->
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<skillRequirements>
 			<Crafting>12</Crafting>
 			<Intellectual>8</Intellectual>
 		</skillRequirements>
-		<jobString>Creating Stellar medicine</jobString>
-		<recipeUsers><li>Table_SNS_Unobtainer</li></recipeUsers>
-		<products><SNS_Medicine_GenI>5</SNS_Medicine_GenI></products>
+		<jobString>Creating Stellar Medicine</jobString>
+		<recipeUsers>
+			<li>Table_SNS_Unobtainer</li>
+		</recipeUsers>
+		<products>
+			<SNS_Medicine_GenI>5</SNS_Medicine_GenI>
+		</products>
 		<researchPrerequisite>SNS_Research_II_medicine</researchPrerequisite>
 	</RecipeDef>
-
 </Defs>

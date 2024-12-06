@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
     <ThingDef ParentName="BuildingBase">
@@ -12,7 +12,9 @@
         </graphicData>
         <size>(1,1)</size>
         <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>SNS_Research_0</li></researchPrerequisites>
+        <researchPrerequisites>
+            <li>SNS_Research_0</li>
+        </researchPrerequisites>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -40,7 +42,7 @@
                 <shortCircuitInRain>true</shortCircuitInRain>
                 <basePowerConsumption>5000</basePowerConsumption>
             </li>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Facility">
                 <statOffsets>
                     <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
@@ -65,7 +67,9 @@
         </graphicData>
         <size>(2,2)</size>
         <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>SNS_Research_II_bridge</li></researchPrerequisites>
+        <researchPrerequisites>
+            <li>SNS_Research_II_bridge</li>
+        </researchPrerequisites>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -92,7 +96,7 @@
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>25000</basePowerConsumption>
             </li>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Facility">
                 <statOffsets>
                     <ResearchSpeedFactor>0.75</ResearchSpeedFactor>
@@ -117,7 +121,9 @@
         </graphicData>
         <size>(3,3)</size>
         <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>SNS_Research_V</li></researchPrerequisites>
+        <researchPrerequisites>
+            <li>SNS_Research_V</li>
+        </researchPrerequisites>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>PassThroughOnly</passability>
@@ -133,11 +139,11 @@
         </statBases>
         <costList>
             <SNS_CosmicAlloy>250</SNS_CosmicAlloy>
-			<SNS_CosmicCall_Component_I>1</SNS_CosmicCall_Component_I>
-			<SNS_CosmicCall_Component_II>1</SNS_CosmicCall_Component_II>
-			<SNS_CosmicCall_Component_III>1</SNS_CosmicCall_Component_III>
-			<SNS_CosmicCall_Component_IV>1</SNS_CosmicCall_Component_IV>
-			<SNS_CosmicCall_Component_V>1</SNS_CosmicCall_Component_V>
+            <SNS_CosmicCall_Component_I>1</SNS_CosmicCall_Component_I>
+            <SNS_CosmicCall_Component_II>1</SNS_CosmicCall_Component_II>
+            <SNS_CosmicCall_Component_III>1</SNS_CosmicCall_Component_III>
+            <SNS_CosmicCall_Component_IV>1</SNS_CosmicCall_Component_IV>
+            <SNS_CosmicCall_Component_V>1</SNS_CosmicCall_Component_V>
         </costList>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
@@ -148,7 +154,7 @@
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>100000</basePowerConsumption>
             </li>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Facility">
                 <statOffsets>
                     <ResearchSpeedFactor>2.5</ResearchSpeedFactor>
@@ -173,7 +179,9 @@
         </graphicData>
         <size>(3,3)</size>
         <uiIconScale>0.85</uiIconScale>
-        <researchPrerequisites><li>SNS_Research_VI_final</li></researchPrerequisites>
+        <researchPrerequisites>
+            <li>SNS_Research_VI_final</li>
+        </researchPrerequisites>
         <rotatable>false</rotatable>
         <altitudeLayer>Building</altitudeLayer>
         <passability>Impassable</passability>
@@ -201,7 +209,7 @@
                 <shortCircuitInRain>false</shortCircuitInRain>
                 <basePowerConsumption>1500000</basePowerConsumption>
             </li>
-            <li Class="CompProperties_Flickable"/>
+            <li Class="CompProperties_Flickable" />
             <li Class="CompProperties_Facility">
                 <statOffsets>
                     <ResearchSpeedFactor>10</ResearchSpeedFactor>

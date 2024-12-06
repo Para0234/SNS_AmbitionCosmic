@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef Name="SNS_Projectile_CosmicPistolBullet" ParentName="BaseBullet">
@@ -12,7 +12,7 @@
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>16</damageAmountBase>
-            <armorPenetrationBase>0.9</armorPenetrationBase>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
 			<speed>150</speed>
 		</projectile>
 	</ThingDef>
@@ -39,9 +39,9 @@
 			<Beauty>12</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -63,7 +63,9 @@
 			</li>
 		</verbs>
 		<techLevel>Archotech</techLevel>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<!-- ============================================== -->
@@ -78,7 +80,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>10</damageAmountBase>
-            <armorPenetrationBase>0.6</armorPenetrationBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -105,9 +107,9 @@
 			<Beauty>12</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -130,9 +132,11 @@
 			</li>
 		</verbs>
 		<techLevel>Archotech</techLevel>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<!-- ============================================== -->
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Shotgun_Gen2_Projectile">
@@ -145,7 +149,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>120</damageAmountBase>
-            <armorPenetrationBase>1.5</armorPenetrationBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
 			<speed>70</speed>
 		</projectile>
 	</ThingDef>
@@ -172,10 +176,10 @@
 			<Beauty>12</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicAlloy>90</SNS_CosmicAlloy>
@@ -195,7 +199,9 @@
 			</li>
 		</verbs>
 		<techLevel>Archotech</techLevel>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<!-- ============================================== -->
@@ -210,7 +216,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>80</damageAmountBase>
-            <armorPenetrationBase>1.25</armorPenetrationBase>
+			<armorPenetrationBase>1.25</armorPenetrationBase>
 			<speed>250</speed>
 		</projectile>
 	</ThingDef>
@@ -237,10 +243,10 @@
 			<Beauty>12</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicAlloy>120</SNS_CosmicAlloy>
@@ -260,9 +266,11 @@
 			</li>
 		</verbs>
 		<techLevel>Archotech</techLevel>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<ThingDef Name="SNS_Projectile_CosmicLanceBullet" ParentName="BaseBullet">
 		<defName>SNS_CosmicLance_Bullet</defName>
 		<label>Cosmic Lance projectile</label>
@@ -301,10 +309,10 @@
 			<Beauty>50</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicAlloy>150</SNS_CosmicAlloy>
@@ -316,11 +324,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SNS_CosmicLance_Bullet</defaultProjectile>
-			
+
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-			
+
 				<forcedMissRadius>0.2</forcedMissRadius>
 				<warmupTime>4</warmupTime>
 				<range>120</range>
@@ -330,7 +338,9 @@
 			</li>
 		</verbs>
 		<techLevel>Archotech</techLevel>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 </Defs>

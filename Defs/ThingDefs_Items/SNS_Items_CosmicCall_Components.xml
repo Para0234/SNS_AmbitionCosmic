@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
@@ -16,12 +16,14 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<thingCategories>
-		  <li>Artifacts</li>
+			<li>Artifacts</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>Artifact</li>
+			<li>Artifact</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smallVolume>false</smallVolume>
@@ -29,7 +31,7 @@
 		<!-- <deepCommonality>0</deepCommonality> -->
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(0,230,255,0)</glowColor>
@@ -59,12 +61,14 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<thingCategories>
-		  <li>Artifacts</li>
+			<li>Artifacts</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>Artifact</li>
+			<li>Artifact</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smallVolume>false</smallVolume>
@@ -72,7 +76,7 @@
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -102,12 +106,14 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<thingCategories>
-		  <li>Artifacts</li>
+			<li>Artifacts</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>Artifact</li>
+			<li>Artifact</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smallVolume>false</smallVolume>
@@ -115,7 +121,7 @@
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -145,12 +151,14 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<thingCategories>
-		  <li>Artifacts</li>
+			<li>Artifacts</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>Artifact</li>
+			<li>Artifact</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smallVolume>false</smallVolume>
@@ -158,7 +166,7 @@
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -188,12 +196,14 @@
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
 		<thingCategories>
-		  <li>Artifacts</li>
+			<li>Artifacts</li>
 		</thingCategories>
 		<tradeTags>
-		  <li>Artifact</li>
+			<li>Artifact</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<stackLimit>1</stackLimit>
 		<tradeNeverStack>true</tradeNeverStack>
 		<smallVolume>false</smallVolume>
@@ -201,7 +211,7 @@
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(0,230,255,0)</glowColor>
@@ -215,5 +225,5 @@
 			<Beauty>75</Beauty>
 		</statBases>
 	</ThingDef>
-	
+
 </Defs>

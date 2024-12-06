@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
   <ThingDef ParentName="FurnitureWithQualityBase">
@@ -9,7 +9,7 @@
       <texPath>Things/Building/Joy/SNS/UrBoard/UrBoard</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
     </graphicData>
-  <castEdgeShadows>false</castEdgeShadows>
+    <castEdgeShadows>false</castEdgeShadows>
     <altitudeLayer>Building</altitudeLayer>
     <rotatable>true</rotatable>
     <socialPropernessMatters>true</socialPropernessMatters>
@@ -35,7 +35,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_II_furniture</li>
@@ -90,7 +90,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_II_furniture</li>
@@ -149,7 +149,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <uiIconScale>0.9</uiIconScale>
@@ -207,7 +207,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_II_furniture</li>
@@ -273,7 +273,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>3400</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <tradeTags>
       <li>Television</li>
@@ -339,7 +339,7 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>15000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <tradeTags>
       <li>Television</li>
@@ -405,11 +405,11 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>28000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Telescope_GenI</defName>
     <label>high-yield telescope</label>
@@ -458,14 +458,14 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>2400</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_II_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Telescope_GenII</defName>
     <label>temporal telescope</label>
@@ -514,14 +514,14 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>6800</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_III_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Telescope_GenIII</defName>
     <label>cosmic observer</label>
@@ -566,14 +566,14 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>24000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_VI_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Computer_GenI</defName>
     <label>stellar computer</label>
@@ -617,14 +617,14 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>5000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_II_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Computer_GenII</defName>
     <label>cosmic computer</label>
@@ -668,14 +668,14 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>18000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_III_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
   <ThingDef ParentName="BuildingBase">
     <defName>SNS_Computer_GenIII</defName>
     <label>enigmatic computer</label>
@@ -719,12 +719,12 @@
         <shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>34000</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_Flickable" />
     </comps>
     <researchPrerequisites>
       <li>SNS_Research_VI_furniture</li>
     </researchPrerequisites>
     <designationCategory>Joy</designationCategory>
   </ThingDef>
-  
+
 </Defs>

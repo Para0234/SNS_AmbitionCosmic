@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BaseGrenadeProjectile">
@@ -32,7 +32,9 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<Beauty>5</Beauty>
 		</statBases>
-		<thingCategories><li>Grenades</li></thingCategories>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
 		<verbs>
 			<li>
 				<label>throw Cosmic EMP Grenade</label>
@@ -44,14 +46,16 @@
 				<noiseRadius>48</noiseRadius>
 				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
 				<soundCast>ThrowGrenade</soundCast>
-				<targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 				<defaultProjectile>SNS_Proj_EMPGrenade</defaultProjectile>
 			</li>
 		</verbs>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -93,7 +97,9 @@
 			<DeteriorationRate>0</DeteriorationRate>
 			<Beauty>5</Beauty>
 		</statBases>
-		<thingCategories><li>Grenades</li></thingCategories>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
 		<verbs>
 			<li>
 				<label>throw Cosmic Frag Grenade</label>
@@ -105,14 +111,16 @@
 				<noiseRadius>16</noiseRadius>
 				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
 				<soundCast>ThrowGrenade</soundCast>
-				<targetParams><canTargetLocations>true</canTargetLocations></targetParams>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 				<defaultProjectile>SNS_Proj_FragGrenade</defaultProjectile>
 			</li>
 		</verbs>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>

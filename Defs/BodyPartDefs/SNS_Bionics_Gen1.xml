@@ -23,50 +23,54 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-			
+
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
-			
+
 			<researchPrerequisite>SNS_Research_II_bionics</researchPrerequisite>
-			
+
 			<recipeUsers>
 				<li>Table_SNS_BionicCraftingStation_GenI</li>
 			</recipeUsers>
 		</recipeMaker>
-		<thingCategories><li>SNS_ThingCategory_Bionics_GenI</li></thingCategories>
+		<thingCategories>
+			<li>SNS_ThingCategory_Bionics_GenI</li>
+		</thingCategories>
 	</ThingDef>
-	
+
 	<HediffDef Name="SNS_BionicHediff_GenI" ParentName="AddedBodyPartBase" Abstract="True">
 		<defName>SNS_Base_BionicHediff_GenI</defName>
 		<defaultLabelColor>(175,155,0)</defaultLabelColor>
-        <comps/>
+		<comps/>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1.5</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
+
 	<HediffDef Name="SNS_BionicImplantHediff_GenI" ParentName="ImplantHediffBase" Abstract="True">
 		<defName>SNS_Base_BionicHediffImplant_GenI</defName>
 		<defaultLabelColor>(175,155,0)</defaultLabelColor>
-        <comps/>
+		<comps/>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
-	
+
+
 	<!-- Eye -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicEye_GenI</defName>
 		<label>stellar eye</label>
 		<labelNoun>a stellar eye</labelNoun>
 		<description>An installed stellar eye.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEye_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEye_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEye_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -74,12 +78,16 @@
 		<defName>SNS_Item_BionicEye_GenI</defName>
 		<label>stellar eye</label>
 		<description>A highly advanced artifical eye made of high-strength Starsteel based off of the Archotech eye. It is incredibly tough, able to withstand high-force impacts without breaking beyond repair. Just like the Archotech eye, it is able to percieve every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays. Its visual acuity is precise enough to read handwriting from twenty meters away. It can emit various wavelengths of radiation like a flashlight, and has an internal near-subpersona-level AI which helps highlight commonly useful visual information.\n\nIts only downfall is that it does not look anything like a human eye on closer inspection, having an extremely obvious border between pupil, iris, and the remainder of the eye, not even considering the possibility a user can cause their irises to glow at will.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEye_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEye_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -114,15 +122,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEye_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Ear -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicEar_GenI</defName>
 		<label>stellar ear</label>
 		<labelNoun>a stellar ear</labelNoun>
 		<description>An installed stellar ear.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEar_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEar_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEar_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -130,12 +140,16 @@
 		<defName>SNS_Item_BionicEar_GenI</defName>
 		<label>stellar ear</label>
 		<description>A highly advanced artifical ear made of high-strength Starsteel. It is incredibly tough, able to withstand high-force impact without breaking beyond repair. Able to hear and detect sound from kilometers away, regardless of how low or high the frequency of said sound is, and also has an internal near-subpersona-level AI that equalises sounds, filters out all unecessary details, and attempts to increase the clarity of speech.\n\nIts only downfall is that it looks nothing like a human ear. Even if one can replicate the shape, the metalic shine and general color makes it obvious that it is not natural, though most don't mind it considering the generally beautiful nature of the metal.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEar_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEar_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -170,15 +184,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEar_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Nose -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicNose_GenI</defName>
 		<label>stellar nose</label>
 		<labelNoun>a stellar nose</labelNoun>
 		<description>An installed stellar nose.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNose_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNose_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNose_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -186,12 +202,16 @@
 		<defName>SNS_Item_BionicNose_GenI</defName>
 		<label>stellar nose</label>
 		<description>A nose made of Starsteel, able to breathe in very high amounts of air in short periods of time. Extremely tough and reliable, its only downfall is that it does not look natural at all.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNose_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNose_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -226,15 +246,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicNose_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Jaw -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicJaw_GenI</defName>
 		<label>stellar jaw</label>
 		<labelNoun>a stellar jaw</labelNoun>
 		<description>An installed stellar jaw.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicJaw_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicJaw_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicJaw_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -242,12 +264,16 @@
 		<defName>SNS_Item_BionicJaw_GenI</defName>
 		<label>stellar jaw</label>
 		<description>A highly advanced artifical jaw made of high-strength Starsteel. It is incredibly tough, able to withstand high-force impact without breaking beyond repair. Able to literally chew through Plasteel and amplify the volume of one's own vocalisations alongside increase the clarity of speech, it is an exceptional eating and negotiation tool.\n\nIts only downfall is that it is obviously artifical, the metalic shine and general color does not help either, though most don't mind it considering the generally beautiful nature of the metal.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicJaw_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicJaw_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>15</SNS_Unobtainium>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -282,15 +308,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicJaw_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Head armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenI">
 		<defName>SNS_Hediff_BionicHead_GenI</defName>
 		<label>stellar head shroud</label>
 		<labelNoun>a stellar head shroud</labelNoun>
 		<description>An installed stellar head shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHead_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHead_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHead_GenI</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -303,12 +331,16 @@
 		<defName>SNS_Item_BionicHead_GenI</defName>
 		<label>stellar head shroud</label>
 		<description>Some surgically-implanted Starsteel armor for the head. While it doesn't provide any benefit over the natural body, it does make the head much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHead_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHead_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>15</SNS_Unobtainium>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -348,15 +380,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicHead_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Neck armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenI">
 		<defName>SNS_Hediff_BionicNeck_GenI</defName>
 		<label>stellar neck shroud</label>
 		<labelNoun>a stellar neck shroud</labelNoun>
 		<description>An installed stellar neck shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNeck_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNeck_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNeck_GenI</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -369,12 +403,16 @@
 		<defName>SNS_Item_BionicNeck_GenI</defName>
 		<label>stellar neck shroud</label>
 		<description>A surgically-implanted Starsteel armor for the neck. While it doesn't provide any benefit over the natural body, it does make the neck much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNeck_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNeck_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>15</SNS_Unobtainium>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -414,15 +452,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicNeck_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Torso armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenI">
 		<defName>SNS_Hediff_BionicTorso_GenI</defName>
 		<label>stellar torso shroud</label>
 		<labelNoun>a stellar torso shroud</labelNoun>
 		<description>An installed stellar torso shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicTorso_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicTorso_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicTorso_GenI</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -435,12 +475,16 @@
 		<defName>SNS_Item_BionicTorso_GenI</defName>
 		<label>stellar torso shroud</label>
 		<description>A surgically-implanted Starsteel armor for the torso. While it doesn't provide any benefit over the natural body, it does make the torso much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicTorso_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicTorso_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>15</SNS_Unobtainium>
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.2</Mass>
 		</statBases>
@@ -480,15 +524,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicTorso_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Arm -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicArm_GenI</defName>
 		<label>stellar arm</label>
 		<labelNoun>a stellar arm</labelNoun>
 		<description>An installed stellar arm.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicArm_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicArm_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -512,12 +558,16 @@
 		<defName>SNS_Item_BionicArm_GenI</defName>
 		<label>stellar arm</label>
 		<description>A highly advanced artifical arm made of high-strength Starsteel. It is incredibly tough, able to withstand high-force impact without breaking beyond repair. It is able to bend some softer metals all on its own with the precision of performing surgery on a grain of rice.\n\nIts only downfall is that it is obviously artificial, and in fact looks very robotic in nature, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicArm_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicArm_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>20</SNS_Unobtainium>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -552,15 +602,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicArm_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Leg -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicLeg_GenI</defName>
 		<label>stellar leg</label>
 		<labelNoun>a stellar leg</labelNoun>
 		<description>An installed stellar leg.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLeg_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLeg_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLeg_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -568,12 +620,16 @@
 		<defName>SNS_Item_BionicLeg_GenI</defName>
 		<label>stellar leg</label>
 		<description>A highly advanced artifical leg made of high-strength Starsteel. It is incredibly tough, able to withstand high-force impact without breaking beyond repair. It is able to allow its user to move as fast as a decent car.\n\nIts only downfall is that it is obviously artifical, and in fact looks very robotic in nature, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLeg_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLeg_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>20</SNS_Unobtainium>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>1.5</Mass>
 		</statBases>
@@ -608,15 +664,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLeg_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Spine -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicSpine_GenI</defName>
 		<label>stellar spine</label>
 		<labelNoun>a stellar spine</labelNoun>
 		<description>An installed stellar spine.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicSpine_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicSpine_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicSpine_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -624,12 +682,16 @@
 		<defName>SNS_Item_BionicSpine_GenI</defName>
 		<label>stellar spine</label>
 		<description>A highly advanced artifical spine made of high-strength Starsteel. It's extremely sturdy, able to handle very high amounts of weight and general strain from various sources all at once.\n\nIts only downfall is that it is obviously artificial, and can't entirely be hidden beneath the skin, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicSpine_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicSpine_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>15</SNS_Unobtainium>
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.75</Mass>
 		</statBases>
@@ -664,42 +726,48 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicSpine_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Brain Implant -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicBrain_GenI</defName>
 		<label>stellar neural enchanter</label>
 		<labelNoun>a stellar neural enchanter</labelNoun>
 		<description>An installed stellar neural enchanter.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicBrain_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicBrain_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenI</spawnThingOnRemoved>
-        <stages>
-            <li>
-                <painFactor>0.33</painFactor>
-                <makeImmuneTo>
-                <li>Dementia</li>
-                <li>Alzheimers</li>
-                <li>PsychicShock</li>
-                </makeImmuneTo>
-                <statFactors>
-                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.35</PsychicEntropyMax>
-                    <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.35</PsychicEntropyRecoveryRate>
-                </statFactors>
-            </li>
-        </stages>
+		<stages>
+			<li>
+				<painFactor>0.33</painFactor>
+				<makeImmuneTo>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>PsychicShock</li>
+				</makeImmuneTo>
+				<statFactors>
+					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.35</PsychicEntropyMax>
+					<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.35</PsychicEntropyRecoveryRate>
+				</statFactors>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenI">
 		<defName>SNS_Item_BionicBrain_GenI</defName>
 		<label>stellar neural enchanter</label>
 		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicBrain_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>8</SNS_Unobtainium>
 			<ComponentSpacer>12</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.15</Mass>
 		</statBases>
@@ -734,15 +802,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicBrain_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Heart -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicHeart_GenI</defName>
 		<label>stellar heart</label>
 		<labelNoun>a stellar heart</labelNoun>
 		<description>An installed stellar heart.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHeart_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHeart_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHeart_GenI</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -755,12 +825,16 @@
 		<defName>SNS_Item_BionicHeart_GenI</defName>
 		<label>stellar heart</label>
 		<description>A highly advanced blood pump that replaces the heart. While it looks nothing like a natural heart, it's far better and more efficient. It can pump blood at the highest safe levels, and adjust bloodflow dynamically to noticably reduce the rate of bleeding.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHeart_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHeart_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>8</SNS_Unobtainium>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.4</Mass>
 		</statBases>
@@ -795,15 +869,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicHeart_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Lung -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicLung_GenI</defName>
 		<label>stellar lung</label>
 		<labelNoun>a stellar lung</labelNoun>
 		<description>An installed stellar lung.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLung_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLung_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLung_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -811,12 +887,16 @@
 		<defName>SNS_Item_BionicLung_GenI</defName>
 		<label>stellar lung</label>
 		<description>A highly advanced lung-like device that collects pure oxygen through normal breathing. It draws oxygen far faster and more efficiently than natural lungs, alongside being able to store oxygen for extended periods of time. Equipped with advanced filtration devices, it can draw oxygen from the most thin atmospheres.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLung_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLung_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.4</Mass>
 		</statBases>
@@ -851,15 +931,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLung_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Kidney -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicKidney_GenI</defName>
 		<label>stellar kidney</label>
 		<labelNoun>a stellar kidney</labelNoun>
 		<description>An installed stellar kidney.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicKidney_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicKidney_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicKidney_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -867,12 +949,16 @@
 		<defName>SNS_Item_BionicKidney_GenI</defName>
 		<label>stellar kidney</label>
 		<description>A highly advanced blood filtration device that filters faster and better than any natural kidney ever could. It is not only able to handle an extremely high bloodflow, but also not lose any efficiency in extreme situations.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicKidney_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicKidney_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>8</SNS_Unobtainium>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.4</Mass>
 		</statBases>
@@ -907,15 +993,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicKidney_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Liver -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicLiver_GenI</defName>
 		<label>stellar liver</label>
 		<labelNoun>a stellar liver</labelNoun>
 		<description>An installed stellar liver.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLiver_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLiver_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLiver_GenI</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -923,12 +1011,16 @@
 		<defName>SNS_Item_BionicLiver_GenI</defName>
 		<label>stellar liver</label>
 		<description>A highly advanced liver-like device that does all the tasks natural livers can do at a much higher speed and efficiency. It is made to deal with anything that can be thrown at it, and more.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLiver_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLiver_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.4</Mass>
 		</statBases>
@@ -963,20 +1055,22 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLiver_GenI</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Stomach -->
 	<HediffDef ParentName="SNS_BionicHediff_GenI">
 		<defName>SNS_Hediff_BionicStomach_GenI</defName>
 		<label>stellar digestive system</label>
 		<labelNoun>a stellar digestive system</labelNoun>
 		<description>An installed stellar digestive system.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicStomach_GenI</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicStomach_GenI</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicStomach_GenI</spawnThingOnRemoved>
 		<stages>
-		  <li>
-			<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
-		  </li>
+			<li>
+				<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+			</li>
 		</stages>
 	</HediffDef>
 
@@ -984,12 +1078,16 @@
 		<defName>SNS_Item_BionicStomach_GenI</defName>
 		<label>stellar digestive system</label>
 		<description>A complete digestive system in a singular organ-shaped device that converts consumed food efficiency into pure nutrtients, also destroying any illness-causing elements in the process of nutrient conversion, effectively removing risk of food poisoning.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicStomach_GenI</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicStomach_GenI</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_Unobtainium>12</SNS_Unobtainium>
 			<ComponentSpacer>4</ComponentSpacer>
 		</costList>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 		<statBases>
 			<Mass>0.4</Mass>
 		</statBases>

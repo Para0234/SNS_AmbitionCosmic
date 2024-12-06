@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	
-	<ThingDef ParentName="ArmorHelmetMakeableBase">
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
     <techLevel>Ultra</techLevel>
     <defName>SNS_Apparel_CosmicAlloyHelmet</defName>
     <label>Starsteel Helmet</label>
@@ -24,7 +24,7 @@
     <statBases>
       <WorkToMake>5000</WorkToMake>
       <MaxHitPoints>450</MaxHitPoints>
-	  <DeteriorationRate>0.0</DeteriorationRate>
+      <DeteriorationRate>0.0</DeteriorationRate>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
@@ -49,18 +49,20 @@
       <tags>
         <li>SpacerMilitary</li>
         <li>RoyalCombatGear</li>
-		<li>PrestigeCombatGear</li>
+        <li>PrestigeCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <tradeTags>
-	  <li>HiTechArmor</li>
+      <li>HiTechArmor</li>
     </tradeTags>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
   </ThingDef>
-  
+
   <ThingDef ParentName="ArmorSmithableBase">
     <techLevel>Ultra</techLevel>
     <defName>SNS_Apparel_CosmicAlloyPlateArmor</defName>
@@ -82,7 +84,7 @@
     </graphicData>
     <statBases>
       <WorkToMake>15000</WorkToMake>
-	  <DeteriorationRate>0.0</DeteriorationRate>
+      <DeteriorationRate>0.0</DeteriorationRate>
       <Mass>2</Mass>
       <MaxHitPoints>900</MaxHitPoints>
       <Flammability>0.0</Flammability>
@@ -92,7 +94,7 @@
       <Insulation_Cold>50</Insulation_Cold>
       <Insulation_Heat>25</Insulation_Heat>
       <EquipDelay>4</EquipDelay>
-	  
+
       <!-- <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate> -->
       <!-- <EnergyShieldEnergyMax>1</EnergyShieldEnergyMax> -->
     </statBases>
@@ -107,13 +109,13 @@
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
-		<li>Waist</li>
+        <li>Waist</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
-		<li>Hands</li>
+        <li>Hands</li>
         <li>Legs</li>
-		<li>Feet</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CosmicPlateArmor/CosmicPlateArmor</wornGraphicPath>
       <layers>
@@ -123,16 +125,18 @@
       <tags>
         <li>SpacerMilitary</li>
         <li>RoyalCombatGear</li>
-	    <li>PrestigeCombatGear</li>
+        <li>PrestigeCombatGear</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
       </defaultOutfitTags>
     </apparel>
     <tradeTags>
-	  <li>HiTechArmor</li>
+      <li>HiTechArmor</li>
     </tradeTags>
-    <thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
   </ThingDef>
-  
+
 </Defs>
