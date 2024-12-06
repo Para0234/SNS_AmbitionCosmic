@@ -73,7 +73,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Drug_Combat_I</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -90,33 +90,33 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <painFactor>0.2</painFactor>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>0.15</offset>
-            </li>
-            <li>
-              <capacity>Manipulation</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Sight</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>0.35</offset>
-            </li>
-          </capMods>
-            <statFactors>
-                <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
-                <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">2</PsychicEntropyRecoveryRate>
-            </statFactors>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <painFactor>0.2</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">2</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- Gen2 -->
@@ -194,7 +194,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Drug_Combat_II</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -211,34 +211,34 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <painFactor>0.1</painFactor>
-          <restFallFactor>0.65</restFallFactor>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>0.15</offset>
-            </li>
-            <li>
-              <capacity>Manipulation</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Sight</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>0.35</offset>
-            </li>
-          </capMods>
-            <statFactors>
-                <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyMax>
-                <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">3</PsychicEntropyRecoveryRate>
-            </statFactors>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <painFactor>0.1</painFactor>
+        <restFallFactor>0.65</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">3</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- Gen3 -->
@@ -320,7 +320,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Drug_Combat_III</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -337,34 +337,34 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <restFallFactor>0</restFallFactor>
-          <painFactor>0</painFactor>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>0.15</offset>
-            </li>
-            <li>
-              <capacity>Manipulation</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Sight</capacity>
-              <offset>0.25</offset>
-            </li>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>0.35</offset>
-            </li>
-          </capMods>
-            <statFactors>
-                <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">2.25</PsychicEntropyMax>
-                <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">5</PsychicEntropyRecoveryRate>
-            </statFactors>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <restFallFactor>0</restFallFactor>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">2.25</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">5</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
   </HediffDef>
 
 </Defs>

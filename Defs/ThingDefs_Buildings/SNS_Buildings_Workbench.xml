@@ -22,7 +22,9 @@
 		<surfaceType>Item</surfaceType>
 		<designationCategory>Production</designationCategory>
 		<altitudeLayer>Building</altitudeLayer>
-		<stuffCategories><li>Metallic</li></stuffCategories>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
 		<costStuffCount>75</costStuffCount>
 		<costList>
 			<Plasteel>75</Plasteel>
@@ -44,19 +46,27 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>SNS_Linkable_Unobtainer_I</li>
-                </linkableFacilities>
-            </li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_Unobtainer_I</li>
+				</linkableFacilities>
+			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_I</li></researchPrerequisites>
-		<placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+		<researchPrerequisites>
+			<li>SNS_Research_I</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 	</ThingDef>
 
 	<ThingDef ParentName="BenchBase">
@@ -101,19 +111,25 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(150,150,255,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>SNS_Linkable_CosmicDrawer_II</li>
-                </linkableFacilities>
-            </li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicDrawer_II</li>
+				</linkableFacilities>
+			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_IV</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_IV</li>
+		</researchPrerequisites>
 	</ThingDef>
-		
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_CosmicDrawer</defName>
 		<label>Cosmic Manipulator</label>
@@ -157,21 +173,27 @@
 				<glowRadius>4</glowRadius>
 				<glowColor>(150,150,255,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>SNS_Linkable_CosmicDrawer_I</li>
-                    <li>SNS_Linkable_CosmicDrawer_II</li>
-                    <li>SNS_Linkable_CosmicDrawer_III</li>
-                </linkableFacilities>
-            </li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicDrawer_I</li>
+					<li>SNS_Linkable_CosmicDrawer_II</li>
+					<li>SNS_Linkable_CosmicDrawer_III</li>
+				</linkableFacilities>
+			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_III_base</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_III_base</li>
+		</researchPrerequisites>
 	</ThingDef>
-		
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_CosmicCall</defName>
 		<label>R.I.F.T. Fabricator</label>
@@ -213,23 +235,29 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(150,150,255,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>SNS_Linkable_CosmicCall_I</li>
-                    <li>SNS_Linkable_CosmicCall_II</li>
-                    <li>SNS_Linkable_CosmicCall_III</li>
-                </linkableFacilities>
-            </li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicCall_I</li>
+					<li>SNS_Linkable_CosmicCall_II</li>
+					<li>SNS_Linkable_CosmicCall_III</li>
+				</linkableFacilities>
+			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_V_breakthrough</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_V_breakthrough</li>
+		</researchPrerequisites>
 	</ThingDef>
-		
-		
-		<!-- Pinnacle of Creation item. -->
+
+
+	<!-- Pinnacle of Creation item. -->
 	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_PinnacleFabricator</defName>
 		<label>The Utopia Device</label>
@@ -273,12 +301,18 @@
 				<glowRadius>30</glowRadius>
 				<glowColor>(150,150,255,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_VII</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_VII</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 	<DesignatorDropdownGroupDef>
@@ -328,20 +362,28 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_II_bionics</li></researchPrerequisites>
-		<placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+		<researchPrerequisites>
+			<li>SNS_Research_II_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_BionicCraftingStation_GenII</defName>
 		<label>cosmic bionic forge</label>
@@ -384,20 +426,28 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_III_bionics</li></researchPrerequisites>
-		<placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+		<researchPrerequisites>
+			<li>SNS_Research_III_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_BionicCraftingStation_GenIII</defName>
 		<label>enigmatic bionic forge</label>
@@ -440,21 +490,29 @@
 				<glowRadius>3</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_AffectedByFacilities">
 				<linkableFacilities>
 					<li>ToolCabinet</li>
 				</linkableFacilities>
 			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_VI_bionics</li></researchPrerequisites>
-		<placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+		<researchPrerequisites>
+			<li>SNS_Research_VI_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 	</ThingDef>
 
-    <ThingDef ParentName="BenchBase">
+	<ThingDef ParentName="BenchBase">
 		<defName>Table_SNS_NutrientProcessor</defName>
 		<label>Nutrient Processor</label>
 		<description>The Nutrient Processor processes input nutrients to produce nutrient paste for further processing into shelf-stable nutrient bars. It also can infuse various materials into food to make higher-quality meals.\n\nStats: Consumes 1250 Watts.</description>
@@ -497,19 +555,27 @@
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Flickable"/>
-			<li Class="CompProperties_Breakdownable"/>
-            <li Class="CompProperties_AffectedByFacilities">
-                <linkableFacilities>
-                    <li>SNS_Linkable_Unobtainer_I</li>
-                </linkableFacilities>
-            </li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_Unobtainer_I</li>
+				</linkableFacilities>
+			</li>
 		</comps>
-		<inspectorTabs><li>ITab_Bills</li></inspectorTabs>
-		<building><spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity></building>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
 		<recipes></recipes>
-		<researchPrerequisites><li>SNS_Research_II_food</li></researchPrerequisites>
-		<placeWorkers><li>PlaceWorker_ShowFacilitiesConnections</li></placeWorkers>
+		<researchPrerequisites>
+			<li>SNS_Research_II_food</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
 	</ThingDef>
 
 </Defs>

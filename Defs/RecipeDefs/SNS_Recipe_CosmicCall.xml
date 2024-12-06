@@ -6,11 +6,11 @@
 		<defName>SNS_Production_CosmicCall_Base</defName>
 		<jobString>Atomically Fabricating</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_CosmicCall</li>

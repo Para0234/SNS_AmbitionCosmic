@@ -4,13 +4,13 @@
 		<defName>SNS_Production_PinnacleFabricator_Base</defName>
 		<jobString>Atomically Constructing</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workAmount>600</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_PinnacleFabricator</li>

@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThoughtDef>
+  <ThoughtDef>
     <defName>AteAwfulMealFlavored</defName>
     <durationDays>1</durationDays>
     <stages>
       <li>
         <label>Science Never Stops Error Fix</label>
-        <description>You probably shouldn't be seeing this without using DevMode. You might need to put Science Never Stops: Ambition of the Cosmic further towards the top of the load order. </description>
+        <description>You probably shouldn't be seeing this without using DevMode. You might need to put Ambition of the Cosmic further towards the top of the load order. </description>
         <baseMoodEffect>0</baseMoodEffect>
       </li>
     </stages>

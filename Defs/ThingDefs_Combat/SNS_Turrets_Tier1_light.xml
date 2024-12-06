@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--
@@ -31,284 +31,292 @@
 	
 	-->
 
-<ThingDef Name="SNS_BaseTurretBuilding" ParentName="BuildingBase" Abstract = "True">
-    <drawerType>MapMeshAndRealTime</drawerType>
-</ThingDef>
+	<ThingDef Name="SNS_BaseTurretBuilding" ParentName="BuildingBase" Abstract="True">
+		<drawerType>MapMeshAndRealTime</drawerType>
+	</ThingDef>
 
-<!-- Light CT -->
+	<!-- Light CT -->
 
-<ThingDef ParentName="BaseWeaponTurret">
-	<defName>SNS_Gun_Turret_LightCosmic</defName>
-	<label>light stellar turret gun</label>
-	<description>The gun of a light cosmic turret.</description>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretLight</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<AccuracyTouch>0.85</AccuracyTouch>
-		<AccuracyShort>0.85</AccuracyShort>
-		<AccuracyMedium>0.75</AccuracyMedium>
-		<AccuracyLong>0.65</AccuracyLong>
-		<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-		<DeteriorationRate>0</DeteriorationRate>
-		<Mass>1.5</Mass>
-		<Flammability>0</Flammability>
-	</statBases>
-	<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SNS_Gun_Turret_Bullet_LightCosmic</defaultProjectile>
-			<warmupTime>0</warmupTime>
-			<range>40</range>
-			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-			<burstShotCount>6</burstShotCount>
-			<soundCast>Shot_ChargeRifle</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>10</muzzleFlashScale>
-			<consumeFuelPerShot>1</consumeFuelPerShot>
-		</li>
-	</verbs>
-</ThingDef>
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_LightCosmic</defName>
+		<label>light stellar turret gun</label>
+		<description>The gun of a light cosmic turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_LightCosmic</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>40</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
 
-<ThingDef ParentName="SNS_Rifle_Gen1_Projectile">
-	<defName>SNS_Gun_Turret_Bullet_LightCosmic</defName>
-    <label>light stellar turret projectile</label>
-</ThingDef>
+	<ThingDef ParentName="SNS_Rifle_Gen1_Projectile">
+		<defName>SNS_Gun_Turret_Bullet_LightCosmic</defName>
+		<label>light stellar turret projectile</label>
+	</ThingDef>
 
-<ThingDef ParentName="SNS_BaseTurretBuilding">
-	<defName>SNS_Turret_LightCosmic</defName>
-	<label>light stellar turret</label>
-	<description>A portable automatic turret made of durable Starsteel and Plasteel. Requires Plasteel to refurbish its barrel after heavy use.</description>
-	<thingClass>Building_TurretGun</thingClass>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseSmall</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(2.5,2.5)</drawSize>	
-		
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		
-		<shadowData>
-			<volume>(0.27,0.25,0.27)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
-	</graphicData>
-	
-	<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_01LightTurret</uiIconPath>
-	<uiIconScale>0.90</uiIconScale>
-	<minifiedDef>MinifiedThing</minifiedDef>
-	<altitudeLayer>Building</altitudeLayer>
-	<stealable>false</stealable>
-	<rotatable>false</rotatable>
-	
-	<thingCategories>
-		<li>BuildingsSecurity</li>
-	</thingCategories>
-	
-	<statBases>
-		<MaxHitPoints>1200</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>2800</WorkToBuild>
-		<Mass>1.5</Mass>
-		<Beauty>10</Beauty>
-		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-	</statBases>
-	
-	<tickerType>Normal</tickerType>
-	
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>400</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-		<li Class="CompProperties_Breakdownable"/>
-		<li Class="CompProperties_Refuelable">
-			<fuelLabel>Shots until barrel change</fuelLabel>
-			<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-			<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
-			<fuelFilter><thingDefs><li>Plasteel</li></thingDefs></fuelFilter>
-			<fuelCapacity>450</fuelCapacity> <!-- 75 bursts -->
-			<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Plasteel per burst. -->
-			<initialFuelPercent>1</initialFuelPercent>
-			<autoRefuelPercent>0.5</autoRefuelPercent>
-			<showFuelGizmo>true</showFuelGizmo>
-			<minimumFueledThreshold>1</minimumFueledThreshold>
-			<factorByDifficulty>true</factorByDifficulty>
-			<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-			<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		</li>
-	</comps>
-	
-	<passability>PassThroughOnly</passability>
-	<pathCost>50</pathCost>
-	<fillPercent>0.4</fillPercent>
-	<hasTooltip>true</hasTooltip>
-	
-	<costList>
-		<SNS_Unobtainium>40</SNS_Unobtainium>
-		<Plasteel>20</Plasteel>
-		<ComponentIndustrial>2</ComponentIndustrial>
-	</costList>
-	
-	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<designationCategory>Security</designationCategory>
-	<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-	
-	<building>
-		<combatPower>150</combatPower>
-		<ai_combatDangerous>false</ai_combatDangerous>
-		<turretGunDef>SNS_Gun_Turret_LightCosmic</turretGunDef>
-		<turretBurstCooldownTime>1</turretBurstCooldownTime>
-	</building>
-	
-	<placeWorkers>
-		<li>PlaceWorker_TurretTop</li>
-		<li>PlaceWorker_ShowTurretRadius</li>
-	</placeWorkers>
-	
-    <researchPrerequisites>
-      <li>SNS_Research_II_wep</li>
-    </researchPrerequisites>
-</ThingDef>
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_LightCosmic</defName>
+		<label>light stellar turret</label>
+		<description>A portable automatic turret made of durable Starsteel and Plasteel. Requires Plasteel to refurbish its barrel after heavy use.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_01LightTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>450</fuelCapacity> <!-- 75 bursts -->
+				<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Plasteel per burst. -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>40</SNS_Unobtainium>
+			<Plasteel>20</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>150</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_LightCosmic</turretGunDef>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_II_wep</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 
-<!-- Perdition Light CT -->
+	<!-- Perdition Light CT -->
 
-<ThingDef ParentName="BaseWeaponTurret">
-	<defName>SNS_Gun_Turret_PerditionLightCosmic</defName>
-	<label>perdition light stellar turret gun</label>
-	<description>The gun of a perdition light stellar turret.</description>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretLight</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<AccuracyTouch>0.85</AccuracyTouch>
-		<AccuracyShort>0.85</AccuracyShort>
-		<AccuracyMedium>0.75</AccuracyMedium>
-		<AccuracyLong>0.65</AccuracyLong>
-		<RangedWeapon_Cooldown>0.17</RangedWeapon_Cooldown>
-		<DeteriorationRate>0</DeteriorationRate>
-		<Mass>1.5</Mass>
-		<Flammability>0</Flammability>
-	</statBases>
-	<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SNS_Gun_Turret_Bullet_LightCosmic</defaultProjectile>
-			<warmupTime>0</warmupTime>
-			<range>40</range>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>Shot_ChargeRifle</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>10</muzzleFlashScale>
-			<consumeFuelPerShot>1</consumeFuelPerShot>
-		</li>
-	</verbs>
-</ThingDef>
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_PerditionLightCosmic</defName>
+		<label>perdition light stellar turret gun</label>
+		<description>The gun of a perdition light stellar turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretLight</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.17</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_LightCosmic</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>40</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
 
-<ThingDef ParentName="SNS_BaseTurretBuilding">
-	<defName>SNS_Turret_PerditionLightCosmic</defName>
-	<label>perdition light stellar turret</label>
-	<description>A portable automatic turret made of durable Starsteel and Plasteel. Requires Plasteel to refurbish its barrel after heavy use.\n\nThis variant does not have a burst nor a cooldown between said bursts. Instead, it constantly fires at a steady pace until its barrels are destroyed.</description>
-	<thingClass>Building_TurretGun</thingClass>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseSmall</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(2.5,2.5)</drawSize>	
-		
-		<damageData>
-			<rect>(0.2,0.2,0.6,0.6)</rect>
-		</damageData>
-		
-		<shadowData>
-			<volume>(0.27,0.25,0.27)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
-	</graphicData>
-	
-	<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_02PerditionLightTurret</uiIconPath>
-	<uiIconScale>0.90</uiIconScale>
-	<minifiedDef>MinifiedThing</minifiedDef>
-	<altitudeLayer>Building</altitudeLayer>
-	<stealable>false</stealable>
-	<rotatable>false</rotatable>
-	
-	<thingCategories>
-		<li>BuildingsSecurity</li>
-	</thingCategories>
-	
-	<statBases>
-		<MaxHitPoints>1200</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>2800</WorkToBuild>
-		<Mass>1.5</Mass>
-		<Beauty>10</Beauty>
-		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-	</statBases>
-	
-	<tickerType>Normal</tickerType>
-	
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>400</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-		<li Class="CompProperties_Breakdownable"/>
-		<li Class="CompProperties_Refuelable">
-			<fuelLabel>Shots until barrel change</fuelLabel>
-			<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
-			<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
-			<fuelFilter><thingDefs><li>Plasteel</li></thingDefs></fuelFilter>
-			<fuelCapacity>450</fuelCapacity> <!-- 75 bursts -->
-			<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Plasteel per burst. -->
-			<initialFuelPercent>1</initialFuelPercent>
-			<autoRefuelPercent>0.5</autoRefuelPercent>
-			<showFuelGizmo>true</showFuelGizmo>
-			<minimumFueledThreshold>1</minimumFueledThreshold>
-			<factorByDifficulty>true</factorByDifficulty>
-			<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-			<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
-		</li>
-	</comps>
-	
-	<passability>PassThroughOnly</passability>
-	<pathCost>50</pathCost>
-	<fillPercent>0.4</fillPercent>
-	<hasTooltip>true</hasTooltip>
-	
-	<costList>
-		<SNS_Unobtainium>43</SNS_Unobtainium>
-		<Plasteel>22</Plasteel>
-		<ComponentIndustrial>2</ComponentIndustrial>
-	</costList>
-	
-	<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-	<designationCategory>Security</designationCategory>
-	<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
-	
-	<building>
-		<combatPower>150</combatPower>
-		<ai_combatDangerous>false</ai_combatDangerous>
-		<turretGunDef>SNS_Gun_Turret_PerditionLightCosmic</turretGunDef>
-		<turretBurstCooldownTime>0.17</turretBurstCooldownTime>
-	</building>
-	
-	<placeWorkers>
-		<li>PlaceWorker_TurretTop</li>
-		<li>PlaceWorker_ShowTurretRadius</li>
-	</placeWorkers>
-	
-    <researchPrerequisites>
-      <li>SNS_Research_II_wep</li>
-    </researchPrerequisites>
-</ThingDef>
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_PerditionLightCosmic</defName>
+		<label>perdition light stellar turret</label>
+		<description>A portable automatic turret made of durable Starsteel and Plasteel. Requires Plasteel to refurbish its barrel after heavy use.\n\nThis variant does not have a burst nor a cooldown between said bursts. Instead, it constantly fires at a steady pace until its barrels are destroyed.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseSmall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2.5,2.5)</drawSize>
+
+			<damageData>
+				<rect>(0.2,0.2,0.6,0.6)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(0.27,0.25,0.27)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_02PerditionLightTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<thingCategories>
+			<li>BuildingsSecurity</li>
+		</thingCategories>
+
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>450</fuelCapacity> <!-- 75 bursts -->
+				<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Plasteel per burst. -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>43</SNS_Unobtainium>
+			<Plasteel>22</Plasteel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>150</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_PerditionLightCosmic</turretGunDef>
+			<turretBurstCooldownTime>0.17</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_II_wep</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 </Defs>

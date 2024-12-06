@@ -4,12 +4,12 @@
 		<defName>SNS_Production_Constructor_Base</defName>
 		<jobString>Atomically Fabricating</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workAmount>2400</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_Constructor</li>

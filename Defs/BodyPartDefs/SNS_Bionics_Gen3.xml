@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
 	<!-- Base part -->
@@ -23,51 +23,55 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-			
+
 			<skillRequirements>
 				<Crafting>18</Crafting>
 			</skillRequirements>
-			
+
 			<researchPrerequisite>SNS_Research_VI_bionics</researchPrerequisite>
-			
+
 			<recipeUsers>
 				<li>Table_SNS_BionicCraftingStation_GenIII</li>
 			</recipeUsers>
 		</recipeMaker>
 		<tradeTags Inherit="False"></tradeTags>
-		<thingCategories><li>SNS_ThingCategory_Bionics_GenIII</li></thingCategories>
+		<thingCategories>
+			<li>SNS_ThingCategory_Bionics_GenIII</li>
+		</thingCategories>
 	</ThingDef>
-	
+
 	<HediffDef Name="SNS_BionicHediff_GenIII" ParentName="AddedBodyPartBase" Abstract="True">
 		<defName>SNS_Base_BionicHediff_GenIII</defName>
 		<defaultLabelColor>(0,128,183)</defaultLabelColor>
-        <comps/>
+		<comps />
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>3</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
+
 	<HediffDef Name="SNS_BionicImplantHediff_GenIII" ParentName="ImplantHediffBase" Abstract="True">
 		<defName>SNS_Base_BionicHediffImplant_GenIII</defName>
 		<defaultLabelColor>(0,128,183)</defaultLabelColor>
-        <comps/>
+		<comps />
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
-	
+
+
 	<!-- Eye -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicEye_GenIII</defName>
 		<label>enigmatic eye</label>
 		<labelNoun>a enigmatic eye</labelNoun>
 		<description>An installed enigmatic eye.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEye_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEye_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEye_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -75,7 +79,9 @@
 		<defName>SNS_Item_BionicEye_GenIII</defName>
 		<label>enigmatic eye</label>
 		<description>An arcane device made of Cosmic Alloy and Eternium. It is for nigh-on indestructable for most situations. It is able to percieve every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays, including those on the extreme ends, be it the most redshifted radio waves or the highest wavelength gamme rays. The eye is able to see with great precision more than twice as far as its Generation 2 predecessor.\n\nIts only downfall is that it does not look anything like a human eye on closer inspection, having an extremely obvious border between pupil, iris, and the remainder of the eye, not even considering the possibility a user can cause their irises to glow at will--and very brightly at that.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEye_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEye_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
@@ -114,15 +120,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEye_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Ear -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicEar_GenIII</defName>
 		<label>enigmatic ear</label>
 		<labelNoun>a enigmatic ear</labelNoun>
 		<description>An installed enigmatic ear.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEar_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEar_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEar_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -130,7 +138,9 @@
 		<defName>SNS_Item_BionicEar_GenIII</defName>
 		<label>enigmatic ear</label>
 		<description>An arcane device made of Cosmic Alloy and Eternium. It is for nigh-on indestructable for most situations. It seems to almost be able to peer past space, listening in on something else in a way that allows nearly unlimited hearing range.\n\nIts only downfall is that it looks nothing like a human ear, even if one can replicate the shape, the metalic shine and enigmatic glow makes it obvious that it is not natural, though most don't mind it considering the absolutely beautiful nature of what it's made of.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEar_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEar_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
@@ -169,15 +179,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEar_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Nose -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicNose_GenIII</defName>
 		<label>enigmatic nose</label>
 		<labelNoun>a enigmatic nose</labelNoun>
 		<description>An installed enigmatic nose.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNose_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNose_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNose_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -185,7 +197,9 @@
 		<defName>SNS_Item_BionicNose_GenIII</defName>
 		<label>enigmatic nose</label>
 		<description>An arcane nose made of Cosmic Alloy and Eternium, it bends the very fabric of all creation to draw in air. Nigh-indestructable and reliable, its only downfall is that it does not look natural at all.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNose_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNose_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
@@ -224,15 +238,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicNose_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Jaw -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicJaw_GenIII</defName>
 		<label>enigmatic jaw</label>
 		<labelNoun>a enigmatic jaw</labelNoun>
 		<description>An installed enigmatic jaw.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicJaw_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicJaw_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicJaw_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -240,7 +256,9 @@
 		<defName>SNS_Item_BionicJaw_GenIII</defName>
 		<label>enigmatic jaw</label>
 		<description>A highly advanced artifical jaw made of Eternium-infused Cosmic Alloy. It is incredibly tough, able to withstand high-force impact even being dented, much less broken. Able to literally rip through Cosmic Alloy like paper and amplify the volume of one's own vocalisations through strange interactions with the psychic field, it is an exceptional eating and negotiation tool.\n\nIts only downfall is that it is obviously artifical, the metalic shine and enigmatic glow does not help either, though most don't mind it considering the generally beautiful nature of the metal.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicJaw_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicJaw_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Eternium>5</SNS_Eternium>
@@ -280,15 +298,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicJaw_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Head armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenIII">
 		<defName>SNS_Hediff_BionicHead_GenIII</defName>
 		<label>enigmatic head shroud</label>
 		<labelNoun>a enigmatic head shroud</labelNoun>
 		<description>An installed enigmatic head shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHead_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHead_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHead_GenIII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -301,7 +321,9 @@
 		<defName>SNS_Item_BionicHead_GenIII</defName>
 		<label>enigmatic head shroud</label>
 		<description>Some surgically-implanted Eternium-infused Cosmic Alloy armor for the head. While it doesn't provide any benefit over the natural body, it does make the head much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHead_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHead_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>2</SNS_Component_GenIII>
@@ -345,15 +367,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicHead_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Neck armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenIII">
 		<defName>SNS_Hediff_BionicNeck_GenIII</defName>
 		<label>enigmatic neck shroud</label>
 		<labelNoun>a enigmatic neck shroud</labelNoun>
 		<description>An installed enigmatic neck shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNeck_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNeck_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNeck_GenIII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -366,7 +390,9 @@
 		<defName>SNS_Item_BionicNeck_GenIII</defName>
 		<label>enigmatic neck shroud</label>
 		<description>Some surgically-implanted Eternium-infused Cosmic Alloy armor for the neck. While it doesn't provide any benefit over the natural body, it does make the neck much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNeck_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNeck_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>2</SNS_Component_GenIII>
@@ -410,15 +436,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicNeck_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Torso armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenIII">
 		<defName>SNS_Hediff_BionicTorso_GenIII</defName>
 		<label>enigmatic torso shroud</label>
 		<labelNoun>a enigmatic torso shroud</labelNoun>
 		<description>An installed enigmatic torso shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicTorso_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicTorso_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicTorso_GenIII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -431,7 +459,9 @@
 		<defName>SNS_Item_BionicTorso_GenIII</defName>
 		<label>enigmatic torso shroud</label>
 		<description>A surgically-implanted Eternium-infused Cosmic Alloy armor for the torso. While it doesn't provide any benefit over the natural body, it does make the torso much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicTorso_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicTorso_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Eternium>5</SNS_Eternium>
@@ -476,15 +506,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicTorso_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Arm -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicArm_GenIII</defName>
 		<label>enigmatic arm</label>
 		<labelNoun>a enigmatic arm</labelNoun>
 		<description>An installed enigmatic arm.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicArm_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicArm_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -508,7 +540,9 @@
 		<defName>SNS_Item_BionicArm_GenIII</defName>
 		<label>enigmatic arm</label>
 		<description>An arcane artifical arm made of high-strength Cosmic Alloy and Eternium. It is obscenely tough, able to withstand high-force impact without even a scratch. It is able to bend Cosmic Alloy all on its own with the precision that simply cannot even be comprehended.\n\nIts only downfall is that it is obviously artificial, and in fact looks very robotic in nature, though few actually mind the apperance due to the beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicArm_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicArm_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>3</SNS_Component_GenIII>
@@ -547,15 +581,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicArm_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Leg -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicLeg_GenIII</defName>
 		<label>enigmatic leg</label>
 		<labelNoun>a enigmatic leg</labelNoun>
 		<description>An installed enigmatic leg.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLeg_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLeg_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLeg_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -563,7 +599,9 @@
 		<defName>SNS_Item_BionicLeg_GenIII</defName>
 		<label>enigmatic leg</label>
 		<description>An arcane artifical leg made of nigh-indestructable Cosmic Alloy and Eternium. It is able to allow its user to move as fast as a decent sports car.\n\nIts only downfall is that it is obviously artificial, and in fact looks very robotic in nature, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLeg_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLeg_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>3</SNS_Component_GenIII>
@@ -602,15 +640,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLeg_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Spine -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicSpine_GenIII</defName>
 		<label>enigmatic spine</label>
 		<labelNoun>a enigmatic spine</labelNoun>
 		<description>An installed enigmatic spine.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicSpine_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicSpine_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicSpine_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -618,7 +658,9 @@
 		<defName>SNS_Item_BionicSpine_GenIII</defName>
 		<label>enigmatic spine</label>
 		<description>An arcane artifical spine made of nigh-indestructable Cosmic Alloy and Eternium. It's extremely sturdy, able to handle unbelievable amounts of weight and general strain from various sources all at once.\n\nIts only downfall is that it is obviously artificial, and can't entirely be hidden beneath the skin, though few actually mind the apperance due to the absolutely beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicSpine_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicSpine_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>3</SNS_Component_GenIII>
@@ -657,37 +699,41 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicSpine_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Brain Implant -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicBrain_GenIII</defName>
 		<label>enigmatic neural enchanter</label>
 		<labelNoun>a enigmatic neural enchanter</labelNoun>
 		<description>An installed enigmatic neural enchanter.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicBrain_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicBrain_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenIII</spawnThingOnRemoved>
-        <stages>
-            <li>
-                <painFactor>0</painFactor>
-                <makeImmuneTo>
-                <li>Dementia</li>
-                <li>Alzheimers</li>
-                <li>PsychicShock</li>
-                </makeImmuneTo>
-                <statFactors>
-                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyMax>
-                    <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyRecoveryRate>
-                </statFactors>
-            </li>
-        </stages>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>PsychicShock</li>
+				</makeImmuneTo>
+				<statFactors>
+					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyMax>
+					<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">10</PsychicEntropyRecoveryRate>
+				</statFactors>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenIII">
 		<defName>SNS_Item_BionicBrain_GenIII</defName>
 		<label>enigmatic neural enchanter</label>
 		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicBrain_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>15</SNS_Component_GenIII>
@@ -726,15 +772,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicBrain_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Heart -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicHeart_GenIII</defName>
 		<label>enigmatic heart</label>
 		<labelNoun>a enigmatic heart</labelNoun>
 		<description>An installed enigmatic heart.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHeart_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHeart_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHeart_GenIII</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -747,7 +795,9 @@
 		<defName>SNS_Item_BionicHeart_GenIII</defName>
 		<label>enigmatic heart</label>
 		<description>An arcane device that circulates blood through the body without any moving parts, the natural properties of Eternium being used to create the perfect 'heart' that will never break down or need maintenence. It is also able to slow the flow of blood anywhere in the body to a crawl, to minimise bleeding rate.\n\nBeing made of Cosmic Alloy and Eternium, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHeart_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHeart_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>2</SNS_Component_GenIII>
@@ -786,15 +836,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicHeart_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Lung -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicLung_GenIII</defName>
 		<label>enigmatic lung</label>
 		<labelNoun>a enigmatic lung</labelNoun>
 		<description>An installed enigmatic lung.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLung_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLung_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLung_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -802,7 +854,9 @@
 		<defName>SNS_Item_BionicLung_GenIII</defName>
 		<label>enigmatic lung</label>
 		<description>An arcane device that does not actually require breathing. Instead, it literally teleports pure oxygen from surrounding air directly into the 'lungs', allowing a rate of oxygen transfer simply not possible otherwise.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLung_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLung_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
@@ -841,15 +895,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLung_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Kidney -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicKidney_GenIII</defName>
 		<label>enigmatic kidney</label>
 		<labelNoun>a enigmatic kidney</labelNoun>
 		<description>An installed enigmatic kidney.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicKidney_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicKidney_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicKidney_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -857,7 +913,9 @@
 		<defName>SNS_Item_BionicKidney_GenIII</defName>
 		<label>enigmatic kidney</label>
 		<description>An arcane blood filtration device that utilises reality manipulation (and more importantly, nanomachines) to filter the entire blood stream at once.\n\nBeing made of Cosmic Alloy and Eternium, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicKidney_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicKidney_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
@@ -896,15 +954,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicKidney_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Liver -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicLiver_GenIII</defName>
 		<label>enigmatic liver</label>
 		<labelNoun>a enigmatic liver</labelNoun>
 		<description>An installed enigmatic liver.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLiver_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLiver_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLiver_GenIII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -912,7 +972,9 @@
 		<defName>SNS_Item_BionicLiver_GenIII</defName>
 		<label>enigmatic liver</label>
 		<description>An arcane device that functions just like a liver, but without any errors whatsoever, alongside functioning far beyond the capabilities of a biological organ.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLiver_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLiver_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>2</SNS_Component_GenIII>
@@ -951,15 +1013,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLiver_GenIII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Stomach -->
 	<HediffDef ParentName="SNS_BionicHediff_GenIII">
 		<defName>SNS_Hediff_BionicStomach_GenIII</defName>
 		<label>enigmatic digestive system</label>
 		<labelNoun>a enigmatic digestive system</labelNoun>
 		<description>An installed enigmatic digestive system.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicStomach_GenIII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicStomach_GenIII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicStomach_GenIII</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -972,7 +1036,9 @@
 		<defName>SNS_Item_BionicStomach_GenIII</defName>
 		<label>enigmatic digestive system</label>
 		<description>An arcane device that replicates an entite digestive system in a singular device, converting food directly into pure nutrients. This, of course, also destroys any food-borne illnesses completely and utterly, removing the risk of food poisoning.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicStomach_GenIII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicStomach_GenIII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>4</SNS_Component_GenIII>

@@ -1,0 +1,1 @@
+For XML modding, I use VS Code with the XML Language support from Red Hat. Just make sure to set Max Line Width to 0 to mae sure it doesn't truncate some of the more lengthy descriptions when using auto format. -xyzzy121

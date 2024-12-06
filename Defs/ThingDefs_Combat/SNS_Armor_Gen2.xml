@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<ThingDef Name="ApparelCosmicPowerArmorHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+  <ThingDef Name="ApparelCosmicPowerArmorHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Archotech</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -25,7 +25,7 @@
     <statBases>
       <WorkToMake>50000</WorkToMake>
       <MaxHitPoints>750</MaxHitPoints>
-	  <DeteriorationRate>0.0</DeteriorationRate>
+      <DeteriorationRate>0.0</DeteriorationRate>
       <Mass>0.5</Mass>
       <Flammability>0</Flammability>
       <ArmorRating_Sharp>1.5</ArmorRating_Sharp>
@@ -38,7 +38,7 @@
     <costList>
       <SNS_CosmicAlloy>60</SNS_CosmicAlloy>
       <SNS_Component_GenII>10</SNS_Component_GenII>
-	  <SNS_CosmicAlloyWeave>50</SNS_CosmicAlloyWeave>
+      <SNS_CosmicAlloyWeave>50</SNS_CosmicAlloyWeave>
     </costList>
     <apparel>
       <bodyPartGroups>
@@ -48,17 +48,19 @@
       <layers>
         <li>Overhead</li>
       </layers>
-	  <tags>
-		<li>EVA</li>
-		<li>PrestigeCombatGear</li>
-	  </tags>
+      <tags>
+        <li>EVA</li>
+        <li>PrestigeCombatGear</li>
+      </tags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
     </apparel>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
   </ThingDef>
-	
-<ThingDef Name="ApparelCosmicPowerArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
-	<techLevel>Archotech</techLevel>
+
+  <ThingDef Name="ApparelCosmicPowerArmorBase" ParentName="ArmorMachineableBase" Abstract="True">
+    <techLevel>Archotech</techLevel>
     <recipeMaker>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <researchPrerequisite>SNS_Research_III_armor</researchPrerequisite>
@@ -78,7 +80,7 @@
     <statBases>
       <WorkToMake>150000</WorkToMake>
       <MaxHitPoints>1500</MaxHitPoints>
-	  <DeteriorationRate>0.0</DeteriorationRate>
+      <DeteriorationRate>0.0</DeteriorationRate>
       <Mass>4</Mass>
       <Flammability>0.0</Flammability>
       <ArmorRating_Sharp>1.7</ArmorRating_Sharp>
@@ -87,7 +89,7 @@
       <Insulation_Cold>125</Insulation_Cold>
       <Insulation_Heat>85</Insulation_Heat>
       <EquipDelay>12</EquipDelay>
-	  
+
       <EnergyShieldRechargeRate>0.75</EnergyShieldRechargeRate>
       <EnergyShieldEnergyMax>50</EnergyShieldEnergyMax>
     </statBases>
@@ -98,7 +100,7 @@
     </comps>
     <equippedStatOffsets>
       <MoveSpeed>1</MoveSpeed>
-	  <!-- <CarryingCapacity>30</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+      <!-- <CarryingCapacity>30</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -109,45 +111,47 @@
     <costList>
       <SNS_CosmicAlloy>150</SNS_CosmicAlloy>
       <SNS_Component_GenII>15</SNS_Component_GenII>
-	  <SNS_CosmicAlloyWeave>125</SNS_CosmicAlloyWeave>
+      <SNS_CosmicAlloyWeave>125</SNS_CosmicAlloyWeave>
     </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
-		<li>Waist</li>
+        <li>Waist</li>
         <li>Neck</li>
         <li>Shoulders</li>
         <li>Arms</li>
-		<li>Hands</li>
+        <li>Hands</li>
         <li>Legs</li>
-		<li>Feet</li>
+        <li>Feet</li>
       </bodyPartGroups>
       <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CosmicPowerArmor/CosmicPowerArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
-		<li>Belt</li>
+        <li>Belt</li>
         <li>Shell</li>
       </layers>
-	  <tags>
-		<li>EVA</li>
-	    <li>PrestigeCombatGear</li>
-	  </tags>
+      <tags>
+        <li>EVA</li>
+        <li>PrestigeCombatGear</li>
+      </tags>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
-	  <careIfWornByCorpse>false</careIfWornByCorpse>
+      <careIfWornByCorpse>false</careIfWornByCorpse>
     </apparel>
-    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
-</ThingDef>
-	
-	<ThingDef ParentName="ApparelCosmicPowerArmorHelmetBase">
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ApparelCosmicPowerArmorHelmetBase">
     <defName>SNS_Apparel_CosmicPowerArmorHelmet</defName>
     <label>Cosmic Power Armor Helmet</label>
     <description>A pressure-sealed Power Armor helmet, made from Cosmic materials. Incredibly lightweight, tough, protective, and comfortable, this power-armor helmet is far superior to that of its predecessors in every way imaginable.\n\nArmor like this isn't seen anywhere but on the most booming, shining Glitterworlds and as useless scrap numbering in the billions on Fortress worlds of a now extinct hyperadvanced precursor. None would dare bring such technology to a planet like a backwards Rimworld.</description>
   </ThingDef>
-  
+
   <ThingDef ParentName="ApparelCosmicPowerArmorBase">
     <defName>SNS_Apparel_CosmicPowerArmor</defName>
     <label>Cosmic Power Armor</label>
     <description>A suit of powered armor, made from Cosmic Materials, with a protective forcefield. Incredibly lightweight, tough, protective, and comfortable, this suit is far superior to its predecessors in every way imaginable.\n\nThe armor resonates with an enigmatic energy, providing incredible protection from outside forces. The natural properties of the Cosmic Matter flowing through the armor provides a protective field much alike what Shield Belts provide, but also allowing its user to fire from within the barrier.\n\nArmor like this isn't seen anywhere but on the most booming, shining Glitterworlds and as useless scrap numbering in the billions on Fortress worlds of a now extinct hyperadvanced precursor. None would dare bring such technology to a planet like a backwards Rimworld.</description>
   </ThingDef>
-  
+
 </Defs>

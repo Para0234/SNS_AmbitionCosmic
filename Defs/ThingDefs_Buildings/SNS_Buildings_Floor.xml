@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-   <TerrainDef ParentName="FloorBase">
+  <TerrainDef ParentName="FloorBase">
     <defName>SNS_UnobtainiumTile</defName>
     <label>starsteel tile</label>
     <renderPrecedence>243</renderPrecedence>
@@ -25,7 +25,7 @@
       <li>SNS_Research_I</li>
     </researchPrerequisites>
   </TerrainDef>
-  
+
   <TerrainDef ParentName="FloorBase">
     <defName>SNS_CosmicMatterTile</defName>
     <label>cosmic tile</label>
@@ -50,7 +50,7 @@
       <li>SNS_Research_III_base</li>
     </researchPrerequisites>
   </TerrainDef>
-  
+
   <TerrainDef ParentName="FloorBase">
     <defName>SNS_EterniumTile</defName>
     <label>eternium tile</label>
@@ -76,5 +76,5 @@
       <li>SNS_Research_VI_base</li>
     </researchPrerequisites>
   </TerrainDef>
-  
+
 </Defs>

@@ -4,12 +4,12 @@
 		<defName>SNS_Production_CosmicDrawer_DrawCosmicMatter_Base</defName>
 		<jobString>Drawing Cosmic Matter</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workAmount>45000</workAmount>
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
@@ -27,11 +27,11 @@
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicAlloy_Base</defName>
 		<jobString>Forging Cosmic Alloy</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
@@ -122,10 +122,10 @@
 		<defName>SNS_Production_CosmicDrawer_ForgeCosmicWeave_Base</defName>
 		<jobString>Forging Cosmic Weave</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>
@@ -153,11 +153,11 @@
 	<RecipeDef Abstract="True" Name="SNS_CosmicDrawer_ForgeCatalystCells">
 		<defName>SNS_Production_CosmicDrawer_ForgeFuelCells_Base</defName>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements/>
+		<skillRequirements />
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients/>
-		<fixedIngredientFilter/>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<recipeUsers>
 			<li>Table_SNS_CosmicDrawer</li>

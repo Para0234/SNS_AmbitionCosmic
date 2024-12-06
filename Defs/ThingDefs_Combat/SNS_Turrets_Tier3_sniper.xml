@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<!--
@@ -31,263 +31,267 @@
 	
 	-->
 
-<ThingDef ParentName="SNS_Sniper_Gen1_Projectile">
-	<defName>SNS_Gun_Turret_Bullet_Sniper</defName>
-    <label>catalyst turret projectile</label>
-</ThingDef>
+	<ThingDef ParentName="SNS_Sniper_Gen1_Projectile">
+		<defName>SNS_Gun_Turret_Bullet_Sniper</defName>
+		<label>catalyst turret projectile</label>
+	</ThingDef>
 
-<ThingDef ParentName="SNS_Projectile_CosmicSniperBullet">
-	<defName>SNS_Gun_Turret_Bullet_OverdriveSniper</defName>
-    <label>overdrive catalyst turret projectile</label>
-</ThingDef>
-
-
-<!-- Catalyst Turret -->
+	<ThingDef ParentName="SNS_Projectile_CosmicSniperBullet">
+		<defName>SNS_Gun_Turret_Bullet_OverdriveSniper</defName>
+		<label>overdrive catalyst turret projectile</label>
+	</ThingDef>
 
 
-<ThingDef ParentName="BaseWeaponTurret">
-	<defName>SNS_Gun_Turret_Sniper</defName>
-	<label>catalyst turret gun</label>
-	<description>The gun of a catalyst turret.</description>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretSniper</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<AccuracyTouch>0.40</AccuracyTouch>
-		<AccuracyShort>0.85</AccuracyShort>
-		<AccuracyMedium>0.90</AccuracyMedium>
-		<AccuracyLong>0.95</AccuracyLong>
-		<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-		<DeteriorationRate>0</DeteriorationRate>
-		<Mass>30</Mass>
-		<Flammability>0</Flammability>
-	</statBases>
-	<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SNS_Gun_Turret_Bullet_Sniper</defaultProjectile>
-			<warmupTime>0</warmupTime>
-			<range>70</range>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>ChargeLance_Fire</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>13</muzzleFlashScale>
-		</li>
-	</verbs>
-</ThingDef>
-
-<ThingDef ParentName="SNS_BaseTurretBuilding">
-	<defName>SNS_Turret_Sniper</defName>
-	<label>catalyst turret</label>
-	<description>An automatic turret fueled by the natural runoff energy of Cosmic Catalyst Cells, said cells protected by extremely thick plates of Cosmic Alloy to ensure that it cannot explode even when punctured. Incredibly safe (disclaimer 1: to the owner, not the enemy) (disclaimer 2: absolutely not safe if something destroys the CC cells after building is destroyed) overall, it can be deployed and forgotten about since it will never break down or need to be reloaded. The only downside is its slow firerate and low accuracy at very close ranges.\n\nThe turret is unique in that it its playform is tall, making it impossible to climb onto the platform and move past it.\n\nNOTE: If something destroys the turret AND Catalyst Cell fuel in one go, then a massive explosion is likely to follow unless it's contained in a very strong-walled room.\nSeriously, the cell can kill a CHARON suit user with just 3 tiles occupied and you won't like that. (either full stack or a single item--beware of spreading it over a large area in a massive vault)</description>
-	<thingClass>Building_TurretGun</thingClass>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(1.5,1.5)</drawSize>	
-		
-		<damageData>
-			<rect>(1.5,1.5,1.5,1.5)</rect>
-		</damageData>
-		
-		<shadowData>
-			<volume>(1.5,1.5,1.5)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
-	</graphicData>
-	
-	<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_07SniperTurret</uiIconPath>
-	<uiIconScale>0.90</uiIconScale>
-	<altitudeLayer>Building</altitudeLayer>
-	<stealable>false</stealable>
-	<rotatable>false</rotatable>
-	
-    <size>(2,2)</size>
-	<statBases>
-		<MaxHitPoints>8000</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>12800</WorkToBuild>
-		<Mass>1.5</Mass>
-		<Beauty>10</Beauty>
-		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-	</statBases>
-	
-	<tickerType>Normal</tickerType>
-	
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>8000</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-	</comps>
-	
-	<passability>PassThroughOnly</passability>
-	<pathCost>150</pathCost>
-	<fillPercent>0.6</fillPercent>
-	<hasTooltip>true</hasTooltip>
-	
-	<costList>
-		<SNS_Unobtainium>325</SNS_Unobtainium>
-		<Plasteel>75</Plasteel>
-		<ComponentSpacer>6</ComponentSpacer>
-		<SNS_Unobtainium_Fuel>50</SNS_Unobtainium_Fuel>
-	</costList>
-	
-	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-	<designationCategory>Security</designationCategory>
-	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
-	
-	<building>
-		<combatPower>1500</combatPower>
-		<ai_combatDangerous>false</ai_combatDangerous>
-		<turretGunDef>SNS_Gun_Turret_Sniper</turretGunDef>
-		<turretBurstCooldownTime>5</turretBurstCooldownTime>
-	</building>
-	
-	<placeWorkers>
-		<li>PlaceWorker_TurretTop</li>
-		<li>PlaceWorker_ShowTurretRadius</li>
-	</placeWorkers>
-	
-    <researchPrerequisites>
-      <li>SNS_Research_II_wep</li>
-    </researchPrerequisites>
-</ThingDef>
+	<!-- Catalyst Turret -->
 
 
-<!-- Perdition Catalyst Turret -->
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_Sniper</defName>
+		<label>catalyst turret gun</label>
+		<description>The gun of a catalyst turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>30</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_Sniper</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>70</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_Sniper</defName>
+		<label>catalyst turret</label>
+		<description>An automatic turret fueled by the natural runoff energy of Cosmic Catalyst Cells, said cells protected by extremely thick plates of Cosmic Alloy to ensure that it cannot explode even when punctured. Incredibly safe (disclaimer 1: to the owner, not the enemy) (disclaimer 2: absolutely not safe if something destroys the CC cells after building is destroyed) overall, it can be deployed and forgotten about since it will never break down or need to be reloaded. The only downside is its slow firerate and low accuracy at very close ranges.\n\nThe turret is unique in that it its playform is tall, making it impossible to climb onto the platform and move past it.\n\nNOTE: If something destroys the turret AND Catalyst Cell fuel in one go, then a massive explosion is likely to follow unless it's contained in a very strong-walled room.\nSeriously, the cell can kill a CHARON suit user with just 3 tiles occupied and you won't like that. (either full stack or a single item--beware of spreading it over a large area in a massive vault)</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+
+			<damageData>
+				<rect>(1.5,1.5,1.5,1.5)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.5,1.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_07SniperTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>12800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>8000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>325</SNS_Unobtainium>
+			<Plasteel>75</Plasteel>
+			<ComponentSpacer>6</ComponentSpacer>
+			<SNS_Unobtainium_Fuel>50</SNS_Unobtainium_Fuel>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1500</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_Sniper</turretGunDef>
+			<turretBurstCooldownTime>5</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_II_wep</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 
-<ThingDef ParentName="BaseWeaponTurret">
-	<defName>SNS_Gun_Turret_PerditionSniper</defName>
-	<label>overdrive catalyst turret gun</label>
-	<description>The gun of an overdrive catalyst turret.</description>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretPerditionSniper</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-	</graphicData>
-	<statBases>
-		<AccuracyTouch>0.40</AccuracyTouch>
-		<AccuracyShort>0.85</AccuracyShort>
-		<AccuracyMedium>0.90</AccuracyMedium>
-		<AccuracyLong>0.95</AccuracyLong>
-		<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
-		<DeteriorationRate>0</DeteriorationRate>
-		<Mass>30</Mass>
-		<Flammability>0</Flammability>
-	</statBases>
-	<verbs>
-		<li>
-			<verbClass>Verb_Shoot</verbClass>
-			<defaultProjectile>SNS_Gun_Turret_Bullet_OverdriveSniper</defaultProjectile>
-			<warmupTime>0</warmupTime>
-			<range>100</range>
-			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
-			<burstShotCount>1</burstShotCount>
-			<soundCast>ChargeLance_Fire</soundCast>
-			<soundCastTail>GunTail_Heavy</soundCastTail>
-			<muzzleFlashScale>13</muzzleFlashScale>
-			<consumeFuelPerShot>1</consumeFuelPerShot>
-		</li>
-	</verbs>
-</ThingDef>
+	<!-- Perdition Catalyst Turret -->
 
-<ThingDef ParentName="SNS_BaseTurretBuilding">
-	<defName>SNS_Turret_PerditionSniper</defName>
-	<label>overdrive catalyst turret</label>
-	<description>An automatic turret fueled by the extreme power of Cosmic Catalyst Cells, said cells protected by extremely thick plates of Cosmic Alloy to ensure that it cannot explode when when punctured. The turret, instead of being passively powered by the Catalyst Cells directly use them as ammunition. This means that the turrets will occasionally have to be resupplied.\n\nThe turret can be manually targeted to either supress or focus down an area.\n\nNOTE: If something destroys the turret AND Catalyst Cell fuel in one go, then a massive explosion is likely to follow unless it's contained in a very strong-walled room.\nSeriously, the cell can kill a CHARON suit user with just 3 tiles occupied and you won't like that. (either full stack or a single item--beware of spreading it over a large area in a massive vault)</description>
-	<thingClass>Building_TurretGun</thingClass>
-	<graphicData>
-		<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
-		<graphicClass>Graphic_Single</graphicClass>
-		<drawSize>(1.5,1.5)</drawSize>	
-		
-		<damageData>
-			<rect>(1.5,1.5,1.5,1.5)</rect>
-		</damageData>
-		
-		<shadowData>
-			<volume>(1.5,1.5,1.5)</volume>
-			<offset>(0,0,0)</offset>
-		</shadowData>
-	</graphicData>
-	
-	<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_08PerditionSniperTurret</uiIconPath>
-	<uiIconScale>0.90</uiIconScale>
-	<altitudeLayer>Building</altitudeLayer>
-	<stealable>false</stealable>
-	<rotatable>false</rotatable>
-	
-    <size>(2,2)</size>
-	<statBases>
-		<MaxHitPoints>8000</MaxHitPoints>
-		<Flammability>0</Flammability>
-		<WorkToBuild>2800</WorkToBuild>
-		<Mass>1.5</Mass>
-		<Beauty>10</Beauty>
-		<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
-	</statBases>
-	
-	<tickerType>Normal</tickerType>
-	
-	<comps>
-		<li Class="CompProperties_Forbiddable"/>
-		<li Class="CompProperties_Power">
-			<compClass>CompPowerTrader</compClass>
-			<basePowerConsumption>8000</basePowerConsumption>
-		</li>
-		<li Class="CompProperties_Flickable"/>
-		<li Class="CompProperties_Refuelable">
-			<fuelLabel>Ammuntion left in turret</fuelLabel>
-			<fuelGizmoLabel>Catalyst Ammo</fuelGizmoLabel>
-			<outOfFuelMessage>Cannot shoot: Needs Cosmic Catalyst Fuel Cell ammunition</outOfFuelMessage>
-			<fuelFilter><thingDefs><li>SNS_Unobtainium_Fuel</li></thingDefs></fuelFilter>
-			<fuelCapacity>100</fuelCapacity> <!-- 100 shots -->
-			<fuelMultiplier>1</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Catalyst Cell per shot. -->
-			<initialFuelPercent>0</initialFuelPercent>
-			<autoRefuelPercent>0.5</autoRefuelPercent>
-			<showFuelGizmo>true</showFuelGizmo>
-			<minimumFueledThreshold>1</minimumFueledThreshold>
-			<factorByDifficulty>true</factorByDifficulty>
-			<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
-			<fuelIconPath>Things/Item/Resource/SNS/FuelCell/FuelCellC</fuelIconPath>
-		</li>
-	</comps>
-	
-	<passability>PassThroughOnly</passability>
-	<pathCost>150</pathCost>
-	<fillPercent>0.6</fillPercent>
-	<hasTooltip>true</hasTooltip>
-	
-	<costList>
-		<SNS_Unobtainium>325</SNS_Unobtainium>
-		<SNS_CosmicAlloy>75</SNS_CosmicAlloy>
-		<SNS_Component_GenII>6</SNS_Component_GenII>
-	</costList>
-	
-	<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-	<designationCategory>Security</designationCategory>
-	<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
-	
-	<building>
-		<combatPower>1500</combatPower>
-		<ai_combatDangerous>false</ai_combatDangerous>
-		<turretGunDef>SNS_Gun_Turret_PerditionSniper</turretGunDef>
-		<turretBurstCooldownTime>1</turretBurstCooldownTime>
-	</building>
-	
-	<placeWorkers>
-		<li>PlaceWorker_TurretTop</li>
-		<li>PlaceWorker_ShowTurretRadius</li>
-	</placeWorkers>
-	
-    <researchPrerequisites>
-      <li>SNS_Research_III_weaponry</li>
-    </researchPrerequisites>
-</ThingDef>
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_PerditionSniper</defName>
+		<label>overdrive catalyst turret gun</label>
+		<description>The gun of an overdrive catalyst turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretPerditionSniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>30</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_OverdriveSniper</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>100</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_PerditionSniper</defName>
+		<label>overdrive catalyst turret</label>
+		<description>An automatic turret fueled by the extreme power of Cosmic Catalyst Cells, said cells protected by extremely thick plates of Cosmic Alloy to ensure that it cannot explode when when punctured. The turret, instead of being passively powered by the Catalyst Cells directly use them as ammunition. This means that the turrets will occasionally have to be resupplied.\n\nThe turret can be manually targeted to either supress or focus down an area.\n\nNOTE: If something destroys the turret AND Catalyst Cell fuel in one go, then a massive explosion is likely to follow unless it's contained in a very strong-walled room.\nSeriously, the cell can kill a CHARON suit user with just 3 tiles occupied and you won't like that. (either full stack or a single item--beware of spreading it over a large area in a massive vault)</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+
+			<damageData>
+				<rect>(1.5,1.5,1.5,1.5)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.5,1.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_08PerditionSniperTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>8000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>8000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Ammuntion left in turret</fuelLabel>
+				<fuelGizmoLabel>Catalyst Ammo</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs Cosmic Catalyst Fuel Cell ammunition</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fuel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity> <!-- 100 shots -->
+				<fuelMultiplier>1</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 1 Catalyst Cell per shot. -->
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/SNS/FuelCell/FuelCellC</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.6</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>325</SNS_Unobtainium>
+			<SNS_CosmicAlloy>75</SNS_CosmicAlloy>
+			<SNS_Component_GenII>6</SNS_Component_GenII>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>9</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1500</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_PerditionSniper</turretGunDef>
+			<turretBurstCooldownTime>1</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_III_weaponry</li>
+		</researchPrerequisites>
+	</ThingDef>
 
 </Defs>
