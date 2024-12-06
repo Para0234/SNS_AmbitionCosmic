@@ -520,7 +520,18 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
-
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_armor_specialization</defName>
+		<label>CHARON specialization</label>
+		<description>The CHARON armor was believed to be the perfection in terms of body armor. But perfection is ultimately subjective. By weakening certain aspects of the CHARON armor, we can improve other aspects and allow us to create specialized variants suitable to different roles.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_armor</li>
+		</prerequisites>
+		<researchViewX>31</researchViewX>
+		<researchViewY>1.7</researchViewY>
+	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_power</defName>
 		<label>Project EMBERS</label>
