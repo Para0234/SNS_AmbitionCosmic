@@ -230,7 +230,7 @@
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>SNS_Apparel_StableMatterPowerArmorMarksman</defName>
     <label>CHARON Marksman Armor</label>
-   <description>A suit of Abyssal Power Armor fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this suit of power armor is far superior to that of its previous generation in every way imaginable.\n\nThis helmet was designed specifically for marksmen. While weaker than its Charon equivalent overall, its built-in aiming systems have been greatly enhanced, allowing the armor itself to assist the user even more.</description>
+   <description>A suit of Abyssal Power Armor fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this suit of power armor is far superior to that of its previous generation in every way imaginable.\n\nThis armor was designed specifically for marksmen. While weaker than its Charon equivalent overall, its built-in aiming systems have been greatly enhanced, allowing the armor itself to assist the user even more.</description>
 	<techLevel>Archotech</techLevel>
 	<useHitPoints>false</useHitPoints>
     <recipeMaker>
