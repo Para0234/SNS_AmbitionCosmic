@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Pistol_Gen3_Projectile">
@@ -12,7 +12,7 @@
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>26</damageAmountBase>
-            <armorPenetrationBase>24.5</armorPenetrationBase>
+			<armorPenetrationBase>24.5</armorPenetrationBase>
 			<speed>200</speed>
 		</projectile>
 	</ThingDef>
@@ -39,9 +39,9 @@
 			<Beauty>50</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -76,7 +76,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>17</damageAmountBase>
-            <armorPenetrationBase>24</armorPenetrationBase>
+			<armorPenetrationBase>24</armorPenetrationBase>
 			<speed>140</speed>
 		</projectile>
 	</ThingDef>
@@ -103,9 +103,9 @@
 			<Beauty>50</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -128,7 +128,7 @@
 		</verbs>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
-	
+
 	<!-- ============================================== -->
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Shotgun_Gen3_Projectile">
@@ -141,7 +141,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>200</damageAmountBase>
-            <armorPenetrationBase>50</armorPenetrationBase>
+			<armorPenetrationBase>50</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -168,10 +168,10 @@
 			<Beauty>50</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicAlloy>60</SNS_CosmicAlloy>
@@ -204,7 +204,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>120</damageAmountBase>
-            <armorPenetrationBase>25</armorPenetrationBase>
+			<armorPenetrationBase>25</armorPenetrationBase>
 			<speed>250</speed>
 		</projectile>
 	</ThingDef>
@@ -231,10 +231,10 @@
 			<Beauty>50</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicAlloy>120</SNS_CosmicAlloy>
@@ -254,7 +254,7 @@
 		</verbs>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
-	
+
 	<ThingDef Name="SNS_Projectile_EXARCHBullet" ParentName="BaseBullet">
 		<defName>SNS_Omega_Bullet</defName>
 		<label>EXARCH projectile</label>
@@ -293,10 +293,10 @@
 			<Beauty>150</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_CosmicLance>1</SNS_CosmicLance>
@@ -308,11 +308,11 @@
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>SNS_Omega_Bullet</defaultProjectile>
-			
+
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
 				</targetParams>
-			
+
 				<forcedMissRadius>0.1</forcedMissRadius>
 				<warmupTime>0.5</warmupTime>
 				<range>120</range>

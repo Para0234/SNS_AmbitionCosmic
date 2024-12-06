@@ -6,7 +6,9 @@
     <defName>SNS_Aegis</defName>
     <label>Aegis</label>
     <description>A drug concoction that prevents almost all infections before they can take hold. It blocks a vast variety of diseases, listed below. It must be taken daily.\n\nNOTE: This drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.\n\nPrevents the following new diseases:\nFood Poisoning, Gut Worms, muscle parasites, wound infections, flu, plague, malaria, and sleeping sickness.</description>
-    <descriptionHyperlinks><HediffDef>SNS_Aegis</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Aegis</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/SNS/Immune1</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -45,7 +47,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Aegis</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -61,22 +63,22 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <makeImmuneTo>
-            <li>GutWorms</li>
-            <li>FoodPoisoning</li>
-            <li>MuscleParasites</li>
-            <li>WoundInfection</li>
-            <li>Flu</li>
-            <li>Animal_Flu</li>
-            <li>Plague</li>
-            <li>Animal_Plague</li>
-            <li>Malaria</li>
-            <li>SleepingSickness</li>
-          </makeImmuneTo>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>GutWorms</li>
+          <li>FoodPoisoning</li>
+          <li>MuscleParasites</li>
+          <li>WoundInfection</li>
+          <li>Flu</li>
+          <li>Animal_Flu</li>
+          <li>Plague</li>
+          <li>Animal_Plague</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+        </makeImmuneTo>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- Gen2 -->
@@ -84,7 +86,9 @@
     <defName>SNS_Aeterno</defName>
     <label>Aeterno</label>
     <description>A nanite-based 'drug' that prevents almost all infections before they can take hold, alongside aiding the immune system to a major degree. It blocks a vast variety of diseases, including mechanites, listed below. It must be taken once every three days.\n\nNOTE: This drug only prevents new infections. It does not cure existing infections - even those that are not yet discovered.\n\nPrevents the following new diseases:\nFood Poisoning, Gut Worms, muscle parasites, wound infections, flu, plague, malaria, sleeping sickness, fibrous mechanites, and sensory mechanites.</description>
-    <descriptionHyperlinks><HediffDef>SNS_Aeterno</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Aeterno</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/SNS/Immune2</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -114,7 +118,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Aeterno</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -130,27 +134,27 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <makeImmuneTo>
-            <li>GutWorms</li>
-            <li>MuscleParasites</li>
-            <li>FoodPoisoning</li>
-            <li>FibrousMechanites</li>
-            <li>SensoryMechanites</li>
-            <li>WoundInfection</li>
-            <li>Flu</li>
-            <li>Animal_Flu</li>
-            <li>Plague</li>
-            <li>Animal_Plague</li>
-            <li>Malaria</li>
-            <li>SleepingSickness</li>
-          </makeImmuneTo>
-          <statOffsets>
-            <ImmunityGainSpeed>1</ImmunityGainSpeed>
-		 </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <makeImmuneTo>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>FoodPoisoning</li>
+          <li>FibrousMechanites</li>
+          <li>SensoryMechanites</li>
+          <li>WoundInfection</li>
+          <li>Flu</li>
+          <li>Animal_Flu</li>
+          <li>Plague</li>
+          <li>Animal_Plague</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ImmunityGainSpeed>1</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- Gen3 -->
@@ -158,7 +162,9 @@
     <defName>SNS_Panacea</defName>
     <label>Panacea</label>
     <description>A nanite-based 'drug' that prevents virtually all diseases, infections, and negative health conditions before they can take hold. Also provides a massive immunity boost to greatly aid with fighting existing infections, but does not outright cure existing infections - even those that are not yet discovered.\n\nShould be taken once every ten or eleven days.</description>
-    <descriptionHyperlinks><HediffDef>SNS_Panacea</HediffDef></descriptionHyperlinks>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Panacea</HediffDef>
+    </descriptionHyperlinks>
     <graphicData>
       <texPath>Things/Item/Drug/SNS/Immune3</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
@@ -188,7 +194,7 @@
       </li>
     </comps>
   </ThingDef>
-  
+
   <HediffDef>
     <defName>SNS_Panacea</defName>
     <hediffClass>Hediff_High</hediffClass>
@@ -205,43 +211,43 @@
       </li>
     </comps>
     <stages>
-        <li>
-            <makeImmuneTo>
-            <li>GutWorms</li>
-            <li>MuscleParasites</li>
-            <li>FibrousMechanites</li>
-            <li>SensoryMechanites</li>
-            <li>WoundInfection</li>
-            <li>Flu</li>
-            <li>Animal_Flu</li>
-            <li>Plague</li>
-            <li>Animal_Plague</li>
-            <li>Malaria</li>
-            <li>SleepingSickness</li>
-            <li>CryptosleepSickness</li>
-            <li>FoodPoisoning</li>
-            <li>ToxicBuildup</li>
-            <li>HeartAttack</li>
-            <li>DrugOverdose</li>
-            <li>BadBack</li>
-            <li>Frail</li>
-            <li>Cataract</li>
-            <li>Blindness</li>
-            <li>HearingLoss</li>
-            <li>Dementia</li>
-            <li>Alzheimers</li>
-            <li>Asthma</li>
-            <li>HeartArteryBlockage</li>
-            <li>Carcinoma</li>
-            <li>ChemicalDamageModerate</li>
-            <li>ChemicalDamageSevere</li>
-            <li>Cirrhosis</li>
-            </makeImmuneTo>
-            <statOffsets>
-            <ImmunityGainSpeed>10</ImmunityGainSpeed>
-            </statOffsets>
-        </li>
+      <li>
+        <makeImmuneTo>
+          <li>GutWorms</li>
+          <li>MuscleParasites</li>
+          <li>FibrousMechanites</li>
+          <li>SensoryMechanites</li>
+          <li>WoundInfection</li>
+          <li>Flu</li>
+          <li>Animal_Flu</li>
+          <li>Plague</li>
+          <li>Animal_Plague</li>
+          <li>Malaria</li>
+          <li>SleepingSickness</li>
+          <li>CryptosleepSickness</li>
+          <li>FoodPoisoning</li>
+          <li>ToxicBuildup</li>
+          <li>HeartAttack</li>
+          <li>DrugOverdose</li>
+          <li>BadBack</li>
+          <li>Frail</li>
+          <li>Cataract</li>
+          <li>Blindness</li>
+          <li>HearingLoss</li>
+          <li>Dementia</li>
+          <li>Alzheimers</li>
+          <li>Asthma</li>
+          <li>HeartArteryBlockage</li>
+          <li>Carcinoma</li>
+          <li>ChemicalDamageModerate</li>
+          <li>ChemicalDamageSevere</li>
+          <li>Cirrhosis</li>
+        </makeImmuneTo>
+        <statOffsets>
+          <ImmunityGainSpeed>10</ImmunityGainSpeed>
+        </statOffsets>
+      </li>
     </stages>
   </HediffDef>
-  
+
 </Defs>

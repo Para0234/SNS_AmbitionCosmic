@@ -1,348 +1,621 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<RecipeDef Abstract="True" Name="SNS_Constructor_Item">
 		<defName>SNS_Production_Constructor_Base</defName>
 		<jobString>Atomically Fabricating</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
-		<skillRequirements></skillRequirements>
+		<skillRequirements />
 		<workAmount>2400</workAmount>
-        <workSkill>Intellectual</workSkill>
+		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
-		<ingredients></ingredients>
-		<fixedIngredientFilter></fixedIngredientFilter>
+		<ingredients />
+		<fixedIngredientFilter />
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
-		<recipeUsers><li>Table_SNS_Constructor</li></recipeUsers>
+		<recipeUsers>
+			<li>Table_SNS_Constructor</li>
+		</recipeUsers>
 	</RecipeDef>
-
+	<!--Food-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MealSimple</defName>
 		<label>Pattern Simple Meal</label>
 		<description>Pattern Simple Meals from pure Cosmic Matter.</description>
-		<products><MealSimple>10</MealSimple></products>
+		<products>
+			<MealSimple>10</MealSimple>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>2.5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>2.5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MealFine</defName>
 		<label>Pattern Fine Meal</label>
 		<description>Pattern Fine Meals from pure Cosmic Matter.</description>
-		<products><MealFine>10</MealFine></products>
+		<products>
+			<MealFine>10</MealFine>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MealLavish</defName>
 		<label>Pattern Lavish Meal</label>
 		<description>Pattern Lavish Meals from pure Cosmic Matter.</description>
-		<products><MealLavish>10</MealLavish></products>
+		<products>
+			<MealLavish>10</MealLavish>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_NutrientBarGenI</defName>
 		<label>Pattern Nutrient Bars</label>
 		<description>Pattern Nutrient Bars from pure Cosmic Matter.</description>
-		<products><SNS_Meal_Nutrient_GenI>25</SNS_Meal_Nutrient_GenI></products>
+		<products>
+			<SNS_Meal_Nutrient_GenI>25</SNS_Meal_Nutrient_GenI>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Kibble</defName>
 		<label>Pattern Kibble</label>
 		<description>Pattern Kibble from pure Cosmic Matter.</description>
-		<products><Kibble>100</Kibble></products>
+		<products>
+			<Kibble>100</Kibble>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Medicine-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_HerbalMedicine</defName>
 		<label>Pattern Herbal Medicine</label>
 		<description>Pattern five packages of Herbal Medicine from pure Cosmic Matter.</description>
-		<products><MedicineHerbal>5</MedicineHerbal></products>
+		<products>
+			<MedicineHerbal>5</MedicineHerbal>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Medicine</defName>
 		<label>Pattern Medicine</label>
 		<description>Pattern five packages of Industrial-Grade Medicine from pure Cosmic Matter.</description>
-		<products><MedicineIndustrial>5</MedicineIndustrial></products>
+		<products>
+			<MedicineIndustrial>5</MedicineIndustrial>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>15</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_GlitterworldMedicine</defName>
 		<label>Pattern Glitterworld Medicine</label>
 		<description>Pattern five packages of Glitterworld Medicine from pure Cosmic Matter.</description>
-		<products><MedicineUltratech>5</MedicineUltratech></products>
+		<products>
+			<MedicineUltratech>5</MedicineUltratech>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>45</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Medicine_GenI</defName>
 		<label>Pattern Stellar Medicine</label>
 		<description>Pattern five packages of Stellar Medicine from pure Cosmic Matter.</description>
-		<products><SNS_Medicine_GenI>5</SNS_Medicine_GenI></products>
+		<products>
+			<SNS_Medicine_GenI>5</SNS_Medicine_GenI>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>45</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>45</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Materials-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Neutroamine</defName>
 		<label>Pattern Neutroamine</label>
 		<description>Pattern fifteen units of Neutroamine from pure Cosmic Matter.</description>
-		<products><Neutroamine>15</Neutroamine></products>
+		<products>
+			<Neutroamine>15</Neutroamine>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Drugs-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Lux</defName>
 		<label>Pattern Lux</label>
 		<description>Pattern ten servings of Lux from pure Cosmic Matter.</description>
-		<products><SNS_Lux>10</SNS_Lux></products>
+		<products>
+			<SNS_Lux>10</SNS_Lux>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Aegis</defName>
 		<label>Pattern Aegis</label>
 		<description>Pattern twenty pills of Aegis from pure Cosmic Matter.</description>
-		<products><SNS_Aegis>20</SNS_Aegis></products>
+		<products>
+			<SNS_Aegis>20</SNS_Aegis>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Stim_I</defName>
 		<label>Pattern STIM-IV</label>
 		<description>Pattern twenty-five pills of STIM-IV from pure Cosmic Matter.</description>
-		<products><SNS_Stim_I>25</SNS_Stim_I></products>
+		<products>
+			<SNS_Stim_I>25</SNS_Stim_I>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Drug_Combat_I</defName>
 		<label>Pattern Boost</label>
 		<description>Pattern five injectors of Boost from pure Cosmic Matter.</description>
-		<products><SNS_Drug_Combat_I>5</SNS_Drug_Combat_I></products>
+		<products>
+			<SNS_Drug_Combat_I>5</SNS_Drug_Combat_I>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Penoxycyline</defName>
 		<label>Pattern Penoxycyline</label>
 		<description>Pattern 25 pills of Penoxycyline from pure Cosmic Matter.</description>
-		<products><Penoxycyline>25</Penoxycyline></products>
+		<products>
+			<Penoxycyline>25</Penoxycyline>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Ambrosia</defName>
 		<label>Pattern Ambrosia</label>
 		<description>Pattern ten Ambrosia fruits from pure Cosmic Matter.</description>
-		<products><Ambrosia>10</Ambrosia></products>
+		<products>
+			<Ambrosia>10</Ambrosia>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Luciferium</defName>
 		<label>Pattern Luciferium</label>
 		<description>Pattern five pills of Luciferium from pure Cosmic Matter.</description>
-		<products><Luciferium>5</Luciferium></products>
+		<products>
+			<Luciferium>5</Luciferium>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Vanilla Stuffables-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Silver</defName>
 		<label>Pattern Silver</label>
 		<description>Pattern a pile of 100 Silver pieces from pure Cosmic Matter.</description>
-		<products><Silver>100</Silver></products>
+		<products>
+			<Silver>100</Silver>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Gold</defName>
 		<label>Pattern Gold</label>
 		<description>Pattern a pile of 100 Gold pieces from pure Cosmic Matter.</description>
-		<products><Gold>100</Gold></products>
+		<products>
+			<Gold>100</Gold>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>15</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Steel</defName>
 		<label>Pattern Steel</label>
 		<description>Pattern a collection of 25 Steel ingots from pure Cosmic Matter.</description>
-		<products><Steel>25</Steel></products>
+		<products>
+			<Steel>25</Steel>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Plasteel</defName>
 		<label>Pattern Plasteel</label>
 		<description>Pattern 25 small sheets of Plasteel from pure Cosmic Matter.</description>
-		<products><Plasteel>25</Plasteel></products>
+		<products>
+			<Plasteel>25</Plasteel>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>15</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Uranium</defName>
 		<label>Pattern Uranium</label>
 		<description>Pattern 25 pieces of self-contained Uranium from pure Cosmic Matter.</description>
-		<products><Uranium>25</Uranium></products>
+		<products>
+			<Uranium>25</Uranium>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_BlocksGranite</defName>
 		<label>Pattern Granite Blocks</label>
 		<description>Pattern 25 perfectly cut blocks of Granite from pure Cosmic Matter.</description>
-		<products><BlocksGranite>25</BlocksGranite></products>
+		<products>
+			<BlocksGranite>25</BlocksGranite>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-	
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Chemfuel</defName>
 		<label>Pattern Chemfuel</label>
 		<description>Pattern a medium container filled with 75 units of Chemfuel from pure Cosmic Matter.</description>
-		<products><Chemfuel>75</Chemfuel></products>
+		<products>
+			<Chemfuel>75</Chemfuel>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Components-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_ComponentIndustrial</defName>
 		<label>Pattern Component</label>
 		<description>Pattern a pile of five generalist basic Components from pure Cosmic Matter.</description>
-		<products><ComponentIndustrial>5</ComponentIndustrial></products>
+		<products>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>5</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_AdvancedComponentIndustrial</defName>
 		<label>Pattern Advanced Component</label>
 		<description>Pattern a pile of five generalist advanced Components from pure Cosmic Matter.</description>
-		<products><ComponentSpacer>5</ComponentSpacer></products>
+		<products>
+			<ComponentSpacer>5</ComponentSpacer>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>15</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--Mech Serum-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MechSerumHealer</defName>
 		<label>Pattern Heal Serum</label>
 		<description>Pattern a single injector of Mech Heal Serum from pure Cosmic Matter.</description>
-		<products><MechSerumHealer>1</MechSerumHealer></products>
+		<products>
+			<MechSerumHealer>1</MechSerumHealer>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>100</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>100</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_MechSerumResurrector</defName>
 		<label>Pattern Resurrector Serum</label>
 		<description>Pattern a single injector of Mech Resurrector Serum from pure Cosmic Matter.</description>
-		<products><MechSerumResurrector>1</MechSerumResurrector></products>
+		<products>
+			<MechSerumResurrector>1</MechSerumResurrector>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>250</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>250</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--SNS Stuffables-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Unobtainium</defName>
 		<label>Pattern Starsteel</label>
 		<description>Pattern ten units of Cosmic Alloy from pure Cosmic Matter.</description>
-		<products><SNS_Unobtainium>10</SNS_Unobtainium></products>
+		<products>
+			<SNS_Unobtainium>10</SNS_Unobtainium>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Unobtainium_Fiber</defName>
 		<label>Pattern Starsteel 'Wool'</label>
 		<description>Pattern twenty units of Cosmic Weave from pure Cosmic Matter.</description>
-		<products><SNS_Unobtainium_Fiber>20</SNS_Unobtainium_Fiber></products>
+		<products>
+			<SNS_Unobtainium_Fiber>20</SNS_Unobtainium_Fiber>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>10</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_CosmicAlloy</defName>
 		<label>Pattern Cosmic Alloy</label>
 		<description>Pattern ten units of Cosmic Alloy from pure Cosmic Matter.</description>
-		<products><SNS_CosmicAlloy>10</SNS_CosmicAlloy></products>
+		<products>
+			<SNS_CosmicAlloy>10</SNS_CosmicAlloy>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>30</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_CosmicAlloyWeave</defName>
 		<label>Pattern Cosmic Weave</label>
 		<description>Pattern twenty units of Cosmic Weave from pure Cosmic Matter.</description>
-		<products><SNS_CosmicAlloyWeave>20</SNS_CosmicAlloyWeave></products>
+		<products>
+			<SNS_CosmicAlloyWeave>20</SNS_CosmicAlloyWeave>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>30</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>30</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
+	<!--SNS Items-->
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_FuelCell</defName>
 		<label>Pattern Fuel Cells</label>
 		<description>Pattern a stack of Cosmic Fuel Catalyst Cells from pure Cosmic Matter.</description>
-		<products><SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel></products>
+		<products>
+			<SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel>
+		</products>
 		<ingredients>
-			<li><filter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></filter><count>25</count></li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>25</count>
+			</li>
 		</ingredients>
 	</RecipeDef>
-
 </Defs>

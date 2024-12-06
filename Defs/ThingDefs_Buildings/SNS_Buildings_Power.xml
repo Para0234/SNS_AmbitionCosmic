@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BuildingBase">
@@ -36,17 +36,21 @@
 			<ComponentSpacer>10</ComponentSpacer>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-100000</basePowerConsumption>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>100</fuelCapacity>
-				<fuelFilter><thingDefs><li>SNS_Unobtainium_Fuel</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fuel</li>
+					</thingDefs>
+				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 			</li>
 			<!--
@@ -73,14 +77,16 @@
 			<li>SNS_Research_II_pwr</li>
 		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>SNS_Reactor_I_Portable</defName>
 		<label>Portable Cosmic Reactor Generation 1</label>
 		<description>The Portable Cosmic Reactor Generation 1 is a powerful power-generation device that utilizes Uranium's radioactivity to extract energy from the Cosmic Matter trapped inside Starsteel. The reaction is generally safe, until its fuel is damaged. If the reactor is destroyed unsafely, it may violently finish the entire reaction of its Catalyst Cells, causing a massive explosion.\n\nIf this reactor is fueled, and its fuel is destroyed by whatever destroys the reactor, it will violently explode. Its explosion radius is very big.\n\nThis Cosmic Reactor uses a streamlined design without any unnecessary parts to make the most out of the materials put into it. It is also surprisingly light and portable, making a great (yet dangerous around explosives) reactor for all operations across the universe.\n\nStats: Generates 100K Watts for 1.1 years when fully fueled with 100 Cosmic Catalyst Fuel Cells.</description>
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories><li>BuildingsPower</li></thingCategories>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Building/Power/SNS/PortableColdFusionReactor/PortableColdFusionReactor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -110,17 +116,21 @@
 			<ComponentSpacer>8</ComponentSpacer>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-100000</basePowerConsumption>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1.5</fuelConsumptionRate>
 				<fuelCapacity>100</fuelCapacity>
-				<fuelFilter><thingDefs><li>SNS_Unobtainium_Fuel</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_Unobtainium_Fuel</li>
+					</thingDefs>
+				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 			</li>
 			<!--
@@ -153,7 +163,9 @@
 		<label>Cosmic Battery Generation 1</label>
 		<description>The Cosmic Battery Gen 1 is capable of storing incredible amounts of energy at the absolute highest possible efficiency. Incredibly safe, the Cosmic Battery will never combust or explode even when damaged. It is NOT immune to power surges, however.\n\nStats: Stores 10000 Watts at 100% efficiency</description>
 		<thingClass>Building_Battery</thingClass>
-		<thingCategories><li>BuildingsPower</li></thingCategories>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Building/Power/SNS/Battery</texPath>
 			<!--<graphicClass>Graphic_Multi</graphicClass>-->
@@ -192,25 +204,27 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>10000</storedEnergyMax>
 				<efficiency>1</efficiency>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<staticSunShadowHeight>0.5</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
 		<canOverlapZones>false</canOverlapZones>
-		<researchPrerequisites><li>SNS_Research_II_pwr</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_II_pwr</li>
+		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<!-- Tier 2 -->
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>SNS_Reactor_II</defName>
 		<label>Cosmic Reactor Generation 2</label>
@@ -246,17 +260,21 @@
 			<SNS_Component_GenII>10</SNS_Component_GenII>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-150000</basePowerConsumption>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>5</fuelConsumptionRate>
 				<fuelCapacity>1000</fuelCapacity>
-				<fuelFilter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -272,14 +290,16 @@
 			<li>SNS_Research_III_power</li>
 		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>SNS_Reactor_II_Portable</defName>
 		<label>Portable Cosmic Reactor Generation 2</label>
 		<description>The Portable Cosmic Matter Reactor converts pure, raw Cosmic Matter into an obscene amount of electrical energy. Able to burn for thrice times as long and output 50% more energy than its predecessor when fully fueled, the Cosmic Matter Reactor is truly superior in every way to its Generation 1 counterpart.\n\nThis Cosmic Reactor uses a streamlined design without any unnecessary parts to make the most out of the materials put into it. It is also surprisingly light and portable, making the perfect mobile reactor for all operations across the universe.\n\nStats: Generates 150K Watts for 3.3 years when fully fueled with 1000 Cosmic Matter.</description>
 		<thingClass>Building</thingClass>
 		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories><li>BuildingsPower</li></thingCategories>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Building/Power/SNS/PortableCosmicReactor/PortableCosmicReactor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -309,17 +329,21 @@
 			<SNS_Component_GenII>5</SNS_Component_GenII>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-150000</basePowerConsumption>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>5</fuelConsumptionRate>
 				<fuelCapacity>1000</fuelCapacity>
-				<fuelFilter><thingDefs><li>SNS_CosmicMatter</li></thingDefs></fuelFilter>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</fuelFilter>
 				<consumeFuelOnlyWhenUsed>false</consumeFuelOnlyWhenUsed>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -341,7 +365,9 @@
 		<label>Cosmic Battery Generation 2</label>
 		<description>The Cosmic Battery Gen 2 is the perfect battery, able to store seemingly endless amounts of energy at the highest possible efficiency. The Generation II Cosmic Battery will never combust or explode regardless of damage or condition, but is NOT immune to power surges.\n\nStats: Stores 100K Watts at 100% efficiency.</description>
 		<thingClass>Building_Battery</thingClass>
-		<thingCategories><li>BuildingsPower</li></thingCategories>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Building/Power/SNS/Battery_Gen2/Battery2</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -378,25 +404,27 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>100000</storedEnergyMax>
 				<efficiency>1</efficiency>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<staticSunShadowHeight>0.25</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
 		<canOverlapZones>false</canOverlapZones>
-		<researchPrerequisites><li>SNS_Research_III_power</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_III_power</li>
+		</researchPrerequisites>
 	</ThingDef>
-	
+
 	<!-- Tier 3 -->
-	
+
 	<ThingDef ParentName="BuildingBase">
 		<defName>SNS_Reactor_III</defName>
 		<label>Cosmic Reactor Generation Omega</label>
@@ -432,11 +460,11 @@
 			<SNS_Component_GenIII>15</SNS_Component_GenIII>
 		</costList>
 		<comps>
-			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-1500000</basePowerConsumption>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Glower">
@@ -458,7 +486,9 @@
 		<label>Cosmic Battery Generation Omega</label>
 		<description>The Cosmic Battery Generation Omega is the ultimate battery, storing vastly more energy than its precessor at the highest possible efficiency.\n\nThe Generation Omega Cosmic Battery will never combust or explode no matter what, but is NOT immune to power surges.\n\nStats: Stores 1M Watts.</description>
 		<thingClass>Building_Battery</thingClass>
-		<thingCategories><li>BuildingsPower</li></thingCategories>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
 		<graphicData>
 			<texPath>Things/Building/Power/SNS/Battery_Gen3/Battery3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -496,21 +526,23 @@
 			<li Class="CompProperties_Battery">
 				<storedEnergyMax>1000000</storedEnergyMax>
 				<efficiency>1</efficiency>
-                <shortCircuitInRain>false</shortCircuitInRain>
+				<shortCircuitInRain>false</shortCircuitInRain>
 				<transmitsPower>true</transmitsPower>
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>8</glowRadius>
 				<glowColor>(255,51,0,0)</glowColor>
 			</li>
-			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Breakdownable" />
 		</comps>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
 		<designationCategory>Power</designationCategory>
 		<staticSunShadowHeight>0.25</staticSunShadowHeight>
 		<constructEffect>ConstructMetal</constructEffect>
 		<canOverlapZones>false</canOverlapZones>
-		<researchPrerequisites><li>SNS_Research_VI_power</li></researchPrerequisites>
+		<researchPrerequisites>
+			<li>SNS_Research_VI_power</li>
+		</researchPrerequisites>
 	</ThingDef>
 
 </Defs>

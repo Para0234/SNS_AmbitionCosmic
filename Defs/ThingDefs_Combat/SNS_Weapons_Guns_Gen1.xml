@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Pistol_Gen1_Projectile">
@@ -12,7 +12,7 @@
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>12</damageAmountBase>
-            <armorPenetrationBase>0.65</armorPenetrationBase>
+			<armorPenetrationBase>0.65</armorPenetrationBase>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
@@ -42,9 +42,9 @@
 			<li>SpacerGun</li>
 		</weaponTags>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -66,7 +66,9 @@
 			</li>
 		</verbs>
 		<techLevel>Ultra</techLevel>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<!-- ============================================== -->
@@ -81,7 +83,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>8</damageAmountBase>
-            <armorPenetrationBase>0.35</armorPenetrationBase>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
 			<speed>80</speed>
 		</projectile>
 	</ThingDef>
@@ -108,9 +110,9 @@
 			<Beauty>5</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
+			</recipeUsers>
 			<researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
 		</recipeMaker>
 		<costList>
@@ -133,9 +135,11 @@
 			</li>
 		</verbs>
 		<techLevel>Ultra</techLevel>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<!-- ============================================== -->
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Shotgun_Gen1_Projectile">
@@ -148,7 +152,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>80</damageAmountBase>
-            <armorPenetrationBase>1.25</armorPenetrationBase>
+			<armorPenetrationBase>1.25</armorPenetrationBase>
 			<speed>50</speed>
 		</projectile>
 	</ThingDef>
@@ -175,10 +179,10 @@
 			<Beauty>5</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_Unobtainium>25</SNS_Unobtainium>
@@ -198,7 +202,9 @@
 			</li>
 		</verbs>
 		<techLevel>Ultra</techLevel>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<!-- ============================================== -->
@@ -213,7 +219,7 @@
 		<projectile>
 			<damageDef>Bullet</damageDef>
 			<damageAmountBase>60</damageAmountBase>
-            <armorPenetrationBase>1</armorPenetrationBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
 			<speed>150</speed>
 		</projectile>
 	</ThingDef>
@@ -240,10 +246,10 @@
 			<Beauty>5</Beauty>
 		</statBases>
 		<recipeMaker>
-			  <recipeUsers Inherit="False">
+			<recipeUsers Inherit="False">
 				<li>FabricationBench</li>
-			  </recipeUsers>
-			  <researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
 		</recipeMaker>
 		<costList>
 			<SNS_Unobtainium>40</SNS_Unobtainium>
@@ -263,8 +269,9 @@
 			</li>
 		</verbs>
 		<techLevel>Ultra</techLevel>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 </Defs>
-

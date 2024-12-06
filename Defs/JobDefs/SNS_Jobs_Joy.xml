@@ -1,6 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-
   <JobDef>
     <defName>Play_SNS_UrBoard</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
@@ -13,7 +12,6 @@
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Play_SNS_Chess</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
@@ -26,7 +24,6 @@
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Play_SNS_Billiards</defName>
     <driverClass>JobDriver_PlayBilliards</driverClass>
@@ -39,7 +36,6 @@
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Play_SNS_Poker</defName>
     <driverClass>JobDriver_PlayPoker</driverClass>
@@ -52,7 +48,6 @@
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Watch_SNS_Television_GenI</defName>
     <driverClass>JobDriver_WatchTelevision</driverClass>
@@ -62,7 +57,6 @@
     <joyKind>Television</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Watch_SNS_Television_GenII</defName>
     <driverClass>JobDriver_WatchTelevision</driverClass>
@@ -72,7 +66,6 @@
     <joyKind>Television</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Watch_SNS_Television_GenIII</defName>
     <driverClass>JobDriver_WatchTelevision</driverClass>
@@ -82,7 +75,6 @@
     <joyKind>Television</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Telescope_GenI</defName>
     <driverClass>JobDriver_WatchBuilding</driverClass>
@@ -94,20 +86,18 @@
     <joyKind>Telescope</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Telescope_GenII</defName>
     <driverClass>JobDriver_WatchBuilding</driverClass>
     <reportString>using temporal telescope.</reportString>
     <joyDuration>4000</joyDuration>
-	<joyGainRate>1.45</joyGainRate>
+    <joyGainRate>1.45</joyGainRate>
     <joyMaxParticipants>1</joyMaxParticipants>
     <joySkill>Intellectual</joySkill>
     <joyXpPerTick>0.016</joyXpPerTick>
     <joyKind>Telescope</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Telescope_GenIII</defName>
     <driverClass>JobDriver_WatchBuilding</driverClass>
@@ -119,7 +109,6 @@
     <joyKind>Telescope</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Computer_GenI</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
@@ -131,7 +120,6 @@
     <joyKind>SNS_Computer</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Computer_GenII</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
@@ -143,7 +131,6 @@
     <joyKind>SNS_Computer</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Computer_GenIII</defName>
     <driverClass>JobDriver_SitFacingBuilding</driverClass>
@@ -155,7 +142,6 @@
     <joyKind>SNS_Computer</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-
   <JobDef>
     <defName>Use_SNS_Hidden</defName>
     <driverClass>JobDriver_WatchBuilding</driverClass>
@@ -165,5 +151,4 @@
     <joyKind>SNS_Hidden</joyKind>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
   </JobDef>
-  
 </Defs>

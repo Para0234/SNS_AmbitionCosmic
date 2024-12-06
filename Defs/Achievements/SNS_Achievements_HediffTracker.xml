@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenI</defName>
 		<label>Mechanised Ascension</label>
 		<description>Have a single pawn with full Generation-1 stellar bionics, armor shrouds, and enchanters.</description>
-		
+
 		<tracker Class="AchievementsExpanded.MultiHediffTracker">
 			<defs>
 				<li>
@@ -74,7 +74,7 @@
 				</li>
 			</defs>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/FullBionics_Gen1</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
@@ -83,7 +83,7 @@
 		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenII</defName>
 		<label>Over-Engineered</label>
 		<description>Have a single pawn with full Generation-2 cosmic bionics, armor shrouds, and enchanters.</description>
-		
+
 		<tracker Class="AchievementsExpanded.MultiHediffTracker">
 			<defs>
 				<li>
@@ -152,7 +152,7 @@
 				</li>
 			</defs>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/FullBionics_Gen2</texPath>
 		<points>75</points>
 	</AchievementsExpanded.AchievementDef>
@@ -161,7 +161,7 @@
 		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenIII</defName>
 		<label>Beyond Organic</label>
 		<description>Have a single pawn with full Generation-3 enigmatic bionics, armor shrouds, and enchanters.</description>
-		
+
 		<tracker Class="AchievementsExpanded.MultiHediffTracker">
 			<defs>
 				<li>
@@ -230,7 +230,7 @@
 				</li>
 			</defs>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/FullBionics_Gen3</texPath>
 		<points>100</points>
 	</AchievementsExpanded.AchievementDef>

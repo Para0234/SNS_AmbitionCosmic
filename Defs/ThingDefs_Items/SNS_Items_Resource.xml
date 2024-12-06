@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
@@ -15,14 +15,17 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>ResourcesRaw</li><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>75</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(205,190,39,0)</glowColor>
@@ -44,7 +47,9 @@
 			<Beauty>10</Beauty>
 		</statBases>
 		<stuffProps>
-			<categories><li>Metallic</li></categories>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(200,200,200)</color>
 			<appearance>Smooth</appearance>
 			<commonality>0.0</commonality>
@@ -73,13 +78,15 @@
 				<Insulation_Cold>15</Insulation_Cold>
 				<Insulation_Heat>15</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
-                <Beauty>2.5</Beauty>
+				<Beauty>2.5</Beauty>
 			</statFactors>
 		</stuffProps>
 		<tradeTags>
-		  	<li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -96,14 +103,16 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>75</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(205,190,39,0)</glowColor>
@@ -133,7 +142,9 @@
 			<appearance>Smooth</appearance>
 			<commonality>0.0</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<statOffsets><Beauty>10</Beauty></statOffsets>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>5</MaxHitPoints>
 				<Flammability>0</Flammability>
@@ -148,15 +159,17 @@
 				<Insulation_Cold>15</Insulation_Cold>
 				<Insulation_Heat>15</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
-                <Beauty>2.5</Beauty>
+				<Beauty>2.5</Beauty>
 			</statFactors>
 		</stuffProps>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<thingClass>ThingWithComps</thingClass>
 		<defName>SNS_CosmicAlloy</defName>
@@ -171,14 +184,17 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>ResourcesRaw</li><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>75</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -200,7 +216,9 @@
 			<Beauty>25</Beauty>
 		</statBases>
 		<stuffProps>
-			<categories><li>Metallic</li></categories>
+			<categories>
+				<li>Metallic</li>
+			</categories>
 			<color>(245,245,255)</color>
 			<appearance>Smooth</appearance>
 			<commonality>0.0</commonality>
@@ -229,13 +247,15 @@
 				<Insulation_Cold>25</Insulation_Cold>
 				<Insulation_Heat>25</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
-                <Beauty>5</Beauty>
+				<Beauty>5</Beauty>
 			</statFactors>
 		</stuffProps>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -252,14 +272,16 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>75</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -287,7 +309,9 @@
 			<appearance>Smooth</appearance>
 			<commonality>0.0</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
-			<statOffsets><Beauty>10</Beauty></statOffsets>
+			<statOffsets>
+				<Beauty>10</Beauty>
+			</statOffsets>
 			<statFactors>
 				<MaxHitPoints>15</MaxHitPoints>
 				<Flammability>0</Flammability>
@@ -300,13 +324,15 @@
 				<Insulation_Cold>25</Insulation_Cold>
 				<Insulation_Heat>25</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
-                <Beauty>5</Beauty>
+				<Beauty>5</Beauty>
 			</statFactors>
 		</stuffProps>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -323,14 +349,16 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>25</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -345,9 +373,11 @@
 			<Beauty>4</Beauty>
 		</statBases>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -362,14 +392,16 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>100</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Normal</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>3</glowRadius>
 				<glowColor>(71,0,163,0)</glowColor>
@@ -389,11 +421,13 @@
 			<Beauty>3</Beauty>
 		</statBases>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<thingClass>ThingWithComps</thingClass>
 		<defName>SNS_CosmicMatter</defName>
@@ -408,14 +442,16 @@
 		<soundInteract>Standard_Pickup</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>ResourcesRaw</li></thingCategories>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
 		<stackLimit>500</stackLimit>
 		<smallVolume>true</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Never</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(255,240,89,0)</glowColor>
@@ -475,11 +511,13 @@
 			</statFactors>
 		</stuffProps>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 	<ThingDef ParentName="ResourceBase">
 		<thingClass>ThingWithComps</thingClass>
 		<defName>SNS_Eternium</defName>
@@ -494,14 +532,16 @@
 		<soundInteract>Standard_Pickup</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>false</useHitPoints>
-		<thingCategories><li>ResourcesRaw</li></thingCategories>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+		</thingCategories>
 		<stackLimit>75</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Never</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(0,230,255,0)</glowColor>
@@ -558,10 +598,12 @@
 				<Insulation_Cold>80</Insulation_Cold>
 				<Insulation_Heat>80</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
-                <Beauty>8</Beauty>
+				<Beauty>8</Beauty>
 			</statFactors>
 		</stuffProps>
-		<thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
@@ -578,14 +620,16 @@
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
 		<useHitPoints>true</useHitPoints>
-		<thingCategories><li>Manufactured</li></thingCategories>
+		<thingCategories>
+			<li>Manufactured</li>
+		</thingCategories>
 		<stackLimit>25</stackLimit>
 		<smallVolume>false</smallVolume>
 		<drawGUIOverlay>true</drawGUIOverlay>
 		<deepCommonality>0</deepCommonality>
 		<tickerType>Rare</tickerType>
 		<comps>
-			<li Class="CompProperties_Forbiddable"/>
+			<li Class="CompProperties_Forbiddable" />
 			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(205,190,39,0)</glowColor>
@@ -600,9 +644,11 @@
 			<Beauty>4</Beauty>
 		</statBases>
 		<tradeTags>
-		  <li>ExoticMisc</li>
+			<li>ExoticMisc</li>
 		</tradeTags>
-		<thingSetMakerTags><li>RewardStandardMidFreq</li></thingSetMakerTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
 	</ThingDef>
-	
+
 </Defs>

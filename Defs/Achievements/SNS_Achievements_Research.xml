@@ -4,11 +4,11 @@
 		<defName>SNS_Achievement_ResearchTech_Gen0</defName>
 		<label>I've Found The Lock</label>
 		<description>Research the [Pushing The Limits] technology.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_0</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen0</texPath>
 		<points>5</points>
 	</AchievementsExpanded.AchievementDef>
@@ -17,25 +17,25 @@
 		<defName>SNS_Achievement_BuildThing_Linkable_Unlocker_GenI</defName>
 		<label>I Have The Key</label>
 		<description>Construct a Stellar Analyzer.</description>
-		
+
 		<tracker Class="AchievementsExpanded.BuildingTracker">
 			<def>SNS_Linkable_Unlocker_GenI</def>
 			<count>1</count>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/Linkable_Unlocker_Gen1</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen1_Unobtainer</defName>
 		<label>The First Of Many Great Things</label>
 		<description>Research the [Stellar Steel] technology and enter Generation 1 of Science Never Stops: Ambition of the Cosmic.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_I</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen1</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
@@ -44,51 +44,51 @@
 		<defName>SNS_Achievement_BuildThing_Linkable_Unlocker_GenII</defName>
 		<label>We're Not Stopping Now</label>
 		<description>Construct a Cosmic Analyzer.</description>
-		
+
 		<tracker Class="AchievementsExpanded.BuildingTracker">
 			<def>SNS_Linkable_Unlocker_GenII</def>
 			<count>1</count>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/Linkable_Unlocker_Gen2</texPath>
 		<points>10</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen1_Bridge</defName>
 		<label>The Second Golden Age</label>
 		<description>Research the [The Second Generation] technology and enter Generation 2 of Science Never Stops: Ambition of the Cosmic.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_III_base</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen2</texPath>
 		<points>15</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen2_Ceiling_I</defName>
 		<label>The Final Ceiling</label>
 		<description>Research the [Reaching The Limits] technology. This can't be all there is, right?</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_IV</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen2_ceiling_A</texPath>
 		<points>20</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen2_Ceiling_II</defName>
 		<label>A Thin Crack</label>
 		<description>Research the [The Great Unknown] technology. There's more to our story.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_V_breakthrough</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen2_ceiling_B</texPath>
 		<points>20</points>
 	</AchievementsExpanded.AchievementDef>
@@ -97,64 +97,64 @@
 		<defName>SNS_Achievement_BuildThing_Linkable_Unlocker_GenIII</defName>
 		<label>The Stars Beckon And We Follow</label>
 		<description>Construct the Call of the Cosmos.</description>
-		
+
 		<tracker Class="AchievementsExpanded.BuildingTracker">
 			<def>SNS_Linkable_Unlocker_GenIII</def>
 			<count>1</count>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/Linkable_Unlocker_Gen3</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen3_Beginning</defName>
 		<label>The Final Floor</label>
 		<description>Research the [Breaching The Limits] technology. Now there's no more ceilings to hold us down.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_VI_base</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen3</texPath>
 		<points>25</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen3_UntoZenith</defName>
 		<label>The Final Stretch</label>
 		<description>Research the [Unto The Zenith] technology.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_VI_final</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen3_untozenith</texPath>
 		<points>50</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_Gen4</defName>
 		<label>The End</label>
 		<description>Finish the technology tree of Science Never Stops: Ambition of the Cosmic by researcing the [Pinnacle of Creation] technology. It's over. You can rest now.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_VII</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_gen4</texPath>
 		<points>250</points>
 	</AchievementsExpanded.AchievementDef>
-	
+
 	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
 		<defName>SNS_Achievement_ResearchTech_infinite</defName>
 		<label>A Parting Gift</label>
 		<description>Spend a TechProf Subpersona Core on the [Beyond Our Understanding] technology. Farewell.</description>
-		
+
 		<tracker Class="AchievementsExpanded.ResearchTracker">
 			<def>SNS_Research_infinite</def>
 		</tracker>
-		
+
 		<texPath>Achievements/SNS/research_infinite</texPath>
 		<points>9999</points>
 	</AchievementsExpanded.AchievementDef>

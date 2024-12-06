@@ -23,51 +23,55 @@
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
 			<unfinishedThingDef>UnfinishedHealthItemBionic</unfinishedThingDef>
-			
+
 			<skillRequirements>
 				<Crafting>14</Crafting>
 			</skillRequirements>
-			
+
 			<researchPrerequisite>SNS_Research_III_bionics</researchPrerequisite>
-			
+
 			<recipeUsers>
 				<li>Table_SNS_BionicCraftingStation_GenII</li>
 			</recipeUsers>
 		</recipeMaker>
 		<tradeTags Inherit="False"></tradeTags>
-		<thingCategories><li>SNS_ThingCategory_Bionics_GenII</li></thingCategories>
+		<thingCategories>
+			<li>SNS_ThingCategory_Bionics_GenII</li>
+		</thingCategories>
 	</ThingDef>
-	
+
 	<HediffDef Name="SNS_BionicHediff_GenII" ParentName="AddedBodyPartBase" Abstract="True">
 		<defName>SNS_Base_BionicHediff_GenII</defName>
 		<defaultLabelColor>(255,229,0)</defaultLabelColor>
-        <comps/>
+		<comps/>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>2</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
+
 	<HediffDef Name="SNS_BionicImplantHediff_GenII" ParentName="ImplantHediffBase" Abstract="True">
 		<defName>SNS_Base_BionicHediffImplant_GenII</defName>
 		<defaultLabelColor>(255,229,0)</defaultLabelColor>
-        <comps/>
+		<comps/>
 		<addedPartProps>
 			<solid>true</solid>
 			<partEfficiency>1</partEfficiency>
 			<betterThanNatural>true</betterThanNatural>
 		</addedPartProps>
 	</HediffDef>
-	
-	
+
+
 	<!-- Eye -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicEye_GenII</defName>
 		<label>cosmic eye</label>
 		<labelNoun>a cosmic eye</labelNoun>
 		<description>An installed cosmic eye.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEye_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEye_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEye_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -75,7 +79,9 @@
 		<defName>SNS_Item_BionicEye_GenII</defName>
 		<label>cosmic eye</label>
 		<description>An extremely advanced artifical eye made of Cosmic Alloy and Cosmic Matter. It is obscenely tough, able to withstand high-force impacts without even being dented, much less being damaged. Just like the Archotech eye, it is able to percieve every type of electromagnetic radiation, including radio waves, infrared, light, x-rays, and gamma rays, though this is where the similarities end. The eye is able to see with great precision more than twice as far as its Generation 1 predecessor.\n\nIts only downfall is that it does not look anything like a human eye on closer inspection, having an extremely obvious border between pupil, iris, and the remainder of the eye, not even considering the possibility a user can cause their irises to glow at will--and brightly at that.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEye_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEye_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>6</SNS_Component_GenII>
@@ -114,15 +120,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEye_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Ear -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicEar_GenII</defName>
 		<label>cosmic ear</label>
 		<labelNoun>a cosmic ear</labelNoun>
 		<description>An installed cosmic ear.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicEar_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicEar_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicEar_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -130,7 +138,9 @@
 		<defName>SNS_Item_BionicEar_GenII</defName>
 		<label>cosmic ear</label>
 		<description>A highly advanced artifical ear made of high-strength Cosmic Alloy. It is incredibly tough, able to withstand high-force impact without breaking beyond repair. Able to hear and detect even quiet sounds from kilometers away, regardless of how low or high the frequency of said sound is, and also has an internal subpersona-level AI that equalises sounds, filters out all unecessary details without error, and is also capable of increasing the clarity of speech to inhuman levels.\n\nIts only downfall is that it looks nothing like a human ear, even if one can replicate the shape, the metalic shine and cosmic glow makes it obvious that it is not natural, though most don't mind it considering the generally beautiful nature of the metal.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicEar_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicEar_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>6</SNS_Component_GenII>
@@ -169,15 +179,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicEar_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Nose -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicNose_GenII</defName>
 		<label>cosmic nose</label>
 		<labelNoun>a cosmic nose</labelNoun>
 		<description>An installed cosmic nose.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNose_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNose_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNose_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -185,7 +197,9 @@
 		<defName>SNS_Item_BionicNose_GenII</defName>
 		<label>cosmic nose</label>
 		<description>A nose made of Cosmic Alloy, able to breathe in very, very high amounts of air in short periods of time. Extremely tough and reliable, its only downfall is  that it does not look natural at all.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNose_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNose_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>6</SNS_Component_GenII>
@@ -224,15 +238,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicNose_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Jaw -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicJaw_GenII</defName>
 		<label>cosmic jaw</label>
 		<labelNoun>a cosmic jaw</labelNoun>
 		<description>An installed cosmic jaw.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicJaw_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicJaw_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicJaw_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -240,7 +256,9 @@
 		<defName>SNS_Item_BionicJaw_GenII</defName>
 		<label>cosmic jaw</label>
 		<description>A highly advanced artifical jaw made of high-strength Cosmic Alloy. It is incredibly tough, able to withstand high-force impact even being dented, much less broken. Able to literally chew through Starsteel, break through thinner sheets of Cosmic Alloy, and amplify the volume of one's own vocalisations alongside increase the clarity of speech, it is an exceptional eating and negotiation tool.\n\nIts only downfall is that it is obviously artifical, the metalic shine and cosmic glow does not help either, though most don't mind it considering the generally beautiful nature of the metal.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicJaw_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicJaw_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenII>2</SNS_Component_GenII>
@@ -279,15 +297,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicJaw_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Head armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenII">
 		<defName>SNS_Hediff_BionicHead_GenII</defName>
 		<label>cosmic head shroud</label>
 		<labelNoun>a cosmic head shroud</labelNoun>
 		<description>An installed cosmic head shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHead_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHead_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHead_GenII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -300,7 +320,9 @@
 		<defName>SNS_Item_BionicHead_GenII</defName>
 		<label>cosmic head shroud</label>
 		<description>Some surgically-implanted Cosmic Alloy armor for the head. While it doesn't provide any benefit over the natural body, it does make the head much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHead_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHead_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenII>2</SNS_Component_GenII>
@@ -344,15 +366,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicHead_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Neck armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenII">
 		<defName>SNS_Hediff_BionicNeck_GenII</defName>
 		<label>cosmic neck shroud</label>
 		<labelNoun>a cosmic neck shroud</labelNoun>
 		<description>An installed cosmic neck shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicNeck_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicNeck_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicNeck_GenII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -365,7 +389,9 @@
 		<defName>SNS_Item_BionicNeck_GenII</defName>
 		<label>cosmic neck shroud</label>
 		<description>Some surgically-implanted Cosmic Alloy armor for the neck. While it doesn't provide any benefit over the natural body, it does make the neck much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicNeck_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicNeck_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenII>2</SNS_Component_GenII>
@@ -409,15 +435,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicNeck_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Torso armor -->
 	<HediffDef ParentName="SNS_BionicImplantHediff_GenII">
 		<defName>SNS_Hediff_BionicTorso_GenII</defName>
 		<label>cosmic torso shroud</label>
 		<labelNoun>a cosmic torso shroud</labelNoun>
 		<description>An installed cosmic torso shroud.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicTorso_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicTorso_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicTorso_GenII</spawnThingOnRemoved>
 		<addedPartProps inherit="false">
 			<solid>true</solid>
@@ -430,7 +458,9 @@
 		<defName>SNS_Item_BionicTorso_GenII</defName>
 		<label>cosmic torso shroud</label>
 		<description>A surgically-implanted Cosmic Alloy armor for the torso. While it doesn't provide any benefit over the natural body, it does make the torso much more durable.\n\nWhile most of the plating can be hidden underneath the skin, some tends to emerge from underneath the skin in ways that most consider to be asthetically pleasing enough to look over.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicTorso_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicTorso_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenII>2</SNS_Component_GenII>
@@ -474,15 +504,17 @@
 		</incompatibleWithHediffTags>
 		<addsHediff>SNS_Hediff_BionicTorso_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Arm -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicArm_GenII</defName>
 		<label>cosmic arm</label>
 		<labelNoun>a cosmic arm</labelNoun>
 		<description>An installed cosmic arm.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicArm_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicArm_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<comps>
 			<li Class="HediffCompProperties_VerbGiver">
 				<tools>
@@ -506,7 +538,9 @@
 		<defName>SNS_Item_BionicArm_GenII</defName>
 		<label>cosmic arm</label>
 		<description>A highly advanced artifical arm made of high-strength Cosmic Alloy. It is incredibly tough, able to withstand high-force impact without bending, much less breaking. It is able to bend Starsteel all on its own with the precision the likes of simply cannot be described.\n\nIts only downfall is that it is obviously artificial, and in fact looks very robotic in nature, though few actually mind the apperance due to the beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicArm_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicArm_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
 			<SNS_Component_GenII>8</SNS_Component_GenII>
@@ -545,15 +579,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicArm_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Leg -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicLeg_GenII</defName>
 		<label>cosmic leg</label>
 		<labelNoun>a cosmic leg</labelNoun>
 		<description>An installed cosmic leg.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLeg_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLeg_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLeg_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -561,7 +597,9 @@
 		<defName>SNS_Item_BionicLeg_GenII</defName>
 		<label>cosmic leg</label>
 		<description>A highly advanced artifical leg made of high-strength Cosmic Alloy. It is incredibly tough, able to withstand high-force impact without bending, much less breaking. It is able to allow its user to move as fast as a good car.\n\nIts only downfall is that it is obviously artificial, and in fact looks very robotic in nature, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLeg_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLeg_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
 			<SNS_Component_GenII>8</SNS_Component_GenII>
@@ -600,15 +638,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLeg_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Spine -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicSpine_GenII</defName>
 		<label>cosmic spine</label>
 		<labelNoun>a cosmic spine</labelNoun>
 		<description>An installed cosmic spine.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicSpine_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicSpine_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicSpine_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -616,7 +656,9 @@
 		<defName>SNS_Item_BionicSpine_GenII</defName>
 		<label>cosmic spine</label>
 		<description>A highly advanced artifical spine made of high-strength Cosmic Alloy. It's extremely sturdy, able to handle very high amounts of weight and general strain from various sources all at once.\n\nIts only downfall is that it is obviously artificial, and can't entirely be hidden beneath the skin, though few actually mind the apperance due to the generally beautiful nature of the metal it is made from.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicSpine_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicSpine_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
 			<SNS_Component_GenII>8</SNS_Component_GenII>
@@ -655,37 +697,41 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicSpine_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Brain Implant -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicBrain_GenII</defName>
 		<label>cosmic neural enchanter</label>
 		<labelNoun>a cosmic neural enchanter</labelNoun>
 		<description>An installed cosmic neural enchanter.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicBrain_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicBrain_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenII</spawnThingOnRemoved>
-        <stages>
-            <li>
-                <painFactor>0</painFactor>
-                <makeImmuneTo>
-                <li>Dementia</li>
-                <li>Alzheimers</li>
-                <li>PsychicShock</li>
-                </makeImmuneTo>
-                <statFactors>
-                    <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyMax>
-                    <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyRecoveryRate>
-                </statFactors>
-            </li>
-        </stages>
+		<stages>
+			<li>
+				<painFactor>0</painFactor>
+				<makeImmuneTo>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>PsychicShock</li>
+				</makeImmuneTo>
+				<statFactors>
+					<PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyMax>
+					<PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyRecoveryRate>
+				</statFactors>
+			</li>
+		</stages>
 	</HediffDef>
 
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenII">
 		<defName>SNS_Item_BionicBrain_GenII</defName>
 		<label>cosmic neural enchanter</label>
 		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicBrain_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenII>12</SNS_Component_GenII>
@@ -724,15 +770,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicBrain_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Heart -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicHeart_GenII</defName>
 		<label>cosmic heart</label>
 		<labelNoun>a cosmic heart</labelNoun>
 		<description>An installed cosmic heart.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicHeart_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicHeart_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicHeart_GenII</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -745,7 +793,9 @@
 		<defName>SNS_Item_BionicHeart_GenII</defName>
 		<label>cosmic heart</label>
 		<description>A highly advanced blood pump that replaces the heart. While it looks nothing like a natural heart, it's far better and more efficient. It can pump blood beyond the highest natural safe levels thanks to the enigmatic nature of Cosmic Matter, and also slow the flow of blood significantly to significantly reduce bleeding rate.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicHeart_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicHeart_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenII>4</SNS_Component_GenII>
@@ -784,15 +834,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicHeart_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Lung -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicLung_GenII</defName>
 		<label>cosmic lung</label>
 		<labelNoun>a cosmic lung</labelNoun>
 		<description>An installed cosmic lung.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLung_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLung_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLung_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -800,7 +852,9 @@
 		<defName>SNS_Item_BionicLung_GenII</defName>
 		<label>cosmic lung</label>
 		<description>A highly advanced lung-like device that collects pure oxygen through normal breathing. It draws oxygen far faster and more efficiently than natural lungs, alongside being able to store oxygen for extended periods of time. Equipped with advanced filtration devices, it can draw oxygen from the most thin atmospheres.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLung_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLung_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>4</SNS_Component_GenII>
@@ -839,15 +893,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLung_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Kidney -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicKidney_GenII</defName>
 		<label>cosmic kidney</label>
 		<labelNoun>a cosmic kidney</labelNoun>
 		<description>An installed cosmic kidney.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicKidney_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicKidney_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicKidney_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -855,7 +911,9 @@
 		<defName>SNS_Item_BionicKidney_GenII</defName>
 		<label>cosmic kidney</label>
 		<description>A highly advanced blood filtration device that filters faster and better than any natural kidney ever could. It is not only able to handle an extremely high bloodflow, but also not lose any efficiency in extreme situations.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicKidney_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicKidney_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>8</SNS_CosmicAlloy>
 			<SNS_Component_GenII>3</SNS_Component_GenII>
@@ -894,15 +952,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicKidney_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Liver -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicLiver_GenII</defName>
 		<label>cosmic liver</label>
 		<labelNoun>a cosmic liver</labelNoun>
 		<description>An installed cosmic liver.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicLiver_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicLiver_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicLiver_GenII</spawnThingOnRemoved>
 	</HediffDef>
 
@@ -910,7 +970,9 @@
 		<defName>SNS_Item_BionicLiver_GenII</defName>
 		<label>cosmic liver</label>
 		<description>A highly advanced liver-like device that does all the tasks natural livers can do at a much higher speed and efficiency. It is made to deal with anything that can be thrown at it, and more.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicLiver_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicLiver_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>4</SNS_Component_GenII>
@@ -949,15 +1011,17 @@
 		</appliedOnFixedBodyParts>
 		<addsHediff>SNS_Hediff_BionicLiver_GenII</addsHediff>
 	</RecipeDef>
-	
-	
+
+
 	<!-- Stomach -->
 	<HediffDef ParentName="SNS_BionicHediff_GenII">
 		<defName>SNS_Hediff_BionicStomach_GenII</defName>
 		<label>cosmic digestive system</label>
 		<labelNoun>a cosmic digestive system</labelNoun>
 		<description>An installed cosmic digestive system.</description>
-		<descriptionHyperlinks><ThingDef>SNS_Item_BionicStomach_GenII</ThingDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<ThingDef>SNS_Item_BionicStomach_GenII</ThingDef>
+		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicStomach_GenII</spawnThingOnRemoved>
 		<stages>
 			<li>
@@ -970,7 +1034,9 @@
 		<defName>SNS_Item_BionicStomach_GenII</defName>
 		<label>cosmic digestive system</label>
 		<description>A complete digestive system in a singular organ-shaped device that converts consumed food efficiency into pure nutrtients, also destroying any illness-causing elements in the process of nutrient conversion, effectively removing risk of food poisoning.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
-		<descriptionHyperlinks><RecipeDef>SNS_InstallBodyPart_BionicStomach_GenII</RecipeDef></descriptionHyperlinks>
+		<descriptionHyperlinks>
+			<RecipeDef>SNS_InstallBodyPart_BionicStomach_GenII</RecipeDef>
+		</descriptionHyperlinks>
 		<costList>
 			<SNS_CosmicAlloy>12</SNS_CosmicAlloy>
 			<SNS_Component_GenII>4</SNS_Component_GenII>

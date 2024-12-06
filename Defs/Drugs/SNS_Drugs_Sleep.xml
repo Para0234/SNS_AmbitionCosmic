@@ -68,9 +68,9 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li/>
-      </stages>
+    <stages>
+      <li/>
+    </stages>
   </HediffDef>
 
   <!-- Gen2 -->
@@ -131,15 +131,15 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <restFallFactor>0.25</restFallFactor>
-          <statOffsets>
-            <WorkSpeedGlobal>1</WorkSpeedGlobal>
-            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1</MeditationFocusGain>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <restFallFactor>0.25</restFallFactor>
+        <statOffsets>
+          <WorkSpeedGlobal>1</WorkSpeedGlobal>
+          <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1</MeditationFocusGain>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
   <!-- Gen3 -->
@@ -200,25 +200,25 @@
         <showHoursToRecover>true</showHoursToRecover>
       </li>
     </comps>
-      <stages>
-        <li>
-          <restFallFactor>0</restFallFactor>
-          <capMods>
-            <li>
-              <capacity>Consciousness</capacity>
-              <offset>0.5</offset>
-            </li>
-            <li>
-              <capacity>Moving</capacity>
-              <offset>0.25</offset>
-            </li>
-          </capMods>
-          <statOffsets>
-            <WorkSpeedGlobal>1</WorkSpeedGlobal>
-            <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">6</MeditationFocusGain>
-          </statOffsets>
-        </li>
-      </stages>
+    <stages>
+      <li>
+        <restFallFactor>0</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <WorkSpeedGlobal>1</WorkSpeedGlobal>
+          <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">6</MeditationFocusGain>
+        </statOffsets>
+      </li>
+    </stages>
   </HediffDef>
 
 
