@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef Name="SNS_Projectile_CosmicPistolBullet" ParentName="BaseBullet">
@@ -62,6 +62,25 @@
 				<muzzleFlashScale>8</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -131,6 +150,25 @@
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -198,6 +236,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -265,6 +322,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
@@ -337,6 +413,25 @@
 				<muzzleFlashScale>30</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardLowFreq</li>
