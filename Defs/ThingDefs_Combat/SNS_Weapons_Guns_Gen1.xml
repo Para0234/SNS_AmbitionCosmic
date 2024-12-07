@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Pistol_Gen1_Projectile">
@@ -65,6 +65,25 @@
 				<muzzleFlashScale>8</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Ultra</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
@@ -134,6 +153,25 @@
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Ultra</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
@@ -201,6 +239,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Ultra</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
@@ -268,6 +325,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>9</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Ultra</techLevel>
 		<thingSetMakerTags>
 			<li>RewardStandardMidFreq</li>
