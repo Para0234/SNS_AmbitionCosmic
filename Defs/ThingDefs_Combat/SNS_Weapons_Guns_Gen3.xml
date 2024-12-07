@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="BaseBullet" Name="SNS_Pistol_Gen3_Projectile">
@@ -61,6 +61,25 @@
 				<muzzleFlashScale>8</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
 
@@ -126,6 +145,25 @@
 				<muzzleFlashScale>10</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
 
@@ -189,6 +227,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
 
@@ -252,6 +309,25 @@
 				<muzzleFlashScale>13</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
 
@@ -321,6 +397,25 @@
 				<muzzleFlashScale>50</muzzleFlashScale>
 			</li>
 		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
 		<techLevel>Archotech</techLevel>
 	</ThingDef>
 
