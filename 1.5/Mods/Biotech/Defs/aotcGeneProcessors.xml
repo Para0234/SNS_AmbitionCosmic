@@ -1,0 +1,211 @@
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>AoTC_Gen1GeneProcessor</defName>
+    <label>Starsteel Gene Processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>14</pathCost>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Dev/placeholderTexture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <shadowData>
+        <volume>(1.5, 0.4, 1.5)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2, 2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>9321</uiOrder>
+    <researchPrerequisites>
+      <li>GeneProcessor</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks>
+      <ThingDef>GeneAssembler</ThingDef>
+      <ThingDef>GeneBank</ThingDef>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>Xenogerm</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>1750</MaxHitPoints>
+      <WorkToBuild>15000</WorkToBuild>
+      <Mass>100</Mass>
+      <Flammability>0</Flammability>
+      <GeneticComplexityIncrease>6</GeneticComplexityIncrease>
+    </statBases>
+    <costList>
+      <Plasteel>100</Plasteel>
+      <SNS_Unobtainium>25</SNS_Unobtainium>
+      <ComponentSpacer>2</ComponentSpacer>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringGeneProcessor</compClass>
+        <inspectString>Gene complexity increase</inspectString>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>100</maxSimultaneous>
+        <maxDistance>15</maxDistance>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>AoTC_Gen2GeneProcessor</defName>
+    <label>Cosmic Alloy Gene Processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>14</pathCost>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Dev/placeholderTexture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <shadowData>
+        <volume>(1.5, 0.4, 1.5)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2, 2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>9321</uiOrder>
+    <researchPrerequisites>
+      <li>GeneProcessor</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks>
+      <ThingDef>GeneAssembler</ThingDef>
+      <ThingDef>GeneBank</ThingDef>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>Xenogerm</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>5250</MaxHitPoints>
+      <WorkToBuild>32000</WorkToBuild>
+      <Mass>135</Mass>
+      <Flammability>0</Flammability>
+      <GeneticComplexityIncrease>15</GeneticComplexityIncrease>
+    </statBases>
+    <costList>
+      <SNS_Unobtainium>100</SNS_Unobtainium>
+      <SNS_CosmicAlloy>25</SNS_CosmicAlloy>
+      <SNS_Component_GenII>2</SNS_Component_GenII>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>1000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringGeneProcessor</compClass>
+        <inspectString>Gene complexity increase</inspectString>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>100</maxSimultaneous>
+        <maxDistance>18</maxDistance>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>AoTC_Gen3GeneProcessor</defName>
+    <label>Eternium Gene Processor</label>
+    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>14</pathCost>
+    <rotatable>false</rotatable>
+    <graphicData>
+      <texPath>Dev/placeholderTexture</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2, 2)</drawSize>
+      <shadowData>
+        <volume>(1.5, 0.4, 1.5)</volume>
+      </shadowData>
+    </graphicData>
+    <size>(2, 2)</size>
+    <canOverlapZones>false</canOverlapZones>
+    <defaultPlacingRot>North</defaultPlacingRot>
+    <designationCategory>Biotech</designationCategory>
+    <uiOrder>9321</uiOrder>
+    <researchPrerequisites>
+      <li>GeneProcessor</li>
+    </researchPrerequisites>
+    <descriptionHyperlinks>
+      <ThingDef>GeneAssembler</ThingDef>
+      <ThingDef>GeneBank</ThingDef>
+      <ThingDef>Genepack</ThingDef>
+      <ThingDef>Xenogerm</ThingDef>
+    </descriptionHyperlinks>
+    <statBases>
+      <MaxHitPoints>17500</MaxHitPoints>
+      <WorkToBuild>80000</WorkToBuild>
+      <Mass>175</Mass>
+      <Flammability>0</Flammability>
+      <GeneticComplexityIncrease>25</GeneticComplexityIncrease>
+    </statBases>
+    <costList>
+      <SNS_CosmicAlloy>100</SNS_CosmicAlloy>
+      <SNS_Eternium>25</SNS_Eternium>
+      <SNS_Component_GenIII>50</SNS_Component_GenIII>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <building>
+      <buildingTags>
+        <li>Biotech</li>
+      </buildingTags>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_InspectString">
+        <compClass>CompInspectStringGeneProcessor</compClass>
+        <inspectString>Gene complexity increase</inspectString>
+      </li>
+      <li Class="CompProperties_Facility">
+        <maxSimultaneous>100</maxSimultaneous>
+        <maxDistance>23</maxDistance>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
