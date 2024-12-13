@@ -10,3 +10,4 @@ Eventually, I hope to migrate us to using Github Issues because this system has 
 ___
 
 Overhaul the contributing file,xyzzy121,5/12/2024
+add research projects for gene processors,xyzzy121,12/12/2024
