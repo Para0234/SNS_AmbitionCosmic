@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ResearchProjectDef ParentName="SNS_Research_Base_GenI">
-    <defName>AOTC_GeneProcessor1Research</defName>
+    <!--Gen 1-->
+	<defName>AOTC_GeneProcessor1Research</defName>
 		<label>Stellar Gene Processor</label>
 		<description>Since Starsteel exhibits superconductivity at the comparatively high temperature of -10 celsius, we can use it to improve the power of the quantum processing unit in the Gene Processor.</description>
 		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_0</li>
+		</prerequisites>
 </ResearchProjectDef>
