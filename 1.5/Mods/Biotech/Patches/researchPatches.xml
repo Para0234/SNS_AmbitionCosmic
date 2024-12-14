@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ResearchProjectDef ParentName="SNS_Research_Base_GenI">
-    <!--Gen 1-->
-	<defName>AOTC_GeneProcessor1Research</defName>
-		<label>Stellar Gene Processor</label>
+	<!--Gen 1-->
+	<defName>AOTC_GeneProcessorI_Research <label>Stellar Gene Processor</label>
 		<description>Since Starsteel exhibits superconductivity at the comparatively high temperature of -10 celsius, we can use it to improve the power of the quantum processing unit in the Gene Processor.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
-			<li>SNS_Research_0</li>
+			<li>SNS_Research_I</li>
 		</prerequisites>
+	</defName>
+	<!--Gen 2-->
+	<defName>AOTC_GeneProcessorII_Research <label>Cosmic Gene Processor</label>
+		<description>Taking advantage of the Cosmic Matter trapped in Cosmic Alloy, we can double the number of qubits the Gene Processor can manipulate.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II</li>
+		</prerequisites>
+	</defName>
+	<!--Gen 3-->
+	<defName>AOTC_GeneProcessorIII_Research <label>Eternium Gene Processor</label>
+		<description>Because of the exotic properties of Eternium, we can use it in an altogether new process to further increase the processing power of the Gene Processor.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III</li>
+		</prerequisites>
+	</defName>
 </ResearchProjectDef>

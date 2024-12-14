@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>AoTC_Gen1GeneProcessor</defName>
+    <defName>AOTC_Gen1GeneProcessor</defName>
     <label>Stellar Gene Processor</label>
-    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <description>An Improvement on the original in every way, the Stellar Gene Processor uses Starsteel's high temperature superconductivity to increase the efficiency of the quantum processing unit within.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -21,7 +22,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>GeneProcessor</li>
+      <li>AOTC_GeneProcessorI_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -41,7 +42,7 @@
       <SNS_Unobtainium>25</SNS_Unobtainium>
       <ComponentSpacer>2</ComponentSpacer>
     </costList>
-    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>12</constructionSkillPrerequisite>
     <building>
       <buildingTags>
         <li>Biotech</li>
@@ -70,9 +71,9 @@
   </ThingDef>
 
   <ThingDef ParentName="BuildingBase">
-    <defName>AoTC_Gen2GeneProcessor</defName>
-    <label>Cosmic Alloy Gene Processor</label>
-    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <defName>AOTC_Gen2GeneProcessor</defName>
+    <label>Cosmic Gene Processor</label>
+    <description>Harnessing the Cosmic Matter trapped in Cosmic Alloy allows this gene processor to be able to manipulate twice the qubits as lastgen. </description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -91,7 +92,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>GeneProcessor</li>
+      <li>AOTC_GeneProcessorII_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -111,7 +112,7 @@
       <SNS_CosmicAlloy>25</SNS_CosmicAlloy>
       <SNS_Component_GenII>2</SNS_Component_GenII>
     </costList>
-    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
     <building>
       <buildingTags>
         <li>Biotech</li>
@@ -140,9 +141,9 @@
   </ThingDef>
   
   <ThingDef ParentName="BuildingBase">
-    <defName>AoTC_Gen3GeneProcessor</defName>
+    <defName>AOTC_Gen3GeneProcessor</defName>
     <label>Eternium Gene Processor</label>
-    <description>A genetic analysis and processing system. Placed near a gene assembler, it increases the maximum genetic complexity of the xenogerms you can assemble. Building multiple gene processors will increase the genetic complexity limit further.</description>
+    <description>Due to the wondrous properties of Eternium, this gene processor abandons qubits entirely, instead opting to use qudits as its basic unit for processing.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -161,7 +162,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>GeneProcessor</li>
+      <li>AOTC_GeneProcessorII_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -181,7 +182,7 @@
       <SNS_Eternium>25</SNS_Eternium>
       <SNS_Component_GenIII>50</SNS_Component_GenIII>
     </costList>
-    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>20</constructionSkillPrerequisite>
     <building>
       <buildingTags>
         <li>Biotech</li>
