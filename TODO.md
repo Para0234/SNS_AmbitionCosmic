@@ -10,5 +10,4 @@ Eventually, I hope to migrate us to using Github Issues because this system has 
 ___
 
 Overhaul the contributing file,xyzzy121,5/12/2024
-add research projects for gene processors,xyzzy121,12/12/2024
-Redo research defnames. Apparently II is used where I should be and III where II should be. also for some reason it has gen 4 projects,xyzzy121,14/12/2024
+Maybe Redo research defnames? Apparently II is used where I should be and III where II should be. also for some reason it has gen 4 projects,xyzzy121,14/12/2024
