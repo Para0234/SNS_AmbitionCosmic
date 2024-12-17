@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<!--Gen 1-->
+		<defName>AOTC_StellarGenetics_Research</defName>
+		<label>Stellar Gene Processor</label>
+		<description>Since st</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<!--Gen 2-->
+		<defName>AOTC_CosmicGenetics_Research</defName>
+		<label>Cosmic Gene Processor</label>
+		<description>With the advances that Cosmic </description>
+		<baseCost>25000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<!--Gen 3-->
+		<defName>AOTC_EterniumGenetics_Research</defName>
+		<label>Project ALTER</label>
+		<description>Eternium is an incredible material. What better way to use it, than to better ourselves?</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>
