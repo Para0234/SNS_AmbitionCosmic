@@ -73,7 +73,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AOTC_Gen2GeneProcessor</defName>
     <label>Cosmic Gene Processor</label>
-    <description>Harnessing the Cosmic Matter trapped in Cosmic Alloy allows this gene processor to be able to manipulate twice the qubits as lastgen. </description>
+    <description>Harnessing the Cosmic Matter trapped in Cosmic Alloy allows our gene processors to be able to manipulate twice the qubits as before. </description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
