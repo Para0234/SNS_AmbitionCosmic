@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<!--Genetics-->
 		<!--Gen 1-->
 		<defName>AOTC_StellarGenetics_Research</defName>
 		<label>Stellar Genetics</label>
@@ -31,6 +32,16 @@
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
 			<li>SNS_Research_III</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>AOTC_CosmicWastepackAtomizer_Research</defName>
+		<label>Cosmic Wastepack Atomizer</label>
+		<description>Cosmic Matter has a lot of wonderful properties. We can use it to speed up the destruction of hazardous waste.</description>
+		<baseCost>20000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II</li>
 		</prerequisites>
 	</ResearchProjectDef>
 </Defs>
