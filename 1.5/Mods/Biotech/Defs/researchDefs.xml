@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<!--Genetics-->
+		<!--Gen 1-->
+		<defName>AOTC_StellarGenetics_Research</defName>
+		<label>Stellar Genetics</label>
+		<description>With the incredible superconductive properties of Starsteel, we can upgrade our genetics equipment to create even more powerful xenotypes.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<!--Gen 2-->
+		<defName>AOTC_CosmicGenetics_Research</defName>
+		<label>Cosmic Genetics</label>
+		<description>With the advances that Cosmic Matter brings to in energy manipulation, we can further increase the potential of our genetics equipment.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<!--Gen 3-->
+		<defName>AOTC_EterniumGenetics_Research</defName>
+		<label>Project ALTER</label>
+		<description>Eternium is an incredible material. What better way to use it, than to perfect ourselves?</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III</li>
+		</prerequisites>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>AOTC_CosmicWastepackAtomizer_Research</defName>
+		<label>Cosmic Wastepack Atomizer</label>
+		<description>Cosmic Matter has a lot of wonderful properties. We can use it to speed up the destruction of hazardous waste.</description>
+		<baseCost>20000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>

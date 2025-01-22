@@ -523,7 +523,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_armor_specialization</defName>
 		<label>CHARON specialization</label>
-		<description>The CHARON armor was believed to be the perfection in terms of body armor. But perfection is ultimately subjective. By weakening certain aspects of the CHARON armor, we can improve other aspects and allow us to create specialized variants suitable to different roles.</description>
+		<description>The CHARON armor was believed to be perfection in terms of body armor. But perfection is ultimately subjective. By weakening certain aspects of the CHARON armor, we can improve other aspects, allowing us to create specialized variants suitable to different roles.</description>
 		<baseCost>150000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
