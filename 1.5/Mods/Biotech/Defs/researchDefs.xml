@@ -11,6 +11,8 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>5.55</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<!--Gen 2-->
@@ -20,8 +22,10 @@
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
-			<li>SNS_Research_II</li>
+			<li>SNS_Research_III_base</li>
 		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>5.5</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<!--Gen 3-->
@@ -31,8 +35,10 @@
 		<baseCost>150000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
-			<li>SNS_Research_III</li>
+			<li>SNS_Research_VI_base</li>
 		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>5.6</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>AOTC_CosmicWastepackAtomizer_Research</defName>
@@ -41,7 +47,9 @@
 		<baseCost>20000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
-			<li>SNS_Research_II</li>
+			<li>SNS_Research_III_base</li>
 		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>6</researchViewY>
 	</ResearchProjectDef>
 </Defs>
