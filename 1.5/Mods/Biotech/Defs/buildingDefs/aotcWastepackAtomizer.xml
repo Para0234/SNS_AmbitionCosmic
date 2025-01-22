@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <ThingDef ParentName="BuildingBase">
-        <defName>WastepackAtomizer</defName>
+        <defName>cosmicWastepackAtomizer</defName>
         <label>Cosmic Wastepack Atomizer</label>
         <description>Using the energy locked in Cosmic Alloy as a catalyst, we can use a more efficient reaction to speed up the the wastepack atomizing cycles.</description>
         <thingClass>Building_WastepackAtomizer</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
         <tickerType>Normal</tickerType>
         <graphicData>
-            <texPath>Dev/placeholderTexture</texPath>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3,2)</drawSize>
             <shadowData>
@@ -27,12 +27,12 @@
             </buildingTags>
             <ai_chillDestination>false</ai_chillDestination>
             <wastepackAtomizerBottomGraphic>
-                <texPath>Dev/placeholderTexture</texPath>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(3,2)</drawSize>
             </wastepackAtomizerBottomGraphic>
             <wastepackAtomizerWindowGraphic>
-                <texPath>Dev/placeholderTexture</texPath>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(3,2)</drawSize>
             </wastepackAtomizerWindowGraphic>
@@ -55,6 +55,7 @@
         </costList>
         <researchPrerequisites>
             <li>WastepackAtomizer</li>
+            <li>AOTC_CosmicWastepackAtomizer_Research</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
         <comps>

@@ -3,11 +3,11 @@
     <Operation Class="PatchOperationSequence">
         <operations>
             <li Class="PatchOperationAdd"> <!--Make Gen 1-3 gene processors link to Gene Assembler-->
-                <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li/linkableFacilities</xpath>
+                <xpath>/Defs/ThingDef[defName="GeneAssembler"]/comps/li[@Class="CompProperties_AffectedByFacilities"]/linkableFacilities</xpath>
                 <value>
-                    <li>AoTC_Gen1GeneProcessor</li>
-                    <li>AoTC_Gen2GeneProcessor</li>
-                    <li>AoTC_Gen3GeneProcessor</li>
+                    <li>AOTC_Gen1GeneProcessor</li>
+                    <li>AOTC_Gen2GeneProcessor</li>
+                    <li>AOTC_Gen3GeneProcessor</li>
                 </value>
             </li>
         </operations>
