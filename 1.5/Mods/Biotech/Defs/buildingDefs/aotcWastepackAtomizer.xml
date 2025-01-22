@@ -55,6 +55,7 @@
         </costList>
         <researchPrerequisites>
             <li>WastepackAtomizer</li>
+            <li>AOTC_CosmicWastepackAtomizer_Research</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
         <comps>
