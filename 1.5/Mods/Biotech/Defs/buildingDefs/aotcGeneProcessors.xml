@@ -3,7 +3,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AOTC_Gen1GeneProcessor</defName>
     <label>Stellar Gene Processor</label>
-    <description>An Improvement on the original in every way, the Stellar Gene Processor uses Starsteel's high temperature superconductivity to increase the efficiency of the quantum processing unit within.</description>
+    <description>An Improvement on the original in every way, the Stellar Gene Processor uses Starsteel's high temperature superconductivity to increase the efficiency of the quantum processing unit within. Not only that, but a miniature memory bank has been implemented to allow the processor to store genepacks by itself.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -22,7 +22,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>AOTC_GeneProcessorI_Research</li>
+      <li>AOTC_StellarGenetics_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -62,6 +62,9 @@
         <compClass>CompInspectStringGeneProcessor</compClass>
         <inspectString>Gene complexity increase</inspectString>
       </li>
+      <li Class="CompProperties_GenepackContainer">
+        <maxCapacity>12</maxCapacity>
+      </li>
       <li Class="CompProperties_Facility">
         <maxSimultaneous>100</maxSimultaneous>
         <maxDistance>15</maxDistance>
@@ -73,7 +76,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AOTC_Gen2GeneProcessor</defName>
     <label>Cosmic Gene Processor</label>
-    <description>Harnessing the Cosmic Matter trapped in Cosmic Alloy allows our gene processors to be able to manipulate twice the qubits as before. </description>
+    <description>Harnessing the Cosmic Matter trapped in Cosmic Alloy allows our gene processors to be able to manipulate twice the qubits as before. The genebank within has been laced with cosmic alloy, allowing for a larger storage.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -92,7 +95,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>AOTC_GeneProcessorII_Research</li>
+      <li>AOTC_CosmicGenetics_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -132,6 +135,9 @@
         <compClass>CompInspectStringGeneProcessor</compClass>
         <inspectString>Gene complexity increase</inspectString>
       </li>
+      <li Class="CompProperties_GenepackContainer">
+        <maxCapacity>25</maxCapacity>
+      </li>
       <li Class="CompProperties_Facility">
         <maxSimultaneous>100</maxSimultaneous>
         <maxDistance>18</maxDistance>
@@ -143,7 +149,7 @@
   <ThingDef ParentName="BuildingBase">
     <defName>AOTC_Gen3GeneProcessor</defName>
     <label>Eternium Gene Processor</label>
-    <description>Due to the wondrous properties of Eternium, this gene processor abandons qubits entirely, instead opting to use qudits as its basic unit for processing, and vastly increasing computational power.</description>
+    <description>Due to the wondrous properties of Eternium, this gene processor abandons qubits entirely, instead opting to use qudits as its basic unit for processing, and vastly increasing computational power. Eternium-based gene storage also proved to be much more efficient.</description>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
     <pathCost>14</pathCost>
@@ -162,7 +168,7 @@
     <designationCategory>Biotech</designationCategory>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
-      <li>AOTC_GeneProcessorII_Research</li>
+      <li>AOTC_EterniumGenetics_Research</li>
     </researchPrerequisites>
     <descriptionHyperlinks>
       <ThingDef>GeneAssembler</ThingDef>
@@ -201,6 +207,9 @@
       <li Class="CompProperties_InspectString">
         <compClass>CompInspectStringGeneProcessor</compClass>
         <inspectString>Gene complexity increase</inspectString>
+      </li>
+      <li Class="CompProperties_GenepackContainer">
+        <maxCapacity>100</maxCapacity>
       </li>
       <li Class="CompProperties_Facility">
         <maxSimultaneous>100</maxSimultaneous>
