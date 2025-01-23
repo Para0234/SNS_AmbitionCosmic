@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-
-<name>Ambition of the Cosmic</name>
-<author>explodoboy</author>
-<packageId>explodoboy.SNSAmbitionCosmic</packageId>
+<name>Ambition of the Cosmic [Continued]</name>
+<author>Para0234</author>
+<packageId>Para0234.SNSAmbitionCosmic</packageId>
 <supportedVersions><li>1.5</li></supportedVersions>
 <modDependencies>
     <li>
@@ -22,7 +21,7 @@
   <loadBefore>
     <li>explodoboy.SNSAmbitionCosmic.RoyaltyAddon</li>
     <li>explodoboy.SNSAmbitionCosmic.TimelessSpeciesMod</li>
-    <li>explodoboy.SNSAmbitionCosmic.Gen4Addon</li>
+    <li>para0234.SNSAmbitionCosmicGen4Addon</li>
     <li>explodoboy.SNSAmbitionCosmic.CEPatch</li>
     <li>explodoboy.SNSAmbitionCosmic.YGTFReskin</li>
     <li>explodoboy.SNSAmbitionCosmic.JokeReskin</li>
@@ -36,5 +35,7 @@
 
 Ambition of the Cosmic adds almost everything you can think of that's in vanilla RimWorld, from weapons to floor tiles to hydroponics to literal resource printers, in three 'generations' that dramatically increase in power per generation, until you are utterly overpowered and have the power to utterly crush the vast majority of modded factions.
 
-This mod was originally made by Aion Algos (formerly known as Alestor) and was known as Science Never Stops. This mod was once called Science Never Stops: Ambition of the Cosmic, but AOTC has moved so far away from the original vision of Aion's SNS, that I've decided to remove the 'Science Never Stops' portion of the mod. The original SNS and this mod, AOTC, are not compatible and should NOT be combined, or things will break.</description>
+This mod was originally made by Aion Algos (formerly known as Alestor) and was known as Science Never Stops. This mod was once called Science Never Stops: Ambition of the Cosmic, but AOTC has moved so far away from the original vision of Aion's SNS, that I've decided to remove the 'Science Never Stops' portion of the mod. The original SNS and this mod, AOTC, are not compatible and should NOT be combined, or things will break.
+
+New creator's note : I took over the mod after Explodoboy announced that he would no longer be keeping the mod up-to-date due to no longer having the time to do so.</description>
 </ModMetaData>
