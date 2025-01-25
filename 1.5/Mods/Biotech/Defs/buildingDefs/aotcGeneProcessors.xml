@@ -20,6 +20,7 @@
     <canOverlapZones>false</canOverlapZones>
     <defaultPlacingRot>North</defaultPlacingRot>
     <designationCategory>Biotech</designationCategory>
+	<tickerType>Rare</tickerType>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
       <li>AOTC_StellarGenetics_Research</li>
@@ -96,6 +97,7 @@
     <canOverlapZones>false</canOverlapZones>
     <defaultPlacingRot>North</defaultPlacingRot>
     <designationCategory>Biotech</designationCategory>
+	<tickerType>Rare</tickerType>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
       <li>AOTC_CosmicGenetics_Research</li>
@@ -172,6 +174,7 @@
     <canOverlapZones>false</canOverlapZones>
     <defaultPlacingRot>North</defaultPlacingRot>
     <designationCategory>Biotech</designationCategory>
+	<tickerType>Rare</tickerType>
     <uiOrder>9321</uiOrder>
     <researchPrerequisites>
       <li>AOTC_EterniumGenetics_Research</li>
