@@ -196,7 +196,7 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <SNS_Apparel_CosmicPowerArmorHelmet>1</SNS_Apparel_CosmicPowerArmorHelmet>
+      <SNS_Apparel_StableMatterPowerArmorHelmet>1</SNS_Apparel_StableMatterPowerArmorHelmet>
       <SNS_Eternium>50</SNS_Eternium>
     </costList>
     <equippedStatOffsets>
@@ -283,7 +283,7 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <costList>
-      <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
+      <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
       <SNS_Eternium>150</SNS_Eternium>
     </costList>
     <apparel>
@@ -348,7 +348,7 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <SNS_Apparel_CosmicPowerArmorHelmet>1</SNS_Apparel_CosmicPowerArmorHelmet>
+      <SNS_Apparel_StableMatterPowerArmorHelmet>1</SNS_Apparel_StableMatterPowerArmorHelmet>
       <SNS_Eternium>50</SNS_Eternium>
     </costList>
     <equippedStatOffsets>
@@ -435,7 +435,7 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <costList>
-      <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
+      <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
       <SNS_Eternium>150</SNS_Eternium>
     </costList>
     <apparel>
@@ -500,7 +500,7 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <SNS_Apparel_CosmicPowerArmorHelmet>1</SNS_Apparel_CosmicPowerArmorHelmet>
+      <SNS_Apparel_StableMatterPowerArmorHelmet>1</SNS_Apparel_StableMatterPowerArmorHelmet>
       <SNS_Eternium>50</SNS_Eternium>
     </costList>
     <equippedStatOffsets>
@@ -586,7 +586,7 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <costList>
-      <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
+      <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
       <SNS_Eternium>150</SNS_Eternium>
     </costList>
     <apparel>
@@ -651,7 +651,7 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <SNS_Apparel_CosmicPowerArmorHelmet>1</SNS_Apparel_CosmicPowerArmorHelmet>
+      <SNS_Apparel_StableMatterPowerArmorHelmet>1</SNS_Apparel_StableMatterPowerArmorHelmet>
       <SNS_Eternium>50</SNS_Eternium>
     </costList>
     <equippedStatOffsets>
@@ -744,7 +744,7 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <costList>
-      <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
+      <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
       <SNS_Eternium>150</SNS_Eternium>
     </costList>
     <apparel>
@@ -809,7 +809,7 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <costList>
-      <SNS_Apparel_CosmicPowerArmorHelmet>1</SNS_Apparel_CosmicPowerArmorHelmet>
+      <SNS_Apparel_StableMatterPowerArmorHelmet>1</SNS_Apparel_StableMatterPowerArmorHelmet>
       <SNS_Eternium>50</SNS_Eternium>
     </costList>
     <equippedStatOffsets>
@@ -898,7 +898,7 @@
       <li>HiTechArmor</li>
     </tradeTags>
     <costList>
-      <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
+      <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
       <SNS_Eternium>150</SNS_Eternium>
     </costList>
     <apparel>
