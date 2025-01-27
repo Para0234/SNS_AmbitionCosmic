@@ -9,7 +9,7 @@
     <pathCost>14</pathCost>
     <rotatable>false</rotatable>
     <graphicData>
-      <texPath>Dev/placeholderTexture</texPath>
+      <texPath>Things/Building/Biotech/GeneProcessor1/GeneProcessor1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2, 2)</drawSize>
       <shadowData>
@@ -86,7 +86,7 @@
     <pathCost>14</pathCost>
     <rotatable>false</rotatable>
     <graphicData>
-      <texPath>Dev/placeholderTexture</texPath>
+      <texPath>Things/Building/Biotech/GeneProcessor2/GeneProcessor2</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2, 2)</drawSize>
       <shadowData>
@@ -163,7 +163,7 @@
     <pathCost>14</pathCost>
     <rotatable>false</rotatable>
     <graphicData>
-      <texPath>Dev/placeholderTexture</texPath>
+      <texPath>Things/Building/Biotech/GeneProcessor3/GeneProcessor3</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <drawSize>(2, 2)</drawSize>
       <shadowData>
