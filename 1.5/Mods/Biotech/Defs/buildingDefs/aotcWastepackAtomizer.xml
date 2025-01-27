@@ -27,12 +27,12 @@
             </buildingTags>
             <ai_chillDestination>false</ai_chillDestination>
             <wastepackAtomizerBottomGraphic>
-                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer_BottomLayer</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(3,2)</drawSize>
             </wastepackAtomizerBottomGraphic>
             <wastepackAtomizerWindowGraphic>
-                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizerWindow</texPath>
                 <graphicClass>Graphic_Multi</graphicClass>
                 <drawSize>(3,2)</drawSize>
             </wastepackAtomizerWindowGraphic>
