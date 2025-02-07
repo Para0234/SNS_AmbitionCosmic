@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
 	<ThingDef ParentName="ResourceBase">
@@ -75,8 +75,8 @@
 				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
 				<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
 				<ArmorRating_Heat>1.4</ArmorRating_Heat>
-				<Insulation_Cold>15</Insulation_Cold>
-				<Insulation_Heat>15</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>1.5</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>1.5</StuffEffectMultiplierInsulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
 				<Beauty>2.5</Beauty>
 			</statFactors>
@@ -156,8 +156,8 @@
 				<ArmorRating_Blunt>1.4</ArmorRating_Blunt>
 				<ArmorRating_Sharp>1.4</ArmorRating_Sharp>
 				<ArmorRating_Heat>1.4</ArmorRating_Heat>
-				<Insulation_Cold>15</Insulation_Cold>
-				<Insulation_Heat>15</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>2</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
 				<Beauty>2.5</Beauty>
 			</statFactors>
@@ -244,8 +244,8 @@
 				<ArmorRating_Blunt>4</ArmorRating_Blunt>
 				<ArmorRating_Sharp>4</ArmorRating_Sharp>
 				<ArmorRating_Heat>4</ArmorRating_Heat>
-				<Insulation_Cold>25</Insulation_Cold>
-				<Insulation_Heat>25</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>5</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>5</StuffEffectMultiplierInsulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
 				<Beauty>5</Beauty>
 			</statFactors>
@@ -321,9 +321,9 @@
 				<ArmorRating_Blunt>4</ArmorRating_Blunt>
 				<ArmorRating_Sharp>4</ArmorRating_Sharp>
 				<ArmorRating_Heat>4</ArmorRating_Heat>
-				<Insulation_Cold>25</Insulation_Cold>
-				<Insulation_Heat>25</Insulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
+				<StuffEffectMultiplierInsulation_Cold>5</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>5</StuffEffectMultiplierInsulation_Heat>
 				<Beauty>5</Beauty>
 			</statFactors>
 		</stuffProps>
@@ -595,8 +595,8 @@
 				<ArmorRating_Blunt>10</ArmorRating_Blunt>
 				<ArmorRating_Sharp>10</ArmorRating_Sharp>
 				<ArmorRating_Heat>10</ArmorRating_Heat>
-				<Insulation_Cold>80</Insulation_Cold>
-				<Insulation_Heat>80</Insulation_Heat>
+				<StuffEffectMultiplierInsulation_Cold>25</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>25</StuffEffectMultiplierInsulation_Heat>
 				<DeteriorationRate>-1.0</DeteriorationRate>
 				<Beauty>8</Beauty>
 			</statFactors>
