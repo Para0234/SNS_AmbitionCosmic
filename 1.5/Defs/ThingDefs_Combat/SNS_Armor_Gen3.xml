@@ -209,7 +209,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsMarksmanHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -360,7 +360,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsMarksmanHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -511,7 +511,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsMarksmanHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -666,7 +666,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsMarksmanHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -823,7 +823,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsMarksmanHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
