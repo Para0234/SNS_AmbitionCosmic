@@ -1,1 +1,0 @@
-The Cosmic Lance's image took a whole lot of liberties from the Rifle (most specifically, the grip, trigger, and stock) and the gun wouldn't look so nice without it.
