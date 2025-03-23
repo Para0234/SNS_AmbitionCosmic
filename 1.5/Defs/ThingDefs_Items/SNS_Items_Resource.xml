@@ -177,7 +177,7 @@
 		<description>Cosmic Alloy is an enhanced Starsteel, overcharged with high amounts of Cosmic Matter. Cosmic Alloy is superior to its predecessor in every way, being softer to the touch, even lighter, easier to build with, more impact-resistant, flexible, and antimicrobial.\n\nIt is truly the perfect material.</description>
 		<graphicData>
 			<texPath>Things/Item/Resource/SNS/CosmicAlloy/CosmicAlloy</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
 		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
