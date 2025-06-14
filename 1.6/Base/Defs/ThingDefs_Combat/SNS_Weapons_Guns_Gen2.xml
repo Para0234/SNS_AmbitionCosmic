@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef Name="SNS_Projectile_CosmicPistolBullet" ParentName="BaseBullet">
+		<defName>SNS_Pistol_GenII_Bullet</defName>
+		<label>cosmic pistol projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen2/Bullet_Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>16</damageAmountBase>
+			<armorPenetrationBase>0.9</armorPenetrationBase>
+			<speed>150</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Pistol_GenII</defName>
+		<label>cosmic pistol</label>
+		<description>An advanced pistol that shoots low-energy Cosmic Matter at suprising velocities. Neglibible recoil and unexpected accuracy.\n\nThe cosmic pistol can be rarely seen on ultra-rich Glitterworlds by the highest classes of military personnel for its extreme reliability, lethality, and cost. It is also used by higher-class military personnel or special operations units by Cosmic Empire militaries.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen2/Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>0.3</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>0.30</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>12</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>15</SNS_CosmicMatter>
+			<SNS_Component_GenII>1</SNS_Component_GenII>
+		</costList>
+		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>2</SNS_Unobtainium></smeltProducts-->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Pistol_GenII_Bullet</defaultProjectile>
+				<warmupTime>0.10</warmupTime>
+				<range>35</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef Name="SNS_Projectile_CosmicRifleBullet" ParentName="BaseBullet">
+		<defName>SNS_Rifle_GenII_Bullet</defName>
+		<label>cosmic rifle projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen2/Bullet_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>0.6</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Rifle_GenII</defName>
+		<label>cosmic rifle</label>
+		<description>A fully automatic rifle that propels low-energy Cosmic Matter at extreme velocities, without producing any recoil whatsoever. Its projectiles are the weakest of cosmic weapons, but its firerate is more than enough to compensate.\n\nThe cosmic rifle can be rarely seen on ultra-rich Glitterworlds by the highest classes of military personnel for its extreme reliability, lethality, and cost. It is also used by higher-class military personnel or special operations units by Cosmic Empire militaries.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen2/Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<WorkToMake>5100</WorkToMake>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>12</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>70</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>20</SNS_CosmicMatter>
+			<SNS_Component_GenII>3</SNS_Component_GenII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Rifle_GenII_Bullet</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>50</range>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<burstShotCount>6</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet" Name="SNS_Shotgun_Gen2_Projectile">
+		<defName>SNS_Shotgun_GenII_Bullet</defName>
+		<label>cosmic shotgun projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen2/Bullet_Shotgun_Clump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<armorPenetrationBase>1.5</armorPenetrationBase>
+			<speed>70</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Shotgun_GenII</defName>
+		<label>cosmic shotgun</label>
+		<description>An advanced shotgun that fires a devastating clump of high-energy plasma projectiles that excel at obliterating armor. While its range is unarguably terrible (as to be expected from a shotgun), its power and armor-shattering properties are more than enough compensation.\n\nThe cosmic shotgun can be rarely seen on ultra-rich Glitterworlds by the highest classes of military personnel for its extreme reliability, lethality, and cost. It is also used by higher-class military personnel or special operations units by Cosmic Empire militaries.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen2/Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.0</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.93</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<RangedWeapon_Cooldown>0.20</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>12</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>90</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>20</SNS_CosmicMatter>
+			<SNS_Component_GenII>4</SNS_Component_GenII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Shotgun_GenII_Bullet</defaultProjectile>
+				<warmupTime>0.4</warmupTime>
+				<range>20</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef Name="SNS_Projectile_CosmicSniperBullet" ParentName="BaseBullet">
+		<defName>SNS_Sniper_GenII_Bullet</defName>
+		<label>cosmic sniper projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen2/Bullet_Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>80</damageAmountBase>
+			<armorPenetrationBase>1.25</armorPenetrationBase>
+			<speed>250</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Sniper_GenII</defName>
+		<label>cosmic sniper</label>
+		<description>An advanced high-power sniper made from Cosmic Alloy. Will leave a red mist wherever it hits, even if it doesn't kill the target in a single shot. Almost always hits its shots at long ranges. Takes a while to load and shoot, but one shot is all you will ever need.\n\nThe cosmic sniper can be rarely seen on ultra-rich Glitterworlds by the highest classes of military personnel for its extreme reliability, lethality, and cost. It is also used by higher-class military personnel or special operations units by Cosmic Empire militaries.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen2/Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>6000</WorkToMake>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Mass>1.0</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>1.75</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>12</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>120</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>20</SNS_CosmicMatter>
+			<SNS_Component_GenII>8</SNS_Component_GenII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Sniper_GenII_Bullet</defaultProjectile>
+				<warmupTime>1.75</warmupTime>
+				<range>100</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+	<ThingDef Name="SNS_Projectile_CosmicLanceBullet" ParentName="BaseBullet">
+		<defName>SNS_CosmicLance_Bullet</defName>
+		<label>Cosmic Lance projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen2/Bullet_Lance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>BombSuper</damageDef>
+			<damageAmountBase>250</damageAmountBase>
+			<explosionRadius>1</explosionRadius>
+			<speed>250</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_CosmicLance</defName>
+		<label>Handheld Cosmic Lance</label>
+		<description>A weapon made of pure Cosmic Alloy, further supercharged with pure Cosmic Matter, the Handheld Cosmic Lance is a miniature version of the Cosmic Lance, a supermassive ship weapon. It charges slowly and takes a long time to cool down between shots, but is able to utterly devastate whatever its projectiles hit. Few things are able to withstand more than a single shot from the Lance.\n\nWhile it excels at long range and extremely close range, it is highly inconsistent at medium ranges. Care should be taken with the Lance since its explosions can accidentially destroy things.\n\nThe full-sized ship weapon Cosmic Lance is both extremely rare and feared for its ability to devastate entire planets with just a few Cosmic Lances firing down from orbit, despite it needing a long time to cool down between shots.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen2/CosmicLance/CosmicLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<MaxHitPoints>1400</MaxHitPoints>
+			<Mass>9</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>10.00</RangedWeapon_Cooldown>
+			<DeteriorationRate>0.00</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>150</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>150</SNS_CosmicMatter>
+			<SNS_Component_GenII>15</SNS_Component_GenII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_CosmicLance_Bullet</defaultProjectile>
+
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+
+				<forcedMissRadius>0.2</forcedMissRadius>
+				<warmupTime>4</warmupTime>
+				<range>120</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>30</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>10</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
+
+</Defs>

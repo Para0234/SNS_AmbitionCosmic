@@ -1,0 +1,9 @@
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\bin\Release\InfiniteResearch.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\bin\Release\InfiniteResearch.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\bin\Release\0Harmony.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\bin\Release\0Harmony.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Release\InfiniteResearch.csproj.AssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Release\InfiniteResearch.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Release\Infinite.062D0126.Up2Date
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Release\InfiniteResearch.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Release\InfiniteResearch.pdb

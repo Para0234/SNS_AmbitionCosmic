@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Cosmic Call Components -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicCallComponent_I</defName>
+		<label>I Want To Be Whole</label>
+		<description>Obtain the Fracture of Greatness.</description>
+
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicCall_Component_I</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCallComponentA</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicCallComponent_II</defName>
+		<label>So I'll Lend You My Essence</label>
+		<description>Obtain the Forbidden Knowledge.</description>
+
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicCall_Component_II</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCallComponentB</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicCallComponent_III</defName>
+		<label>For Your Rusted Throne</label>
+		<description>Obtain the Beckoning of Desire.</description>
+
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicCall_Component_III</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCallComponentC</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicCallComponent_IV</defName>
+		<label>And You Could Bring Back The Light</label>
+		<description>Obtain the Astral Refuter.</description>
+
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicCall_Component_IV</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCallComponentD</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicCallComponent_V</defName>
+		<label>I'll Hide Away In A Castle On The Sea</label>
+		<description>Obtain the Amplifier Of Ambition.</description>
+
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicCall_Component_V</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCallComponentE</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

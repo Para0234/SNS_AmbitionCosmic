@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_Unobtainer</defName>
+		<label>Cosmic Forge</label>
+		<description>The Cosmic Forge collects Cosmic Matter from the Eternal Planes without input, and then can weave it into a Plasteel and Gold catalyst in the form of Starsteel, along with providing other ways to refine Starsteel.\n\nStats: Consumes 30K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/Unobtainer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>7500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>2</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>30000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_Unobtainer_I</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_I</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_Constructor</defName>
+		<label>Atomic Fabricator</label>
+		<description>The Atomic Fabricator is able to assemble many items from pure Cosmic Matter with great speed and ease. Such a wonderful device.\n\nStats: Consumes 10K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/AtomicFabricator/AtomFabricator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_CosmicAlloy>100</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>200</SNS_CosmicMatter>
+			<SNS_Component_GenII>10</SNS_Component_GenII>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>30000</WorkToBuild>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>5</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>10000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(150,150,255,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicDrawer_II</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_IV</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_CosmicDrawer</defName>
+		<label>Cosmic Manipulator</label>
+		<description>The Cosmic Manipulator draws pure Cosmic Matter from the Eternal Plane, trading an vast amount of energy and time for either stable, well-contained Cosmic Matter or the creation of a highly pure Cosmic Alloy.\n\nStats: Consumes 100K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/CosmicDrawer/CosmicDrawer</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costStuffCount>75</costStuffCount>
+		<costList>
+			<SNS_Unobtainium>50</SNS_Unobtainium>
+			<Plasteel>25</Plasteel>
+			<ComponentSpacer>12</ComponentSpacer>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>15000</WorkToBuild>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>5</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>100000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>4</glowRadius>
+				<glowColor>(150,150,255,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicDrawer_I</li>
+					<li>SNS_Linkable_CosmicDrawer_II</li>
+					<li>SNS_Linkable_CosmicDrawer_III</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_III_base</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_CosmicCall</defName>
+		<label>R.I.F.T. Fabricator</label>
+		<description>The ultimate of atomic fabrication technology, the R.I.F.T. Fabricator is the flawless combination of a Cosmic Manipulator and an Atomic Fabricator, able to both draw Cosmic Matter and fabricate matter, and at a much greater speed than its predecessor.\n\nIts production speed can be further boosted by buildable modules.\n\nStats: Consumes 1.5M Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/CosmicCall/CosmicCall</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(2,2)</drawSize>
+		</graphicData>
+		<size>(2,2)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_CosmicAlloy>150</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>500</SNS_CosmicMatter>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>45000</WorkToBuild>
+			<MaxHitPoints>4500</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>5</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1500000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(150,150,255,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_CosmicCall_I</li>
+					<li>SNS_Linkable_CosmicCall_II</li>
+					<li>SNS_Linkable_CosmicCall_III</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_V_breakthrough</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!-- Pinnacle of Creation item. -->
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_PinnacleFabricator</defName>
+		<label>The Utopia Device</label>
+		<description>This device is perfection itself, a fabricator imbued with Eternium. The device fabricates things out of pure Eternium rather than from Cosmic Matter, allowing things to be constructed at a pace never seen before.\n\nThis item is rediculously powerful and not balanced in the slightest, nor will it ever be. This is your reward for achieving the Pinnacle of Creation. Good luck.\n\nStats: Consumes 150K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/PinnacleFabricator/PinnacleFabricator</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(3,3)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-2)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_CosmicAlloy>500</SNS_CosmicAlloy>
+			<SNS_Eternium>525</SNS_Eternium>
+			<SNS_Component_GenII>150</SNS_Component_GenII>
+			<SNS_Component_GenIII>45</SNS_Component_GenIII>
+		</costList>
+		<useHitPoints>False</useHitPoints>
+		<statBases>
+			<WorkToBuild>45000</WorkToBuild>
+			<MaxHitPoints>25000</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>5</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>150000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>30</glowRadius>
+				<glowColor>(150,150,255,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_VII</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<DesignatorDropdownGroupDef>
+		<defName>SNS_DDG_BionicCraftingStation</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- bionic crafting stations -->
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_BionicCraftingStation_GenI</defName>
+		<label>stellar bionic forge</label>
+		<description>A high-precision station where Generation-1 Stellar bionics are made.\n\nStats: Consumes 5K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<designatorDropdown>SNS_DDG_BionicCraftingStation</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/BionicCraftingStation/BionicCraftingStation1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_Unobtainium>15</SNS_Unobtainium>
+			<ComponentSpacer>6</ComponentSpacer>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>150</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>5000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_II_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_BionicCraftingStation_GenII</defName>
+		<label>cosmic bionic forge</label>
+		<description>A very-high-precision station where Generation-2 Cosmic bionics are made.\n\nStats: Consumes 25K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<designatorDropdown>SNS_DDG_BionicCraftingStation</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/BionicCraftingStation/BionicCraftingStation2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
+			<SNS_Component_GenII>2</SNS_Component_GenII>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>12000</WorkToBuild>
+			<MaxHitPoints>450</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>25000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_III_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_BionicCraftingStation_GenIII</defName>
+		<label>enigmatic bionic forge</label>
+		<description>An extremely precise station where Generation-3 Enigmatic bionics are made.\n\nStats: Consumes 75K Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<designatorDropdown>SNS_DDG_BionicCraftingStation</designatorDropdown>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/BionicCraftingStation/BionicCraftingStation3</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>2</SNS_Component_GenIII>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>50000</WorkToBuild>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>75000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>ToolCabinet</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_VI_bionics</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+	<ThingDef ParentName="BenchBase">
+		<defName>Table_SNS_NutrientProcessor</defName>
+		<label>Nutrient Processor</label>
+		<description>The Nutrient Processor processes input nutrients to produce nutrient paste for further processing into shelf-stable nutrient bars. It also can infuse various materials into food to make higher-quality meals.\n\nStats: Consumes 1250 Watts.</description>
+		<thingClass>Building_WorkTable</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/NutrientProcessor/NutrientProcessor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,2)</drawSize>
+		</graphicData>
+		<size>(3,2)</size>
+		<blockWind>false</blockWind>
+		<rotatable>true</rotatable>
+		<hasInteractionCell>True</hasInteractionCell>
+		<interactionCellOffset>(0,0,-1)</interactionCellOffset>
+		<fillPercent>0.4</fillPercent>
+		<pathCost>40</pathCost>
+		<passability>PassThroughOnly</passability>
+		<surfaceType>Item</surfaceType>
+		<designationCategory>Production</designationCategory>
+		<altitudeLayer>Building</altitudeLayer>
+		<costList>
+			<Plasteel>35</Plasteel>
+			<SNS_Unobtainium>15</SNS_Unobtainium>
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<useHitPoints>True</useHitPoints>
+		<statBases>
+			<WorkToBuild>7500</WorkToBuild>
+			<MaxHitPoints>180</MaxHitPoints>
+			<Flammability>0.0</Flammability>
+			<Cleanliness>2</Cleanliness>
+		</statBases>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_AffectedByFacilities">
+				<linkableFacilities>
+					<li>SNS_Linkable_Unobtainer_I</li>
+				</linkableFacilities>
+			</li>
+		</comps>
+		<inspectorTabs>
+			<li>ITab_Bills</li>
+		</inspectorTabs>
+		<building>
+			<spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+		</building>
+		<recipes></recipes>
+		<researchPrerequisites>
+			<li>SNS_Research_II_food</li>
+		</researchPrerequisites>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+	</ThingDef>
+
+</Defs>

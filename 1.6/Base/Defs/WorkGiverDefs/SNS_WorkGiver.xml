@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_Unobtainer</defName>
+		<label>do bills at Cosmic Forge</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_Unobtainer</li>
+		</fixedBillGiverDefs>
+		<verb>produce</verb>
+		<gerund>producing</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_Constructor</defName>
+		<label>do bills at Atomic Fabricator</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_Constructor</li>
+		</fixedBillGiverDefs>
+		<verb>Atomically Fabricate</verb>
+		<gerund>Atomically Fabricating</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_CosmicDrawer</defName>
+		<label>do bills at Cosmic Manipulator</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_CosmicDrawer</li>
+		</fixedBillGiverDefs>
+		<verb>Draw Cosmic Matter</verb>
+		<gerund>Drawing Cosmic Matter</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_CosmicCall</defName>
+		<label>do bills at The Cosmic Call</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_CosmicCall</li>
+		</fixedBillGiverDefs>
+		<verb>Summon Matter</verb>
+		<gerund>Summoning Matter</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_PinnacleFabricator</defName>
+		<label>do bills at The Utopia Device</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_PinnacleFabricator</li>
+		</fixedBillGiverDefs>
+		<verb>Construct Matter</verb>
+		<gerund>Constructing Matter</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_BionicCraftingStations</defName>
+		<label>do bills at bionic crafting stations</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_BionicCraftingStation_GenI</li>
+			<li>Table_SNS_BionicCraftingStation_GenII</li>
+			<li>Table_SNS_BionicCraftingStation_GenIII</li>
+		</fixedBillGiverDefs>
+		<verb>Manufacture Bionics</verb>
+		<gerund>Manufacturing Bionics</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<WorkGiverDef>
+		<defName>DoBills_SNS_NutrientProcessor</defName>
+		<label>do bills at nutrient processor</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Crafting</workType>
+		<priorityInType>100</priorityInType>
+		<!--<priorityInType>130</priorityInType>-->
+		<fixedBillGiverDefs>
+			<li>Table_SNS_NutrientProcessor</li>
+		</fixedBillGiverDefs>
+		<verb>Process nutrients into food</verb>
+		<gerund>Processing nutrients into food</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+</Defs>
