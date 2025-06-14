@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CosmicMatterTrade_single</defName>
+		<label>Indirect Money Printer</label>
+		<description>Sell any amount of Cosmic Matter for Silver.</description>
+
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>1</count>
+			<singleTransaction>true</singleTransaction>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicMatterTradeA</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CosmicMatterTrade_hundred</defName>
+		<label>Net Positive Economy</label>
+		<description>Sell a hundred Cosmic Matter in a single transaction.</description>
+
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>100</count>
+			<singleTransaction>true</singleTransaction>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicMatterTradeB</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CosmicMatterTrade_milestone</defName>
+		<label>You're Never Going To Need Silver Again</label>
+		<description>Sell ten-thousand (10,000) Cosmic Matter total. Does [not] have to be done all in one transaction.</description>
+
+		<tracker Class="AchievementsExpanded.TraderTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>10000</count>
+			<singleTransaction>false</singleTransaction>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicMatterTradeC</texPath>
+		<points>30</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

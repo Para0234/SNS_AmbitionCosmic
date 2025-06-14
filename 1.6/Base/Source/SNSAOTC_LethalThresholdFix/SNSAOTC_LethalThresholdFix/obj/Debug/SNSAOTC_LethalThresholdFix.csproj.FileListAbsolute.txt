@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Science Never Stops - Ambition of the Cosmic\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Science Never Stops - Ambition of the Cosmic\1.2\Assemblies\SNSAOTC_LethalThresholdFix.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Science Never Stops - Ambition of the Cosmic\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\Science Never Stops - Ambition of the Cosmic\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.csprojAssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.csproj.AssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_LethalThresholdFix.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\1.2\Assemblies\SNSAOTC_LethalThresholdFix.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Debug\SNSAOTC_.E138E61F.Up2Date

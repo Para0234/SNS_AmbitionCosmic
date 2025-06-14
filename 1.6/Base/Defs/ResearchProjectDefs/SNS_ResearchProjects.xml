@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<!-- Generation 0 -->
+	<ResearchProjectDef ParentName="ShipResearchProjectBase">
+		<defName>SNS_Research_0</defName>
+		<label>Pushing The Limits</label>
+		<description>From the dawn of our civilization we have been in the shadow of the ancient's Cosmic Matter, a material whose perfection transcends our very perception of reality. We've found the lock, all we've got to do now is make the key.</description>
+		<baseCost>10000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>ShipComputerCore</li>
+			<li>ShipEngine</li>
+			<li>ShipReactor</li>
+			<li>ShipCryptosleep</li>
+			<li>ShipSensorCluster</li>
+		</prerequisites>
+		<researchViewX>20</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 1 -->
+
+	<ResearchProjectDef Name="SNS_Research_Base" Abstract="True">
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>MultiAnalyzer</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef Name="SNS_Research_Base_GenI" ParentName="SNS_Research_Base" Abstract="True">
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>SNS_Linkable_Unlocker_GenI</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef Name="SNS_Research_Base_GenII" ParentName="SNS_Research_Base" Abstract="True">
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>SNS_Linkable_Unlocker_GenII</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef Name="SNS_Research_Base_GenIII" ParentName="SNS_Research_Base" Abstract="True">
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<requiredResearchFacilities>
+			<li>SNS_Linkable_Unlocker_GenIII</li>
+		</requiredResearchFacilities>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_I</defName>
+		<label>Stellar Steel</label>
+		<description>It is time that we harnessed the power of Cosmic Matter on this planet. Through the investigation of Cosmic Matter's influence and reaction to various materials, we could hopefully create an alloy strong enough to house the endless power of Cosmic Matter.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_0</li>
+		</prerequisites>
+		<researchViewX>21</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_I_linkable</defName>
+		<label>Advanced Starsteel Production</label>
+		<description>Our current methods of developing Starsteel are rather inefficient, as it is highly difficult to prepare for the next step of Starsteel production while currently working on one stage. If we can devise a way to prep for a later stage of Starsteel production, we could theoretically improve the speed of the Cosmic Forge drastically.</description>
+		<baseCost>20000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_0</li>
+		</prerequisites>
+		<researchViewX>21</researchViewX>
+		<researchViewY>1.6</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_bionics</defName>
+		<label>Stellar Bionics</label>
+		<description>The bionic limbs of today suffer from the truth that they have limits. There are just things bionics cannot achieve alone, even the grand Archotech set of bionics often cannot rise to the occasion.\n\nSo, we will turn to Starsteel to make limbs both precise and tough, able to last a soldier and sate a mechanic.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>0.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_wep</defName>
+		<label>Cosmic Weaponisation</label>
+		<description>Starsteel can withstand extreme temperatures, and Cosmic Matter can create those extreme temperatures that Starsteel is made to withstand. To weaponize this...\n\nIt would surely be a most fruitful endeavor.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>1.05</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_armor</defName>
+		<label>Stellar Armors</label>
+		<description>Starsteel can withstand intense pressures and take an extreme amount of damage. It would logically make the perfect armor, able to withstand all forces with ease.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>1.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_pwr</defName>
+		<label>Cosmic Energy</label>
+		<description>Cosmic Matter contains vast amounts of energy, energies too difficult to extract under normal circumstances to make it a reality. If we can figure out how to safely extract this energy, we could potentially generate a truly endless amounts of energy.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_hydroponics</defName>
+		<label>Cosmic Hydroponics</label>
+		<description>Hydroponics Basins can be made significantly more efficient with the introduction of a more intensive nutrient bath with the light sprinking of Starsteel, nearly tripling the effectiveness of Hydroponics-based technology.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>2.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_medicine</defName>
+		<label>Stellar Medicinals</label>
+		<description>Starsteel boasts incredible antimicrobial properties, to a point that we could better our existing medicines just by replacing a few tools.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>3.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_food</defName>
+		<label>Perfected Food Preparation</label>
+		<description>To reach for the stars we needed both full rockets and full stomachs. Let us ensure we can do both for the long journey ahead of us!\n\nFood is cooked just like any other meals, on the electric/fueled stove.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>3.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_drugs</defName>
+		<label>Advanced Drug Production</label>
+		<description>Recreational and functional drugs of today are rather flawed, most having various side-effects and/or long-term damage that cause great risk--especially for those who lack self-control. While we cannot re-create them perfectly, we can at least try to make something better.\n\nAnything unlocked by this technology are either made in a Stove or the Drug Lab.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>4.35</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_furniture</defName>
+		<label>Next-Generation Recreation</label>
+		<description>While our existing methods of recreation are perfectly fine, there are still many things that we could improve to better our lives, primarily in the consideration of AI-applications.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>22</researchViewX>
+		<researchViewY>4.95</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 1.5 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_bridge</defName>
+		<label>Cosmic Theory</label>
+		<description>We must reach higher, and grasp beyond even the Stars themselves. We must sieze the very fabric of the universe to reach our final destination. We must achieve purity, we must achieve perfection, we must achieve eternity. We must draw from the very source, find the key to our desires of a cosmic age.</description>
+		<baseCost>17500</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II_bionics</li>
+			<li>SNS_Research_II_wep</li>
+			<li>SNS_Research_II_armor</li>
+			<li>SNS_Research_II_pwr</li>
+			<li>SNS_Research_II_hydroponics</li>
+			<li>SNS_Research_II_medicine</li>
+			<li>SNS_Research_II_food</li>
+			<li>SNS_Research_II_drugs</li>
+			<li>SNS_Research_II_furniture</li>
+		</prerequisites>
+		<researchViewX>23</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 2 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_base</defName>
+		<label>The Second Generation</label>
+		<description>Meeting the absolute zenith of human technology, we achieve the Second Generation of the Ancient's arcane technologies.\n\nThis technology unlocks the Cosmic Manipulator, which allows you to either make Cosmic Matter or the legendary Cosmic Alloy.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_II_bridge</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_linkable</defName>
+		<label>Advanced Cosmic Matter Stabilization</label>
+		<description>Our current methods of Cosmic Matter manipulation is crude, drawing chaotic Cosmic Matter almost too unstable to exist in our reality, requiring extreme patience and care when attempting to work with it or draw any remotely stable amount of it. While we can't magically stumble upon a less chaotic varient of Cosmic Matter, we can artificially make it more stable and thus easier to work with.</description>
+		<baseCost>32500</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
+		<researchViewY>1.6</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_bionics</defName>
+		<label>Cosmic Bionics</label>
+		<description>Just meeting the level of Archotech limbs is not enough. Just like everything else we've made, we must soar beyond the technologies of old and embrace the new, so that we can perisist. Nothing will break our will, or our limbs.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>0.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_weaponry</defName>
+		<label>Cosmic Weapons Generation II</label>
+		<description>What we have is not enough. We must grow stronger, more powerful.\n\nAnd perhaps, we can even make something of pure terror, in the process.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_armor</defName>
+		<label>Cosmic Power Armor</label>
+		<description>Armor made of Starsteel is simply put, not enough. We must push further, imbue Power Armor with the might of Cosmic Matter and Cosmic Alloy. This armor shall withstand all the forces of Eternity!</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>1.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_power</defName>
+		<label>Cosmic Energy Generation II</label>
+		<description>The Generation II Cosmic Matter reactor does not rely on a catalyst to produce endless amounts of energy, but instead allows direct inserting of Cosmic Matter into the reactor, for a much cleaner and longer burn and even higher generation rate.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_hydroponics</defName>
+		<label>Cosmic Hydroponics Generation II</label>
+		<description>The Generation II Cosmic Hydroponics Basin does not rely on a custom-made nutrient bath for plants to grow in with trace amounts of Cosmic Alloy for prosperity, but instead, it infuses the very cells of plants with Cosmic Matter, allowing for plants to grow at their very limit.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>2.85</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_medicine</defName>
+		<label>Cosmic Medicinals</label>
+		<description>Pushing the envelope further, we can achive perfection beyond Glitterworld medicine with the help of Cosmic Alloy and Cosmic Matter.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>3.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_food</defName>
+		<label>Cosmic Foods</label>
+		<description>Perfecting the art of cosmic-based foods, we can rest easy and content knowing our future is fed with the help of Cosmic Alloy and Cosmic Matter.\n\nFood is cooked just like any other meals, on the electric/fueled stove.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>4.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_drugs</defName>
+		<label>Cosmic Drugs</label>
+		<description>Leaping to greater highs, we can make better, safer, and more effective drugs for both recreation and operation with our growing mastery of Cosmic Matter.\n\nDrugs unlocked by this technology must made in the Cosmic Manipulator.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>4.5</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_III_furniture</defName>
+		<label>Cosmic Recreation</label>
+		<description>Soaring towards our joys, we can improve the quality of our lives through perpetual pursuit of better recreational buildings.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>25</researchViewX>
+		<researchViewY>5</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 2.5 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_IV</defName>
+		<label>Reaching The Limits</label>
+		<description>There is one last known feat of Cosmic Matter; Creating matter out of pure Cosmic Matter. The cost may be great, but the reward will be infinitely more.</description>
+		<baseCost>50000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_bionics</li>
+			<li>SNS_Research_III_weaponry</li>
+			<li>SNS_Research_III_armor</li>
+			<li>SNS_Research_III_power</li>
+			<li>SNS_Research_III_hydroponics</li>
+			<li>SNS_Research_III_medicine</li>
+			<li>SNS_Research_III_food</li>
+			<li>SNS_Research_III_drugs</li>
+			<li>SNS_Research_III_furniture</li>
+		</prerequisites>
+		<researchViewX>26</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_IV_linkable</defName>
+		<label>Type-Theta Cosmic Matter</label>
+		<description>Type-Theta Cosmic Matter is a highly stable form of Cosmic Matter, and is the galaxy's favorite version as it is it common enough to be exploitable without being too much more expensive to produce than the lesser Cosmic Matter-forms of old. While the machinery required will be highly expensive and complex, the benefits are sure to outweigh the costs.</description>
+		<baseCost>40000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_IV</li>
+		</prerequisites>
+		<researchViewX>26</researchViewX>
+		<researchViewY>1.55</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_IV_cosmicturrets_III</defName>
+		<label>Eternal Turrets</label>
+		<description>Through the mastery of Cosmic Matter, we can manufacture perfect turrets that never need reload or refurbishment.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_IV</li>
+		</prerequisites>
+		<researchViewX>26</researchViewX>
+		<researchViewY>2.65</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 2.9 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Research_V</defName>
+		<label>The Great Unknown</label>
+		<description>There is so much that happens in this world that we will never be able to see or understand. There are forces beyond us, forces we could never hope to understand.\n\nThis world seems to beckon us, push us towards the final goal. Fragments of something long lost, of a people long gone, scattered about unused by any others.\n\nLet us find these fragments, and ascend beyond greatness.</description>
+		<baseCost>75000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_IV</li>
+		</prerequisites>
+		<researchViewX>27</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_V_breakthrough</defName>
+		<label>Peering Beyond The Veil</label>
+		<description>There is still something out there, something eternal and invisible we have yet to grasp onto.\n\nLet us near it as close as we may, and then leap forward.</description>
+		<baseCost>125000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_V</li>
+		</prerequisites>
+		<researchViewX>28</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 3 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_base</defName>
+		<label>Breaching The Limits</label>
+		<description>Just when we thought we had reached the limits and hit the technological ceiling, we had found yet another key to greatness. Dubbed 'Eternium', this is the ultimate material. Its properties are much alike that of Cosmic Matter, but with stability not seen anywhere else. We should be able to draw it from the Call of the Cosmos.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_V_breakthrough</li>
+		</prerequisites>
+		<researchViewX>29</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_linkable_I</defName>
+		<label>Advanced R.I.F.T. Creation</label>
+		<description>The R.I.F.T. Fabricator is unique in that it is able to process more than one access point of space at a time, allowing more Cosmic Matter and Eternium to be processed before experiencing diminishing returns.</description>
+		<baseCost>50000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>29</researchViewX>
+		<researchViewY>1.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_linkable_II</defName>
+		<label>Type-Beta Cosmic Matter</label>
+		<description>The second form of Cosmic Matter that was discovered is Type-Beta, a form of Cosmic Matter so volatile and unstable that it was only useful for emergency kickstart-power to allow a more stable form of Cosmic Matter to take over. This instability could greatly benefit us, as Type-Beta Cosmic Matter can disrupt the very fabric of reality enough to make the collection of higher-stability forms of Cosmic Matter and Eternium far easier.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_bionics</defName>
+		<label>Project ETERNALS</label>
+		<description>Nigh-on unbreakable, third-generation bionics are re-inforced with thin layers of Eternium to make the most precise and powerful bionic replacements possible in the universe.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>0.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_weaponry</defName>
+		<label>Project OVERTAKER</label>
+		<description>Behold, our finest creations; the weapons that shall shatter the very foundation of Creation! UNLEASH THE E.X.A.R.C.H.!\n\nUnlocks the ultimate weaponry, alongside a superweapon to overcome all others.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>1.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_armor</defName>
+		<label>Project CHARON</label>
+		<description>An immovable object, The CHARON Armor provides the ultimate form of protection.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>1.7</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_armor_specialization</defName>
+		<label>CHARON specialization</label>
+		<description>The CHARON armor was believed to be perfection in terms of body armor. But perfection is ultimately subjective. By weakening certain aspects of the CHARON armor, we can improve other aspects, allowing us to create specialized variants suitable to different roles.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_armor</li>
+		</prerequisites>
+		<researchViewX>31</researchViewX>
+		<researchViewY>1.7</researchViewY>
+	</ResearchProjectDef>
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_power</defName>
+		<label>Project EMBERS</label>
+		<description>Defeating expectation, the Generation Omega Cosmic Reactor draws Cosmic Matter directly from the eternal plane, fueling itself without any need for input. Forever.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_hydroponics</defName>
+		<label>Project EDEN</label>
+		<description>Surpassing the odds, we shatter the need for space to grow as we find every last prosperous boon we can find, with the Eternium Hydroponics.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>2.7</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_medicine</defName>
+		<label>Project EVERLAST</label>
+		<description>Overcoming fate, we embrace Eternium whole-heartedly with medical tools so grand that not even Archotechs could replicate them.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>3.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_food</defName>
+		<label>Project HEDONIST: Food</label>
+		<description>Superceding hunger, we utilize Eternium to fuel our bodies and our spirits.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>3.65</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_drugs</defName>
+		<label>Project HEDONIST: Drugs</label>
+		<description>Bypassing suffering, we utilize Eternium to further increase the great joy that is existence.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>4.30</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_furniture</defName>
+		<label>Project HEDONIST: Recreation</label>
+		<description>Overcoming boredom, we utilize Eternim to make the best recreational buildings of all creation.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>30</researchViewX>
+		<researchViewY>4.95</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 3.5 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Research_VI_final</defName>
+		<label>Unto The Zenith</label>
+		<description>Let's race past this horizon, and rest upon a whole new one.</description>
+		<baseCost>250000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_linkable_II</li>
+			<li>SNS_Research_VI_bionics</li>
+			<li>SNS_Research_VI_power</li>
+			<li>SNS_Research_VI_weaponry</li>
+			<li>SNS_Research_VI_armor</li>
+			<li>SNS_Research_VI_hydroponics</li>
+			<li>SNS_Research_VI_medicine</li>
+			<li>SNS_Research_VI_food</li>
+			<li>SNS_Research_VI_drugs</li>
+			<li>SNS_Research_VI_furniture</li>
+		</prerequisites>
+		<researchViewX>31</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation 4 -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base">
+		<defName>SNS_Research_VII</defName>
+		<label>Pinnacle Of Creation</label>
+		<description>We are the pinnacle of creation. The Zenith of all, the tower atop the eternal, endless sea. We reached up to the stars and the skies, and grasped onto the vast horizons. We finally, at last know the truth: We are the undisputed masters of all reality, atop the Zenith, beyond all perception. Such great privilage.</description>
+		<baseCost>5000000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<requiredResearchFacilities>
+			<li>SNS_Linkable_Unlocker_POC</li>
+		</requiredResearchFacilities>
+		<prerequisites>
+			<li>SNS_Research_VI_final</li>
+		</prerequisites>
+		<researchViewX>32</researchViewX>
+		<researchViewY>2.2</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- Generation Infinity -->
+
+	<ResearchProjectDef ParentName="SNS_Research_Base">
+		<defName>SNS_Research_infinite</defName>
+		<label>Beyond our Understanding</label>
+		<description>In the darkness of what lies beyond our vision lies the true great Unknown, the second ceiling of all technology; that one hard barrier that inhibits all progress. Some things will forever lie beyond our grasp, for Science Never Stops, even with our Ambition of the Cosmic.\n\n[[NOTE: This research is NOT intended to be completed. Usually, it is made so that it literally cannot be completed.]</description>
+		<baseCost>Infinity</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VII</li>
+		</prerequisites>
+		<researchViewX>33</researchViewX>
+		<researchViewY>2.2</researchViewY>
+		<modExtensions>
+			<li Class="InfiniteResearch.ResearchExtension_Infinite" />
+		</modExtensions>
+	</ResearchProjectDef>
+
+</Defs>

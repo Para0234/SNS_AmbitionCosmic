@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseBullet" Name="SNS_Pistol_Gen3_Projectile">
+		<defName>SNS_Pistol_GenIII_Bullet</defName>
+		<label>eternal pistol projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen3/Bullet_Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>24.5</armorPenetrationBase>
+			<speed>200</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Pistol_GenIII</defName>
+		<label>eternal pistol</label>
+		<description>A grand pistol that fires small amounts of Eternium at terrifying rates. Its power is unrivaled by any other pistol.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Pistol</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToMake>9000</WorkToMake>
+			<Mass>0.3</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.98</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>0.15</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>1</SNS_Component_GenIII>
+		</costList>
+		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>2</SNS_Unobtainium></smeltProducts-->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Pistol_GenIII_Bullet</defaultProjectile>
+				<warmupTime>0.05</warmupTime>
+				<range>45</range>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet" Name="SNS_Rifle_Gen3_Projectile">
+		<defName>SNS_Rifle_GenIII_Bullet</defName>
+		<label>eternal rifle projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen3/Bullet_Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>17</damageAmountBase>
+			<armorPenetrationBase>24</armorPenetrationBase>
+			<speed>140</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Rifle_GenIII</defName>
+		<label>eternal rifle</label>
+		<description>A fully automatic rifle that propels a small amount of Eternium at terrifying velocities, and does not produce any recoil whatsoever. Its projectiles are the weakest of eternal weapons, but its firerate is more than enough to compensate.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Rifle</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<statBases>
+			<MaxHitPoints>1200</MaxHitPoints>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>0.6</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.87</AccuracyMedium>
+			<AccuracyLong>0.75</AccuracyLong>
+			<RangedWeapon_Cooldown>0.35</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>30</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>3</SNS_Component_GenIII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Rifle_GenIII_Bullet</defaultProjectile>
+				<warmupTime>0.25</warmupTime>
+				<range>70</range>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<burstShotCount>12</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet" Name="SNS_Shotgun_Gen3_Projectile">
+		<defName>SNS_Shotgun_GenIII_Bullet</defName>
+		<label>eternal shotgun projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen3/Bullet_Shotgun_Clump</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<armorPenetrationBase>50</armorPenetrationBase>
+			<speed>100</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Shotgun_GenIII</defName>
+		<label>eternal shotgun</label>
+		<description>An arcane shotgun that fires a devastating clump of Eternium projectiles that excel at effectively erasing armor. While its range is the worst of the eternal weapons (as to be expected from a shotgun), its power and armor-shattering properties are more than enough compensation.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Shotgun</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MaxHitPoints>1500</MaxHitPoints>
+			<WorkToMake>13500</WorkToMake>
+			<Mass>1.0</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.97</AccuracyTouch>
+			<AccuracyShort>0.95</AccuracyShort>
+			<AccuracyMedium>0.48</AccuracyMedium>
+			<AccuracyLong>0.10</AccuracyLong>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>60</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>4</SNS_Component_GenIII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Shotgun_GenIII_Bullet</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>30</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+	</ThingDef>
+
+	<!-- ============================================== -->
+
+	<ThingDef ParentName="BaseBullet" Name="SNS_Sniper_Gen3_Projectile">
+		<defName>SNS_Sniper_GenIII_Bullet</defName>
+		<label>eternal sniper projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen3/Bullet_Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>120</damageAmountBase>
+			<armorPenetrationBase>25</armorPenetrationBase>
+			<speed>250</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_Sniper_GenIII</defName>
+		<label>eternal sniper</label>
+		<description>An arcane sniper rifle made of Eternium and Cosmic Alloy. It fires pure low-energy Eternium projectiles that often obliterates whatever it hits, able to go through entire bodies top to bottom and still have enough energy left to dent the floor beneath. Even grazing blows are highly dangerous. The rifle can be used at all ranges, though its accuracy is unrivaled at the longest ranges.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Sniper</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<statBases>
+			<MaxHitPoints>2000</MaxHitPoints>
+			<WorkToMake>15000</WorkToMake>
+			<Mass>1.0</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.80</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.95</AccuracyMedium>
+			<AccuracyLong>1</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>120</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>5</SNS_Component_GenIII>
+		</costList>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Sniper_GenIII_Bullet</defaultProjectile>
+				<warmupTime>1.25</warmupTime>
+				<range>120</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>13</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+	</ThingDef>
+
+	<ThingDef Name="SNS_Projectile_EXARCHBullet" ParentName="BaseBullet">
+		<defName>SNS_Omega_Bullet</defName>
+		<label>EXARCH projectile</label>
+		<graphicData>
+			<texPath>Things/Projectile/SNS/Gen3/Bullet_EXARCH</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<thingClass>Projectile_Explosive</thingClass>
+		<projectile>
+			<damageDef>BombSuper</damageDef>
+			<damageAmountBase>250</damageAmountBase>
+			<explosionRadius>2</explosionRadius>
+			<speed>250</speed>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>SNS_EterniumLance</defName>
+		<label>The EXARCH</label>
+		<description>A weapon made of pure Eternium, this superweapon fires deadly Eternium at an incredibly rapid speed. Just like its precessor, its projectile will make short work of anything in its way, and something that suvives one shot probably won't survive the next.\n\nLike the Cosmic Lance, it excels at long and close range but may be harder to use at medium range.\n\nIt is so dangerous that it should not be used anywhere near something valuable, since it can easily destroy entire colonies by itself.\n\nExtreme care should be taken with the EXARCH since it can wipe out its user if said user shoots at a target that gets too close.\n\nNo, seriously. EXARCH projectiles will literally kill a CHARON suit user in two shots depending on suit quality.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/EterniumLance/EterniumLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<WorkToMake>90000</WorkToMake>
+			<Mass>15.0</Mass>
+			<Flammability>0.0</Flammability>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0.00</DeteriorationRate>
+			<Beauty>150</Beauty>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_VI_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicLance>1</SNS_CosmicLance>
+			<SNS_Eternium>375</SNS_Eternium>
+		</costList>
+		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>40</SNS_Unobtainium></smeltProducts-->
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>SNS_Omega_Bullet</defaultProjectile>
+
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<warmupTime>0.5</warmupTime>
+				<range>120</range>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>50</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+            <li>
+              <label>grip</label>
+              <capacities>
+                <li>Blunt</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+              <label>barrel</label>
+              <capacities>
+                <li>Blunt</li>
+                <li>Poke</li>
+              </capacities>
+              <power>12</power>
+              <cooldownTime>2</cooldownTime>
+            </li>
+		</tools>
+		<techLevel>Archotech</techLevel>
+	</ThingDef>
+
+</Defs>

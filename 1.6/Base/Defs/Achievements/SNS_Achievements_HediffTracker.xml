@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenI</defName>
+		<label>Mechanised Ascension</label>
+		<description>Have a single pawn with full Generation-1 stellar bionics, armor shrouds, and enchanters.</description>
+
+		<tracker Class="AchievementsExpanded.MultiHediffTracker">
+			<defs>
+				<li>
+					<key>SNS_Hediff_BionicEye_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicEar_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNose_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicJaw_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHead_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNeck_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicTorso_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicArm_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLeg_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicSpine_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicBrain_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHeart_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLung_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicKidney_GenI</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLiver_GenI</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicStomach_GenI</key>
+					<value>1</value>
+				</li>
+			</defs>
+		</tracker>
+
+		<texPath>Achievements/SNS/FullBionics_Gen1</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenII</defName>
+		<label>Over-Engineered</label>
+		<description>Have a single pawn with full Generation-2 cosmic bionics, armor shrouds, and enchanters.</description>
+
+		<tracker Class="AchievementsExpanded.MultiHediffTracker">
+			<defs>
+				<li>
+					<key>SNS_Hediff_BionicEye_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicEar_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNose_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicJaw_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHead_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNeck_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicTorso_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicArm_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLeg_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicSpine_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicBrain_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHeart_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLung_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicKidney_GenII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLiver_GenII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicStomach_GenII</key>
+					<value>1</value>
+				</li>
+			</defs>
+		</tracker>
+
+		<texPath>Achievements/SNS/FullBionics_Gen2</texPath>
+		<points>75</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_HediffTracker_BionicsFull_GenIII</defName>
+		<label>Beyond Organic</label>
+		<description>Have a single pawn with full Generation-3 enigmatic bionics, armor shrouds, and enchanters.</description>
+
+		<tracker Class="AchievementsExpanded.MultiHediffTracker">
+			<defs>
+				<li>
+					<key>SNS_Hediff_BionicEye_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicEar_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNose_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicJaw_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHead_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicNeck_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicTorso_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicArm_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLeg_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicSpine_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicBrain_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicHeart_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLung_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicKidney_GenIII</key>
+					<value>2</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicLiver_GenIII</key>
+					<value>1</value>
+				</li>
+				<li>
+					<key>SNS_Hediff_BionicStomach_GenIII</key>
+					<value>1</value>
+				</li>
+			</defs>
+		</tracker>
+
+		<texPath>Achievements/SNS/FullBionics_Gen3</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+
+</Defs>

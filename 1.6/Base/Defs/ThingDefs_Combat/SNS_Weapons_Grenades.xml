@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SNS_Proj_EMPGrenade</defName>
+		<label>Cosmic EMP Grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>24</explosionRadius>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<explosionDelay>150</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseWeapon">
+		<defName>SNS_EMPGrenade</defName>
+		<label>Cosmic EMP Grenade</label>
+		<description>This grenade is a terrifying weapon, boasting a much, MUCH larger blast radius than the size of the object could ever suggest. It not only is highly powerful but will hit things seemingly miles away from its ground zero.\n\nHint: The blast radius is larger than you can throw it. Good luck.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/EMP</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Flammability>0.0</Flammability>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>5</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw Cosmic EMP Grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>18</range>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<warmupTime>1</warmupTime>
+				<noiseRadius>48</noiseRadius>
+				<ai_IsBuildingDestroyer>false</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>SNS_Proj_EMPGrenade</defaultProjectile>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
+			<ComponentSpacer>8</ComponentSpacer>
+		</costList>
+		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>1</SNS_Unobtainium></smeltProducts-->
+		<techLevel>Ultra</techLevel>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SNS_Proj_FragGrenade</defName>
+		<label>Cosmic Frag Grenade</label>
+		<thingClass>Projectile_Explosive</thingClass>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<explosionRadius>8</explosionRadius>
+			<damageDef>Bomb</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<explosionDelay>90</explosionDelay>
+		</projectile>
+	</ThingDef>
+	<ThingDef ParentName="BaseWeapon">
+		<defName>SNS_FragGrenade</defName>
+		<label>Cosmic Frag Grenade</label>
+		<description>This grenade is a terrifying weapon, boasting both a large explosion (one far too large for an object of its size) and with said explosion being incredibly damaging. You should throw this at the maximum possible range, or else you might get your entire body reduced to a fine pulp.\n\nIt's safe to say that you should hold your fire and use this monster manually.</description>
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Frag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<soundInteract>Interact_Grenade</soundInteract>
+		<statBases>
+			<Mass>0.03</Mass>
+			<Flammability>0.0</Flammability>
+			<RangedWeapon_Cooldown>2.0</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Beauty>5</Beauty>
+		</statBases>
+		<thingCategories>
+			<li>Grenades</li>
+		</thingCategories>
+		<verbs>
+			<li>
+				<label>throw Cosmic Frag Grenade</label>
+				<verbClass>Verb_LaunchProjectile</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<range>16</range>
+				<forcedMissRadius>1.0</forcedMissRadius>
+				<warmupTime>1</warmupTime>
+				<noiseRadius>16</noiseRadius>
+				<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+				<soundCast>ThrowGrenade</soundCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<defaultProjectile>SNS_Proj_FragGrenade</defaultProjectile>
+			</li>
+		</verbs>
+		<recipeMaker>
+			<recipeUsers Inherit="False">
+				<li>FabricationBench</li>
+			</recipeUsers>
+			<researchPrerequisite>SNS_Research_III_weaponry</researchPrerequisite>
+		</recipeMaker>
+		<costList>
+			<SNS_CosmicAlloy>15</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>2</SNS_CosmicMatter>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>1</SNS_Unobtainium></smeltProducts-->
+		<techLevel>Ultra</techLevel>
+	</ThingDef>
+
+</Defs>
