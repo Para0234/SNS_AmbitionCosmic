@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="MealBase" Name="SNS_MealBase" Abstract="True"> <!-- Removed the ability for SNS foods to be affected by food poisoning. -->
+    <comps Inherit="False">
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Ingredients" />
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="SNS_MealBase">
+    <defName>SNS_Meal_Nutrient_GenI</defName>
+    <label>nutrient bar</label>
+    <description>A solidified nutrient-paste-like bar of protein, carbohydrates, vitamins, amino acids and minerals prepared in a way that it won't spoil. Everything the body needs. It tastes horrible and is somehow simultaneously hard like hardtack and then is powdery when you finally are able to chew it. Most would prefer Nutrient Paste over this monstrosity.\n\nUnlike Nutrient Paste, the Nutrient Bar will not go bad or spoil, but it will still deteriorate at a very slow rate when left outside.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SNS/NutrientBarG1/NutrientBarG1</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Flammability>0.5</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <Mass>0.15</Mass>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealAwful</preferability>
+      <tasteThought>SNS_AteNutrientBarG1</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>-4</optimalityOffsetHumanlikes>
+    </ingestible>
+  </ThingDef>
+
+  <ThingDef ParentName="SNS_MealBase">
+    <defName>SNS_Meal_Nutrient_GenII</defName>
+    <label>advanced nutrient bar</label>
+    <description>A nutrient bar made of of protein, carbohydrates, vitamins, amino acids, minerals, a small amount of Cosmic Alloy and Cosmic Matter that won't spoil or deteriorate. Everything the body needs. It is enhanced with Cosmic Alloy and a trace amount of Cosmic Matter to eliminate any flavor, and is slightly chewy, making a foodstuff that is completely neutral in experience. People won't feel worse or better from eating this.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SNS/NutrientBarG2/NutrientBarG2</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>35</MarketValue>
+      <Flammability>0.1</Flammability>
+      <MaxHitPoints>100</MaxHitPoints>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>0.12</Mass>
+      <Nutrition>1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <tasteThought>SNS_AteNutrientBarG2</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>4</optimalityOffsetHumanlikes>
+    </ingestible>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="SNS_MealBase">
+    <defName>SNS_Meal_Nutrient_GenIII</defName>
+    <label>luxurious nutrient bar</label>
+    <description>A nutrient bar made of of protein, carbohydrates, vitamins, amino acids, minerals, a small amount of Eternium that won't spoil or deteriorate. Everything the body needs. It is enhanced with Eternium to make it taste as good as it can while retaining a good texture, making a foodstuff equal to the Lavish Meal in experience.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SNS/NutrientBarG3/NutrientBarG3</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+      <MaxHitPoints>400</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>0.09</Mass>
+      <Nutrition>1.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>SNS_AteNutrientBarG3</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>RawVegetable_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>16</optimalityOffsetHumanlikes>
+    </ingestible>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="SNS_MealBase">
+    <defName>SNS_Meal_Normal_GenII</defName>
+    <label>decadent meal</label>
+    <description>A foodstuff better than even the Lavish Meal, it is improved by the properties of Cosmic Alloy and Cosmic Matter to make a truly stellar meal that will never spoil. The food itself is kept safe inside airtight packaging, drastically reducing the rate it deteriorates and eliminating all risk of food poisoning.\n\nOnly the richest, most technologically advanced Glitterworlds are able to mass-produce these, due to the extreme rarity of pure Cosmic Matter.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SNS/SNSMealG2/SNSMealG2</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>120</MarketValue>
+      <Flammability>0</Flammability>
+      <MaxHitPoints>125</MaxHitPoints>
+      <DeteriorationRate>0.25</DeteriorationRate>
+      <Mass>0.3</Mass>
+      <Nutrition>1.1</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>SNS_AteMealG2</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>24</optimalityOffsetHumanlikes>
+    </ingestible>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="SNS_MealBase">
+    <defName>SNS_Meal_Normal_GenIII</defName>
+    <label>hedonistic meal</label>
+    <description>The number one choice of hedonists, this meal is seen nowhere but the most gleaming, rich Glitterworlds--the only worlds rich enough to have their hands on advanced Precursor technologies. These meals never spoil, deteriorate, or make a pawn sick from food poisoning due to its perfected packaging and sterile production methods. Chances are that if this wasn't made here, it was made by the civilisation that originally discovered Cosmic Matter and survived an untold amount of time to find itself in your grasp.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/SNS/SNSMealG3/SNSMealG3</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>245</MarketValue>
+      <Flammability>0</Flammability>
+      <MaxHitPoints>450</MaxHitPoints>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>0.3</Mass>
+      <Nutrition>1.3</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>MealLavish</preferability>
+      <tasteThought>SNS_AteMealG3</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+      <optimalityOffsetHumanlikes>24</optimalityOffsetHumanlikes>
+    </ingestible>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

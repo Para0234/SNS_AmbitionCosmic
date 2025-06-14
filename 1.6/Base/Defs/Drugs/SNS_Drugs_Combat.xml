@@ -1,0 +1,370 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Gen1 -->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SNS_Drug_Combat_I</defName>
+    <label>boost</label>
+    <description>A synthetic performance-enhancing drug. Boost blocks pain, increases movement speed, improves the user's melee and shooting abilities, and provides a significant boost to psychic abilities.\n\nBoost is used heavily by glitterworld militaries, and was made as a successor to go-juice.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Drug_Combat_I</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Combat1</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>900</WorkToMake>
+      <MarketValue>120</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <!--joyKind>Chemical</joyKind>
+      <joy>0.40</joy-->
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_I</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.25</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+          <offset>0.25</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_II_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <SNS_Stim_I>1</SNS_Stim_I>
+      <Neutroamine>3</Neutroamine>
+      <SNS_Unobtainium>1</SNS_Unobtainium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>1300</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Drug_Combat_I</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>high on boost</label>
+    <labelNoun>a boost high</labelNoun>
+    <description>Boost in the bloodstream. It supercharges combat-related abilities and psychic powers.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.2</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.5</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">2</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Gen2 -->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SNS_Drug_Combat_II</defName>
+    <label>accelerant</label>
+    <description>A synthetic performance-enhancing drug cocktail. Accelerant blocks pain, increases movement speed, improves the user's melee and shooting abilities, and provides significant boosts to psychic abilities.\n\nIt is heavily used by Cosmic Empire militaries.\n\nNOTE: This drug also gives the effects of Boost.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Drug_Combat_II</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Combat2</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>900</WorkToMake>
+      <MarketValue>550</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Archotech</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_I</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_II</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.7</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+          <offset>0.5</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_III_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <SNS_Drug_Combat_I>1</SNS_Drug_Combat_I>
+      <SNS_Stim_II>1</SNS_Stim_II>
+      <Neutroamine>4</Neutroamine>
+      <SNS_Unobtainium>1</SNS_Unobtainium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>1310</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Drug_Combat_II</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>high on accelerant</label>
+    <labelNoun>an accelerant high</labelNoun>
+    <description>Accelerant in the bloodstream. It supercharges combat-related abilities and psychic powers.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <painFactor>0.1</painFactor>
+        <restFallFactor>0.65</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">1.75</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">3</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Gen3 -->
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>SNS_Drug_Combat_III</defName>
+    <label>ascendance</label>
+    <description>A heavy synthetic performance-enhancing drug cocktail. Ascendance blocks pain, increases movement speed, improves the user's melee and shooting abilities, and provides massive boosts to psychica abilities\n\nNOTE: This drug also gives the effects of Boost and Accelerant.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Drug_Combat_III</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Combat3</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>900</WorkToMake>
+      <MarketValue>1500</MarketValue>
+      <Mass>0.1</Mass>
+    </statBases>
+    <techLevel>Archotech</techLevel>
+    <ingestible>
+      <drugCategory>Hard</drugCategory>
+      <foodType>Processed, Fluid</foodType>
+      <baseIngestTicks>80</baseIngestTicks>
+      <ingestSound>Ingest_Inject</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Inject {0}</ingestCommandString>
+      <ingestReportString>Injecting {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <chairSearchRadius>0</chairSearchRadius>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_I</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_II</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Drug_Combat_III</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1</offset>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetPsyfocus">
+          <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_VI_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <SNS_Drug_Combat_II>1</SNS_Drug_Combat_II>
+      <SNS_Stim_III>1</SNS_Stim_III>
+      <Neutroamine>6</Neutroamine>
+      <SNS_CosmicAlloy>1</SNS_CosmicAlloy>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+        <listOrder>1310</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+        <largeOverdoseChance>0</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Drug_Combat_III</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>high on ascendance</label>
+    <labelNoun>an ascendance high</labelNoun>
+    <description>Ascendance in the bloodstream. It supercharges combat-related abilities and psychic powers.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>0</restFallFactor>
+        <painFactor>0</painFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.15</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.25</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.35</offset>
+          </li>
+        </capMods>
+        <statFactors>
+          <PsychicEntropyMax MayRequire="Ludeon.RimWorld.Royalty">2.25</PsychicEntropyMax>
+          <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">5</PsychicEntropyRecoveryRate>
+        </statFactors>
+      </li>
+    </stages>
+  </HediffDef>
+
+</Defs>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- If you're looking at this file hoping to learn more about patches, you're in luck! I will leave a comment pretty much everywhere so you can understand what's going on here. -->
+<!-- Most of the comments are focused around the first PatchOperationAdd and the first PatchOperationReplace. -->
+<!-- I know it might look daunting, and it might look too complicated to bother to learn, but it's actually really simple once you understand how it works. I learned xpath in just a day myself and had a patch made and uploaded the very same day! -->
+
+<Operation Class="PatchOperationFindMod"> <!-- This checks to see if a specific mod is currently ACTIVATED. If it is, then the Operation continues. Otherwise, nothing happens. -->
+    <mods>
+        <li>RT Fuse</li> <!-- Multiple mods can be put here, BUT you MUST put an <li></li> between each and every mod, even if it's just one otherwise things will break. -->
+    </mods>
+	<match Class="PatchOperationSequence"> <!-- PatchOperationSequence basically means "Do multiple operations". It's really simple. -->
+		<operations>
+			<!-- Add Circuit Breaker to building -->
+			<li Class="PatchOperationAdd"> <!-- This will add an attribute to the <comps> of a building. In this case, it adds a circuit breaker to the Generation 1 SNS battery. -->
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_I"]/comps</xpath> <!-- This is the path to what you want to add to/modify/replace. --> 
+				<!-- /Defs/ is typically a given for most patches I know about, since it's the blanket term for every single Def in the game, modded and otherwise. -->
+				<!-- /ThingDef is the thing that's at the very beginning of anything that's defined in XML that I know of. Replace this with whatever the thing you're trying to patch is, so if something starts with RecipeDef put that there. -->
+				<!-- [defName="SNS_Battery_I"] I'm not going to lie when I say I don't know a whole lot about this. I just know that it works. You just put the defName of what you're trying to patch here, and you should be good to go. I don't know what to do if, say, something DOESN'T have a defName, but I'll probably figure that out EVENTUALLY. -->
+				<!-- After that, you make a path to whatever you're trying to patch. In this case, it's <comps>. If something is nested inside an <li> you would do /li/INSERT_THING_HERE. Let's say, for example, that you want to increase the strength of a fuse added to the SNS battery from this patch. The xpath will be /Defs/ThingDef/[defName="SNS_Battery_I"]/comps/li/surgeMitigation. -->
+				<value> <!-- This is what you're adding/inserting/replacing. In this case, it's a fuse. -->
+					<li Class="RT_Fuse.CompProperties_RTFuse">
+						<compClass>RT_Fuse.CompRTFuse</compClass>
+						<surgeMitigation>10000</surgeMitigation> <!-- In the example above, you would just put this line of code here with whatever value you want. -->
+						<breakdownOnTrip>false</breakdownOnTrip>
+					</li>
+					<li Class="CompProperties_Flickable" /> <!-- Fuses don't work if they can't be flicked or break down, so to fix this the batteries get the Flickable tag. -->
+				</value>
+			</li> <!-- This is the end of the first operation argument. It's all just pretty much copy-paste from here until we get to PatchOperationReplace. -->
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_II"]/comps</xpath>
+				<value>
+					<li Class="RT_Fuse.CompProperties_RTFuse">
+						<compClass>RT_Fuse.CompRTFuse</compClass>
+						<surgeMitigation>100000</surgeMitigation>
+						<breakdownOnTrip>false</breakdownOnTrip>
+					</li>
+					<li Class="CompProperties_Flickable" />
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_III"]/comps</xpath>
+				<value>
+					<li Class="RT_Fuse.CompProperties_RTFuse">
+						<compClass>RT_Fuse.CompRTFuse</compClass>
+						<surgeMitigation>1000000</surgeMitigation>
+						<breakdownOnTrip>false</breakdownOnTrip>
+					</li>
+					<li Class="CompProperties_Flickable" />
+				</value>
+			</li>
+			
+			<!-- Update descriptions to mention circuit breakers -->
+			<li Class="PatchOperationReplace"> <!-- This operation will COMPLETELY REPLACE whatever you put in xpath. -->
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_I"]/description</xpath> <!-- In this case, <description> will be TOTALLY OVERWRITTEN. You must put a wholly new <description> tag below. -->
+				<value> <!-- Within the <value> tag is what you're replacing the old description with. -->
+					<description>Incredibly safe, the Cosmic Battery Gen 1 is capable of storing incredible amounts of energy at the absolute highest possible efficiency. Incredibly safe, the Cosmic Battery will never combust or explode even when damaged. It is also effectively immune to power surges, as it will simply discharge itself when a short circuit is detected.\n\nStats:\n1: Stores 10000 Watts at 100% efficiency\n2: Will dissipate 10000 Watts during short circuit (Zzztt...) events.</description>
+				</value> <!-- This is the end of the operation. The next two operations are pretty much copy-paste. -->
+			</li>
+			
+			<!-- Update descriptions to mention circuit breakers -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_II"]/description</xpath>
+				<value>
+					<description>Incredibly safe, the Cosmic Battery Gen 2 is the perfect battery, able to store seemingly endless amounts of energy at the highest possible efficiency. The Generation II Cosmic Battery will never combust or explode regardless of damage or condition. It is also effectively immune to power surges, as it will simply discharge itself when a short circuit is detected.\n\nStats:\n1: Stores 100K Watts at 100% efficiency\n2: Will dissipate 100K Watts during short circuit (Zzztt...) events.</description>
+				</value>
+			</li>
+			
+			<!-- Update descriptions to mention circuit breakers -->
+			<li Class="PatchOperationReplace">
+				<xpath>/Defs/ThingDef[defName="SNS_Battery_III"]/description</xpath>
+				<value>
+					<description>The Cosmic Battery Generation Omega is the ultimate battery, storing vastly more energy than its precessor at the highest possible efficiency.\n\nThe Generation Omega Cosmic Battery will never combust or explode no matter what, and is also effectively immune to power surges, as it will simply discharge itself when a short circuit is detected.\n\nStats:\n1: Stores 1M Watts at 100% efficiency\n2: Will dissipate 1M Watts during short circuit (Zzztt...) events.</description>
+				</value>
+			</li>
+		</operations> <!-- This is the end of the operations sequence from the PatchOperationSequence operation; it's done working here. -->
+	</match> <!-- This is the end of the definition of the PatchOperationSequence operation. I think you can place more operations here, but I've not tested that out. You can try it, but I can give no promises to if it'll work or not. -->
+</Operation> <!-- This is the end of the PatchOperationFindMod operation. You can now put more operations down if you want. -->
+
+</Patch> <!-- This is the end of the file. YOU SHOULD NOT PUT ANYTHING PAST HERE IF IT'S NOT COMMENTED. -->

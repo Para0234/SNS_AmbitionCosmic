@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Starsteel -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftCount_Unobtainium_I</defName>
+		<label>Proof Of Concept</label>
+		<description>Craft a standard Cosmic Forge batch's worth of Starsteel.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_Unobtainium</def>
+			<count>35</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/StarsteelCraft</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Unobtainium_I</defName>
+		<label>Beyond Plasteel</label>
+		<description>Obtain any amount of Starsteel by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Unobtainium</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/StarsteelA</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Unobtainium_II</defName>
+		<label>A Steady Supply</label>
+		<description>Stockpile a hundred units of Starsteel by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Unobtainium</def>
+			<count>100</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/StarsteelB</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Unobtainium_III</defName>
+		<label>Starsteel Acquisition</label>
+		<description>Stockpile a thousand units of Starsteel by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Unobtainium</def>
+			<count>1000</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/StarsteelC</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Unobtainium_IV</defName>
+		<label>A Good Problem To Have</label>
+		<description>Stockpile ten-thousand units of Starsteel by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Unobtainium</def>
+			<count>10000</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/StarsteelD</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+
+
+	<!-- Cosmic Matter -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftCount_CosmicMatter_I</defName>
+		<label>Signs Of Progress</label>
+		<description>Gather Cosmic Matter using the Cosmic Manipulator.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>100</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CosmicMatterCraft</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicMatter_I</defName>
+		<label>Cosmic Acquisition</label>
+		<description>Obtain any amount of Cosmic Matter by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CosmicMatterSmall</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicMatter_II</defName>
+		<label>A Steady Stream</label>
+		<description>Stockpile a thousand Cosmic Matter by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>1000</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CosmicMatter</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_CosmicMatter_III</defName>
+		<label>A Cosmic Age</label>
+		<description>Stockpile ten-thousand Cosmic Matter by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_CosmicMatter</def>
+			<count>10000</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CosmicMatterLarge</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+
+
+	<!-- Eternium -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftCount_Eternium_I</defName>
+		<label>The Fabric Bends To Your Will</label>
+		<description>Gather Eternium using the R.I.F.T. Fabricator or the Utop-- Actually, I won't spoil that to you.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_Eternium</def>
+			<count>75</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/EterniumCraft</texPath>
+		<points>50</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Eternium_I</defName>
+		<label>Secrets To Eternity</label>
+		<description>Obtain any amount of Eternium by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Eternium</def>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/EterniumSmall</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Eternium_II</defName>
+		<label>Coalescence</label>
+		<description>Stockpile 375 Eternium by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Eternium</def>
+			<count>375</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/Eternium</texPath>
+		<points>100</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_ItemCount_Eternium_III</defName>
+		<label>Singularity</label>
+		<description>Stockpile three-thousand Eternium by any means.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemTracker">
+			<def>SNS_Eternium</def>
+			<count>3000</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/EterniumLarge</texPath>
+		<points>200</points>
+	</AchievementsExpanded.AchievementDef>
+
+
+	<!-- Weapon, Armor & Quality Trackers -->
+
+	<!-- Weaponry -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftQuality_Gen2_CosmicLance</defName>
+		<label>Mount It To A Ship</label>
+		<description>Craft a Legendary-quality Handheld Cosmic Lance.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_CosmicLance</def>
+			<quality>Legendary</quality>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CosmicLance</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftQuality_Gen2_EterniumLance</defName>
+		<label>Never Overkill Enough</label>
+		<description>Craft a Legendary-quality EXARCH.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_EterniumLance</def>
+			<quality>Legendary</quality>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/EXARCH_Legendary</texPath>
+		<points>125</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<!-- Armor -->
+	<!-- Quality -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftQuality_Gen3_Helmet</defName>
+		<label>The Ultimate Helmet</label>
+		<description>Craft a Legendary-quality CHARON Helmet.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_Apparel_StableMatterPowerArmorHelmet</def>
+			<quality>Legendary</quality>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CharonsHelmet_Legendary</texPath>
+		<points>75</points>
+	</AchievementsExpanded.AchievementDef>
+	
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_CraftQuality_Gen3_Armor</defName>
+		<label>The Ultimate Armor</label>
+		<description>Craft a set of Legendary-quality CHARON Armor.</description>
+		
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_Apparel_StableMatterPowerArmor</def>
+			<quality>Legendary</quality>
+			<count>1</count>
+		</tracker>
+		
+		<texPath>Achievements/SNS/CharonsArmor_Legendary</texPath>
+		<points>75</points>
+	</AchievementsExpanded.AchievementDef>
+	
+</Defs>

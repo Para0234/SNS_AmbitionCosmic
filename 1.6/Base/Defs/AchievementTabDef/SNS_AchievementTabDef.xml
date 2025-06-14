@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AchievementsExpanded.AchievementTabDef>
+		<defName>SNS_AchievementTab_AmbitionCosmic</defName>
+		<label>SNS: AOTC</label>
+	</AchievementsExpanded.AchievementTabDef>
+</Defs>

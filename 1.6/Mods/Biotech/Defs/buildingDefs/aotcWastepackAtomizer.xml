@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <ThingDef ParentName="BuildingBase">
+        <defName>cosmicWastepackAtomizer</defName>
+        <label>Cosmic Wastepack Atomizer</label>
+        <description>Using the energy locked in Cosmic Alloy as a catalyst, we can use a more efficient reaction to speed up the the wastepack atomizing cycles.</description>
+        <thingClass>Building_WastepackAtomizer</thingClass>
+        <drawerType>MapMeshAndRealTime</drawerType>
+        <tickerType>Normal</tickerType>
+        <graphicData>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3,2)</drawSize>
+            <shadowData>
+                <volume>(3, 0.35, 2)</volume>
+            </shadowData>
+        </graphicData>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <canOverlapZones>false</canOverlapZones>
+        <pathCost>42</pathCost>
+        <blockWind>true</blockWind>
+        <fillPercent>0.5</fillPercent>
+        <building>
+            <buildingTags>
+                <li>Biotech</li>
+            </buildingTags>
+            <ai_chillDestination>false</ai_chillDestination>
+            <wastepackAtomizerBottomGraphic>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizer_BottomLayer</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,2)</drawSize>
+            </wastepackAtomizerBottomGraphic>
+            <wastepackAtomizerWindowGraphic>
+                <texPath>Things/Building/Biotech/WastepackAtomizer/WastepackAtomizerWindow</texPath>
+                <graphicClass>Graphic_Multi</graphicClass>
+                <drawSize>(3,2)</drawSize>
+            </wastepackAtomizerWindowGraphic>
+            <wastepackAtomizerOperationEffecter>WastepackAtomizer_Operating</wastepackAtomizerOperationEffecter>
+        </building>
+        <designationCategory>Biotech</designationCategory>
+        <hasInteractionCell>true</hasInteractionCell>
+        <interactionCellOffset>(0, 0, -1)</interactionCellOffset>
+        <statBases>
+            <MaxHitPoints>500</MaxHitPoints>
+            <WorkToBuild>50000</WorkToBuild>
+            <Mass>80</Mass>
+            <Flammability>0</Flammability>
+        </statBases>
+        <size>(3,2)</size>
+        <costList>
+            <SNS_Unobtainium>200</SNS_Unobtainium>
+            <SNS_CosmicAlloy>50</SNS_CosmicAlloy>
+            <NanostructuringChip>1</NanostructuringChip>
+        </costList>
+        <researchPrerequisites>
+            <li>WastepackAtomizer</li>
+            <li>AOTC_CosmicWastepackAtomizer_Research</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <basePowerConsumption>1000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Atomizer">
+                <thingDef>Wastepack</thingDef>
+                <stackLimit>20</stackLimit>
+                <drawContainedThing>false</drawContainedThing>
+                <ticksPerAtomize>10000</ticksPerAtomize>
+                <resolveEffecter>AtomizerResolve</resolveEffecter>
+                <workingEffecter>WastepackAtomizer_Working</workingEffecter>
+                <materialsAddedSound>WastepackAtomizer_MaterialInserted</materialsAddedSound>
+                <contentsDrawOffset>(0.05, 0, 0.2)</contentsDrawOffset>
+            </li>
+            <li Class="CompProperties_Flickable"/>
+        </comps>
+    </ThingDef>
+</Defs>

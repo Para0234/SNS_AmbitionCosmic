@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RecipeDef Abstract="True" Name="SNS_CosmicCall_Item">
+		<!-- 1/2 in-game work per CM, 30 code work per CM, 300 work per 10 CM -->
+		<!-- multiply code CM cost x10, then multiply x30 -->
+		<defName>SNS_Production_CosmicCall_Base</defName>
+		<jobString>Atomically Fabricating</jobString>
+		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
+		<skillRequirements />
+		<workSkill>Intellectual</workSkill>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<ingredients />
+		<fixedIngredientFilter />
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<recipeUsers>
+			<li>Table_SNS_CosmicCall</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!--Meals-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MealSimple</defName>
+		<label>Pattern Simple Meal</label>
+		<description>Pattern Simple Meals from pure Cosmic Matter.</description>
+		<workAmount>750</workAmount>
+		<products>
+			<MealSimple>10</MealSimple>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MealFine</defName>
+		<label>Pattern Fine Meal</label>
+		<description>Pattern Fine Meals from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<MealFine>10</MealFine>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MealLavish</defName>
+		<label>Pattern Lavish Meal</label>
+		<description>Pattern Lavish Meals from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<MealLavish>10</MealLavish>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_NutrientBarGenI</defName>
+		<label>Pattern Nutrient Bar</label>
+		<description>Pattern Nutrient Bars from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<SNS_Meal_Nutrient_GenI>25</SNS_Meal_Nutrient_GenI>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MealGenII</defName>
+		<label>Pattern Decadent Meal</label>
+		<description>Pattern Luxurious Meals from pure Cosmic Matter.</description>
+		<workAmount>6000</workAmount>
+		<products>
+			<SNS_Meal_Normal_GenII>10</SNS_Meal_Normal_GenII>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_NutrientBarGenII</defName>
+		<label>Pattern Advanced Nutrient Bar</label>
+		<description>Pattern Nutrient Bars from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<SNS_Meal_Nutrient_GenII>25</SNS_Meal_Nutrient_GenII>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Kibble</defName>
+		<label>Pattern Kibble</label>
+		<description>Pattern Kibble from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<Kibble>100</Kibble>
+		</products>
+	</RecipeDef>
+	<!--Medicine-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_HerbalMedicine</defName>
+		<label>Pattern Herbal Medicine</label>
+		<description>Pattern five packages of Herbal Medicine from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<MedicineHerbal>5</MedicineHerbal>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Medicine</defName>
+		<label>Pattern Medicine</label>
+		<description>Pattern five packages of Industrial-Grade Medicine from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<MedicineIndustrial>5</MedicineIndustrial>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_GlitterworldMedicine</defName>
+		<label>Pattern Glitterworld Medicine</label>
+		<description>Pattern five packages of Glitterworld Medicine from pure Cosmic Matter.</description>
+		<workAmount>13500</workAmount>
+		<products>
+			<MedicineUltratech>5</MedicineUltratech>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Medicine_GenI</defName>
+		<label>Pattern Stellar Medicine</label>
+		<description>Pattern five packages of Stellar Medicine from pure Cosmic Matter.</description>
+		<workAmount>13500</workAmount>
+		<products>
+			<SNS_Medicine_GenI>5</SNS_Medicine_GenI>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Medicine_GenII</defName>
+		<label>Pattern Cosmic Medicine</label>
+		<description>Pattern five packages of Cosmic Medicine from pure Cosmic Matter.</description>
+		<workAmount>24000</workAmount>
+		<products>
+			<SNS_Medicine_GenII>5</SNS_Medicine_GenII>
+		</products>
+	</RecipeDef>
+	<!--Drugs-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Lux</defName>
+		<label>Pattern Lux</label>
+		<description>Pattern ten serving of Lux from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<SNS_Lux>10</SNS_Lux>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Aegis</defName>
+		<label>Pattern Aegis</label>
+		<description>Pattern twenty pills of Aegis from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<SNS_Aegis>20</SNS_Aegis>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Aeterno</defName>
+		<label>Pattern Aeterno</label>
+		<description>Pattern twenty pills of Aeterno from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<SNS_Aeterno>20</SNS_Aeterno>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Stim_I</defName>
+		<label>Pattern STIM-IV</label>
+		<description>Pattern twenty-five pills of STIM-IV from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<SNS_Stim_I>25</SNS_Stim_I>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Stim_II</defName>
+		<label>Pattern STIM-VII</label>
+		<description>Pattern twenty-five pills of STIM-VII from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<SNS_Stim_II>25</SNS_Stim_II>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Drug_Combat_I</defName>
+		<label>Pattern Boost</label>
+		<description>Pattern five injectors of Boost from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<SNS_Drug_Combat_I>5</SNS_Drug_Combat_I>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Drug_Combat_II</defName>
+		<label>Pattern Accelerant</label>
+		<description>Pattern five injectors of Accelerant from pure Cosmic Matter.</description>
+		<workAmount>6000</workAmount>
+		<products>
+			<SNS_Drug_Combat_II>5</SNS_Drug_Combat_II>
+		</products>
+	</RecipeDef>
+	<!--Materials-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Neutroamine</defName>
+		<label>Pattern Neutroamine</label>
+		<description>Pattern five units of Neutroamine from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<Neutroamine>5</Neutroamine>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Penoxycyline</defName>
+		<label>Pattern Penoxycyline</label>
+		<description>Pattern a small container of 50 Penoxycyline pills from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<Penoxycyline>50</Penoxycyline>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Ambrosia</defName>
+		<label>Pattern Ambrosia</label>
+		<description>Pattern a sizeable pile of 25 Ambrosia fruits from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<Ambrosia>25</Ambrosia>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Luciferium</defName>
+		<label>Pattern Luciferium</label>
+		<description>Pattern ten Luciferium pills from pure Cosmic Matter.</description>
+		<workAmount>7500</workAmount>
+		<products>
+			<Luciferium>10</Luciferium>
+		</products>
+	</RecipeDef>
+	<!--Vanilla Stuffables-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Silver</defName>
+		<label>Pattern Silver</label>
+		<description>Pattern a pile of 500 Silver pieces from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<Silver>300</Silver>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Gold</defName>
+		<label>Pattern Gold</label>
+		<description>Pattern a pile of 500 Gold pieces from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<Gold>500</Gold>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Steel</defName>
+		<label>Pattern Steel</label>
+		<description>Pattern a collection of 75 Steel ingots from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<Steel>75</Steel>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Plasteel</defName>
+		<label>Pattern Plasteel</label>
+		<description>Pattern 75 small sheets of Plasteel from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<Plasteel>75</Plasteel>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Uranium</defName>
+		<label>Pattern Uranium</label>
+		<description>Pattern 75 pieces of self-contained Uranium from pure Cosmic Matter.</description>
+		<workAmount>7500</workAmount>
+		<products>
+			<Uranium>75</Uranium>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_BlocksGranite</defName>
+		<label>Pattern Granite Blocks</label>
+		<description>Pattern a neat stack of 75 Granite blocks from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<BlocksGranite>75</BlocksGranite>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Chemfuel</defName>
+		<label>Pattern Chemfuel</label>
+		<description>Pattern a full, large container filled with 150 units of Chemfuel from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<Chemfuel>150</Chemfuel>
+		</products>
+	</RecipeDef>
+	<!--SNS Stuffables-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Unobtainium</defName>
+		<label>Pattern Starsteel</label>
+		<description>Pattern 75 units of Starsteel from pure Cosmic Matter.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<SNS_Unobtainium>75</SNS_Unobtainium>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Unobtainium_Fiber</defName>
+		<label>Pattern Starsteel 'Wool'</label>
+		<description>Pattern 75 units of Starsteel Wool from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<SNS_Unobtainium_Fiber>75</SNS_Unobtainium_Fiber>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_CosmicAlloy</defName>
+		<label>Pattern Cosmic Alloy</label>
+		<description>Pattern 75 units of Cosmic Alloy from pure Cosmic Matter.</description>
+		<workAmount>9000</workAmount>
+		<products>
+			<SNS_CosmicAlloy>75</SNS_CosmicAlloy>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_CosmicAlloyWeave</defName>
+		<label>Pattern Cosmic Weave</label>
+		<description>Pattern 75 units of Cosmic Alloy Weave from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<SNS_CosmicAlloyWeave>75</SNS_CosmicAlloyWeave>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_CosmicMatter</defName>
+		<label>Summon Cosmic Matter</label>
+		<description>Draw Cosmic Matter directly from the Eternal Plane.</description>
+		<workAmount>3000</workAmount>
+		<products>
+			<SNS_CosmicMatter>250</SNS_CosmicMatter>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Eternium</defName>
+		<workAmount>90000</workAmount>
+		<label>Draw Eternium</label>
+		<researchPrerequisites>
+			<li>SNS_Research_VI_base</li>
+		</researchPrerequisites>
+		<description>Draw Eternium directly from the Eternal Plane. The process is incredibly slow, and a great time must be invested into gathering it.</description>
+		<products>
+			<SNS_Eternium>75</SNS_Eternium>
+		</products>
+	</RecipeDef>
+	<!--Components-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_ComponentIndustrial</defName>
+		<label>Pattern Component</label>
+		<description>Pattern a pile of five generalist basic Components from pure Cosmic Matter.</description>
+		<workAmount>1500</workAmount>
+		<products>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_AdvancedComponentIndustrial</defName>
+		<label>Pattern Advanced Component</label>
+		<description>Pattern a pile of five generalist advanced Components from pure Cosmic Matter.</description>
+		<workAmount>4500</workAmount>
+		<products>
+			<ComponentSpacer>5</ComponentSpacer>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_Component_GenII</defName>
+		<label>Pattern Cosmic Component</label>
+		<description>Pattern a pile of five cosmic Components from pure Cosmic Matter.</description>
+		<workAmount>9000</workAmount>
+		<products>
+			<SNS_Component_GenII>5</SNS_Component_GenII>
+		</products>
+	</RecipeDef>
+	<!--Mech Serums-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MechSerumHealer</defName>
+		<label>Pattern Heal Serum</label>
+		<description>Pattern a single injector of Mech Heal Serum from pure Cosmic Matter.</description>
+		<workAmount>30000</workAmount>
+		<products>
+			<MechSerumHealer>1</MechSerumHealer>
+		</products>
+	</RecipeDef>
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_MechSerumResurrector</defName>
+		<label>Pattern Resurrector Serum</label>
+		<description>Pattern a single injector of Mech Resurrector Serum from pure Cosmic Matter.</description>
+		<workAmount>75000</workAmount>
+		<products>
+			<MechSerumResurrector>1</MechSerumResurrector>
+		</products>
+	</RecipeDef>
+	<!--SNS Items-->
+	<RecipeDef ParentName="SNS_CosmicCall_Item">
+		<defName>SNS_Production_CosmicCall_FuelCell</defName>
+		<label>Pattern Fuel Cells</label>
+		<description>Pattern a stack of Cosmic Fuel Catalyst Cells from pure Cosmic Matter.</description>
+		<workAmount>7500</workAmount>
+		<products>
+			<SNS_Unobtainium_Fuel>100</SNS_Unobtainium_Fuel>
+		</products>
+	</RecipeDef>
+</Defs>

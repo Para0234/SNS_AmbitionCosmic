@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Cosmic Forge -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_Unobtainer</defName>
+		<label>And So, A New Era Begins</label>
+		<description>Construct a Cosmic Forge.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Table_SNS_Unobtainer</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/Unobtainer</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Cosmic Manipulator -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_CosmicManipulator</defName>
+		<label>Toying With The Fabric</label>
+		<description>Construct a Cosmic Manipulator.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Table_SNS_CosmicDrawer</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicDrawer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Atomic Fabricator -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_AtomicFabricator</defName>
+		<label>Forging With The Fabric</label>
+		<description>Construct an Atomic Fabricator.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Table_SNS_Constructor</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/AtomFabricator</texPath>
+		<points>15</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- R.I.F.T. Fabricator -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_CosmicCall</defName>
+		<label>From Nothingness</label>
+		<description>Construct a R.I.F.T. Fabricator.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Table_SNS_CosmicCall</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicCall</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Utopia Device -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_PinnacleFabricator</defName>
+		<label>The Fabric Breathes</label>
+		<description>Construct the Utopia Device.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>Table_SNS_PinnacleFabricator</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/PinnacleFabricator</texPath>
+		<points>250</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Gen1 Reactor -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_Reactor_GenI</defName>
+		<label>What A Wonderful Reactor</label>
+		<description>Construct a Cosmic Reactor Generation 1.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>SNS_Reactor_I</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/ColdFusionReactor</texPath>
+		<points>5</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Gen2 Reactor -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_Reactor_GenII</defName>
+		<label>Look At It Go!</label>
+		<description>Construct a Cosmic Reactor Generation 2</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>SNS_Reactor_II</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicReactor_north</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+
+	<!-- Gen3 Reactor -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_BuildThing_Reactor_GenIII</defName>
+		<label>Nigh-On-Limitless</label>
+		<description>Construct a Cosmic Reactor Generation Omega.</description>
+
+		<tracker Class="AchievementsExpanded.BuildingTracker">
+			<def>SNS_Reactor_III</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/CosmicReactor_Gen3</texPath>
+		<points>20</points>
+	</AchievementsExpanded.AchievementDef>
+
+</Defs>
