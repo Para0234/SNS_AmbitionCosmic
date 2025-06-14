@@ -9,5 +9,6 @@
         <li>/</li>
         <li>1.6/Base</li>
         <li IfModActive="Ludeon.RimWorld.Biotech">1.6/Mods/Biotech</li>
+		<li IfModActive="vanillaexpanded.achievements">1.6/Mods/vanillaAchievementsExpanded</li>
     </v1.6>
 </loadFolders>
