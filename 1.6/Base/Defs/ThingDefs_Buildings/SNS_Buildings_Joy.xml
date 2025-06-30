@@ -1,0 +1,730 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>SNS_UrBoard</defName>
+    <label>advanced game-of-Ur board</label>
+    <description>Dating from 2500BC, this exciting yet infuriating board game can be played by one or two people. The board has an on-board AI that can act as another player and/or provide training. It trains intellectual skills.\n\nThe board provides a higher amount of joy and training than the normal game-of-Ur board.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/UrBoard/UrBoard</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+    </graphicData>
+    <castEdgeShadows>false</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>true</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.20</fillPercent>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>2</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>15</Beauty>
+      <JoyGainFactor>1.1</JoyGainFactor>
+    </statBases>
+    <costList>
+      <SNS_Unobtainium>40</SNS_Unobtainium>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <pathCost>14</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>SNS_ChessTable</defName>
+    <label>advanced chess table</label>
+    <description>The ancient game of kings. Fun for a few hours here and there, even playing alone. The board has an on-board AI that can act as another player and/or provide training. It trains intellectual skills.\n\nThe board provides a higher amount of joy and training than the normal chess table.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/ChessTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shadowData>
+        <volume>(0.65, 0.25, 0.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>16000</WorkToBuild>
+      <Mass>5</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>20</Beauty>
+      <JoyGainFactor>1.25</JoyGainFactor>
+    </statBases>
+    <costList>
+      <SNS_Unobtainium>55</SNS_Unobtainium>
+      <ComponentSpacer>5</ComponentSpacer>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <pathCost>30</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>SNS_PokerTable</defName>
+    <label>advanced poker table</label>
+    <description>A table designed for playing gambling card games like poker. A great way to test your strategic skills and a bit of luck. The board has an on-board AI that can act as another player and/or provide training. It trains intellectual skills.\n\nThe board provides a higher amount of joy and training than the normal poker table.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/PokerTable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <shadowData>
+        <volume>(1.6, 0.3, 1.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <building>
+      <joyKind>Gaming_Cerebral</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1.55</JoyGainFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <costList>
+      <SNS_Unobtainium>75</SNS_Unobtainium>
+      <ComponentSpacer>8</ComponentSpacer>
+    </costList>
+    <pathCost>42</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>SNS_BilliardsTable</defName>
+    <label>advanced billards table</label>
+    <description>A soft-topped bounded table for playing a variety of billiards-type games. It trains shooting ability. The board has an on-board AI that can act as another player and/or provide training. It trains intellectual skills.\n\nThe board provides a higher amount of joy and training than the normal billards table.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/BilliardsTable/BilliardsTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4,4)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <building>
+      <joyKind>Gaming_Dexterity</joyKind>
+      <buildingSizeCategory>Medium</buildingSizeCategory>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1.55</JoyGainFactor>
+    </statBases>
+    <size>(2,3)</size>
+    <costList>
+      <SNS_Unobtainium>125</SNS_Unobtainium>
+      <ComponentSpacer>7</ComponentSpacer>
+    </costList>
+    <pathCost>42</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <canOverlapZones>false</canOverlapZones>
+    <placeWorkers>
+      <li>PlaceWorker_NeverAdjacentUnstandable</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2500</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Television_GenI</defName>
+    <label>giga-television</label>
+    <description>A massive, high-tech television fit for a theater. Gigantic, hyper-vibrant images almost leap out of the screen, utilizing advanced upscaling technology to further increase image quality. Very entertaining. Picks up transmissions from ancient satellites and ubiquitous data cards.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/TV_Gen1/TV_Gen1</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(5, 1.2, 0.2)</volume>
+        <offset>(0, 0, 0.2)</offset>
+      </shadowData>
+      <drawSize>(6,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <SNS_Unobtainium>275</SNS_Unobtainium>
+      <ComponentSpacer>15</ComponentSpacer>
+    </costList>
+    <statBases>
+      <WorkToBuild>120000</WorkToBuild>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+      <JoyGainFactor>1.75</JoyGainFactor>
+    </statBases>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(6,2)</size>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>3~10</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>9</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>3400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Television_GenII</defName>
+    <label>advanced giga-television</label>
+    <description>A massive, high-tech television fit for a theater. Gigantic, hyper-vibrant images almost leap out of the screen, utilizing advanced upscaling technology to further increase image quality. Very entertaining. Picks up transmissions from ancient satellites and ubiquitous data cards, alongside distant high-power Cosmic Empire transmission stations intended for some distant Cosmic Empire outpost colony.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/TV_Gen2/TV_Gen2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(5, 1.2, 0.2)</volume>
+        <offset>(0, 0, 0.2)</offset>
+      </shadowData>
+      <drawSize>(6,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <SNS_CosmicAlloy>225</SNS_CosmicAlloy>
+      <SNS_Component_GenII>12</SNS_Component_GenII>
+    </costList>
+    <statBases>
+      <WorkToBuild>150000</WorkToBuild>
+      <MaxHitPoints>1050</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+      <JoyGainFactor>2</JoyGainFactor>
+    </statBases>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(6,2)</size>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>3~10</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>9</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>SNS_Research_III_furniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>15000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Television_GenIII</defName>
+    <label>pattern transmission unit</label>
+    <description>A massive, arcane television fit for a theater. Gigantic, hyper-vibrant images almost leap out of the screen, utilizing advanced upscaling technology to further increase image quality. Extremely entertaining. Picks up transmissions from seemingly everywhere at once with perfect reception, faster than light. How it is able to recieve lightspeed signals from distant corners of human territory is unknown, all that is known is that it just works.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/TV_Gen3/TV_Gen3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(5, 1.2, 0.2)</volume>
+        <offset>(0, 0, 0.2)</offset>
+      </shadowData>
+      <drawSize>(6,2)</drawSize>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.35</fillPercent>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <SNS_CosmicAlloy>225</SNS_CosmicAlloy>
+      <SNS_Component_GenIII>3</SNS_Component_GenIII>
+    </costList>
+    <statBases>
+      <WorkToBuild>180000</WorkToBuild>
+      <MaxHitPoints>1800</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>15</Mass>
+      <JoyGainFactor>2.5</JoyGainFactor>
+    </statBases>
+    <pathCost>50</pathCost>
+    <passability>PassThroughOnly</passability>
+    <size>(6,2)</size>
+    <building>
+      <joyKind>Television</joyKind>
+      <spawnedConceptLearnOpportunity>TVForSickPeople</spawnedConceptLearnOpportunity>
+      <boughtConceptLearnOpportunity>TVForSickPeople</boughtConceptLearnOpportunity>
+      <watchBuildingStandDistanceRange>3~12</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>11</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>SNS_Research_VI_furniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>28000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Telescope_GenI</defName>
+    <label>high-yield telescope</label>
+    <description>A powerful telescope for doing ameteur astronomy, able to view a full night sky even in places of extreme light pollution. It's a relaxing hobby for a certain kind of person. Can only be used outdoors.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Telescope_Gen1</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.3, 0.7, 0.3)</volume>
+        <offset>(-0.03,0,-0.35)</offset>
+      </shadowData>
+    </graphicData>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+    <fillPercent>0.15</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>Telescope</joyKind>
+    </building>
+    <costList>
+      <SNS_Unobtainium>35</SNS_Unobtainium>
+      <ComponentSpacer>4</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>225</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>7.5</Mass>
+      <JoyGainFactor>1.5</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>2400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Telescope_GenII</defName>
+    <label>temporal telescope</label>
+    <description>A powerful telescope for doing ameteur astronomy, able to view a full night sky even in places of extreme light pollution. It has an on-board AI able to simulate the progression of deep time, simulating an older or younger universe depending on user choice. It's a relaxing hobby for a certain kind of person. Can only be used outdoors. Comes equipped with a Virtual-Reality headset for extra immersion.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Telescope_Gen2</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.3, 0.7, 0.3)</volume>
+        <offset>(-0.03,0,-0.35)</offset>
+      </shadowData>
+    </graphicData>
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+    <fillPercent>0.15</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>Telescope</joyKind>
+    </building>
+    <costList>
+      <SNS_CosmicAlloy>45</SNS_CosmicAlloy>
+      <SNS_Component_GenII>8</SNS_Component_GenII>
+    </costList>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>7.5</Mass>
+      <JoyGainFactor>1.75</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>6800</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_III_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Telescope_GenIII</defName>
+    <label>cosmic observer</label>
+    <description>The ultimate stargazing device, the cosmic observer can peer at the night sky even when underneath a roof, and across all of time from the dawn of the universe to the day the last star vanishes from the sky forever. It's a relaxing hobby for a certain kind of person, and a wonder for everyone else. Comes equipped with four Virtual-Reality headsets for extra immersion, meaning that four people can use the cosmic observer at once.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Telescope_Gen3</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawRotated>false</drawRotated>
+      <shadowData>
+        <volume>(0.7, 0.7, 0.7)</volume>
+      </shadowData>
+    </graphicData>
+    <canBeUsedUnderRoof>true</canBeUsedUnderRoof>
+    <fillPercent>0.6</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <pathCost>30</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>Telescope</joyKind>
+    </building>
+    <costList>
+      <SNS_CosmicAlloy>50</SNS_CosmicAlloy>
+      <SNS_Component_GenIII>6</SNS_Component_GenIII>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>7.5</Mass>
+      <JoyGainFactor>2</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>24000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_VI_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Computer_GenI</defName>
+    <label>stellar computer</label>
+    <description>A powerful computer setup capable of almost anything. It has several high-end applications and games that provide an endless amount of entertainment, no matter the user.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Computer_Gen1/Computer_Gen1</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <fillPercent>0.45</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>SNS_Computer</joyKind>
+    </building>
+    <costList>
+      <SNS_Unobtainium>150</SNS_Unobtainium>
+      <ComponentSpacer>12</ComponentSpacer>
+    </costList>
+    <statBases>
+      <MaxHitPoints>300</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>25</Mass>
+      <JoyGainFactor>2</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>5000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_II_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Computer_GenII</defName>
+    <label>cosmic computer</label>
+    <description>An extremely powerful computer setup capable of almost anything. It has several high-end applications and game that provide an endless amount of entertainment, alongside a highly complex AI on-board that can create new applications and games to the user's needs.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Computer_Gen2/Computer_Gen2</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <fillPercent>0.45</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>SNS_Computer</joyKind>
+    </building>
+    <costList>
+      <SNS_CosmicAlloy>150</SNS_CosmicAlloy>
+      <SNS_Component_GenII>15</SNS_Component_GenII>
+    </costList>
+    <statBases>
+      <MaxHitPoints>750</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>25</Mass>
+      <JoyGainFactor>2.5</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>18000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_III_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>SNS_Computer_GenIII</defName>
+    <label>enigmatic computer</label>
+    <description>A supremely powerful computer setup capable of almost anything. It has several high-end applications and game that provide an endless amount of entertainment. It also has an extremely complex AI on-board that is able to not only create wholly new applications and games tailored to its user, but also modify and extend existing games--even those that were not created by the AI, all perfectly tailored to its user. The possibilities are truly endless.</description>
+    <graphicData>
+      <texPath>Things/Building/Joy/SNS/Computer_Gen3/Computer_Gen3</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(2.5,2.5)</drawSize>
+    </graphicData>
+    <size>(2,1)</size>
+    <fillPercent>0.45</fillPercent>
+    <altitudeLayer>Building</altitudeLayer>
+    <hasInteractionCell>true</hasInteractionCell>
+    <interactionCellOffset>(1,0,1)</interactionCellOffset>
+    <passability>PassThroughOnly</passability>
+    <pathCost>60</pathCost>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <building>
+      <joyKind>SNS_Computer</joyKind>
+    </building>
+    <costList>
+      <SNS_CosmicAlloy>175</SNS_CosmicAlloy>
+      <SNS_Component_GenIII>5</SNS_Component_GenIII>
+    </costList>
+    <statBases>
+      <MaxHitPoints>1250</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Mass>25</Mass>
+      <JoyGainFactor>3</JoyGainFactor>
+    </statBases>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>34000</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+    </comps>
+    <researchPrerequisites>
+      <li>SNS_Research_VI_furniture</li>
+    </researchPrerequisites>
+    <designationCategory>Joy</designationCategory>
+  </ThingDef>
+
+</Defs>

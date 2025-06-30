@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JoyGiverDef>
+    <defName>Play_SNS_UrBoard</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>3</baseChance>
+    <requireChair>false</requireChair>
+    <thingDefs>
+      <li>SNS_UrBoard</li>
+    </thingDefs>
+    <jobDef>Play_SNS_UrBoard</jobDef>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Play_SNS_Chess</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>3</baseChance>
+    <thingDefs>
+      <li>SNS_ChessTable</li>
+    </thingDefs>
+    <jobDef>Play_SNS_Chess</jobDef>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Play_SNS_Billiards</defName>
+    <giverClass>JoyGiver_PlayBilliards</giverClass>
+    <baseChance>4</baseChance>
+    <thingDefs>
+      <li>SNS_BilliardsTable</li>
+    </thingDefs>
+    <jobDef>Play_SNS_Billiards</jobDef>
+    <joyKind>Gaming_Dexterity</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Play_SNS_Poker</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>4</baseChance>
+    <thingDefs>
+      <li>SNS_PokerTable</li>
+    </thingDefs>
+    <jobDef>Play_SNS_Poker</jobDef>
+    <joyKind>Gaming_Cerebral</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <!-- television -->
+
+  <JoyGiverDef>
+    <defName>Watch_SNS_Television_GenI</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>5</baseChance>
+    <canDoWhileInBed>true</canDoWhileInBed>
+    <thingDefs>
+      <li>SNS_Television_GenI</li>
+    </thingDefs>
+    <jobDef>Watch_SNS_Television_GenI</jobDef>
+    <joyKind>Television</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Watch_SNS_Television_GenII</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>6</baseChance>
+    <canDoWhileInBed>true</canDoWhileInBed>
+    <thingDefs>
+      <li>SNS_Television_GenII</li>
+    </thingDefs>
+    <jobDef>Watch_SNS_Television_GenII</jobDef>
+    <joyKind>Television</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Watch_SNS_Television_GenIII</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>7</baseChance>
+    <canDoWhileInBed>true</canDoWhileInBed>
+    <thingDefs>
+      <li>SNS_Television_GenIII</li>
+    </thingDefs>
+    <jobDef>Watch_SNS_Television_GenIII</jobDef>
+    <joyKind>Television</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <!-- telescope -->
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Telescope_GenI</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>4</baseChance>
+    <thingDefs>
+      <li>SNS_Telescope_GenI</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Telescope_GenI</jobDef>
+    <joyKind>Telescope</joyKind>
+    <unroofedOnly>true</unroofedOnly>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Telescope_GenII</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>5</baseChance>
+    <thingDefs>
+      <li>SNS_Telescope_GenII</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Telescope_GenII</jobDef>
+    <joyKind>Telescope</joyKind>
+    <unroofedOnly>true</unroofedOnly>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Telescope_GenIII</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>6</baseChance>
+    <thingDefs>
+      <li>SNS_Telescope_GenIII</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Telescope_GenIII</jobDef>
+    <joyKind>Telescope</joyKind>
+    <unroofedOnly>true</unroofedOnly>
+    <requiredCapacities>
+      <li>Sight</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <!-- computer -->
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Computer_GenI</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>6</baseChance>
+    <thingDefs>
+      <li>SNS_Computer_GenI</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Computer_GenI</jobDef>
+    <joyKind>SNS_Computer</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Computer_GenII</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>7</baseChance>
+    <thingDefs>
+      <li>SNS_Computer_GenII</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Computer_GenII</jobDef>
+    <joyKind>SNS_Computer</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <JoyGiverDef>
+    <defName>Use_SNS_Computer_GenIII</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>8</baseChance>
+    <thingDefs>
+      <li>SNS_Computer_GenIII</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Computer_GenIII</jobDef>
+    <joyKind>SNS_Computer</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+
+  <!-- eternity cell -->
+  <JoyGiverDef>
+    <defName>Use_SNS_Hidden</defName>
+    <giverClass>JoyGiver_InteractBuildingInteractionCell</giverClass>
+    <baseChance>10</baseChance>
+    <thingDefs>
+      <li>SNS_Hidden</li>
+    </thingDefs>
+    <jobDef>Use_SNS_Hidden</jobDef>
+    <joyKind>SNS_Hidden</joyKind>
+  </JoyGiverDef>
+
+</Defs>

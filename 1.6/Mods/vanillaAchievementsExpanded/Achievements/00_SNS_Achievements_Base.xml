@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<AchievementsExpanded.AchievementDef Name="SNS_Achievement_Base" Abstract="true">
+		<tab>SNS_AchievementTab_AmbitionCosmic</tab>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

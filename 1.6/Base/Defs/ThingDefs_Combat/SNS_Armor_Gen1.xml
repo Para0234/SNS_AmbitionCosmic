@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="ArmorHelmetMakeableBase">
+    <techLevel>Ultra</techLevel>
+    <defName>SNS_Apparel_CosmicAlloyHelmet</defName>
+    <label>Starsteel Helmet</label>
+    <description>A feather-light combat helmet with a complex design, made of pure Starsteel. Not very effective against blunt weaponry.</description>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_II_armor</researchPrerequisite>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CosmicPlateHelmet/CosmicPlateHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.4</uiIconScale>
+    <statBases>
+      <WorkToMake>5000</WorkToMake>
+      <MaxHitPoints>450</MaxHitPoints>
+      <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>0.5</Mass>
+      <Flammability>0</Flammability>
+      <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.45</ArmorRating_Heat>
+      <Insulation_Cold>15</Insulation_Cold>
+      <Insulation_Heat>8</Insulation_Heat>
+      <EquipDelay>2</EquipDelay>
+    </statBases>
+    <costList>
+      <ComponentSpacer>1</ComponentSpacer>
+      <SNS_Unobtainium>45</SNS_Unobtainium>
+    </costList>
+    <apparel>
+      <bodyPartGroups>
+        <li>FullHead</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CosmicPlateHelmet/CosmicPlateHelmet</wornGraphicPath>
+      <layers>
+        <li>Overhead</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="ArmorSmithableBase">
+    <techLevel>Ultra</techLevel>
+    <defName>SNS_Apparel_CosmicAlloyPlateArmor</defName>
+    <label>Starsteel Plate Armor</label>
+    <description>Overlapping solid plates of Starsteel armor covering the entire body from neck to feet. Unlike standard Plate Armor, however, this does not restrict movement in the slightest and is superior to the likes of Power Armor.</description>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedMetallicTechArmor</unfinishedThingDef>
+      <researchPrerequisite>SNS_Research_II_armor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>7</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Apparel/CosmicPlateArmor/CosmicPlateArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <WorkToMake>15000</WorkToMake>
+      <DeteriorationRate>0.0</DeteriorationRate>
+      <Mass>2</Mass>
+      <MaxHitPoints>900</MaxHitPoints>
+      <Flammability>0.0</Flammability>
+      <ArmorRating_Sharp>1.25</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.25</ArmorRating_Heat>
+      <Insulation_Cold>50</Insulation_Cold>
+      <Insulation_Heat>25</Insulation_Heat>
+      <EquipDelay>4</EquipDelay>
+
+      <!-- <EnergyShieldRechargeRate>0.1</EnergyShieldRechargeRate> -->
+      <!-- <EnergyShieldEnergyMax>1</EnergyShieldEnergyMax> -->
+    </statBases>
+    <costList>
+      <ComponentSpacer>2</ComponentSpacer>
+      <SNS_Unobtainium>240</SNS_Unobtainium>
+      <SNS_Unobtainium_Fiber>75</SNS_Unobtainium_Fiber>
+    </costList>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Waist</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Hands</li>
+        <li>Legs</li>
+        <li>Feet</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CosmicPlateArmor/CosmicPlateArmor</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <tags>
+        <li>SpacerMilitary</li>
+        <li>RoyalCombatGear</li>
+        <li>PrestigeCombatGear</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

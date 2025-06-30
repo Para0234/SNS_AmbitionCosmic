@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Paradox\\Desktop\\Git\\SNS_AmbitionCosmic\\1.6\\Base\\Source\\InfiniteResearch\\InfiniteResearch.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Paradox\\Desktop\\Git\\SNS_AmbitionCosmic\\1.6\\Base\\Source\\InfiniteResearch\\InfiniteResearch.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Paradox\\Desktop\\Git\\SNS_AmbitionCosmic\\1.6\\Base\\Source\\InfiniteResearch\\InfiniteResearch.csproj",
+        "projectName": "InfiniteResearch",
+        "projectPath": "C:\\Users\\Paradox\\Desktop\\Git\\SNS_AmbitionCosmic\\1.6\\Base\\Source\\InfiniteResearch\\InfiniteResearch.csproj",
+        "packagesPath": "C:\\Users\\Paradox\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Paradox\\Desktop\\Git\\SNS_AmbitionCosmic\\1.6\\Base\\Source\\InfiniteResearch\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "UsingMicrosoftNETSdk": false,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Paradox\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Krafs.Rimworld.Ref": {
+              "target": "Package",
+              "version": "[1.6.4490-beta, )"
+            },
+            "Lib.Harmony": {
+              "target": "Package",
+              "version": "[2.3.6, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
