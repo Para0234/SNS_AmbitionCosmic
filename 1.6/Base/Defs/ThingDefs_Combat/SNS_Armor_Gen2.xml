@@ -105,6 +105,8 @@
     <equippedStatOffsets>
       <MoveSpeed>1</MoveSpeed>
       <!-- <CarryingCapacity>30</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+      <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -117,10 +119,6 @@
       <SNS_Component_GenII>15</SNS_Component_GenII>
       <SNS_CosmicAlloyWeave>125</SNS_CosmicAlloyWeave>
     </costList>
-    <equippedStatOffsets>
-      <ToxicResistance>1</ToxicResistance>
-	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
-    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
