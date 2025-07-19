@@ -7,6 +7,7 @@
 		<skillRequirements />
 		<workAmount>45000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<ingredients />
 		<fixedIngredientFilter />
@@ -18,6 +19,7 @@
 	<RecipeDef ParentName="SNS_DrawCosmicMatter">
 		<defName>SNS_Production_DrawCosmicMatter</defName>
 		<label>Draw Cosmic Matter</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Combine a lot of time and energy into drawing pure, stable Cosmic Matter.</description>
 		<products>
 			<SNS_CosmicMatter>100</SNS_CosmicMatter>
@@ -29,6 +31,7 @@
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
 		<skillRequirements />
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<ingredients />
 		<fixedIngredientFilter />
@@ -155,6 +158,7 @@
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
 		<skillRequirements />
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<ingredients />
 		<fixedIngredientFilter />
@@ -241,6 +245,7 @@
 		</fixedIngredientFilter>
 		<workAmount>4500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Cosmic medicine</jobString>
@@ -302,6 +307,7 @@
 		</fixedIngredientFilter>
 		<workAmount>19125</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Cosmic medicine</jobString>
@@ -346,6 +352,7 @@
 		</fixedIngredientFilter>
 		<workAmount>9000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Enigmatic Medicine</jobString>
@@ -387,6 +394,7 @@
 		</fixedIngredientFilter>
 		<workAmount>38250</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Enigmatic Medicine</jobString>
@@ -428,6 +436,7 @@
 		</fixedIngredientFilter>
 		<workAmount>3000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Aeterno</jobString>
@@ -469,6 +478,7 @@
 		</fixedIngredientFilter>
 		<workAmount>12750</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating aeterno</jobString>
@@ -519,6 +529,7 @@
 		</fixedIngredientFilter>
 		<workAmount>1500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating Panacea</jobString>
@@ -560,6 +571,7 @@
 		</fixedIngredientFilter>
 		<workAmount>3000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM-VI</jobString>
@@ -601,6 +613,7 @@
 		</fixedIngredientFilter>
 		<workAmount>12750</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM_VI</jobString>
@@ -642,6 +655,7 @@
 		</fixedIngredientFilter>
 		<workAmount>17500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Creating STIM-X</jobString>
@@ -683,6 +697,7 @@
 		</fixedIngredientFilter>
 		<workAmount>750</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making Cosmic Component</jobString>
@@ -724,6 +739,7 @@
 		</fixedIngredientFilter>
 		<workAmount>3187</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making Cosmic Component</jobString>
@@ -765,6 +781,7 @@
 		</fixedIngredientFilter>
 		<workAmount>1500</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making Enigmatic Component</jobString>
@@ -806,6 +823,7 @@
 		</fixedIngredientFilter>
 		<workAmount>6375</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<jobString>Making Enigmatic Component</jobString>
@@ -856,6 +874,7 @@
 		</fixedIngredientFilter>
 		<workAmount>250000</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
 		<skillRequirements>
