@@ -47,6 +47,7 @@
       <MeleeHitChance>0.05</MeleeHitChance>
       <MeleeDodgeChance>0.05</MeleeDodgeChance>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -123,6 +124,7 @@
       <MeleeCooldownFactor>-0.1</MeleeCooldownFactor>
       <MeleeDamageFactor>0.1</MeleeDamageFactor>
       <StaggerDurationFactor>-0.1</StaggerDurationFactor>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -204,6 +206,7 @@
       <AimingDelayFactor>-0.25</AimingDelayFactor>
       <RangedCooldownFactor>-0.25</RangedCooldownFactor>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -275,6 +278,7 @@
       <AimingDelayFactor>-0.25</AimingDelayFactor>
       <RangedCooldownFactor>-0.25</RangedCooldownFactor>
 	  <!-- <CarryingCapacity>250</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -355,6 +359,7 @@
       <MeleeHitChance>0.25</MeleeHitChance>
       <MeleeDodgeChance>0.25</MeleeDodgeChance>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -427,6 +432,7 @@
       <MeleeDamageFactor>0.5</MeleeDamageFactor>
       <StaggerDurationFactor>-0.5</StaggerDurationFactor>
 	  <!-- <CarryingCapacity>250</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -506,6 +512,7 @@
     <equippedStatOffsets>
       <PsychicSensitivity>1.5</PsychicSensitivity>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -578,6 +585,7 @@
       <PsychicEntropyMax>1000</PsychicEntropyMax>
       <MoveSpeed>3</MoveSpeed>
 	  <!-- <CarryingCapacity>250</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -661,6 +669,7 @@
       <MechRemoteShieldEnergy>250</MechRemoteShieldEnergy>
       <MechBandwidth>10</MechBandwidth>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -736,6 +745,7 @@
       <WorkSpeedGlobalOffsetMech>2</WorkSpeedGlobalOffsetMech>
       <MoveSpeed>3</MoveSpeed>
 	  <!-- <CarryingCapacity>250</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
@@ -818,6 +828,7 @@
       <RestFallRateFactor>-0.25</RestFallRateFactor>
       <WorkSpeedGlobal>0.5</WorkSpeedGlobal>
       <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -890,6 +901,7 @@
 	  <CarryingCapacity>250</CarryingCapacity> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
       <ButcheryMechanoidEfficiency>0.5</ButcheryMechanoidEfficiency>
       <ConstructSuccessChance>1</ConstructSuccessChance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
