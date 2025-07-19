@@ -7,6 +7,7 @@
 		<jobString>Atomically Fabricating</jobString>
 		<!--workSpeedStat>SmithingSpeed</workSpeedStat-->
 		<skillRequirements />
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<workSkill>Intellectual</workSkill>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<ingredients />
@@ -20,6 +21,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_MealSimple</defName>
 		<label>Pattern Simple Meal</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern Simple Meals from pure Cosmic Matter.</description>
 		<workAmount>750</workAmount>
 		<products>
@@ -38,6 +40,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_MealLavish</defName>
 		<label>Pattern Lavish Meal</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern Lavish Meals from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
 		<products>
@@ -47,6 +50,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_NutrientBarGenI</defName>
 		<label>Pattern Nutrient Bar</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern Nutrient Bars from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
 		<products>
@@ -56,6 +60,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_MealGenII</defName>
 		<label>Pattern Decadent Meal</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern Luxurious Meals from pure Cosmic Matter.</description>
 		<workAmount>6000</workAmount>
 		<products>
@@ -65,6 +70,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_NutrientBarGenII</defName>
 		<label>Pattern Advanced Nutrient Bar</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern Nutrient Bars from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
 		<products>
@@ -76,6 +82,7 @@
 		<label>Pattern Kibble</label>
 		<description>Pattern Kibble from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Kibble>100</Kibble>
 		</products>
@@ -86,6 +93,7 @@
 		<label>Pattern Herbal Medicine</label>
 		<description>Pattern five packages of Herbal Medicine from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<MedicineHerbal>5</MedicineHerbal>
 		</products>
@@ -95,6 +103,7 @@
 		<label>Pattern Medicine</label>
 		<description>Pattern five packages of Industrial-Grade Medicine from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<MedicineIndustrial>5</MedicineIndustrial>
 		</products>
@@ -104,6 +113,7 @@
 		<label>Pattern Glitterworld Medicine</label>
 		<description>Pattern five packages of Glitterworld Medicine from pure Cosmic Matter.</description>
 		<workAmount>13500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<MedicineUltratech>5</MedicineUltratech>
 		</products>
@@ -113,6 +123,7 @@
 		<label>Pattern Stellar Medicine</label>
 		<description>Pattern five packages of Stellar Medicine from pure Cosmic Matter.</description>
 		<workAmount>13500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Medicine_GenI>5</SNS_Medicine_GenI>
 		</products>
@@ -122,6 +133,7 @@
 		<label>Pattern Cosmic Medicine</label>
 		<description>Pattern five packages of Cosmic Medicine from pure Cosmic Matter.</description>
 		<workAmount>24000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Medicine_GenII>5</SNS_Medicine_GenII>
 		</products>
@@ -132,6 +144,7 @@
 		<label>Pattern Lux</label>
 		<description>Pattern ten serving of Lux from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Lux>10</SNS_Lux>
 		</products>
@@ -141,6 +154,7 @@
 		<label>Pattern Aegis</label>
 		<description>Pattern twenty pills of Aegis from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Aegis>20</SNS_Aegis>
 		</products>
@@ -150,6 +164,7 @@
 		<label>Pattern Aeterno</label>
 		<description>Pattern twenty pills of Aeterno from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Aeterno>20</SNS_Aeterno>
 		</products>
@@ -159,6 +174,7 @@
 		<label>Pattern STIM-IV</label>
 		<description>Pattern twenty-five pills of STIM-IV from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Stim_I>25</SNS_Stim_I>
 		</products>
@@ -168,6 +184,7 @@
 		<label>Pattern STIM-VII</label>
 		<description>Pattern twenty-five pills of STIM-VII from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Stim_II>25</SNS_Stim_II>
 		</products>
@@ -177,6 +194,7 @@
 		<label>Pattern Boost</label>
 		<description>Pattern five injectors of Boost from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Drug_Combat_I>5</SNS_Drug_Combat_I>
 		</products>
@@ -186,6 +204,7 @@
 		<label>Pattern Accelerant</label>
 		<description>Pattern five injectors of Accelerant from pure Cosmic Matter.</description>
 		<workAmount>6000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Drug_Combat_II>5</SNS_Drug_Combat_II>
 		</products>
@@ -196,6 +215,7 @@
 		<label>Pattern Neutroamine</label>
 		<description>Pattern five units of Neutroamine from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Neutroamine>5</Neutroamine>
 		</products>
@@ -205,6 +225,7 @@
 		<label>Pattern Penoxycyline</label>
 		<description>Pattern a small container of 50 Penoxycyline pills from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Penoxycyline>50</Penoxycyline>
 		</products>
@@ -214,6 +235,7 @@
 		<label>Pattern Ambrosia</label>
 		<description>Pattern a sizeable pile of 25 Ambrosia fruits from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Ambrosia>25</Ambrosia>
 		</products>
@@ -223,6 +245,7 @@
 		<label>Pattern Luciferium</label>
 		<description>Pattern ten Luciferium pills from pure Cosmic Matter.</description>
 		<workAmount>7500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Luciferium>10</Luciferium>
 		</products>
@@ -233,6 +256,7 @@
 		<label>Pattern Silver</label>
 		<description>Pattern a pile of 500 Silver pieces from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Silver>300</Silver>
 		</products>
@@ -242,6 +266,7 @@
 		<label>Pattern Gold</label>
 		<description>Pattern a pile of 500 Gold pieces from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Gold>500</Gold>
 		</products>
@@ -251,6 +276,7 @@
 		<label>Pattern Steel</label>
 		<description>Pattern a collection of 75 Steel ingots from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Steel>75</Steel>
 		</products>
@@ -260,6 +286,7 @@
 		<label>Pattern Plasteel</label>
 		<description>Pattern 75 small sheets of Plasteel from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Plasteel>75</Plasteel>
 		</products>
@@ -269,6 +296,7 @@
 		<label>Pattern Uranium</label>
 		<description>Pattern 75 pieces of self-contained Uranium from pure Cosmic Matter.</description>
 		<workAmount>7500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Uranium>75</Uranium>
 		</products>
@@ -278,6 +306,7 @@
 		<label>Pattern Granite Blocks</label>
 		<description>Pattern a neat stack of 75 Granite blocks from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<BlocksGranite>75</BlocksGranite>
 		</products>
@@ -287,6 +316,7 @@
 		<label>Pattern Chemfuel</label>
 		<description>Pattern a full, large container filled with 150 units of Chemfuel from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<Chemfuel>150</Chemfuel>
 		</products>
@@ -297,6 +327,7 @@
 		<label>Pattern Starsteel</label>
 		<description>Pattern 75 units of Starsteel from pure Cosmic Matter.</description>
 		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Unobtainium>75</SNS_Unobtainium>
 		</products>
@@ -306,6 +337,7 @@
 		<label>Pattern Starsteel 'Wool'</label>
 		<description>Pattern 75 units of Starsteel Wool from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_Unobtainium_Fiber>75</SNS_Unobtainium_Fiber>
 		</products>
@@ -315,6 +347,7 @@
 		<label>Pattern Cosmic Alloy</label>
 		<description>Pattern 75 units of Cosmic Alloy from pure Cosmic Matter.</description>
 		<workAmount>9000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_CosmicAlloy>75</SNS_CosmicAlloy>
 		</products>
@@ -324,6 +357,7 @@
 		<label>Pattern Cosmic Weave</label>
 		<description>Pattern 75 units of Cosmic Alloy Weave from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_CosmicAlloyWeave>75</SNS_CosmicAlloyWeave>
 		</products>
@@ -333,6 +367,7 @@
 		<label>Summon Cosmic Matter</label>
 		<description>Draw Cosmic Matter directly from the Eternal Plane.</description>
 		<workAmount>3000</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<SNS_CosmicMatter>250</SNS_CosmicMatter>
 		</products>
@@ -341,6 +376,7 @@
 		<defName>SNS_Production_CosmicCall_Eternium</defName>
 		<workAmount>90000</workAmount>
 		<label>Draw Eternium</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<researchPrerequisites>
 			<li>SNS_Research_VI_base</li>
 		</researchPrerequisites>
@@ -353,6 +389,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_ComponentIndustrial</defName>
 		<label>Pattern Component</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern a pile of five generalist basic Components from pure Cosmic Matter.</description>
 		<workAmount>1500</workAmount>
 		<products>
@@ -364,6 +401,7 @@
 		<label>Pattern Advanced Component</label>
 		<description>Pattern a pile of five generalist advanced Components from pure Cosmic Matter.</description>
 		<workAmount>4500</workAmount>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<products>
 			<ComponentSpacer>5</ComponentSpacer>
 		</products>
@@ -371,6 +409,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_Component_GenII</defName>
 		<label>Pattern Cosmic Component</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern a pile of five cosmic Components from pure Cosmic Matter.</description>
 		<workAmount>9000</workAmount>
 		<products>
@@ -381,6 +420,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_MechSerumHealer</defName>
 		<label>Pattern Heal Serum</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern a single injector of Mech Heal Serum from pure Cosmic Matter.</description>
 		<workAmount>30000</workAmount>
 		<products>
@@ -390,6 +430,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_MechSerumResurrector</defName>
 		<label>Pattern Resurrector Serum</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern a single injector of Mech Resurrector Serum from pure Cosmic Matter.</description>
 		<workAmount>75000</workAmount>
 		<products>
@@ -400,6 +441,7 @@
 	<RecipeDef ParentName="SNS_CosmicCall_Item">
 		<defName>SNS_Production_CosmicCall_FuelCell</defName>
 		<label>Pattern Fuel Cells</label>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<description>Pattern a stack of Cosmic Fuel Catalyst Cells from pure Cosmic Matter.</description>
 		<workAmount>7500</workAmount>
 		<products>
