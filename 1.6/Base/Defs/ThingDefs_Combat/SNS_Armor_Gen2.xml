@@ -40,6 +40,10 @@
       <SNS_Component_GenII>10</SNS_Component_GenII>
       <SNS_CosmicAlloyWeave>50</SNS_CosmicAlloyWeave>
     </costList>
+    <equippedStatOffsets>
+      <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -113,6 +117,10 @@
       <SNS_Component_GenII>15</SNS_Component_GenII>
       <SNS_CosmicAlloyWeave>125</SNS_CosmicAlloyWeave>
     </costList>
+    <equippedStatOffsets>
+      <ToxicResistance>1</ToxicResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
