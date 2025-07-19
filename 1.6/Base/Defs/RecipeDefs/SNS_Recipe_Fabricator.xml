@@ -7,6 +7,7 @@
 		<skillRequirements />
 		<workAmount>2400</workAmount>
 		<workSkill>Intellectual</workSkill>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		<soundWorking>Recipe_Machining</soundWorking>
 		<ingredients />
 		<fixedIngredientFilter />
