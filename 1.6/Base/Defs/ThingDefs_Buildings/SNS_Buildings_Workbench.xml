@@ -151,7 +151,6 @@
 		<surfaceType>Item</surfaceType>
 		<designationCategory>Production</designationCategory>
 		<altitudeLayer>Building</altitudeLayer>
-		<costStuffCount>75</costStuffCount>
 		<costList>
 			<SNS_Unobtainium>50</SNS_Unobtainium>
 			<Plasteel>25</Plasteel>
