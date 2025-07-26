@@ -47,6 +47,7 @@
 			<Beauty>10</Beauty>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Metallic</li>
 			</categories>
@@ -134,6 +135,7 @@
 			<BluntDamageMultiplier>2.0</BluntDamageMultiplier>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Fabric</li>
 				<li>Leathery</li>
@@ -216,6 +218,7 @@
 			<Beauty>25</Beauty>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Metallic</li>
 			</categories>
@@ -301,6 +304,7 @@
 			<StuffPower_Insulation_Heat>25</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Fabric</li>
 				<li>Leathery</li>
@@ -473,6 +477,7 @@
 			<Beauty>25</Beauty>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<!--categories>
 				<li>Metallic</li>
 				<li>Woody</li>
@@ -563,6 +568,7 @@
 			<Beauty>40</Beauty>
 		</statBases>
 		<stuffProps>
+			<isAirtight>true</isAirtight>
 			<categories>
 				<li>Metallic</li>
 				<li>Woody</li>
