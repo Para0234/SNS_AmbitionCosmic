@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
 	<!-- Generation 0 -->
 	<ResearchProjectDef ParentName="ShipResearchProjectBase">
 		<defName>SNS_Research_0</defName>
@@ -22,37 +21,31 @@
 		<researchViewX>20</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 1 -->
-
 	<ResearchProjectDef Name="SNS_Research_Base" Abstract="True">
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>MultiAnalyzer</li>
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef Name="SNS_Research_Base_GenI" ParentName="SNS_Research_Base" Abstract="True">
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>SNS_Linkable_Unlocker_GenI</li>
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef Name="SNS_Research_Base_GenII" ParentName="SNS_Research_Base" Abstract="True">
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>SNS_Linkable_Unlocker_GenII</li>
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef Name="SNS_Research_Base_GenIII" ParentName="SNS_Research_Base" Abstract="True">
 		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
 		<requiredResearchFacilities>
 			<li>SNS_Linkable_Unlocker_GenIII</li>
 		</requiredResearchFacilities>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_I</defName>
 		<label>Stellar Steel</label>
@@ -65,7 +58,6 @@
 		<researchViewX>21</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_I_linkable</defName>
 		<label>Advanced Starsteel Production</label>
@@ -78,7 +70,6 @@
 		<researchViewX>21</researchViewX>
 		<researchViewY>1.6</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_bionics</defName>
 		<label>Stellar Bionics</label>
@@ -91,7 +82,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>0.55</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_wep</defName>
 		<label>Cosmic Weaponisation</label>
@@ -104,7 +94,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>1.05</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_armor</defName>
 		<label>Stellar Armors</label>
@@ -117,7 +106,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_pwr</defName>
 		<label>Cosmic Energy</label>
@@ -130,7 +118,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_hydroponics</defName>
 		<label>Cosmic Hydroponics</label>
@@ -143,7 +130,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>2.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_medicine</defName>
 		<label>Stellar Medicinals</label>
@@ -156,7 +142,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>3.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_food</defName>
 		<label>Perfected Food Preparation</label>
@@ -169,7 +154,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>3.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_drugs</defName>
 		<label>Advanced Drug Production</label>
@@ -182,7 +166,6 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>4.35</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_furniture</defName>
 		<label>Next-Generation Recreation</label>
@@ -195,9 +178,7 @@
 		<researchViewX>22</researchViewX>
 		<researchViewY>4.95</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 1.5 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_bridge</defName>
 		<label>Cosmic Theory</label>
@@ -218,9 +199,7 @@
 		<researchViewX>23</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 2 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_base</defName>
 		<label>The Second Generation</label>
@@ -233,7 +212,6 @@
 		<researchViewX>24</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_linkable</defName>
 		<label>Advanced Cosmic Matter Stabilization</label>
@@ -246,7 +224,6 @@
 		<researchViewX>24</researchViewX>
 		<researchViewY>1.6</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_bionics</defName>
 		<label>Cosmic Bionics</label>
@@ -259,7 +236,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_weaponry</defName>
 		<label>Cosmic Weapons Generation II</label>
@@ -272,7 +248,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>1.0</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_armor</defName>
 		<label>Cosmic Power Armor</label>
@@ -285,7 +260,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_power</defName>
 		<label>Cosmic Energy Generation II</label>
@@ -298,7 +272,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_hydroponics</defName>
 		<label>Cosmic Hydroponics Generation II</label>
@@ -311,7 +284,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>2.85</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_medicine</defName>
 		<label>Cosmic Medicinals</label>
@@ -324,7 +296,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>3.5</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_food</defName>
 		<label>Cosmic Foods</label>
@@ -337,7 +308,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_drugs</defName>
 		<label>Cosmic Drugs</label>
@@ -350,7 +320,6 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>4.5</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_furniture</defName>
 		<label>Cosmic Recreation</label>
@@ -363,9 +332,7 @@
 		<researchViewX>25</researchViewX>
 		<researchViewY>5</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 2.5 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_IV</defName>
 		<label>Reaching The Limits</label>
@@ -386,7 +353,6 @@
 		<researchViewX>26</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_IV_linkable</defName>
 		<label>Type-Theta Cosmic Matter</label>
@@ -399,7 +365,6 @@
 		<researchViewX>26</researchViewX>
 		<researchViewY>1.55</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_IV_cosmicturrets_III</defName>
 		<label>Eternal Turrets</label>
@@ -412,9 +377,7 @@
 		<researchViewX>26</researchViewX>
 		<researchViewY>2.65</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 2.9 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_V</defName>
 		<label>The Great Unknown</label>
@@ -427,7 +390,6 @@
 		<researchViewX>27</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_V_breakthrough</defName>
 		<label>Peering Beyond The Veil</label>
@@ -440,9 +402,7 @@
 		<researchViewX>28</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 3 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_base</defName>
 		<label>Breaching The Limits</label>
@@ -455,7 +415,6 @@
 		<researchViewX>29</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_linkable_I</defName>
 		<label>Advanced R.I.F.T. Creation</label>
@@ -468,7 +427,6 @@
 		<researchViewX>29</researchViewX>
 		<researchViewY>1.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_linkable_II</defName>
 		<label>Type-Beta Cosmic Matter</label>
@@ -481,7 +439,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_bionics</defName>
 		<label>Project ETERNALS</label>
@@ -494,7 +451,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_weaponry</defName>
 		<label>Project OVERTAKER</label>
@@ -507,7 +463,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>1.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_armor</defName>
 		<label>Project CHARON</label>
@@ -544,7 +499,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_hydroponics</defName>
 		<label>Project EDEN</label>
@@ -557,7 +511,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>2.7</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_medicine</defName>
 		<label>Project EVERLAST</label>
@@ -570,7 +523,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>3.2</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_food</defName>
 		<label>Project HEDONIST: Food</label>
@@ -583,7 +535,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>3.65</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_drugs</defName>
 		<label>Project HEDONIST: Drugs</label>
@@ -596,7 +547,6 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>4.30</researchViewY>
 	</ResearchProjectDef>
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_furniture</defName>
 		<label>Project HEDONIST: Recreation</label>
@@ -609,9 +559,7 @@
 		<researchViewX>30</researchViewX>
 		<researchViewY>4.95</researchViewY>
 	</ResearchProjectDef>
-
 	<!-- Generation 3.5 -->
-
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_final</defName>
 		<label>Unto The Zenith</label>
@@ -633,41 +581,5 @@
 		<researchViewX>31</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
-
-	<!-- Generation 4 -->
-
-	<ResearchProjectDef ParentName="SNS_Research_Base">
-		<defName>SNS_Research_VII</defName>
-		<label>Pinnacle Of Creation</label>
-		<description>We are the pinnacle of creation. The Zenith of all, the tower atop the eternal, endless sea. We reached up to the stars and the skies, and grasped onto the vast horizons. We finally, at last know the truth: We are the undisputed masters of all reality, atop the Zenith, beyond all perception. Such great privilage.</description>
-		<baseCost>5000000</baseCost>
-		<techLevel>Archotech</techLevel>
-		<requiredResearchFacilities>
-			<li>SNS_Linkable_Unlocker_POC</li>
-		</requiredResearchFacilities>
-		<prerequisites>
-			<li>SNS_Research_VI_final</li>
-		</prerequisites>
-		<researchViewX>32</researchViewX>
-		<researchViewY>2.2</researchViewY>
-	</ResearchProjectDef>
-
-	<!-- Generation Infinity -->
-
-	<ResearchProjectDef ParentName="SNS_Research_Base">
-		<defName>SNS_Research_infinite</defName>
-		<label>Beyond our Understanding</label>
-		<description>In the darkness of what lies beyond our vision lies the true great Unknown, the second ceiling of all technology; that one hard barrier that inhibits all progress. Some things will forever lie beyond our grasp, for Science Never Stops, even with our Ambition of the Cosmic.\n\n[[NOTE: This research is NOT intended to be completed. Usually, it is made so that it literally cannot be completed.]</description>
-		<baseCost>Infinity</baseCost>
-		<techLevel>Archotech</techLevel>
-		<prerequisites>
-			<li>SNS_Research_VII</li>
-		</prerequisites>
-		<researchViewX>33</researchViewX>
-		<researchViewY>2.2</researchViewY>
-		<modExtensions>
-			<li Class="InfiniteResearch.ResearchExtension_Infinite" />
-		</modExtensions>
-	</ResearchProjectDef>
-
+	<!--Gen 4 Projects have been moved to TPOC.-->
 </Defs>
