@@ -20,7 +20,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>16000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Eternium>150</SNS_Eternium>
+      <SNS_Component_GenIII>4</SNS_Component_GenIII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -78,6 +83,16 @@
         <cooldownTime>1.2</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <displayPriority>1050</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
@@ -98,7 +113,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>16000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Eternium>175</SNS_Eternium>
+      <SNS_Component_GenIII>4</SNS_Component_GenIII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -136,6 +156,16 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <displayPriority>1050</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
@@ -156,7 +186,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>16000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Eternium>125</SNS_Eternium>
+      <SNS_Component_GenIII>4</SNS_Component_GenIII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -204,5 +239,15 @@
         <cooldownTime>0.75</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>15</Crafting>
+      </skillRequirements>
+      <displayPriority>1080</displayPriority>
+    </recipeMaker>
   </ThingDef>
 </Defs>
