@@ -4,7 +4,7 @@
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
     <defName>SNS_Halberd_GenThree</defName>
     <label>Eternal Halberd</label>
-    <description>A halberd made of pure eternium, reinforced with a powerful energy field generator. It can easily go through armor and wearer alike. The melee weapon of choice for Eternal Guardians, this weapon is both ceremonial and battle-ready.</description>
+    <description>A halberd made of pure eternium, reinforced with a powerful energy field generator. It can easily go through armor and wearer alike.\n\nThe melee weapon of choice for Eternal Guardians, this weapon is both ceremonial and battle-ready.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gen3Halberd</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -84,7 +84,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen3</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
@@ -98,7 +98,7 @@
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
     <defName>SNS_Hammer_GenThree</defName>
     <label>Eternal Hammer</label>
-    <description>A hammer made of pure eternium, reinforced with a powerful energy field generator. Every hit is devastating, able to crush everything in its path. Some Eternal Guardians prefer to use this over the Eternal Halberd, although not in ceremonial capacities.</description>
+    <description>A hammer made of pure eternium, reinforced with a powerful energy field generator. Every hit is devastating, able to crush everything in its path.\n\nSome Eternal Guardians prefer to use this over the Eternal Halberd, although not in ceremonial capacities.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gen3Hammer</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -157,7 +157,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen3</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
@@ -171,7 +171,7 @@
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
     <defName>SNS_Sword_GenThree</defName>
     <label>Eternal Sword</label>
-    <description>A sword made of pure eternium, reinforced with a powerful energy field generator. Armor and flesh are cut apart with ease. The secondary weapon of choice for eternal watchmen.</description>
+    <description>A sword made of pure eternium, reinforced with a powerful energy field generator. Armor and flesh are cut apart with ease.\n\nThe secondary weapon of choice for eternal watchmen.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gen3Sword</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -240,7 +240,7 @@
       </li>
     </tools>
     <recipeMaker>
-      <researchPrerequisite>SNS_Weapons_Gen3</researchPrerequisite>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen3</researchPrerequisite>
       <recipeUsers Inherit="False">
         <li>FabricationBench</li>
       </recipeUsers>
