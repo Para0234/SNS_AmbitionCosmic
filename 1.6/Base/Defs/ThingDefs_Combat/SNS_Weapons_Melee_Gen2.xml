@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="BaseWeapon"> <!-- A -->
+    <defName>SNS_Axe_GenTwo</defName>
+    <label>Cosmic Axe</label>
+    <description>An axe made of cosmic alloy with an integrated energy field generator inside the handle, this weapon is surprisingly light and easy to use. The blade can easily pierce heavy armor, but leaves surprisingly shallow wounds.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gen2Axe</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Archotech</techLevel>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <MarketValue>8500</MarketValue>
+      <Mass>0.5</Mass>
+      <Beauty>250</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.0</Flammability>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags />
+    <burnableByRecipe>true</burnableByRecipe>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>0.05</armorPenetration>
+        <cooldownTime>1</cooldownTime>
+      </li>
+      <li>
+        <label>Axe head</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>15</power>
+		<armorPenetration>1.8</armorPenetration>
+        <cooldownTime>1</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon"> <!-- A -->
+    <defName>SNS_Knife_GenTwo</defName>
+    <label>Cosmic Knife</label>
+    <description>A knife with a small energy field generator inside the handle. This generator gives the blade a surprisingly easy time going through armor, but it is far less useful against flesh.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gen2Knife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>2</uiIconScale>
+    <techLevel>Archotech</techLevel>
+    <equippedAngleOffset>45</equippedAngleOffset>
+    <statBases>
+      <MarketValue>7000</MarketValue>
+      <Mass>2.5</Mass>
+      <Beauty>250</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.0</Flammability>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags />
+    <burnableByRecipe>true</burnableByRecipe>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>6</power>
+		<armorPenetration>0.05</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Blade</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>2</power>
+		<armorPenetration>1.80</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+      <li>
+        <label>Blade head</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>2</power>
+		<armorPenetration>1.80</armorPenetration>
+        <cooldownTime>0.5</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeapon"> <!-- A -->
+    <defName>SNS_Sword_GenTwo</defName>
+    <label>Cosmic Sword</label>
+    <description>A sword made of cosmic matter, with an integrated energy field, allowing the blade to easily cut through armor. However, it has a harder time going through flesh.</description>
+    <graphicData>
+      <texPath>Things/Item/Equipment/WeaponMelee/Gen2Sword</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.1</uiIconScale>
+    <techLevel>Archotech</techLevel>
+    <equippedAngleOffset>225</equippedAngleOffset>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+      <Mass>1.5</Mass>
+      <Beauty>250</Beauty>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Flammability>0.0</Flammability>
+      <MaxHitPoints>150</MaxHitPoints>
+    </statBases>
+	<comps>
+	  <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <tradeTags />
+    <burnableByRecipe>true</burnableByRecipe>
+    <tools>
+      <li>
+        <label>Handle</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Poke</li>
+        </capacities>
+        <power>7</power>
+		<armorPenetration>0.05</armorPenetration>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>Blade</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>8</power>
+		<armorPenetration>1.80</armorPenetration>
+        <cooldownTime>0.75</cooldownTime>
+      </li>
+      <li>
+        <label>Blade head</label>
+        <labelUsedInLogging>true</labelUsedInLogging>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>6</power>
+		<armorPenetration>1.80</armorPenetration>
+        <cooldownTime>0.75</cooldownTime>
+      </li>
+    </tools>
+  </ThingDef>
+</Defs>
