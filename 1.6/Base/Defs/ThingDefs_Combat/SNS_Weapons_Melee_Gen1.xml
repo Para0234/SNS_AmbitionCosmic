@@ -19,7 +19,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Unobtainium>75</SNS_Unobtainium>
+      <ComponentIndustrial>2</SNS_Component_GenII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -57,6 +62,16 @@
         <cooldownTime>1.25</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen1</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1000</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
@@ -115,6 +130,16 @@
         <cooldownTime>2</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen1</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1010</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
@@ -184,4 +209,14 @@
       </li>
     </tools>
   </ThingDef>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Melee_Weapons_Gen1</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1020</displayPriority>
+    </recipeMaker>
 </Defs>
