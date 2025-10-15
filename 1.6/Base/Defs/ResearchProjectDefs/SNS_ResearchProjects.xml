@@ -19,7 +19,7 @@
 			<li>ShipCryptosleep</li>
 			<li>ShipSensorCluster</li>
 		</prerequisites>
-		<researchViewX>20</researchViewX>
+		<researchViewX>22</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -62,7 +62,7 @@
 		<prerequisites>
 			<li>SNS_Research_0</li>
 		</prerequisites>
-		<researchViewX>21</researchViewX>
+		<researchViewX>23</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -75,7 +75,7 @@
 		<prerequisites>
 			<li>SNS_Research_0</li>
 		</prerequisites>
-		<researchViewX>21</researchViewX>
+		<researchViewX>23</researchViewX>
 		<researchViewY>1.6</researchViewY>
 	</ResearchProjectDef>
 
@@ -88,7 +88,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>0.55</researchViewY>
 	</ResearchProjectDef>
 
@@ -101,7 +101,20 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
+		<researchViewY>5.45</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Melee_Weapons_Gen1</defName>
+		<label>Stellar Blades</label>
+		<description>Starsteel is an excellent power amplifier. By adding an experimental generator to weapons made of Starsteel, maybe we can use that property to increase the damage our weapons deal.\n\nWe should be ready to have drawbacks, however, such as a low armor penetration.</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
 		<researchViewY>1.05</researchViewY>
 	</ResearchProjectDef>
 
@@ -114,7 +127,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -127,7 +140,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -140,7 +153,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>2.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -153,7 +166,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>3.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -166,7 +179,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>3.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -179,7 +192,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>4.35</researchViewY>
 	</ResearchProjectDef>
 
@@ -192,7 +205,7 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
+		<researchViewX>24</researchViewX>
 		<researchViewY>4.95</researchViewY>
 	</ResearchProjectDef>
 
@@ -215,7 +228,7 @@
 			<li>SNS_Research_II_drugs</li>
 			<li>SNS_Research_II_furniture</li>
 		</prerequisites>
-		<researchViewX>23</researchViewX>
+		<researchViewX>25</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -230,7 +243,7 @@
 		<prerequisites>
 			<li>SNS_Research_II_bridge</li>
 		</prerequisites>
-		<researchViewX>24</researchViewX>
+		<researchViewX>26</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -243,7 +256,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>24</researchViewX>
+		<researchViewX>26</researchViewX>
 		<researchViewY>1.6</researchViewY>
 	</ResearchProjectDef>
 
@@ -256,7 +269,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>0.5</researchViewY>
 	</ResearchProjectDef>
 
@@ -269,8 +282,21 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>1.0</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
+		<defName>SNS_Melee_Weapons_Gen2</defName>
+		<label>Cosmic Melee Weapons Generation II</label>
+		<description>Our melee weapons are suffering when facing up against armored foes. We must lead our researches towards cutting open whatever the enemy has protecting him, even if we sacrifice some damage for it.\n\nUsing the property of the cosmic alloy, we might be able to create an energy field around our blades, allowing said blade to atomically separate hard matter used in armors.\n\nWith our current knowledge, making that blade cut the flesh will be much harder.</description>
+		<baseCost>25000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_III_base</li>
+		</prerequisites>
+		<researchViewX>27</researchViewX>
+		<researchViewY>5.5</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
@@ -282,7 +308,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -295,7 +321,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -308,7 +334,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>2.85</researchViewY>
 	</ResearchProjectDef>
 
@@ -321,7 +347,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>3.5</researchViewY>
 	</ResearchProjectDef>
 
@@ -334,7 +360,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>4.0</researchViewY>
 	</ResearchProjectDef>
 
@@ -347,7 +373,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>4.5</researchViewY>
 	</ResearchProjectDef>
 
@@ -360,7 +386,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
+		<researchViewX>27</researchViewX>
 		<researchViewY>5</researchViewY>
 	</ResearchProjectDef>
 
@@ -383,7 +409,7 @@
 			<li>SNS_Research_III_drugs</li>
 			<li>SNS_Research_III_furniture</li>
 		</prerequisites>
-		<researchViewX>26</researchViewX>
+		<researchViewX>28</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -396,7 +422,7 @@
 		<prerequisites>
 			<li>SNS_Research_IV</li>
 		</prerequisites>
-		<researchViewX>26</researchViewX>
+		<researchViewX>28</researchViewX>
 		<researchViewY>1.55</researchViewY>
 	</ResearchProjectDef>
 
@@ -409,7 +435,7 @@
 		<prerequisites>
 			<li>SNS_Research_IV</li>
 		</prerequisites>
-		<researchViewX>26</researchViewX>
+		<researchViewX>28</researchViewX>
 		<researchViewY>2.65</researchViewY>
 	</ResearchProjectDef>
 
@@ -424,7 +450,7 @@
 		<prerequisites>
 			<li>SNS_Research_IV</li>
 		</prerequisites>
-		<researchViewX>27</researchViewX>
+		<researchViewX>29</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -437,7 +463,7 @@
 		<prerequisites>
 			<li>SNS_Research_V</li>
 		</prerequisites>
-		<researchViewX>28</researchViewX>
+		<researchViewX>30</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -452,7 +478,7 @@
 		<prerequisites>
 			<li>SNS_Research_V_breakthrough</li>
 		</prerequisites>
-		<researchViewX>29</researchViewX>
+		<researchViewX>31</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -465,7 +491,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>29</researchViewX>
+		<researchViewX>31</researchViewX>
 		<researchViewY>1.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -478,7 +504,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
@@ -491,7 +517,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -504,8 +530,21 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>1.2</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
+		<defName>SNS_Melee_Weapons_Gen3</defName>
+		<label>Project REAPER</label>
+		<description>Eternium was the key we were searching for. Its unique properties will allow us to generate energy fields similar to cosmic blades, but much more powerful, with none of the drawbacks.\n\nThese weapons are even better against armor, but now, biological matter will be cut just as easily.</description>
+		<baseCost>150000</baseCost>
+		<techLevel>Archotech</techLevel>
+		<prerequisites>
+			<li>SNS_Research_VI_base</li>
+		</prerequisites>
+		<researchViewX>32</researchViewX>
+		<researchViewY>5.45</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
@@ -517,9 +556,10 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
+	
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_armor_specialization</defName>
 		<label>CHARON specialization</label>
@@ -529,7 +569,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_armor</li>
 		</prerequisites>
-		<researchViewX>31</researchViewX>
+		<researchViewX>33</researchViewX>
 		<researchViewY>1.7</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
@@ -541,7 +581,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -554,7 +594,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>2.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -567,7 +607,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>3.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -580,7 +620,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>3.65</researchViewY>
 	</ResearchProjectDef>
 
@@ -593,7 +633,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>4.30</researchViewY>
 	</ResearchProjectDef>
 
@@ -606,7 +646,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
+		<researchViewX>32</researchViewX>
 		<researchViewY>4.95</researchViewY>
 	</ResearchProjectDef>
 
@@ -630,7 +670,7 @@
 			<li>SNS_Research_VI_drugs</li>
 			<li>SNS_Research_VI_furniture</li>
 		</prerequisites>
-		<researchViewX>31</researchViewX>
+		<researchViewX>33</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -648,7 +688,7 @@
 		<prerequisites>
 			<li>SNS_Research_VI_final</li>
 		</prerequisites>
-		<researchViewX>32</researchViewX>
+		<researchViewX>34</researchViewX>
 		<researchViewY>2.2</researchViewY>
 	</ResearchProjectDef>
 
@@ -663,7 +703,7 @@
 		<prerequisites>
 			<li>SNS_Research_VII</li>
 		</prerequisites>
-		<researchViewX>33</researchViewX>
+		<researchViewX>35</researchViewX>
 		<researchViewY>2.2</researchViewY>
 		<modExtensions>
 			<li Class="InfiniteResearch.ResearchExtension_Infinite" />
