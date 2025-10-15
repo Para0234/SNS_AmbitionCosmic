@@ -23,7 +23,7 @@
     </statBases>
     <costList>
       <SNS_Unobtainium>75</SNS_Unobtainium>
-      <ComponentIndustrial>2</SNS_Component_GenII>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
 	<comps>
 	  <li>
@@ -92,7 +92,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Unobtainium>90</SNS_Unobtainium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -160,7 +165,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_Unobtainium>100</SNS_Unobtainium>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -208,7 +218,6 @@
         <cooldownTime>1.5</cooldownTime>
       </li>
     </tools>
-  </ThingDef>
     <recipeMaker>
       <researchPrerequisite>SNS_Melee_Weapons_Gen1</researchPrerequisite>
       <recipeUsers Inherit="False">
@@ -219,4 +228,5 @@
       </skillRequirements>
       <displayPriority>1020</displayPriority>
     </recipeMaker>
+  </ThingDef>
 </Defs>
