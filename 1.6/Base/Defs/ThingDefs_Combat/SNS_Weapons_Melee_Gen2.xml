@@ -19,7 +19,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>12000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_CosmicAlloy>75</SNS_CosmicAlloy>
+      <SNS_Component_GenII>2</SNS_Component_GenII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -57,12 +62,22 @@
         <cooldownTime>1</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen2</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1030</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
     <defName>SNS_Knife_GenTwo</defName>
     <label>Cosmic Knife</label>
-    <description>A knife with a small energy field generator inside the handle. This generator gives the blade a surprisingly easy time going through armor, but it is far less useful against flesh.</description>
+    <description>A cosmic alloy knife with a small energy field generator inside the handle. This generator gives the blade a surprisingly easy time going through armor, but it is far less useful against flesh.</description>
     <graphicData>
       <texPath>Things/Item/Equipment/WeaponMelee/Gen2Knife</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -77,7 +92,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>8000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_CosmicAlloy>50</SNS_CosmicAlloy>
+      <SNS_Component_GenII>2</SNS_Component_GenII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -125,6 +145,16 @@
         <cooldownTime>0.5</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen2</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1040</displayPriority>
+    </recipeMaker>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeapon"> <!-- A -->
@@ -145,7 +175,12 @@
       <DeteriorationRate>0</DeteriorationRate>
       <Flammability>0.0</Flammability>
       <MaxHitPoints>150</MaxHitPoints>
+      <WorkToMake>11000</WorkToMake>
     </statBases>
+    <costList>
+      <SNS_CosmicAlloy>100</SNS_CosmicAlloy>
+      <SNS_Component_GenII>2</SNS_Component_GenII>
+    </costList>
 	<comps>
 	  <li>
         <compClass>CompQuality</compClass>
@@ -193,5 +228,15 @@
         <cooldownTime>0.75</cooldownTime>
       </li>
     </tools>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Weapons_Gen2</researchPrerequisite>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>12</Crafting>
+      </skillRequirements>
+      <displayPriority>1050</displayPriority>
+    </recipeMaker>
   </ThingDef>
 </Defs>
