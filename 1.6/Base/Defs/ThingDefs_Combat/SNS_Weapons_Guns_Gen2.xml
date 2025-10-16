@@ -57,6 +57,7 @@
 			<li>SNSRangedTierTwo</li>
 		</weaponTags>
 		<tradeTags>
+			<li>WeaponRanged</li>
 			<li>SNSGear</li>
 			<li>SNSGearTierTwo</li>
 		</tradeTags>
@@ -155,6 +156,7 @@
 			<li>SNSRangedTierTwo</li>
 		</weaponTags>
 		<tradeTags>
+			<li>WeaponRanged</li>
 			<li>SNSGear</li>
 			<li>SNSGearTierTwo</li>
 		</tradeTags>
@@ -254,6 +256,7 @@
 			<li>SNSRangedTierTwo</li>
 		</weaponTags>
 		<tradeTags>
+			<li>WeaponRanged</li>
 			<li>SNSGear</li>
 			<li>SNSGearTierTwo</li>
 		</tradeTags>
@@ -351,6 +354,7 @@
 			<li>SNSRangedTierTwo</li>
 		</weaponTags>
 		<tradeTags>
+			<li>WeaponRanged</li>
 			<li>SNSGear</li>
 			<li>SNSGearTierTwo</li>
 		</tradeTags>
@@ -439,13 +443,13 @@
 			<SNS_CosmicMatter>150</SNS_CosmicMatter>
 			<SNS_Component_GenII>15</SNS_Component_GenII>
 		</costList>
-		<thingCategories>
+		<thingCategories Inherit="False">
 			<li>SNSSuperWeapons</li>
 		</thingCategories>
 		<weaponTags>
 			<li>SNSRangedTierTwo</li>
 		</weaponTags>
-		<tradeTags>
+		<tradeTags Inherit="False">
 			<li>SNSGear</li>
 			<li>SNSGearTierTwo</li>
 		</tradeTags>
