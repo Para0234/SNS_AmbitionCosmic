@@ -38,7 +38,13 @@
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags>
+	  <li>SNSMeleeTierOne</li>
+    </weaponTags>
+	<tradeTags>
+      <li>SNSGear</li>
+	  <li>SNSGearTierOne</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
@@ -111,7 +117,13 @@
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags>
+	  <li>SNSMeleeTierOne</li>
+    </weaponTags>
+	<tradeTags>
+      <li>SNSGear</li>
+	  <li>SNSGearTierOne</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
@@ -184,7 +196,13 @@
     <thingCategories>
       <li>WeaponsMelee</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags>
+	  <li>SNSMeleeTierOne</li>
+    </weaponTags>
+	<tradeTags>
+      <li>SNSGear</li>
+	  <li>SNSGearTierOne</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
