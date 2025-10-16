@@ -19,7 +19,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>SNS_Pistol_GenIII</defName>
 		<label>eternal pistol</label>
-		<description>A grand pistol that fires small amounts of Eternium at terrifying rates. Its power is unrivaled by any other pistol.</description>
+		<description>A grand pistol that fires small amounts of Eternium at terrifying rates. Its power is unrivaled by any other pistol.\n\nDespite being extremely rare, it is the standard sidearm of Eternal watchmen.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Pistol</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -48,6 +48,17 @@
 			<SNS_CosmicAlloy>20</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>1</SNS_Component_GenIII>
 		</costList>
+		<thingCategories Inherit="False">
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier3</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>SNSRangedTierThree</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>SNSGear</li>
+			<li>SNSGearTierThree</li>
+		</tradeTags>
 		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>2</SNS_Unobtainium></smeltProducts-->
 		<verbs>
 			<li>
@@ -102,7 +113,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>SNS_Rifle_GenIII</defName>
 		<label>eternal rifle</label>
-		<description>A fully automatic rifle that propels a small amount of Eternium at terrifying velocities, and does not produce any recoil whatsoever. Its projectiles are the weakest of eternal weapons, but its firerate is more than enough to compensate.</description>
+		<description>A fully automatic rifle that propels a small amount of Eternium at terrifying velocities, and does not produce any recoil whatsoever. Its projectiles are the weakest of eternal weapons, but its firerate is more than enough to compensate.\n\nDespite its rarity, it is the standard issue weapon for Eternal Watchmen.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Rifle</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -131,6 +142,17 @@
 			<SNS_CosmicAlloy>30</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>3</SNS_Component_GenIII>
 		</costList>
+		<thingCategories Inherit="False">
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier3</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>SNSRangedTierThree</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>SNSGear</li>
+			<li>SNSGearTierThree</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -186,7 +208,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>SNS_Shotgun_GenIII</defName>
 		<label>eternal shotgun</label>
-		<description>An arcane shotgun that fires a devastating clump of Eternium projectiles that excel at effectively erasing armor. While its range is the worst of the eternal weapons (as to be expected from a shotgun), its power and armor-shattering properties are more than enough compensation.</description>
+		<description>An arcane shotgun that fires a devastating clump of Eternium projectiles that excel at effectively erasing armor. While its range is the worst of the eternal weapons (as to be expected from a shotgun), its power and armor-shattering properties are more than enough compensation.\n\nDespite its rarity, it is used by specialists among Eternal Watchmen.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Shotgun</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -215,6 +237,17 @@
 			<SNS_CosmicAlloy>60</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>4</SNS_Component_GenIII>
 		</costList>
+		<thingCategories Inherit="False">
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier3</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>SNSRangedTierThree</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>SNSGear</li>
+			<li>SNSGearTierThree</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -260,7 +293,7 @@
 		</graphicData>
 		<projectile>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>120</damageAmountBase>
+			<damageAmountBase>500</damageAmountBase>
 			<armorPenetrationBase>25</armorPenetrationBase>
 			<speed>250</speed>
 		</projectile>
@@ -268,7 +301,7 @@
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>SNS_Sniper_GenIII</defName>
 		<label>eternal sniper</label>
-		<description>An arcane sniper rifle made of Eternium and Cosmic Alloy. It fires pure low-energy Eternium projectiles that often obliterates whatever it hits, able to go through entire bodies top to bottom and still have enough energy left to dent the floor beneath. Even grazing blows are highly dangerous. The rifle can be used at all ranges, though its accuracy is unrivaled at the longest ranges.</description>
+		<description>An arcane sniper rifle made of Eternium and Cosmic Alloy. It fires pure low-energy Eternium projectiles that often obliterates whatever it hits, able to go through entire bodies top to bottom and still have enough energy left to dent the floor beneath. Even grazing blows are highly dangerous. The rifle can be used at all ranges, though its accuracy is unrivaled at the longest ranges.\n\nIt is used by assassins among the eternal watchmen, allowing them to erase targets without being seen.</description>
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponRanged/SNS/Gen3/Sniper</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -283,7 +316,7 @@
 			<AccuracyShort>0.90</AccuracyShort>
 			<AccuracyMedium>0.95</AccuracyMedium>
 			<AccuracyLong>1</AccuracyLong>
-			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
 			<DeteriorationRate>0</DeteriorationRate>
 			<Beauty>50</Beauty>
 		</statBases>
@@ -297,6 +330,17 @@
 			<SNS_CosmicAlloy>120</SNS_CosmicAlloy>
 			<SNS_Component_GenIII>5</SNS_Component_GenIII>
 		</costList>
+		<thingCategories Inherit="False">
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier3</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>SNSRangedTierThree</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>SNSGear</li>
+			<li>SNSGearTierThree</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -378,6 +422,16 @@
 			<SNS_CosmicLance>1</SNS_CosmicLance>
 			<SNS_Eternium>375</SNS_Eternium>
 		</costList>
+		<thingCategories Inherit="False">
+			<li>SNSSuperWeapons</li>
+		</thingCategories>
+		<weaponTags Inherit="False">
+			<li>SNSRangedTierThree</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>SNSGear</li>
+			<li>SNSGearTierThree</li>
+		</tradeTags>
 		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>40</SNS_Unobtainium></smeltProducts-->
 		<verbs>
 			<li>
