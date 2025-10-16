@@ -19,8 +19,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -129,8 +130,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_CosmicPowerArmor>1</SNS_Apparel_CosmicPowerArmor>
@@ -180,8 +182,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -283,8 +286,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
@@ -334,8 +338,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -437,8 +442,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
@@ -488,8 +494,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -590,8 +597,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
@@ -641,8 +649,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -750,8 +759,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
@@ -801,8 +811,9 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -906,8 +917,9 @@
     <thingCategories>
       <li>ApparelArmor</li>
     </thingCategories>
-    <tradeTags>
-      <li>HiTechArmor</li>
+    <tradeTags Inherit="False">
+      <li>SNSGear</li>
+      <li>SNSGearTierThree</li>
     </tradeTags>
     <costList>
       <SNS_Apparel_StableMatterPowerArmor>1</SNS_Apparel_StableMatterPowerArmor>
