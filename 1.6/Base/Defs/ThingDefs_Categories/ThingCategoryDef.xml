@@ -2,49 +2,55 @@
 <Defs>
   <ThingCategoryDef>
     <defName>SNSWeaponsMelee</defName>
-    <label>melee weapons</label>
+    <label>Archotech-adjacent melee weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsMeleeTier1</defName>
-    <label>melee weapons</label>
+    <label>Stellar-grade melee weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsMeleeTier2</defName>
-    <label>melee weapons</label>
+    <label>Cosmic-grade melee weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsMeleeTier3</defName>
-    <label>melee weapons</label>
+    <label>Eternium-grade melee weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsRanged</defName>
-    <label>melee weapons</label>
+    <label>Archotech-adjacent ranged weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsRangedTier1</defName>
-    <label>melee weapons</label>
+    <label>Stellar-graderanged weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsRangedTier2</defName>
-    <label>melee weapons</label>
+    <label>Cosmic-grade ranged weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
   
   <ThingCategoryDef>
     <defName>SNSWeaponsRangedTier3</defName>
-    <label>melee weapons</label>
+    <label>Eternium-grade ranged weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSSuperWeapons</defName>
+    <label>Ultimate Weapons</label>
     <parent>Weapons</parent>
   </ThingCategoryDef>
 </Defs>
