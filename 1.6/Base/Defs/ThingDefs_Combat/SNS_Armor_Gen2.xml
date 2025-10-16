@@ -20,6 +20,8 @@
     <uiIconScale>1.25</uiIconScale>
     <tradeTags>
       <li>HiTechArmor</li>
+      <li>SNSGear</li>
+      <li>SNSGearTierTwo</li>
     </tradeTags>
     <generateCommonality>2</generateCommonality>
     <statBases>
@@ -113,6 +115,8 @@
     </thingCategories>
     <tradeTags>
       <li>HiTechArmor</li>
+      <li>SNSGear</li>
+      <li>SNSGearTierTwo</li>
     </tradeTags>
     <costList>
       <SNS_CosmicAlloy>150</SNS_CosmicAlloy>

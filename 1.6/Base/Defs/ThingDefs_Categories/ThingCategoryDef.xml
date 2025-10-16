@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMelee</defName>
+    <label>Archotech-adjacent melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier1</defName>
+    <label>Stellar-grade melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier2</defName>
+    <label>Cosmic-grade melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier3</defName>
+    <label>Eternium-grade melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRanged</defName>
+    <label>Archotech-adjacent ranged weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier1</defName>
+    <label>Stellar-graderanged weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier2</defName>
+    <label>Cosmic-grade ranged weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier3</defName>
+    <label>Eternium-grade ranged weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmor</defName>
+    <label>Archotech-adjacent armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier1</defName>
+    <label>Stellar-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier2</defName>
+    <label>Cosmic-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier3</defName>
+    <label>Eternium-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSSuperWeapons</defName>
+    <label>Ultimate Weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+</Defs>

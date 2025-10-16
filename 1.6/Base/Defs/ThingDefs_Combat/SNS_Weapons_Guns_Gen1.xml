@@ -53,6 +53,18 @@
 			<ComponentSpacer>2</ComponentSpacer>
 		</costList>
 		<!--smeltable>true</smeltable><smeltProducts><SNS_Stellar>2</SNS_Stellar></smeltProducts-->
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier1</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierOne</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>SNSGear</li>
+			<li>SNSGearTierOne</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -139,6 +151,18 @@
 			<Plasteel>40</Plasteel>
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier1</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierOne</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>SNSGear</li>
+			<li>SNSGearTierOne</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -227,6 +251,18 @@
 			<Plasteel>45</Plasteel>
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier1</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierOne</li>
+		</weaponTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+			<li>SNSGear</li>
+			<li>SNSGearTierOne</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
