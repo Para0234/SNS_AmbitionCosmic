@@ -54,7 +54,6 @@
 		</costList>
 		<!--smeltable>true</smeltable><smeltProducts><SNS_Stellar>2</SNS_Stellar></smeltProducts-->
 		<thingCategories>
-			<li>WeaponsRanged</li>
 			<li>SNSWeaponsRanged</li>
 			<li>SNSWeaponsRangedTier1</li>
 		</thingCategories>
@@ -152,7 +151,6 @@
 			<ComponentSpacer>6</ComponentSpacer>
 		</costList>
 		<thingCategories>
-			<li>WeaponsRanged</li>
 			<li>SNSWeaponsRanged</li>
 			<li>SNSWeaponsRangedTier1</li>
 		</thingCategories>
@@ -252,7 +250,6 @@
 			<ComponentSpacer>3</ComponentSpacer>
 		</costList>
 		<thingCategories>
-			<li>WeaponsRanged</li>
 			<li>SNSWeaponsRanged</li>
 			<li>SNSWeaponsRangedTier1</li>
 		</thingCategories>
