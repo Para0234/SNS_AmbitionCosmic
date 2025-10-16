@@ -36,10 +36,17 @@
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
-    <thingCategories>
-      <li>WeaponsMelee</li>
+    <thingCategories Inherit="False">
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier3</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags Inherit="False">
+	  <li>SNSMeleeTierThree</li>
+    </weaponTags>
+	<tradeTags  Inherit="False">
+      <li>SNSGear</li>
+	  <li>SNSGearTierThree</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
@@ -129,10 +136,17 @@
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
-    <thingCategories>
-      <li>WeaponsMelee</li>
+    <thingCategories Inherit="False">
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier3</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags Inherit="False">
+	  <li>SNSMeleeTierThree</li>
+    </weaponTags>
+	<tradeTags  Inherit="False">
+      <li>SNSGear</li>
+	  <li>SNSGearTierThree</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
@@ -202,10 +216,17 @@
         <minQualityForArtistic>Excellent</minQualityForArtistic>
       </li>
     </comps>
-    <thingCategories>
-      <li>WeaponsMelee</li>
+    <thingCategories Inherit="False">
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier3</li>
     </thingCategories>
-    <tradeTags />
+	<weaponTags Inherit="False">
+	  <li>SNSMeleeTierThree</li>
+    </weaponTags>
+	<tradeTags  Inherit="False">
+      <li>SNSGear</li>
+	  <li>SNSGearTierThree</li>
+    </tradeTags>
     <burnableByRecipe>true</burnableByRecipe>
     <tools>
       <li>
