@@ -37,6 +37,8 @@
     </comps>
     <thingCategories>
       <li>WeaponsMelee</li>
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier1</li>
     </thingCategories>
 	<weaponTags>
 	  <li>SNSMeleeTierOne</li>
@@ -116,6 +118,8 @@
     </comps>
     <thingCategories>
       <li>WeaponsMelee</li>
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier1</li>
     </thingCategories>
 	<weaponTags>
 	  <li>SNSMeleeTierOne</li>
@@ -195,6 +199,8 @@
     </comps>
     <thingCategories>
       <li>WeaponsMelee</li>
+      <li>SNSWeaponsMelee</li>
+      <li>SNSWeaponsMeleeTier1</li>
     </thingCategories>
 	<weaponTags>
 	  <li>SNSMeleeTierOne</li>
