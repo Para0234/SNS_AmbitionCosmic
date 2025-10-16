@@ -49,6 +49,30 @@
   </ThingCategoryDef>
   
   <ThingCategoryDef>
+    <defName>SNSArmor</defName>
+    <label>Archotech-adjacent armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier1</defName>
+    <label>Stellar-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier2</defName>
+    <label>Cosmic-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSArmorTier3</defName>
+    <label>Eternium-grade armors</label>
+    <parent>ApparelArmor</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
     <defName>SNSSuperWeapons</defName>
     <label>Ultimate Weapons</label>
     <parent>Weapons</parent>
