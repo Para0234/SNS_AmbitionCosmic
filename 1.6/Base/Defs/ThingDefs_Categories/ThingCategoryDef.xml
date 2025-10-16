@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMelee</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier1</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier2</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsMeleeTier3</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRanged</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier1</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier2</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+  
+  <ThingCategoryDef>
+    <defName>SNSWeaponsRangedTier3</defName>
+    <label>melee weapons</label>
+    <parent>Weapons</parent>
+  </ThingCategoryDef>
+</Defs>
