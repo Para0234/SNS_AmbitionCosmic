@@ -49,6 +49,17 @@
 			<SNS_CosmicMatter>15</SNS_CosmicMatter>
 			<SNS_Component_GenII>1</SNS_Component_GenII>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier2</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierTwo</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SNSGear</li>
+			<li>SNSGearTierTwo</li>
+		</tradeTags>
 		<!--smeltable>true</smeltable><smeltProducts><SNS_Unobtainium>2</SNS_Unobtainium></smeltProducts-->
 		<verbs>
 			<li>
@@ -136,6 +147,17 @@
 			<SNS_CosmicMatter>20</SNS_CosmicMatter>
 			<SNS_Component_GenII>3</SNS_Component_GenII>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier2</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierTwo</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SNSGear</li>
+			<li>SNSGearTierTwo</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -224,6 +246,17 @@
 			<SNS_CosmicMatter>20</SNS_CosmicMatter>
 			<SNS_Component_GenII>4</SNS_Component_GenII>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier2</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierTwo</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SNSGear</li>
+			<li>SNSGearTierTwo</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -310,6 +343,17 @@
 			<SNS_CosmicMatter>20</SNS_CosmicMatter>
 			<SNS_Component_GenII>8</SNS_Component_GenII>
 		</costList>
+		<thingCategories>
+			<li>SNSWeaponsRanged</li>
+			<li>SNSWeaponsRangedTier2</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierTwo</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SNSGear</li>
+			<li>SNSGearTierTwo</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
@@ -395,6 +439,16 @@
 			<SNS_CosmicMatter>150</SNS_CosmicMatter>
 			<SNS_Component_GenII>15</SNS_Component_GenII>
 		</costList>
+		<thingCategories>
+			<li>SNSSuperWeapons</li>
+		</thingCategories>
+		<weaponTags>
+			<li>SNSRangedTierTwo</li>
+		</weaponTags>
+		<tradeTags>
+			<li>SNSGear</li>
+			<li>SNSGearTierTwo</li>
+		</tradeTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
