@@ -385,7 +385,7 @@
 	<RecipeDef MayRequire="zal.morearchotechgarbage" ParentName="SNS_PinnacleFabricator_Item">
 		<defName>SNS_Production_PinnacleFabricator_ArchotechFragment</defName>
 		<label>Draw Archotech Fragments</label>
-		<description>Draw fragments of Archotechnolofy directly from the Eternla plane.</description>
+		<description>Draw fragments of Archotechnology directly from the Eternal plane.</description>
 		<products>
 			<ArchotechScrap>75</ArchotechScrap>
 		</products>
