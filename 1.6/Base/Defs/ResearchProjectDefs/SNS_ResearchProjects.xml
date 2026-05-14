@@ -123,7 +123,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_armor</defName>
 		<label>Stellar Armors</label>
-		<description>Starsteel can withstand intense pressures and absorb an extreme amount of damage. It would logically make the perfect armor, able to withstand all forces with ease.</description>
+		<description>Starsteel can withstand intense pressures and endure an extreme amount of damage. It would logically make the perfect armor, able to withstand all forces with ease.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -278,7 +278,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_weaponry</defName>
 		<label>Cosmic Weapons Generation II</label>
-		<description>Our stellar weaponry, previously seen as the peak of warfare, are in truth nothing but a crude imitation of the Ancient's technology. Now that we have reached beyond the veil, we will develop true weapons worthy of their legacy.</description>
+		<description>Our stellar weaponry, previously seen as the peak of warfare, is in truth nothing but a crude imitation of the Ancient's technology. Now that we have reached beyond the veil, we will develop true weapons worthy of their legacy.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -330,7 +330,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_hydroponics</defName>
 		<label>Cosmic Hydroponics Generation II</label>
-		<description>The Generation II Cosmic Hydroponics Basin does not rely on a custom-made nutrient bath for plants to grow in with trace amounts of Cosmic Alloy for prosperity. Instead, it infuses the very cells of plants with Cosmic Matter, allowing for plants to grow at speeds even observable by the naked eye.</description>
+		<description>The Generation II Cosmic Hydroponics Basin does not rely on a custom-made nutrient bath for plants to grow in with trace amounts of Cosmic Alloy for prosperity. Instead, it infuses the very cells of plants with Cosmic Matter, allowing for plants to grow at speeds observable by the naked eye.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -475,7 +475,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_base</defName>
 		<label>Breaching The Limits</label>
-		<description>Just when we thought we had reached the limits and hit the technological ceiling, we had found yet another key to greatness. Dubbed 'Eternium', this is the ultimate material. Its properties are much alike that of Cosmic Matter, but with stability not seen anywhere else. We should be able to draw it with the newly designed R.I.F.T Fabricator.</description>
+		<description>Just when we thought we had reached the limits and hit the technological ceiling, we had found yet another key to greatness. Dubbed 'Eternium', this is the ultimate material. Its properties are much alike that of Cosmic Matter, but with stability not seen anywhere else. We should be able to draw it using the newly designed R.I.F.T Fabricator.</description>
 		<baseCost>150000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
