@@ -76,8 +76,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>12</Crafting>
+        <Crafting>13</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1030</displayPriority>
     </recipeMaker>
   </ThingDef>
@@ -167,8 +168,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>12</Crafting>
+        <Crafting>13</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1040</displayPriority>
     </recipeMaker>
   </ThingDef>
@@ -258,8 +260,9 @@
         <li>FabricationBench</li>
       </recipeUsers>
       <skillRequirements>
-        <Crafting>12</Crafting>
+        <Crafting>13</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1050</displayPriority>
     </recipeMaker>
   </ThingDef>
