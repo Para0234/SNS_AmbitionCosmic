@@ -24,6 +24,10 @@
     <li>V1024.EBFramework</li>
 	<li>CETeam.CombatExtended</li>
 	<li>vanillaexpanded.achievements</li>
+    <li>Ludeon.Rimworld.Biotech</li>
+    <li>Ludeon.Rimworld.Royalty</li>
+    <li>Ludeon.Rimworld.Anomaly</li>
+    <li>Ludeon.Rimworld.Odyssey</li>
   </loadAfter>
 <description><![CDATA[Welcome to Ambition of the Cosmic. This mod extends the late-game of RimWorld to the extreme, providing a massive time-sink for overwhelming power.
 

@@ -55,8 +55,8 @@
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_I</defName>
-		<label>Stellar Steel</label>
-		<description>It is time that we harnessed the power of Cosmic Matter on this planet. Through the investigation of Cosmic Matter's influence and reaction to various materials, we could hopefully create an alloy strong enough to house the endless power of Cosmic Matter.</description>
+		<label>Starsteel Production</label>
+		<description>Cosmic Matter exists everywhere, and its power is just at our fingertips. Through the investigation of Cosmic Matter's influence and reaction to various materials, we could hopefully create an alloy strong enough to house its endless power.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -82,7 +82,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_bionics</defName>
 		<label>Stellar Bionics</label>
-		<description>The bionic limbs of today suffer from the truth that they have limits. There are just things bionics cannot achieve alone, even the grand Archotech set of bionics often cannot rise to the occasion.\n\nSo, we will turn to Starsteel to make limbs both precise and tough, able to last a soldier and sate a mechanic.</description>
+		<description>Bionics of today are incredibly advanced. Yet, they are limited by the materials of the time. Even the mighty Archotechs couldn't break through this limit. Yet, Starsteel is a material with incredible potential, maybe allowing us to surpass those limits.\n\nSo, we will turn to Starsteel to make limbs both precise and tough, able to last a soldier and sate a mechanic.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -121,7 +121,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_armor</defName>
 		<label>Stellar Armors</label>
-		<description>Starsteel can withstand intense pressures and take an extreme amount of damage. It would logically make the perfect armor, able to withstand all forces with ease.</description>
+		<description>The ability of Starsteel to absorb shock and disperse it is incredible. It would logically make the perfect armor, able to withstand all forces with ease.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -147,7 +147,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_hydroponics</defName>
 		<label>Cosmic Hydroponics</label>
-		<description>Hydroponics Basins can be made significantly more efficient with the introduction of a more intensive nutrient bath with the light sprinking of Starsteel, nearly tripling the effectiveness of Hydroponics-based technology.</description>
+		<description>By using Starsteel as a conduit for Cosmic Matter, we can slowly diffuse it within hydroponics basins, using it as a nutrient that will nearly triple the efficiency of our hydroponics.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -173,7 +173,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_food</defName>
 		<label>Perfected Food Preparation</label>
-		<description>To reach for the stars we needed both full rockets and full stomachs. Let us ensure we can do both for the long journey ahead of us!\n\nFood is cooked just like any other meals, on the electric/fueled stove.</description>
+		<description>To reach for the stars we needed both full rockets and full stomachs. Let us ensure we can do both for the long journey ahead of us!</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -186,7 +186,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_drugs</defName>
 		<label>Advanced Drug Production</label>
-		<description>Recreational and functional drugs of today are rather flawed, most having various side-effects and/or long-term damage that cause great risk--especially for those who lack self-control. While we cannot re-create them perfectly, we can at least try to make something better.\n\nAnything unlocked by this technology are either made in a Stove or the Drug Lab.</description>
+		<description>Recreational and functional drugs of today are rather flawed, most having various side-effects and/or long-term damage that cause great risk--especially for those who lack self-control. While we cannot re-create them perfectly, we can at least try to make something better.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -214,7 +214,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_bridge</defName>
 		<label>Cosmic Theory</label>
-		<description>We must reach higher, and grasp beyond even the Stars themselves. We must sieze the very fabric of the universe to reach our final destination. We must achieve purity, we must achieve perfection, we must achieve eternity. We must draw from the very source, find the key to our desires of a cosmic age.</description>
+		<description>We must reach higher, and grasp beyond even the Stars themselves. We must seize the very fabric of the universe to reach our final destination. We must achieve purity, we must achieve perfection, we must achieve eternity. We must draw from the very source, find the key to our desires of a cosmic age.</description>
 		<baseCost>17500</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -237,7 +237,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_base</defName>
 		<label>The Second Generation</label>
-		<description>Meeting the absolute zenith of human technology, we achieve the Second Generation of the Ancient's arcane technologies.\n\nThis technology unlocks the Cosmic Manipulator, which allows you to either make Cosmic Matter or the legendary Cosmic Alloy.</description>
+		<description>Meeting the absolute zenith of human technology, we achieve the Second Generation of the Ancient's arcane technologies.\n\nThis technology unlocks the Cosmic Manipulator, which allows you to either make Cosmic Matter or the legendary Cosmic Alloy, a new alloy allowing us to use Cosmic Matter with a much greater efficiency.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>

@@ -78,6 +78,7 @@
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1000</displayPriority>
     </recipeMaker>
   </ThingDef>
@@ -159,6 +160,7 @@
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1010</displayPriority>
     </recipeMaker>
   </ThingDef>
@@ -250,6 +252,7 @@
       <skillRequirements>
         <Crafting>12</Crafting>
       </skillRequirements>
+      <workSkill>Crafting</workSkill>
       <displayPriority>1020</displayPriority>
     </recipeMaker>
   </ThingDef>

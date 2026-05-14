@@ -476,7 +476,7 @@
     </apparel>
   </ThingDef>
   
-  <ThingDef Name="ApparelStableMatterPowerArmorPsycastHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" Name="ApparelStableMatterPowerArmorPsycastHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Archotech</techLevel>
 	<useHitPoints>false</useHitPoints>
     <recipeMaker>
@@ -537,13 +537,13 @@
     </apparel>
   </ThingDef>
 	
-	<ThingDef ParentName="ApparelStableMatterPowerArmorPsycastHelmetBase">
+	<ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="ApparelStableMatterPowerArmorPsycastHelmetBase">
     <defName>SNS_Apparel_StableMatterPowerArmorHelmetPsycast</defName>
     <label>CHARON Psycaster Helmet</label>
     <description>A pressure-sealed Abyssal Power Armor Helmet fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this power-armor helmet is far superior to that of its predecessors in every way imaginable.\n\nThis helmet was designed with specialization in mind. It ditches all the regular enhancements of the CHARON armor, apart from its speed, which remains slower, all of these enhancements have been replaced by a powerful mental-enhancing array, allowing the wearer to wield psychic powers much better than any unaugmented psycaster.</description>
   </ThingDef>
   
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="ArmorMachineableBase">
     <defName>SNS_Apparel_StableMatterPowerArmorPsycast</defName>
     <label>CHARON Psycaster Armor</label>
    <description>A suit of Abyssal Power Armor fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this suit of power armor is far superior to that of its previous generation in every way imaginable.\n\nThis armor was designed specifically for psycasters. All enhancements but the speed have been removed to be replaced by a combination of a mental stabilizing array and powerful psy-enhancers, allowing the wearer to remain calm,while manipulating the powers of the Arcane.</description>
@@ -631,7 +631,7 @@
     </apparel>
   </ThingDef>
   
-  <ThingDef Name="ApparelStableMatterPowerArmorMechanitorHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
+  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" Name="ApparelStableMatterPowerArmorMechanitorHelmetBase" ParentName="ArmorHelmetMakeableBase" Abstract="True">
     <techLevel>Archotech</techLevel>
 	<useHitPoints>false</useHitPoints>
     <recipeMaker>
@@ -696,13 +696,13 @@
     </apparel>
   </ThingDef>
 	
-	<ThingDef ParentName="ApparelStableMatterPowerArmorMechanitorHelmetBase">
+	<ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="ApparelStableMatterPowerArmorMechanitorHelmetBase">
     <defName>SNS_Apparel_StableMatterPowerArmorMechanitorPsycast</defName>
     <label>CHARON Mechanitor Helmet</label>
     <description>A pressure-sealed Abyssal Power Armor Helmet fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this power-armor helmet is far superior to that of its predecessors in every way imaginable.\n\nThis helmet was made specifically for Mechanitors. Nearly all of the upgrades of the regular CHARON armor have been replaced by a powerful mechlink calculation subcore, greatly enhancing the abilities of the user's Mechlink..</description>
   </ThingDef>
   
-  <ThingDef ParentName="ArmorMachineableBase">
+  <ThingDef MayRequire="Ludeon.RimWorld.Biotech" ParentName="ArmorMachineableBase">
     <defName>SNS_Apparel_StableMatterPowerArmorMechanitor</defName>
     <label>CHARON Mechanitor Armor</label>
    <description>A suit of Abyssal Power Armor fueled by Eternium. Incredibly lightweight, tough, protective, and comfortable, this suit of power armor is far superior to that of its previous generation in every way imaginable.\n\nThis armor was designed specifically for mechanitors. Its upgrades have been replaced by an integrated mechlink amplifier that allows the wearer to improve the mechanoids' work speed, alongside improving the mechlink's capabilities.</description>

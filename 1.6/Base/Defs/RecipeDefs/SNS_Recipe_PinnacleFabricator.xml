@@ -382,4 +382,12 @@
 			<SNS_Eternium>75</SNS_Eternium>
 		</products>
 	</RecipeDef>
+	<RecipeDef MayRequire="zal.morearchotechgarbage" ParentName="SNS_PinnacleFabricator_Item">
+		<defName>SNS_Production_PinnacleFabricator_ArchotechFragment</defName>
+		<label>Draw Archotech Fragments</label>
+		<description>Draw fragments of Archotechnology directly from the Eternal plane.</description>
+		<products>
+			<ArchotechScrap>75</ArchotechScrap>
+		</products>
+	</RecipeDef>
 </Defs>

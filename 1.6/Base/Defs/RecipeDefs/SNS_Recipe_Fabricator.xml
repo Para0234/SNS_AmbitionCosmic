@@ -272,6 +272,24 @@
 			</li>
 		</ingredients>
 	</RecipeDef>
+	<RecipeDef MayRequire="zal.morearchotechgarbage" ParentName="SNS_Constructor_Item">
+		<defName>SNS_Production_Fabricator_Archotech_Fragment</defName>
+		<label>Archotech Fragment production</label>
+		<description>Pattern five fragments of Archotech technology.</description>
+		<products>
+			<ArchotechScrap>10</ArchotechScrap>
+		</products>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_CosmicMatter</li>
+					</thingDefs>
+				</filter>
+				<count>200</count>
+			</li>
+		</ingredients>
+	</RecipeDef>
 	<RecipeDef ParentName="SNS_Constructor_Item">
 		<defName>SNS_Production_Fabricator_Penoxycyline</defName>
 		<label>Pattern Penoxycyline</label>
