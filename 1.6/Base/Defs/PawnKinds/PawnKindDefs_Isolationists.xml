@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnKindDef Name="IsolationistPawnBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>CosmicIsolationist</defaultFactionDef>
+    <chemicalAddictionChance>0</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Excellent</itemQuality>
+    <backstoryCryptosleepCommonality>0.25</backstoryCryptosleepCommonality>
+    <maxGenerationAge>40</maxGenerationAge>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+    <initialResistanceRange>55~80</initialResistanceRange>
+    <initialWillRange>30~40</initialWillRange>
+    <skills>
+       <li>
+        <skill>Shooting</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Melee</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Construction</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Mining</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Cooking</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Plants</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Animals</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Crafting</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Artistic</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Medicine</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Social</skill>
+        <range>14~20</range>
+      </li>
+      <li>
+        <skill>Intellectual</skill>
+        <range>14~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Nudist</li>
+      <li>BodyPurist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <!-- Civilians -->
+  <PawnKindDef ParentName="IsolationistPawnBase" Name="IsolationistCommonBase" Abstract="True">
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <stuff>SNS_CosmicAlloyWeave</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>SNS_CosmicAlloyWeave</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>SNS_CosmicAlloyWeave</stuff>
+      </li>
+    </specificApparelRequirements>
+    <isFighter>false</isFighter>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <apparelMoney>50000~50000</apparelMoney>
+    <gearHealthRange>10~10</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsMoney>20000~30000</techHediffsMoney>
+    <techHediffsTags>
+      <li>SNSBionicTierOne</li>
+      <li>SNSBionicTierTwo</li>
+    </techHediffsTags>
+    <techHediffsChance>1</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="IsolationistCommonBase">
+    <defName>IsolationistCitizen</defName>
+    <label>isolationist citizen</label>
+    <race>Human</race>
+    <combatPower>80</combatPower>
+    <weaponTags>
+      <li>SNSRangedTierOne</li>
+      <li>SNSRangedTierTwo</li>
+    </weaponTags>
+    <weaponMoney>80000~100000</weaponMoney>
+  </PawnKindDef>
+
+  <!-- Cosmic Marines -->
+   <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" Abstract="True" Name="IsolationistSoldierAdvanced" ParentName="IsolationistPawnBase">
+    <combatPower>600</combatPower>
+    <apparelRequired>
+      <li>SNS_Apparel_CosmicPowerArmor</li>
+      <li>SNS_Apparel_CosmicPowerArmorHelmet</li> 
+    </apparelRequired>
+    <isFighter>true</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <apparelTags>
+      <li>SNSGearTierTwo</li>
+    </apparelTags>
+    <apparelMoney>500000~500000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>SNS_Medicine_GenII</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+   <techHediffsRequired>
+      <li>DeathAcidifier</li>
+      <li>SNS_Item_BionicEye_GenII</li>
+      <li>SNS_Item_BionicEye_GenII</li>
+      <li>SNS_Item_BionicEar_GenII</li>
+      <li>SNS_Item_BionicEar_GenII</li>
+      <li>SNS_Item_BionicNose_GenII</li>
+      <li>SNS_Item_BionicJaw_GenII</li>
+      <li>SNS_Item_BionicHead_GenII</li>
+      <li>SNS_Item_BionicNeck_GenII</li>
+      <li>SNS_Item_BionicTorso_GenII</li>
+      <li>SNS_Item_BionicArm_GenII</li>
+      <li>SNS_Item_BionicArm_GenII</li>
+      <li>SNS_Item_BionicLeg_GenII</li>
+      <li>SNS_Item_BionicLeg_GenII</li>
+      <li>SNS_Item_BionicSpine_GenII</li>
+      <li>SNS_Item_BionicBrain_GenII</li>
+      <li>SNS_Item_BionicHeart_GenII</li>
+      <li>SNS_Item_BionicLung_GenII</li>
+      <li>SNS_Item_BionicLung_GenII</li>
+      <li>SNS_Item_BionicKidney_GenII</li>
+      <li>SNS_Item_BionicKidney_GenII</li>
+      <li>SNS_Item_BionicLiver_GenII</li>
+      <li>SNS_Item_BionicStomach_GenII</li>
+    </techHediffsRequired>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>8000~12000</techHediffsMoney>
+    <techHediffsTags>
+        <li>SNSBionicTierOne</li>
+        <li>SNSBionicTierTwo</li>
+    </techHediffsTags>
+    <combatEnhancingDrugsChance>1</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>1~3</combatEnhancingDrugsCount>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="IsolationistSoldierAdvanced">
+    <defName>ACR_CosmicMarineRanged</defName>
+    <label>cosmic marine</label>
+    <labelPlural>cosmic marines</labelPlural>
+    <weaponTags>
+      <li>SNSRangedTierTwo</li>
+    </weaponTags>
+    <weaponMoney>20000~30000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>20~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+   
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="IsolationistSoldierAdvanced">
+    <defName>ACR_CosmicMarineMelee</defName>
+    <label>cosmic warrior</label>
+    <labelPlural>cosmic warriors</labelPlural>
+    <weaponTags>
+      <li>SNSMeleeTierTwo</li>
+    </weaponTags>
+    <weaponMoney>50000~100000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <canBeSapper>true</canBeSapper>
+  </PawnKindDef>
+
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="IsolationistSoldierAdvanced">
+    <defName>CosmicEmperor</defName>
+    <label>cosmic emperor</label>
+    <labelPlural>cosmic emperor</labelPlural>
+    <factionLeader>true</factionLeader>
+    <weaponTags>
+      <li>SNSRangedTierTwo</li>
+    </weaponTags>
+    <weaponMoney>20000~30000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>20~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <itemQuality Inherit="False">Legendary</itemQuality>
+  </PawnKindDef>
+
+</Defs>

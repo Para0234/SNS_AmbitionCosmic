@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef ParentName="FactionBase" Name="AscendantFactionBase" Abstract="True">
+    <pawnSingular>ascendant</pawnSingular>
+    <pawnsPlural>ascendants</pawnsPlural>
+    <categoryTag>Ascendant</categoryTag>
+    <listOrderPriority>300</listOrderPriority>
+    <settlementGenerationWeight>1.2</settlementGenerationWeight>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/WorldObjects/Expanding/StarTown</factionIconPath>
+    <techLevel>Ultra</techLevel>
+    <settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Collectivist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">MaleSupremacy</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">FemaleSupremacy</li>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_TheistEmbodied MayRequire="Ludeon.RimWorld.Ideology">1</Structure_TheistEmbodied>
+      <Structure_TheistAbstract MayRequire="Ludeon.RimWorld.Ideology">2</Structure_TheistAbstract>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <Structure_Archist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Archist>
+      <Structure_OriginChristian MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginChristian>
+      <Structure_OriginIslamic MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginIslamic>
+      <Structure_OriginHindu MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginHindu>
+      <Structure_OriginBuddhist MayRequire="Ludeon.RimWorld.Ideology">1</Structure_OriginBuddhist>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+        <Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.025</Starjack>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Outlander</li>
+        </categories>
+        <commonality>0.25</commonality>
+      </li>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>0.75</commonality>
+      </li>
+    </backstoryFilters>
+    <caravanTraderKinds>
+      <li>Caravan_Ascendant_BulkGoods</li>
+      <li>Caravan_Ascendant_CombatSupplier</li>
+      <li>Caravan_Ascendant_Exotic</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Outlander_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Ascendant_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>AscendantRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(200, 50)</li>
+        <li>(500, 100)</li>
+        <li>(1500, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <ACR_SpaceMarineRanged>11</ACR_SpaceMarineRanged>
+          <ACR_SpaceMarineMelee>9</ACR_SpaceMarineMelee>
+          <ACR_StellarMarineRanged>6</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>4</ACR_StellarMarineMelee>
+          <AscendantEmperor>1</AscendantEmperor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <AscendantCitizen>10</AscendantCitizen>
+          <ACR_SpaceMarineRanged>7</ACR_SpaceMarineRanged>
+          <ACR_SpaceMarineMelee>5</ACR_SpaceMarineMelee>
+          <ACR_StellarMarineRanged>2</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>2</ACR_StellarMarineMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <AscendantTrader>1</AscendantTrader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <ACR_SpaceMarineRangedGuard>5</ACR_SpaceMarineRangedGuard>
+          <ACR_SpaceMarineMeleeGuard>5</ACR_SpaceMarineMeleeGuard>
+          <ACR_StellarMarineRangedGuard>3</ACR_StellarMarineRangedGuard>
+          <ACR_StellarMarineMeleeGuard>3</ACR_StellarMarineMeleeGuard>
+          <AscendantCitizen>10</AscendantCitizen>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <AscendantCitizen>4</AscendantCitizen>
+          <ACR_SpaceMarineRanged>9</ACR_SpaceMarineRanged>
+          <ACR_SpaceMarineMelee>7</ACR_SpaceMarineMelee>
+          <ACR_StellarMarineRanged>6</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>4</ACR_StellarMarineMelee>
+          <AscendantEmperor>1</AscendantEmperor>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+  
+  <ThingSetMakerDef>
+    <defName>AscendantRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>MedicineIndustrial</li>
+            <li>ComponentIndustrial</li>
+            <li>ComponentSpacer</li>
+            <li>Neutroamine</li>
+            <li>SNS_Medicine_GenI</li>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <FactionDef ParentName="AscendantFactionBase">
+    <defName>AscendantCivil</defName>
+    <label>ascendant federation</label>
+    <factionNameMaker>NamerFactionAscendantCivil</factionNameMaker>
+    <leaderTitle>president</leaderTitle>
+    <description>An advanced federation formed of many smaller spacer-era factions. Working together, they have progressed tremendously beyond the level of technological advancement common on most rimworlds, having begun to glimpse into the true workings of the cosmos and using this knowledge to develop powerful stellar technology.\n\nThis particular federation is concerned with matters of peace and prosperity, and is willing to work together with the other factions to make the world a better place.</description>
+    <colorSpectrum>
+      <li>(0.9, 0.9, 0.2)</li>
+      <li>(0.9, 0.9, 0.3)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+  </FactionDef>
+
+  <FactionDef ParentName="AscendantFactionBase">
+    <defName>AscendantRough</defName>
+    <label>ascendant empire</label>
+    <factionNameMaker>NamerFactionAscendantRough</factionNameMaker>
+    <leaderTitle>emperor</leaderTitle>
+    <description>An advanced empire that has conquered large parts of this rimworld. They possess knowledge of the true workings of the cosmos, possessing powerful stellar technology which they use to destroy all who stand in their way.\n\nWhile their ultimate goal is the conquest of the entire world, should you prove your worth, they can be negotiated with.</description>
+    <settlementGenerationWeight>2</settlementGenerationWeight>
+    <naturalEnemy>true</naturalEnemy>
+    <colorSpectrum>
+      <li>(0.95, 0.59, 0.03)</li>
+      <li>(1, 0.59, 0.15)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>

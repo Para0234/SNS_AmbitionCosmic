@@ -18,7 +18,7 @@
 		<!--Gen 2-->
 		<defName>AOTC_CosmicGenetics_Research</defName>
 		<label>Cosmic Genetics</label>
-		<description>With the advances that Cosmic Matter brings to in energy manipulation, we can further increase the potential of our genetics equipment.</description>
+		<description>With the advances that Cosmic Matter brings in energy manipulation, we can further increase the potential of our genetics equipment.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>

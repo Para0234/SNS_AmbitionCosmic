@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFactionIsolationist</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [SuperiorAdjective] [IsolationistFac]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>SuperiorAdjective->Names/SuperiorAdjective</li>
+        <li>IsolationistFac->Names/IsolationistFac</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef MayRequire="Ludeon.Rimworld.Royalty" ParentName="FactionBase" Name="CosmicIsolationist">
+    <defName>CosmicIsolationist</defName>
+    <label>cosmic isolationists</label>
+    <leaderTitle>keeper</leaderTitle>
+    <description>A highly secretive organization possessing extremely powerful Cosmic technologies, rivaling the power of the Ancients themselves. They have a strict society where the powerful rule with an iron fist, with all outsiders being viewed as 'lesser' than them and not worth their time.\n\nThey are completely apathetic to the existence of all other beings on the planet and do not believe you worth their time. They will refuse to trade with you and remain permanently hostile, although it'll be a while after your arrival before they consider you enough of a threat to send raids.</description>
+    <colorSpectrum>
+      <li>(0.37, 0, 0.07)</li>
+      <li>(0.37, 0, 0)</li>
+    </colorSpectrum>
+    <classicIdeo>true</classicIdeo>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>100</configurationListOrderPriority>
+    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+    <pawnSingular>isolationist</pawnSingular>
+    <pawnsPlural>isolationists</pawnsPlural>
+    <categoryTag>Isolationist</categoryTag>
+    <factionNameMaker>NamerFactionIsolationist</factionNameMaker>
+    <listOrderPriority>290</listOrderPriority>
+    <settlementGenerationWeight>0.4</settlementGenerationWeight>
+    <factionIconPath>World/WorldObjects/Expanding/EyeTown</factionIconPath>
+    <techLevel>Archotech</techLevel>
+    <settlementNameMaker>NamerSettlementEmpire</settlementNameMaker>
+    <permanentEnemy>true</permanentEnemy>
+    <canSiege>true</canSiege>
+    <canStageAttacks>true</canStageAttacks>
+    <allowedCultures><li>Astropolitan</li></allowedCultures>
+    <dialogFactionGreetingHostile>IsolationistFactionGreetingHostile</dialogFactionGreetingHostile>
+    <earliestRaidDays>240</earliestRaidDays>
+    <canGenerateQuestSites>false</canGenerateQuestSites>
+    <requiredMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Loyalist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+    </requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Structure_Animist</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Nudism</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Blindsight</li>
+    </disallowedMemes>
+    <structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">1</Structure_Ideological>
+      <VME_Structure_Authoritarianism MayRequire="Ludeon.RimWorld.Ideology,VanillaExpanded.VMemesE">1</VME_Structure_Authoritarianism>
+    </structureMemeWeights>
+    <xenotypeSet>
+      <xenotypeChances>
+        <Hussar MayRequire="Ludeon.RimWorld.Biotech">0.05</Hussar>
+        <Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.05</Dirtmole>
+        <Genie MayRequire="Ludeon.RimWorld.Biotech">0.025</Genie>
+        <Neanderthal MayRequire="Ludeon.RimWorld.Biotech">0.025</Neanderthal>
+        <Starjack MayRequire="Ludeon.RimWorld.Biotech,Ludeon.RimWorld.Odyssey">0.025</Starjack>
+      </xenotypeChances>
+    </xenotypeSet>
+    <backstoryFilters>
+      <li>
+        <categories>
+          <li>Offworld</li>
+        </categories>
+        <commonality>1</commonality>
+      </li>
+    </backstoryFilters>
+    <baseTraderKinds>
+      <li>Base_Ascendant_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>-40~45</allowedArrivalTemperatureRange>
+    <raidLootMaker>CosmicRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(2000, 50)</li>
+        <li>(2000, 100)</li>
+        <li>(2000, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, standard mix -->
+        <kindDef>Combat</kindDef>
+        <options>
+          <ACR_StellarMarineRanged>8</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>8</ACR_StellarMarineMelee>
+          <ACR_CosmicMarineRanged>12</ACR_CosmicMarineRanged>
+          <ACR_CosmicMarineMelee>12</ACR_CosmicMarineMelee>
+          <CosmicEmperor>1</CosmicEmperor>
+        </options>
+      </li>
+      <li>
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <IsolationistCitizen>10</IsolationistCitizen>
+          <ACR_StellarMarineRanged>5</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>5</ACR_StellarMarineMelee>
+          <ACR_CosmicMarineRanged>8</ACR_CosmicMarineRanged>
+          <ACR_CosmicMarineMelee>8</ACR_CosmicMarineMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <AscendantTrader>1</AscendantTrader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2</Alpaca>
+          <Elephant>1</Elephant>
+        </carriers>
+        <guards>
+          <IsolationistCitizen>10</IsolationistCitizen>
+          <ACR_StellarMarineRanged>5</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>5</ACR_StellarMarineMelee>
+          <ACR_CosmicMarineRanged>8</ACR_CosmicMarineRanged>
+          <ACR_CosmicMarineMelee>8</ACR_CosmicMarineMelee>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <IsolationistCitizen>6</IsolationistCitizen>
+          <ACR_StellarMarineRanged>5</ACR_StellarMarineRanged>
+          <ACR_StellarMarineMelee>5</ACR_StellarMarineMelee>
+          <ACR_CosmicMarineRanged>15</ACR_CosmicMarineRanged>
+          <ACR_CosmicMarineMelee>15</ACR_CosmicMarineMelee>
+          <CosmicEmperor>1</CosmicEmperor>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>CosmicRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>SNS_Unobtainium</li>
+            <li>SNS_CosmicAlloy</li>
+            <li>SNS_Medicine_GenII</li>
+            <li>ComponentSpacer</li>
+            <li>SNS_Component_GenII</li>
+            <li>SNS_Meal_Normal_GenII</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+
+</Defs>

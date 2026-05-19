@@ -29,10 +29,11 @@
             <Flammability>0</Flammability>
         </statBases>
         <costList>
-            <Plasteel>75</Plasteel>
-            <Gold>250</Gold>
-            <ComponentSpacer>15</ComponentSpacer>
-        </costList>
+           <Plasteel>75</Plasteel>
+           <Gold>250</Gold>
+           <ComponentSpacer>10</ComponentSpacer>
+           <SNS_Unobtainium>50</SNS_Unobtainium>
+    </costList>
         <building>
             <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
         </building>

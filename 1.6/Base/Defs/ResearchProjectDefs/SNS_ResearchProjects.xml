@@ -21,6 +21,8 @@
 		</prerequisites>
 		<researchViewX>22</researchViewX>
 		<researchViewY>2.2</researchViewY>
+		<discoveredLetterTitle>Stellar Ambitions</discoveredLetterTitle>
+        <discoveredLetterText>Your colony has laid the groundwork for the research and development of basic Cosmic Matter-powered technologies. However, in order to progress further, you will need a Stellar Analyzer.\n\nThis building requires a small amount of Starsteel to construct, which can be aquired either through trade with advanced factions or looted from their members and settlements.</discoveredLetterText>
 	</ResearchProjectDef>
 
 	<!-- Generation 1 -->
@@ -134,7 +136,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_pwr</defName>
 		<label>Cosmic Energy</label>
-		<description>Cosmic Matter contains vast amounts of energy, energies too difficult to extract under normal circumstances to make it a reality. If we can figure out how to safely extract this energy, we could potentially generate a truly endless amounts of energy.</description>
+		<description>Cosmic Matter contains vast amounts of energy too difficult to extract under normal circumstances to be of practical use. If we can figure out how to safely extract this energy, we could potentially generate a nearly endless amount of power.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -186,7 +188,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_drugs</defName>
 		<label>Advanced Drug Production</label>
-		<description>Recreational and functional drugs of today are rather flawed, most having various side-effects and/or long-term damage that cause great risk--especially for those who lack self-control. While we cannot re-create them perfectly, we can at least try to make something better.</description>
+		<description>Recreational and functional drugs of today are rather flawed, most having various side-effects or significant long-term drawbacks that cause great risk, especially for those who lack self-control. While we cannot re-create them perfectly, we can at least try to make something better.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -199,7 +201,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
 		<defName>SNS_Research_II_furniture</defName>
 		<label>Next-Generation Recreation</label>
-		<description>While our existing methods of recreation are perfectly fine, there are still many things that we could improve to better our lives, primarily in the consideration of AI-applications.</description>
+		<description>While our existing methods of recreation are perfectly fine, there are still many things that we could improve to better our lives, primarily through the application of advanced AI systems.</description>
 		<baseCost>15000</baseCost>
 		<techLevel>Ultra</techLevel>
 		<prerequisites>
@@ -263,7 +265,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_bionics</defName>
 		<label>Cosmic Bionics</label>
-		<description>Just meeting the level of Archotech limbs is not enough. Just like everything else we've made, we must soar beyond the technologies of old and embrace the new, so that we can perisist. Nothing will break our will, or our limbs.</description>
+		<description>Just meeting the level of Archotech limbs is not enough. Just like everything else we have made, we must soar beyond the technologies of old and embrace the new in order to persist. Nothing will break our will, or our limbs.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -276,7 +278,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_weaponry</defName>
 		<label>Cosmic Weapons Generation II</label>
-		<description>What we have is not enough. We must grow stronger, more powerful.\n\nAnd perhaps, we can even make something of pure terror, in the process.</description>
+		<description>Our stellar weaponry, previously seen as the peak of warfare, is in truth nothing but a crude imitation of the Ancient's technology. Now that we have reached beyond the veil, we will develop true weapons worthy of their legacy.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -328,7 +330,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_hydroponics</defName>
 		<label>Cosmic Hydroponics Generation II</label>
-		<description>The Generation II Cosmic Hydroponics Basin does not rely on a custom-made nutrient bath for plants to grow in with trace amounts of Cosmic Alloy for prosperity, but instead, it infuses the very cells of plants with Cosmic Matter, allowing for plants to grow at their very limit.</description>
+		<description>The Generation II Cosmic Hydroponics Basin does not rely on a custom-made nutrient bath for plants to grow in with trace amounts of Cosmic Alloy for prosperity. Instead, it infuses the very cells of plants with Cosmic Matter, allowing for plants to grow at speeds observable by the naked eye.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -341,7 +343,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_medicine</defName>
 		<label>Cosmic Medicinals</label>
-		<description>Pushing the envelope further, we can achive perfection beyond Glitterworld medicine with the help of Cosmic Alloy and Cosmic Matter.</description>
+		<description>Pushing medical technology yet further, we can achieve perfection beyond even Glitterworld medicine with the help of Cosmic Alloy and Cosmic Matter.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -354,7 +356,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_food</defName>
 		<label>Cosmic Foods</label>
-		<description>Perfecting the art of cosmic-based foods, we can rest easy and content knowing our future is fed with the help of Cosmic Alloy and Cosmic Matter.\n\nFood is cooked just like any other meals, on the electric/fueled stove.</description>
+		<description>Perfecting the art of cosmic-based foods with the help of Cosmic Alloy and Cosmic Matter, we can rest easy and content knowing our bellies will be full long into Eternity itself.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -367,7 +369,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_drugs</defName>
 		<label>Cosmic Drugs</label>
-		<description>Leaping to greater highs, we can make better, safer, and more effective drugs for both recreation and operation with our growing mastery of Cosmic Matter.\n\nDrugs unlocked by this technology must made in the Cosmic Manipulator.</description>
+		<description>Leaping to greater highs, we can make better, safer, and more effective drugs for all purposes, from recreation to combat, using our growing mastery of Cosmic Matter.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -380,7 +382,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_III_furniture</defName>
 		<label>Cosmic Recreation</label>
-		<description>Soaring towards our joys, we can improve the quality of our lives through perpetual pursuit of better recreational buildings.</description>
+		<description>Soaring towards eternal happiness, we can improve the quality of our lives through perpetual pursuit of better recreational facilities.</description>
 		<baseCost>25000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -434,6 +436,7 @@
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
 			<li>SNS_Research_IV</li>
+			<li>SNS_Research_III_weaponry</li>
 		</prerequisites>
 		<researchViewX>28</researchViewX>
 		<researchViewY>2.65</researchViewY>
@@ -444,7 +447,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>SNS_Research_V</defName>
 		<label>The Great Unknown</label>
-		<description>There is so much that happens in this world that we will never be able to see or understand. There are forces beyond us, forces we could never hope to understand.\n\nThis world seems to beckon us, push us towards the final goal. Fragments of something long lost, of a people long gone, scattered about unused by any others.\n\nLet us find these fragments, and ascend beyond greatness.</description>
+		<description>There is so much that happens in this world that we will never be able to see or understand. There are forces beyond us, forces we could never hope to understand.\n\nThey seem to beckon us, steer us towards the final goal. Fragments of something long lost, of a people long gone, scattered about, beyond the understanding of any others.\n\nLet us find these fragments, and ascend beyond greatness.</description>
 		<baseCost>75000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -472,7 +475,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_base</defName>
 		<label>Breaching The Limits</label>
-		<description>Just when we thought we had reached the limits and hit the technological ceiling, we had found yet another key to greatness. Dubbed 'Eternium', this is the ultimate material. Its properties are much alike that of Cosmic Matter, but with stability not seen anywhere else. We should be able to draw it from the Call of the Cosmos.</description>
+		<description>Just when we thought we had reached the limits and hit the technological ceiling, we had found yet another key to greatness. Dubbed 'Eternium', this is the ultimate material. Its properties are much alike that of Cosmic Matter, but with stability not seen anywhere else. We should be able to draw it using the newly designed R.I.F.T Fabricator.</description>
 		<baseCost>150000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -655,7 +658,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<defName>SNS_Research_VI_final</defName>
 		<label>Unto The Zenith</label>
-		<description>Let's race past this horizon, and rest upon a whole new one.</description>
+		<description>Let's race past the horizon, and rest upon a whole new one.</description>
 		<baseCost>250000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<prerequisites>
@@ -679,7 +682,7 @@
 	<ResearchProjectDef ParentName="SNS_Research_Base">
 		<defName>SNS_Research_VII</defName>
 		<label>Pinnacle Of Creation</label>
-		<description>We are the pinnacle of creation. The Zenith of all, the tower atop the eternal, endless sea. We reached up to the stars and the skies, and grasped onto the vast horizons. We finally, at last know the truth: We are the undisputed masters of all reality, atop the Zenith, beyond all perception. Such great privilage.</description>
+		<description>We are the pinnacle of creation. The Zenith of all, the tower atop the eternal, endless sea. We reached up to the stars and the skies, and grasped onto the vast horizons. We finally, at last know the truth: We are the undisputed masters of all reality, atop the Zenith, beyond all perception. Such great power...</description>
 		<baseCost>5000000</baseCost>
 		<techLevel>Archotech</techLevel>
 		<requiredResearchFacilities>
