@@ -569,7 +569,7 @@
 				<li>Fabric</li>
 				<li>Leathery</li>
 			</categories>
-			<color>(0,230,255)</color>
+			<color>(0,180,205)</color>
 			<appearance>Smooth</appearance>
 			<commonality>0.0</commonality>
 			<constructEffect>ConstructMetal</constructEffect> <!-- Item isn't intended to be used as a construction material, so I'll just leave it be here for now... -->
