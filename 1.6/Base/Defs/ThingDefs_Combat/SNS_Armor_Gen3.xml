@@ -178,7 +178,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanHelmet/CharonsHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -250,7 +250,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPowerArmor/CharonsArmor</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanArmor/CharonsArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -334,7 +334,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMeleeHelmet/CharonsHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -370,7 +370,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMeleeHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -405,7 +405,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPowerArmor/CharonsArmor</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMeleeArmor/CharonsArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -461,7 +461,7 @@
         <li>Legs</li>
 		  <li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanArmor/CharonsArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMeleeArmor/CharonsArmor</wornGraphicPath>
       <layers>
       <li>Middle</li>
 	  	<li>Belt</li>
@@ -490,7 +490,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPsycasterHelmet/CharonsHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -525,7 +525,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsPsycasterHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -560,7 +560,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPowerArmor/CharonsArmor</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPsycasterArmor/CharonsArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -616,7 +616,7 @@
         <li>Legs</li>
 		<li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanArmor/CharonsArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsPsycasterArmor/CharonsArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
 		<li>Belt</li>
@@ -645,7 +645,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMechanitorHelmet/CharonsHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -684,7 +684,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMechanitorHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -719,7 +719,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPowerArmor/CharonsArmor</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsMechanitorArmor/CharonsArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -778,7 +778,7 @@
         <li>Legs</li>
 		<li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanArmor/CharonsArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMechanitorArmor/CharonsArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
 		<li>Belt</li>
@@ -807,7 +807,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsWorkerHelmet/CharonsHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <uiIconScale>1.25</uiIconScale>
@@ -845,7 +845,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsHelmet/CharonsHelmet</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsWorkerHelmet/CharonsHelmet</wornGraphicPath>
       <layers>
         <li>Overhead</li>
       </layers>
@@ -880,7 +880,7 @@
       </recipeUsers>
     </recipeMaker>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Apparel/CharonsPowerArmor/CharonsArmor</texPath>
+      <texPath>Things/Pawn/Humanlike/Apparel/CharonsWorkerArmor/CharonsArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <tickerType>Normal</tickerType>
@@ -936,7 +936,7 @@
         <li>Legs</li>
 		<li>Feet</li>
       </bodyPartGroups>
-      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsMarksmanArmor/CharonsArmor</wornGraphicPath>
+      <wornGraphicPath>Things/Pawn/Humanlike/Apparel/CharonsWorkerArmor/CharonsArmor</wornGraphicPath>
       <layers>
         <li>Middle</li>
 		<li>Belt</li>
