@@ -37,6 +37,9 @@
 		<thingCategories>
 			<li>SNS_ThingCategory_Bionics_GenI</li>
 		</thingCategories>
+		<techHediffsTags>
+           <li>SNSBionicTierOne</li>
+        </techHediffsTags>
 	</ThingDef>
 
 	<HediffDef Name="SNS_BionicHediff_GenI" ParentName="AddedBodyPartBase" Abstract="True">

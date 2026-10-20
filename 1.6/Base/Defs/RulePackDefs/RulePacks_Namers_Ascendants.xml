@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <RulePackDef>
+    <defName>NamerFactionAscendantCivil</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[StellarAdjective] [Celestial] [AscendantFed]</li>
+        <li>r_name(p=0.5)->[Celestial] [AscendantFed]</li>
+        <li>r_name->[Color] [StellarAdjective] [Celestial] [AscendantFed]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>StellarAdjective->Names/StellarAdjective</li>
+        <li>AscendantFed->Names/AscendantFed</li>
+        <li>Celestial->Names/Celestial</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>NamerFactionAscendantRough</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->The [TyrannyAdjective] [Celestial] [AscendantEmp]</li>
+        <li>r_name(p=0.5)->The [Celestial] [AscendantEmp]</li>
+        <li>r_name->The [Color] [TyrannyAdjective] [Celestial] [AscendantEmp]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>TyrannyAdjective->Names/TyrannyAdjective</li>
+        <li>AscendantEmp->Names/AscendantEmp</li>
+        <li>Celestial->Names/Celestial</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+  
+</Defs>

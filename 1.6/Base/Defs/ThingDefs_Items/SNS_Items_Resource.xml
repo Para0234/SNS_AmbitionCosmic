@@ -99,7 +99,6 @@
 			<texPath>Things/Item/Resource/SNS/Starsteel/Starsteel</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -188,7 +187,6 @@
 			<texPath>Things/Item/Resource/SNS/StarsteelTextile/StarsteelTextile</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -270,7 +268,6 @@
 			<texPath>Things/Item/Resource/SNS/CosmicAlloy/CosmicAlloy</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -359,7 +356,6 @@
 			<texPath>Things/Item/Resource/SNS/CosmicWeave/CosmicWeave</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -400,7 +396,7 @@
 			</categories>
 			<color>(245,245,255)</color>
 			<appearance>Smooth</appearance>
-			<commonality>0.0</commonality>
+            <commonality>0.00001</commonality>
 			<constructEffect>ConstructMetal</constructEffect>
 			<statOffsets>
 				<Beauty>10</Beauty>
@@ -437,7 +433,6 @@
 			<texPath>Things/Item/Resource/SNS/ComponentGen2/ComponentGen2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -530,7 +525,6 @@
 			<texPath>Things/Item/Resource/SNS/Cosmic_Matter/Cosmic_Matter</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Standard_Pickup</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -621,7 +615,6 @@
 			<texPath>Things/Item/Resource/SNS/Eternium/Eternium</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Standard_Pickup</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -710,7 +703,6 @@
 			<texPath>Things/Item/Resource/SNS/ComponentGen3/ComponentGen3</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>

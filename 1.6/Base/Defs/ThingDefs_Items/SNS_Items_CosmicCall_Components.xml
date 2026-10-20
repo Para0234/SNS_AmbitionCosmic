@@ -10,7 +10,6 @@
 			<texPath>Things/Item/Misc/SNS/Component1_DiluteEterniumShard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -55,7 +54,6 @@
 			<texPath>Things/Item/Misc/SNS/Component2_DataDrive</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -100,7 +98,6 @@
 			<texPath>Things/Item/Misc/SNS/Component3_EterniumMotor</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -145,7 +142,6 @@
 			<texPath>Things/Item/Misc/SNS/Component4_CircuitBoard</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>
@@ -190,7 +186,6 @@
 			<texPath>Things/Item/Misc/SNS/Component5_EterniumAmplifier</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
 		<resourceReadoutPriority>First</resourceReadoutPriority>
 		<soundInteract>Metal_Drop</soundInteract>
 		<soundDrop>Standard_Drop</soundDrop>

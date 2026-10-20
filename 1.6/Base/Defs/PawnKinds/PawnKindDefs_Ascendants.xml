@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="AscendantPawnBase" Abstract="True">
+    <race>Human</race>
+    <defaultFactionDef>AscendantCivil</defaultFactionDef>
+    <chemicalAddictionChance>0.05</chemicalAddictionChance>
+    <invNutrition>2.55</invNutrition>
+    <itemQuality>Good</itemQuality>
+    <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+    <maxGenerationAge>65</maxGenerationAge>
+    <biocodeWeaponChance>0.6</biocodeWeaponChance>
+    <initialResistanceRange>20~35</initialResistanceRange>
+    <initialWillRange>8~18</initialWillRange>
+  </PawnKindDef>
+
+  <!-- Civilians -->
+
+  <PawnKindDef ParentName="AscendantPawnBase" Name="AscendantCommonBase" Abstract="True">
+    <specificApparelRequirements>
+      <li>
+        <bodyPartGroup>UpperHead</bodyPartGroup>
+        <stuff>Synthread</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Torso</bodyPartGroup>
+        <stuff>Synthread</stuff>
+      </li>
+      <li>
+        <bodyPartGroup>Legs</bodyPartGroup>
+        <stuff>Synthread</stuff>
+      </li>
+    </specificApparelRequirements>
+    <isFighter>false</isFighter>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+      <li>IndustrialAdvanced</li>
+    </apparelTags>
+    <apparelMoney>500~1500</apparelMoney>
+    <gearHealthRange>1~1</gearHealthRange>
+    <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+    <techHediffsMoney>50~800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Poor</li>
+      <li>Simple</li>
+    </techHediffsTags>
+    <techHediffsChance>0.08</techHediffsChance>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantCommonBase">
+    <defName>AscendantCitizen</defName>
+    <label>ascendant citizen</label>
+    <race>Human</race>
+    <combatPower>30</combatPower>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponMoney>1100~3500</weaponMoney>
+    <disallowedTraits>
+      <li>Nudist</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantCommonBase">
+    <defName>AscendantTrader</defName>
+    <label>ascendant trader</label>
+    <trader>true</trader>
+    <race>Human</race>
+    <combatPower>30</combatPower>
+    <weaponTags>
+      <li>IndustrialGunAdvanced</li>
+    </weaponTags>
+    <weaponMoney>1100~3500</weaponMoney>
+    <disallowedTraits>
+      <li>Nudist</li>
+    </disallowedTraits>
+    <skills>
+      <li>
+        <skill>Social</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+  </PawnKindDef>
+
+  <!-- Space Marines -->
+
+  <PawnKindDef Abstract="True" Name="AscendantSoldierBasic" ParentName="AscendantPawnBase">
+    <combatPower>150</combatPower>
+    <gearHealthRange>1~1</gearHealthRange>
+    <isFighter>true</isFighter>
+    <apparelTags>
+      <li>SpacerMilitary</li>
+    </apparelTags>
+    <apparelMoney>2000~4000</apparelMoney>
+    <apparelAllowHeadgearChance>0.9</apparelAllowHeadgearChance>
+    <techHediffsChance>0.5</techHediffsChance>
+    <techHediffsMoney>2000~4000</techHediffsMoney>
+    <techHediffsTags>
+      <li>ImplantEmpireCommon</li>
+      <li>Advanced</li>
+      <li>SNSBionicTierOne</li>
+    </techHediffsTags>
+    <inventoryOptions>
+      <skipChance>0.95</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>MedicineIndustrial</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <disallowedTraits>
+      <li>Nudist</li>
+    </disallowedTraits>
+    <combatEnhancingDrugsChance>0.15</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantSoldierBasic">
+    <defName>ACR_SpaceMarineRanged</defName>
+    <label>space marine</label>
+    <labelPlural>space marines</labelPlural>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponMoney>1010~2200</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+  </PawnKindDef>
+
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="AscendantSoldierBasic">
+    <defName>ACR_SpaceMarineMelee</defName>
+    <label>space marine</label>
+    <labelPlural>space marines</labelPlural>
+    <weaponTags>
+      <li>UltratechMelee</li>
+    </weaponTags>
+    <weaponMoney>2000~3000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <canBeSapper>true</canBeSapper>
+  </PawnKindDef>
+
+  <!-- Stellar Marines -->
+
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" Abstract="True" Name="AscendantSoldierAdvanced" ParentName="AscendantPawnBase">
+    <combatPower>450</combatPower>
+    <isFighter>true</isFighter>
+    <gearHealthRange>1~1</gearHealthRange>
+    <apparelTags>
+      <li>SNSGearTierOne</li>
+    </apparelTags>
+    <apparelMoney>20000~25000</apparelMoney>
+    <apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+    <inventoryOptions>
+      <skipChance>0.9</skipChance>
+      <subOptionsChooseOne>
+        <li>
+          <thingDef>SNS_Medicine_GenI</thingDef>
+          <countRange>1</countRange>
+        </li>
+      </subOptionsChooseOne>
+    </inventoryOptions>
+    <biocodeWeaponChance>1</biocodeWeaponChance>
+    <techHediffsRequired>
+      <li>DeathAcidifier</li>
+      <li>SNS_Item_BionicEye_GenI</li>
+      <li>SNS_Item_BionicEye_GenI</li>
+      <li>SNS_Item_BionicEar_GenI</li>
+      <li>SNS_Item_BionicEar_GenI</li>
+      <li>SNS_Item_BionicNose_GenI</li>
+      <li>SNS_Item_BionicJaw_GenI</li>
+      <li>SNS_Item_BionicHead_GenI</li>
+      <li>SNS_Item_BionicNeck_GenI</li>
+      <li>SNS_Item_BionicTorso_GenI</li>
+      <li>SNS_Item_BionicArm_GenI</li>
+      <li>SNS_Item_BionicArm_GenI</li>
+      <li>SNS_Item_BionicLeg_GenI</li>
+      <li>SNS_Item_BionicLeg_GenI</li>
+      <li>SNS_Item_BionicSpine_GenI</li>
+      <li>SNS_Item_BionicBrain_GenI</li>
+      <li>SNS_Item_BionicHeart_GenI</li>
+      <li>SNS_Item_BionicLung_GenI</li>
+      <li>SNS_Item_BionicLung_GenI</li>
+      <li>SNS_Item_BionicKidney_GenI</li>
+      <li>SNS_Item_BionicKidney_GenI</li>
+      <li>SNS_Item_BionicLiver_GenI</li>
+      <li>SNS_Item_BionicStomach_GenI</li>
+    </techHediffsRequired>
+    <techHediffsChance>1</techHediffsChance>
+    <techHediffsMoney>8000~12000</techHediffsMoney>
+    <techHediffsTags>
+        <li>Advanced</li>
+        <li>SNSBionicTierOne</li>
+    </techHediffsTags>
+    <disallowedTraits>
+      <li>Nudist</li>
+    </disallowedTraits>
+    <combatEnhancingDrugsChance>0.8</combatEnhancingDrugsChance>
+    <combatEnhancingDrugsCount>0~2</combatEnhancingDrugsCount>
+    <apparelColor>(255, 255, 255)</apparelColor>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantSoldierAdvanced">
+    <defName>ACR_StellarMarineRanged</defName>
+    <label>stellar marine</label>
+    <labelPlural>stellar marines</labelPlural>
+    <weaponTags>
+      <li>SNSRangedTierOne</li>
+    </weaponTags>
+    <weaponMoney>2265~6000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <apparelRequired>
+      <li MayRequire="VanillaExpanded.VAEAccessories" >VAEA_Apparel_RangedShieldBelt</li>
+    </apparelRequired>
+  </PawnKindDef>
+   
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="AscendantSoldierAdvanced">
+    <defName>ACR_StellarMarineMelee</defName>
+    <label>stellar warrior</label>
+    <labelPlural>stellar warriors</labelPlural>
+    <weaponTags>
+      <li>SNSMeleeTierOne</li>
+    </weaponTags>
+    <weaponMoney>4000~12000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <canBeSapper>true</canBeSapper>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantSoldierAdvanced">
+    <defName>AscendantEmperor</defName>
+    <label>stellar emperor</label>
+    <labelPlural>stellar emperors</labelPlural>
+    <factionLeader>true</factionLeader>
+    <itemQuality>Masterwork</itemQuality>
+    <weaponTags>
+      <li>SNSRangedTierOne</li>
+    </weaponTags>
+    <weaponMoney>10000~10000</weaponMoney>
+    <apparelMoney>40000~50000</apparelMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <apparelRequired>
+      <li MayRequire="VanillaExpanded.VAEAccessories" >VAEA_Apparel_RangedShieldBelt</li>
+    </apparelRequired>
+  </PawnKindDef>
+
+  <!-- Trade Guards -->
+  <!-- Simply regular pawns with lowered point cost in order for them to appear as caravan guards, at least until a better fix is available -->
+
+  <PawnKindDef ParentName="AscendantSoldierBasic">
+    <defName>ACR_SpaceMarineRangedGuard</defName>
+    <label>space marine</label>
+    <labelPlural>space marines</labelPlural>
+    <weaponTags>
+      <li>SpacerGun</li>
+    </weaponTags>
+    <weaponMoney>1010~2200</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <combatPower Inherit="False">60</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="AscendantSoldierBasic">
+    <defName>ACR_SpaceMarineMeleeGuard</defName>
+    <label>space marine</label>
+    <labelPlural>space marines</labelPlural>
+    <weaponTags>
+      <li>UltratechMelee</li>
+    </weaponTags>
+    <weaponMoney>2000~3000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>12~16</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <canBeSapper>true</canBeSapper>
+    <combatPower Inherit="False">60</combatPower>
+  </PawnKindDef>
+
+  <PawnKindDef ParentName="AscendantSoldierAdvanced">
+    <defName>ACR_StellarMarineRangedGuard</defName>
+    <label>stellar marine</label>
+    <labelPlural>stellar marines</labelPlural>
+    <weaponTags>
+      <li>SNSRangedTierOne</li>
+    </weaponTags>
+    <weaponMoney>2265~6000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Shooting</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <disallowedTraits>
+      <li>Brawler</li>
+    </disallowedTraits>
+    <apparelRequired>
+      <li MayRequire="VanillaExpanded.VAEAccessories" >VAEA_Apparel_RangedShieldBelt</li>
+    </apparelRequired>
+    <combatPower Inherit="False">100</combatPower>
+  </PawnKindDef>
+   
+  <PawnKindDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="AscendantSoldierAdvanced">
+    <defName>ACR_StellarMarineMeleeGuard</defName>
+    <label>stellar warrior</label>
+    <labelPlural>stellar warriors</labelPlural>
+    <weaponTags>
+      <li>SNSMeleeTierOne</li>
+    </weaponTags>
+    <weaponMoney>4000~12000</weaponMoney>
+    <skills>
+      <li>
+        <skill>Melee</skill>
+        <range>15~20</range>
+      </li>
+    </skills>
+    <apparelRequired>
+      <li>Apparel_ShieldBelt</li>
+    </apparelRequired>
+    <canBeSapper>true</canBeSapper>
+    <combatPower Inherit="False">100</combatPower>
+  </PawnKindDef>
+</Defs>
