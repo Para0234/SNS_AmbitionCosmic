@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+    <Operation Class="PatchOperationSequence">
+        <operations>
+            <li Class="PatchOperationAdd"> 
+                <xpath>/Defs/ThingDef[defName="HiTechResearchBench"]/comps/li/linkableFacilities</xpath> 
+                <value>
+                    <li>SNS_Linkable_Unlocker_GenI</li>
+                    <li>SNS_Linkable_Unlocker_GenII</li>
+                    <li>SNS_Linkable_Unlocker_GenIII</li>
+                    <li>SNS_Linkable_Unlocker_POC</li>
+                </value>
+            </li>
+        </operations>
+    </Operation>
+
+</Patch>

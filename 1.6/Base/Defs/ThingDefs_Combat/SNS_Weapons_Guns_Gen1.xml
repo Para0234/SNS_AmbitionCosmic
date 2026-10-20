@@ -40,6 +40,7 @@
 		</statBases>
 		<weaponTags>
 			<li>SpacerGun</li>
+			<li>SNSRangedTierOne</li>
 		</weaponTags>
 		<recipeMaker>
 			<recipeUsers Inherit="False">
@@ -57,9 +58,6 @@
 			<li>SNSWeaponsRanged</li>
 			<li>SNSWeaponsRangedTier1</li>
 		</thingCategories>
-		<weaponTags>
-			<li>SNSRangedTierOne</li>
-		</weaponTags>
 		<tradeTags>
 			<li>WeaponRanged</li>
 			<li>SNSGear</li>
@@ -157,6 +155,7 @@
 		</thingCategories>
 		<weaponTags>
 			<li>SNSRangedTierOne</li>
+			<li>SNSMechRifle</li>
 		</weaponTags>
 		<tradeTags>
 			<li>WeaponRanged</li>
@@ -330,7 +329,7 @@
 			<WorkToMake>3000</WorkToMake>
 			<Mass>1.0</Mass>
 			<Flammability>0.0</Flammability>
-			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyTouch>0.80</AccuracyTouch>
 			<AccuracyShort>0.85</AccuracyShort>
 			<AccuracyMedium>0.88</AccuracyMedium>
 			<AccuracyLong>0.90</AccuracyLong>
@@ -344,6 +343,10 @@
 			</recipeUsers>
 			<researchPrerequisite>SNS_Research_II_wep</researchPrerequisite>
 		</recipeMaker>
+		<weaponTags>
+			<li>SNSRangedTierOne</li>
+			<li>SNSMechSniper</li>
+		</weaponTags>
 		<costList>
 			<SNS_Unobtainium>40</SNS_Unobtainium>
 			<Plasteel>75</Plasteel>

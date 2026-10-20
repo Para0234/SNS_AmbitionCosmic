@@ -1,0 +1,554 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+	
+	Planned turrets (concepts):
+	
+	(GEN1) Light Stellar Turret: A portable turret that shoots like a stellar Rifle. It has a short cooldown period and requires refurbishment.
+	(GEN1) Perdition Light Stellar Turret: A portable turret that shoots slower than a stellar Rifle, but doesn't have a cooldown period. It requires refurbishment.
+	
+	(GEN2) Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle combined with a Minigun. It has a short cooldown period and requires occasional refurbishment. 
+	(GEN2) Perdition Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle. Slower than the Cosmic Turret but no cooldown period and requires occasional refurbishment.
+	(GEN2.5) Eternal Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle combined with a Minigun. It has a short cooldown period. It does NOT require refurbishment.
+	(GEN2.5) Eternal Perdition Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle. Slower than the Cosmic Turret but no cooldown period. It does NOT require refurbishment.
+	
+	(GEN1) Catalyst Turret: A non-portable 2x2 turret that shoots Cosmic Sniper rounds at a good rate. It shoots 1 bullet and then has a short cooldown. It does NOT require refurbishment.
+	(GEN2) Overdrive Catalyst Turret: A non-portable 2x2 turret that rapidly shoots Cosmic Sniper rounds. It shoots 1 bullet at a time. It requires constant Cosmic Catalyst Cell refueling. (1 Cat. Cell per shot)
+	
+	(GEN2) Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds. It has a (relatively) long cooldown and only shoots 1 bullet at a time. It requires Cosmic Catalyst Cells (5 eaten per shot) to work.
+	(GEN2) Deep Storage Automated Lance: An Automated Lance with 500 CC Cell capacity.
+	(GEN2) Perdition Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds relatively quickly. It shoots 1 bullet at a time. It requires Cosmic Catalyst Cells (5 eaten per shot) and Cosmic Matter (50 eaten per shot) as coolant. //This gets expensive real quick, but will probably be absurdly powerful against pretty much everything.
+	(GEN2) Deep Storage Perdition Automated Lance: A Perdition Automated Lance with 500 CC cell capacity and 5000 CM capacity.
+	(GEN2.5) Eternal Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds. It does NOT require fuel.
+	
+	(GEN2.9) Engimatic Lance: A non-portable 3x3 Eternium-fueled 4x4 turret that shoots EXARCH rounds quickly. It requires Eternium (1:1) as fuel.
+	
+	(GEN3) Automated EXARCH: A non-portable 3x3 turret that shoots EXARCH rounds. It shoots quickly and shoots 1 bullet at a time. It requires Eternium (1 per 5 shots) as fuel.
+	(GEN3.5) Eternal Automated EXARCH: A non-portable 3x3 turret that shoots EXARCH rounds. It does not require any fuel.
+	
+	(GEN4) Bastion of Stability: A non-portable 3x3 turret that shoots EXARCH rounds like a minigun, said rounds also explode. It does not have any specific cooldown period.
+	
+	-->
+
+
+	<!-- Cosmic Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_Cosmic</defName>
+		<label>cosmic turret gun</label>
+		<description>The gun of a cosmic turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretCosmic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>23</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_Cosmic</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>50</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>30</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_Projectile_CosmicRifleBullet">
+		<defName>SNS_Gun_Turret_Bullet_Cosmic</defName>
+		<label>cosmic turret projectile</label>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_Rifle_Gen3_Projectile">
+		<defName>SNS_Gun_Turret_Bullet_OverdriveCosmic</defName>
+		<label>overcharged cosmic turret projectile</label>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_Cosmic</defName>
+		<label>cosmic turret</label>
+		<description>A heavy automatic turret. Fires like a minigun, spewing its reserves at whatever crosses its path without remorse. Requires a large amount of Plasteel to refurbish its barrel after heavy use.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+
+			<damageData>
+				<rect>(1.7,1.7,1.7,1.7)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.7,1.7,1.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_03CosmicTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>6400</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>4000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>900</fuelCapacity> <!-- 10 bursts, 150 Plasteel per full reload. -->
+				<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 5 Plasteel per burst. -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>250</SNS_Unobtainium>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>800</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_Cosmic</turretGunDef>
+			<turretBurstCooldownTime>4</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_III_weaponry</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!-- Perdition Cosmic Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_PerditionCosmic</defName>
+		<label>perdition cosmic turret gun</label>
+		<description>The gun of a perdition cosmic turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretCosmic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>23</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_Cosmic</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>50</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_PerditionCosmic</defName>
+		<label>perdition cosmic turret</label>
+		<description>A heavy automatic turret. Fires like at a rapid pace, spewing its reserves at whatever crosses its path without remorse or cooldown. Requires a large amount of Plasteel to refurbish its barrel after heavy use.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+
+			<damageData>
+				<rect>(1.7,1.7,1.7,1.7)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.7,1.7,1.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_04PerditionCosmicTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>4000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Breakdownable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Shots until barrel change</fuelLabel>
+				<fuelGizmoLabel>Barrel durability</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs new barrel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>900</fuelCapacity> <!-- 10 bursts, 150 Plasteel per full reload. -->
+				<fuelMultiplier>6</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 5 Plasteel per burst. -->
+				<initialFuelPercent>1</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>UI/Overlays/Barrel</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>250</SNS_Unobtainium>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>800</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_PerditionCosmic</turretGunDef>
+			<turretBurstCooldownTime>0.1</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_III_weaponry</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!-- Eternal Cosmic Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_EternalCosmic</defName>
+		<label>eternal cosmic turret gun</label>
+		<description>The gun of an eternal cosmic turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretEternalCosmic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>23</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_OverdriveCosmic</defaultProjectile>
+				<warmupTime>0</warmupTime>
+				<range>50</range>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<burstShotCount>30</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_EternalCosmic</defName>
+		<label>eternal cosmic turret</label>
+		<description>A heavy automatic turret. Fires like a minigun, spewing its reserves at whatever crosses its path without remorse. It does not need refurbishment or refueling, ever, nor can it break down.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+
+			<damageData>
+				<rect>(1.7,1.7,1.7,1.7)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.7,1.7,1.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_05EternalCosmicTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>6000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>250</SNS_Unobtainium>
+			<SNS_CosmicMatter>100</SNS_CosmicMatter>
+			<Plasteel>150</Plasteel>
+			<ComponentSpacer>4</ComponentSpacer>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1200</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_EternalCosmic</turretGunDef>
+			<turretBurstCooldownTime>4</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_IV_cosmicturrets_III</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!-- Perdition Cosmic Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_EternalPerditionCosmic</defName>
+		<label>eternal perdition cosmic turret gun</label>
+		<description>The gun of an eternal perdition cosmic turret.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretEternalCosmic</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.85</AccuracyShort>
+			<AccuracyMedium>0.75</AccuracyMedium>
+			<AccuracyLong>0.65</AccuracyLong>
+			<RangedWeapon_Cooldown>0.2</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>23</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_OverdriveCosmic</defaultProjectile>
+
+
+				<warmupTime>0</warmupTime>
+				<range>50</range>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>Shot_ChargeRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_EternalPerditionCosmic</defName>
+		<label>eternal perdition cosmic turret</label>
+		<description>A heavy automatic turret. Fires like at a rapid pace, spewing its reserves at whatever crosses its path without remorse or cooldown. It does not require refurbishment or refueling, ever, nor can it break down.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHeavy</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7,1.7)</drawSize>
+
+			<damageData>
+				<rect>(1.7,1.7,1.7,1.7)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.7,1.7,1.7)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_06EternalPerditionCosmicTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>6000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>2800</WorkToBuild>
+			<Mass>1.5</Mass>
+			<Beauty>10</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>6000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_Unobtainium>250</SNS_Unobtainium>
+			<SNS_CosmicMatter>100</SNS_CosmicMatter>
+			<Plasteel>150</Plasteel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1200</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_EternalPerditionCosmic</turretGunDef>
+			<turretBurstCooldownTime>0.1</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_IV_cosmicturrets_III</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

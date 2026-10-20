@@ -11,9 +11,23 @@
 		<prerequisites>
 			<li>SNS_Research_I</li>
 		</prerequisites>
-		<researchViewX>22</researchViewX>
-		<researchViewY>5.55</researchViewY>
+		<researchViewX>24</researchViewX>
+		<researchViewY>7.2</researchViewY>
 	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
+		<defName>SNS_Research_II_Mechanoid</defName>
+		<label>Stellar Mechtech</label>
+		<description>Mechanoids can be incredible allies, or incredibly dangerous foes. This research will allow us to produce special mechanoids, reinforced with Starsteel..</description>
+		<baseCost>15000</baseCost>
+		<techLevel>Ultra</techLevel>
+		<prerequisites>
+			<li>SNS_Research_I</li>
+		</prerequisites>
+		<researchViewX>24</researchViewX>
+		<researchViewY>6.7</researchViewY>
+	</ResearchProjectDef>
+	
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<!--Gen 2-->
 		<defName>AOTC_CosmicGenetics_Research</defName>
@@ -24,8 +38,8 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
-		<researchViewY>5.5</researchViewY>
+		<researchViewX>27</researchViewX>
+		<researchViewY>6.4</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">
 		<!--Gen 3-->
@@ -37,8 +51,8 @@
 		<prerequisites>
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
-		<researchViewX>30</researchViewX>
-		<researchViewY>5.6</researchViewY>
+		<researchViewX>32</researchViewX>
+		<researchViewY>6.25</researchViewY>
 	</ResearchProjectDef>
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenII">
 		<defName>AOTC_CosmicWastepackAtomizer_Research</defName>
@@ -49,7 +63,7 @@
 		<prerequisites>
 			<li>SNS_Research_III_base</li>
 		</prerequisites>
-		<researchViewX>25</researchViewX>
-		<researchViewY>6</researchViewY>
+		<researchViewX>27</researchViewX>
+		<researchViewY>7.1</researchViewY>
 	</ResearchProjectDef>
 </Defs>

@@ -1,0 +1,5 @@
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Assemblies\1.3\Assemblies\InfiniteResearch.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Debug\InfiniteResearch.csproj.AssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Debug\InfiniteResearch.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Debug\Infinite.062D0126.Up2Date
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\InfiniteResearch\obj\Debug\InfiniteResearch.dll

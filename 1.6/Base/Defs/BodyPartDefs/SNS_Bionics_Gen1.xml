@@ -738,6 +738,9 @@
 			<ThingDef>SNS_Item_BionicBrain_GenI</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenI</spawnThingOnRemoved>
+		<tags>
+			<li>SNS_NeuralEnchanter</li>
+		</tags>
 		<stages>
 			<li>
 				<painFactor>0.33</painFactor>
@@ -757,7 +760,7 @@
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenI">
 		<defName>SNS_Item_BionicBrain_GenI</defName>
 		<label>stellar neural enchanter</label>
-		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
+		<description>A highly advanced brain 'implant' that covers the entirety of the brain.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Starsteel, it is incredibly durable, far more than the natural body.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenI</RecipeDef>
 		</descriptionHyperlinks>
@@ -773,7 +776,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>SNS_InstallBodyPart_BionicBrain_GenI</defName>
 		<label>install stellar neural enchanter</label>
 		<description>Install a stellar neural enchanter.</description>
@@ -782,6 +785,9 @@
 			<HediffDef>SNS_Hediff_BionicBrain_GenI</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing stellar neural enchanter.</jobString>
+		<incompatibleWithHediffTags>
+			<li>SNS_NeuralEnchanter</li>
+		</incompatibleWithHediffTags>
 		<ingredients>
 			<li>
 				<filter>

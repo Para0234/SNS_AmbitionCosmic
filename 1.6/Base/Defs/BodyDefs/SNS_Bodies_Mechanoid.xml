@@ -1,0 +1,650 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+	Each coverage value is relative to its parent.
+	Remaining body part coverage (100% minus coverage of all child nodes) is a chance to hit exactly this part.
+	Damage "starts" at corePart, and then "goes deeper" until it hits remaining body part coverage or leaf node - this body part is then hit.
+-->
+
+<Defs>
+	
+	<!-- Maul -->
+	<BodyDef>
+		<defName>SNS_MechBull</defName>
+		<label>Mechanoid Bull</label>
+		<corePart>
+			<def>StarsteelMechFrame</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>StarsteelMechShell</def>
+					<coverage>0.90</coverage>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>MatterManipulator</def>
+					<coverage>0.01</coverage>
+					<height>Top</height>
+				</li>
+				<li>
+					<def>StarsteelCore</def>
+					<coverage>0.05</coverage>
+					<height>Top</height>
+					<parts>
+						<li>
+							<def>StarsteelMotionCore</def>
+							<coverage>0.2</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>StarsteelMechBrain</def>
+							<coverage>0.15</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>StarsteelReactor</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>StarsteelReprocessor</def>
+							<coverage>0.10</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.15</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.025</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.025</coverage>
+						</li>
+						<li>
+							<def>StarsteelMechAntenna</def>
+							<coverage>0.025</coverage>
+						</li>
+						<li>
+							<def>SmellSensor</def>
+							<coverage>0.05</coverage>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>BullLeg</def>
+					<coverage>0.01</coverage>
+					<height>Bottom</height>
+					<customLabel>front left leg</customLabel>
+				</li>
+				<li>
+					<def>BullLeg</def>
+					<coverage>0.01</coverage>
+					<height>Bottom</height>
+					<customLabel>front right leg</customLabel>
+				</li>
+				<li>
+					<def>BullLeg</def>
+					<coverage>0.01</coverage>
+					<height>Bottom</height>
+					<customLabel>back left leg</customLabel>
+				</li>
+				<li>
+					<def>BullLeg</def>
+					<coverage>0.01</coverage>
+					<height>Bottom</height>
+					<customLabel>back right leg</customLabel>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+	
+	<!-- Maul -->
+	<BodyDef>
+		<defName>SNS_MechMaul</defName>
+		<label>Mechanoid Maul</label>
+		<corePart>
+			<def>MaulMechBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>MaulMechHead</def>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<coverage>0.10</coverage>
+					<parts>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>MatterManipulator</def>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>MaulProcessorCasing</def>
+							<coverage>0.20</coverage>
+							<parts>
+								<li>
+									<def>StarsteelMechBrain</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MaulMechTorso</def>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<coverage>0.59</coverage>
+					<parts>
+						<li>
+							<def>MaulChestArmor</def>
+							<coverage>0.40</coverage>
+						</li>
+						<li>
+							<def>MaulPike</def>
+							<coverage>0.1</coverage>
+							<groups>
+								<li>MaulPike</li>
+							</groups>
+						</li>
+						<li>
+							<def>MaulBlade</def>
+							<coverage>0.1</coverage>
+							<groups>
+								<li>MaulBlade</li>
+							</groups>
+						</li>
+						<li>
+							<def>MaulPowerCasing</def>
+							<coverage>0.2</coverage>
+							<parts>
+								<li>
+									<def>StarsteelReprocessor</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>StarsteelReactor</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>MaulLegAssembly</def>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<coverage>0.30</coverage>
+					<parts>
+						<li>
+							<def>MaulWaist</def>
+							<coverage>0.8</coverage>
+							<parts>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Left Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Right Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+
+	<!-- Sentinel -->
+	<BodyDef>
+		<defName>SNS_MechSentinel</defName>
+		<label>Mechanoid Sentinel</label>
+		<corePart>
+			<def>SentinelMechBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>SentinelMechHead</def>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<coverage>0.10</coverage>
+					<parts>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>MatterManipulator</def>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>MaulProcessorCasing</def>
+							<coverage>0.20</coverage>
+							<parts>
+								<li>
+									<def>StarsteelMechBrain</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>SentinelMechTorso</def>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<coverage>0.59</coverage>
+					<parts>
+						<li>					
+							<def>StarsteelShoulder</def>
+							<coverage>0.2</coverage>
+							<customLabel>Left Shoulder</customLabel>
+							<parts>
+								<li>
+									<def>StarsteelArm</def>
+									<coverage>0.7</coverage>
+									<customLabel>Left Arm</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelHand</def>
+											<coverage>0.3</coverage>
+											<customLabel>Left Hand</customLabel>
+											<parts>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Pinky Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Middle Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Index</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Thumb</customLabel>
+												</li>
+											</parts>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+						<li>					
+							<def>StarsteelShoulder</def>
+							<coverage>0.2</coverage>
+							<customLabel>Right Shoulder</customLabel>
+							<parts>
+								<li>
+									<def>StarsteelArm</def>
+									<coverage>0.7</coverage>
+									<customLabel>Right Arm</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelHand</def>
+											<coverage>0.3</coverage>
+											<customLabel>Right Hand</customLabel>
+											<parts>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Pinky Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Middle Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Index</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Thumb</customLabel>
+												</li>
+											</parts>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>SentinelPowerCasing</def>
+							<coverage>0.2</coverage>
+							<parts>
+								<li>
+									<def>StarsteelReprocessor</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+								<li>
+									<def>StarsteelReactor</def>
+									<coverage>0.25</coverage>
+									<depth>Inside</depth>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>SentinelLegAssembly</def>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<coverage>0.30</coverage>
+					<parts>
+						<li>
+							<def>SentinelWaist</def>
+							<coverage>0.8</coverage>
+							<parts>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Left Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Right Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+
+
+	<!-- Seneschal -->
+	<BodyDef>
+		<defName>SNS_MechSeneschal</defName>
+		<label>Mechanoid Seneschal</label>
+		<corePart>
+			<def>SeneschalMechBody</def>
+			<height>Middle</height>
+			<depth>Outside</depth>
+			<parts>
+				<li>
+					<def>SeneschalMechHead</def>
+					<height>Top</height>
+					<depth>Outside</depth>
+					<coverage>0.10</coverage>
+					<parts>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>right sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>StarsteelLightReceptor</def>
+							<customLabel>left sight sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>right hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>HearingSensor</def>
+							<customLabel>left hearing sensor</customLabel>
+							<coverage>0.04</coverage>
+						</li>
+						<li>
+							<def>MatterManipulator</def>
+							<coverage>0.05</coverage>
+						</li>
+						<li>
+							<def>StarsteelMechBrain</def>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>SeneschalMechTorso</def>
+					<height>Middle</height>
+					<depth>Outside</depth>
+					<coverage>0.59</coverage>
+					<parts>
+						<li>					
+							<def>StarsteelShoulder</def>
+							<coverage>0.2</coverage>
+							<customLabel>Left Shoulder</customLabel>
+							<parts>
+								<li>
+									<def>StarsteelArm</def>
+									<coverage>0.7</coverage>
+									<customLabel>Left Arm</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelHand</def>
+											<coverage>0.3</coverage>
+											<customLabel>Left Hand</customLabel>
+											<parts>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Pinky Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Middle Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Index</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Left Thumb</customLabel>
+												</li>
+											</parts>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+						<li>					
+							<def>StarsteelShoulder</def>
+							<coverage>0.2</coverage>
+							<customLabel>Right Shoulder</customLabel>
+							<parts>
+								<li>
+									<def>StarsteelArm</def>
+									<coverage>0.7</coverage>
+									<customLabel>Right Arm</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelHand</def>
+											<coverage>0.3</coverage>
+											<customLabel>Right Hand</customLabel>
+											<parts>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Pinky Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Middle Finger</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Index</customLabel>
+												</li>
+												<li>
+													<def>StarsteelFinger</def>
+													<coverage>0.1</coverage>
+													<customLabel>Right Thumb</customLabel>
+												</li>
+											</parts>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+						<li>
+							<def>StarsteelReprocessor</def>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+						<li>
+							<def>StarsteelReactor</def>
+							<coverage>0.25</coverage>
+							<depth>Inside</depth>
+						</li>
+					</parts>
+				</li>
+				<li>
+					<def>SeneschalLegAssembly</def>
+					<height>Bottom</height>
+					<depth>Outside</depth>
+					<coverage>0.30</coverage>
+					<parts>
+						<li>
+							<def>SeneschalWaist</def>
+							<coverage>0.8</coverage>
+							<parts>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Left Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+								<li>
+									<def>StarsteelLeg</def>
+									<coverage>0.45</coverage>
+									<depth>Outside</depth>
+									<customLabel>Right Leg</customLabel>
+									<parts>
+										<li>
+											<def>StarsteelFoot</def>
+											<coverage>0.5</coverage>
+											<depth>Outside</depth>
+											<customLabel>Left Foot</customLabel>
+										</li>
+									</parts>
+								</li>
+							</parts>
+						</li>
+					</parts>
+				</li>
+			</parts>
+		</corePart>
+	</BodyDef>
+</Defs>

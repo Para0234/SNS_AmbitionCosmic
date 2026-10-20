@@ -1,0 +1,9 @@
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\bin\Release\SNSAOTC_LethalThresholdFix.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\bin\Release\SNSAOTC_LethalThresholdFix.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\bin\Release\0Harmony.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\bin\Release\0Harmony.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Release\SNSAOTC_LethalThresholdFix.csproj.AssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Release\SNSAOTC_LethalThresholdFix.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Release\SNSAOTC_.E138E61F.Up2Date
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Release\SNSAOTC_LethalThresholdFix.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\SNSAOTC_LethalThresholdFix\SNSAOTC_LethalThresholdFix\obj\Release\SNSAOTC_LethalThresholdFix.pdb

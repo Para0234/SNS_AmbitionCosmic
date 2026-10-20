@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- Generation 1 -->
+	<ThingDef ParentName="BuildingBase">
+
+		<defName>SNS_Hydroponics_I</defName>
+		<label>Cosmic Hydroponics Generation 1</label>
+		<description>A highly advanced Hydroponics Basin that bathes plants in an artificial nutrient bath that includes trace amounts of Cosmic Alloy, further enhancing the speed in which plants are grown. When unpowered, the nutrient pumps will stop and the plants will quickly die.</description>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/Hydroponics/Gen1/SNS_Hydroponics_1</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,4)</drawSize>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+
+		<statBases>
+			<WorkToBuild>6000</WorkToBuild>
+			<MaxHitPoints>800</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+
+		<size>(1,4)</size>
+		<costList>
+			<Plasteel>50</Plasteel>
+			<SNS_Unobtainium>50</SNS_Unobtainium>
+			<ComponentSpacer>2</ComponentSpacer>
+		</costList>
+		<fertility>7</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>700</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<researchPrerequisites>
+			<li>SNS_Research_II_hydroponics</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+	</ThingDef>
+
+	<!-- Generation 2 -->
+	<ThingDef ParentName="BuildingBase">
+
+		<defName>SNS_Hydroponics_II</defName>
+		<label>Cosmic Hydroponics Generation 2</label>
+		<description>An arcane device that infuses plants with Cosmic Matter, causing the rapid growth of plants. Without the Cosmic Matter, the plants will die. Without power, the Cosmic Matter will not flow; the plants will die if power is out.</description>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/Hydroponics/Gen2/SNS_Hydroponics_2</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,4)</drawSize>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+
+		<statBases>
+			<WorkToBuild>15000</WorkToBuild>
+			<MaxHitPoints>4000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+
+		<size>(1,4)</size>
+		<costList>
+			<SNS_CosmicAlloy>100</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>50</SNS_CosmicMatter>
+			<SNS_Component_GenII>5</SNS_Component_GenII>
+		</costList>
+		<fertility>15</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>1800</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<researchPrerequisites>
+			<li>SNS_Research_III_hydroponics</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+	</ThingDef>
+
+	<!-- Generation 3 -->
+	<ThingDef ParentName="BuildingBase">
+
+		<defName>SNS_Hydroponics_III</defName>
+		<label>Cosmic Hydroponics Generation Omega</label>
+		<description>An arcane device that channels the raw power of another reality entirely, drawing Eternium straight from the Eternal Plane to allow plants to grow beyond the biological limits. Without power, the Eternium cannot flow, and the plants will die; the plants will die without power.</description>
+		<thingClass>Building_PlantGrower</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Production/SNS/Hydroponics/Gen3/SNS_Hydroponics_3</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,4)</drawSize>
+
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+			</damageData>
+		</graphicData>
+
+		<castEdgeShadows>true</castEdgeShadows>
+		<altitudeLayer>LowPlant</altitudeLayer>
+		<defaultPlacingRot>East</defaultPlacingRot>
+		<passability>PassThroughOnly</passability>
+		<pathCost>60</pathCost>
+		<constructEffect>ConstructMetal</constructEffect>
+		<fillPercent>0.30</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
+
+		<statBases>
+			<WorkToBuild>45000</WorkToBuild>
+			<MaxHitPoints>25000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<Cleanliness>0</Cleanliness>
+		</statBases>
+
+		<size>(1,4)</size>
+		<costList>
+			<SNS_CosmicAlloy>250</SNS_CosmicAlloy>
+			<SNS_CosmicMatter>500</SNS_CosmicMatter>
+			<SNS_Component_GenIII>10</SNS_Component_GenIII>
+		</costList>
+		<fertility>100</fertility>
+		<building>
+			<defaultPlantToGrow>Plant_Rice</defaultPlantToGrow>
+			<sowTag>Hydroponic</sowTag>
+		</building>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>5000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+		<researchPrerequisites>
+			<li>SNS_Research_VI_hydroponics</li>
+		</researchPrerequisites>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+
+	</ThingDef>
+</Defs>

@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>SNS_AteMealG2</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate decadent meal</label>
+        <description>Words cannot describe how incredible that meal was. I feel like my very soul has been uplifted to another level.</description>
+        <baseMoodEffect>16</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SNS_AteMealG3</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate hedonistic meal</label>
+        <description>I truly feel like a hedonist with what I ate. I feel like everything's going to be just okay, no matter what.</description>
+        <baseMoodEffect>21</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SNS_AteMealG4</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>utterly starstruck (meal)</label>
+        <description>I am the pinnacle of creation, for I have touched God, and God is really, REALLY good cook.</description>
+        <baseMoodEffect>32</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SNS_AteNutrientBarG1</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate horrific thing</label>
+        <description>I had to eat something so utterly disgusting and horrific that words cannot describe it. It doesn't matter if it keeps me alive! Never again! NEVER!</description>
+        <baseMoodEffect>-8</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SNS_AteNutrientBarG2</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate advanced nutrient bar</label>
+        <description>I ate an advanced nutrient bar. It didn't really taste like anything, but it had a decent enough texture. At least it'll keep me alive.</description>
+        <baseMoodEffect>0</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+  <ThoughtDef>
+    <defName>SNS_AteNutrientBarG3</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate luxurious nutrient bar</label>
+        <description>I ate something that, while not very appetising-looking tasted absolutely amazing. I can't believe it's good for me!</description>
+        <baseMoodEffect>12</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

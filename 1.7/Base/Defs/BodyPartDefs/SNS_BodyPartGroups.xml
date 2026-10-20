@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>MaulPike</defName>
+    <label>maul pike</label>
+    <labelShort>pike</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>MaulBlade</defName>
+    <label>maul blade</label>
+    <labelShort>blade</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

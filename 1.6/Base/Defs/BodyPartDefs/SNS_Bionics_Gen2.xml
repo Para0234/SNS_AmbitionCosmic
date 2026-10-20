@@ -709,6 +709,9 @@
 			<ThingDef>SNS_Item_BionicBrain_GenII</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenII</spawnThingOnRemoved>
+		<tags>
+			<li>SNS_NeuralEnchanter</li>
+		</tags>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -728,7 +731,7 @@
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenII">
 		<defName>SNS_Item_BionicBrain_GenII</defName>
 		<label>cosmic neural enchanter</label>
-		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
+		<description>A highly advanced brain 'implant' that covers the entirety of the brain.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy, it is incredibly durable, far more than the natural body.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenII</RecipeDef>
 		</descriptionHyperlinks>
@@ -741,7 +744,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>SNS_InstallBodyPart_BionicBrain_GenII</defName>
 		<label>install cosmic neural enchanter</label>
 		<description>Install a cosmic neural enchanter.</description>
@@ -750,6 +753,9 @@
 			<HediffDef>SNS_Hediff_BionicBrain_GenII</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing cosmic neural enchanter.</jobString>
+		<incompatibleWithHediffTags>
+			<li>SNS_NeuralEnchanter</li>
+		</incompatibleWithHediffTags>
 		<ingredients>
 			<li>
 				<filter>

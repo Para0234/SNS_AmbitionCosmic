@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<!-- Eternity Cell -->
+	<AchievementsExpanded.AchievementDef ParentName="SNS_Achievement_Base">
+		<defName>SNS_Achievement_Hidden</defName>
+		<label>The Final Ambition</label>
+		<description>Craft the Enigmatic Blueprint in the Cosmic Manipulator.</description>
+
+		<tracker Class="AchievementsExpanded.ItemCraftTracker">
+			<def>SNS_Hidden</def>
+			<count>1</count>
+		</tracker>
+
+		<texPath>Achievements/SNS/Hidden</texPath>
+		<points>1000</points>
+	</AchievementsExpanded.AchievementDef>
+
+</Defs>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+<!--=============== Production ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+    <value>
+	  <li>SNS_Bull</li>
+	  <li>SNS_Maul</li>
+	  <li>SNS_Seneschal</li>
+	  <li>SNS_Sentinel_Sniper</li>
+	  <li>SNS_Sentinel_Rifleman</li>
+    </value>
+</Operation>
+<!--Operation Class="PatchOperationAdd">
+    <xpath>/Defs/ThingDef[defName="MechGestator"]/recipes</xpath>
+    <value>
+	  <li>OE_Mech_Necroframe_Melee</li>
+	  <li>OE_Mech_Necroframe_Ranged</li>
+    </value>
+</Operation-->
+<!--=============== Resurrection ====================-->
+<Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="ResurrectMediumMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+	  <li>Corpse_SNS_Bull</li>
+	  <li>Corpse_SNS_Maul</li>
+	  <li>Corpse_SNS_Seneschal</li>
+	  <li>Corpse_SNS_Sentinel_Sniper</li>
+	  <li>Corpse_SNS_Sentinel_Rifleman</li>
+    </value>
+</Operation>
+<!--Operation Class="PatchOperationAdd">
+    <xpath>/Defs/RecipeDef[defName="ResurrectLightMech"]/fixedIngredientFilter/thingDefs</xpath>
+    <value>
+	  <li>Corpse_OE_Mech_Necroframe_Melee</li>
+	  <li>Corpse_OE_Mech_Necroframe_Ranged</li>
+    </value>
+</Operation-->
+
+</Patch>

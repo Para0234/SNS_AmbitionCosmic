@@ -1,0 +1,15 @@
+C:\Users\Paradox\Downloads\1\bin\Debug\net48\Armorshield.dll
+C:\Users\Paradox\Downloads\1\bin\Debug\net48\Armorshield.pdb
+C:\Users\Paradox\Downloads\1\obj\Debug\net48\Armorshield.csproj.AssemblyReference.cache
+C:\Users\Paradox\Downloads\1\obj\Debug\net48\Armorshield.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paradox\Downloads\1\obj\Debug\net48\Armorshield.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Downloads\1\obj\Debug\net48\Armorshield.dll
+C:\Users\Paradox\Downloads\1\obj\Debug\net48\Armorshield.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\bin\Debug\net48\Armorshield.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\bin\Debug\net48\Armorshield.pdb
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.csproj.AssemblyReference.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.csproj.CoreCompileInputs.cache
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.sourcelink.json
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.dll
+C:\Users\Paradox\Desktop\Git\SNS_AmbitionCosmic\1.6\Base\Source\Armorshield\obj\Debug\net48\Armorshield.pdb

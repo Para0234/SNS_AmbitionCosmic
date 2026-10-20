@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_Unlocker_GenI</defName>
+        <label>Stellar Analyzer</label>
+        <description>A highly intricate device that draws trace amounts of Cosmic energy, allowing for direct experimentation with low-purity Cosmic Matter.\n\nStats: Requires 5K Watts\n\n Provides 25% research speed boost to nearby research benches. Does not stack with other Stellar Analyzers.\nEnables researching the [Stellar Steel] technology and later Generation 1 'Stellar' technologies.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Research/Linkable_Unlocker_Gen1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_0</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>25000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <Plasteel>75</Plasteel>
+            <Gold>250</Gold>
+            <ComponentSpacer>15</ComponentSpacer>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>true</shortCircuitInRain>
+                <basePowerConsumption>5000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <ResearchSpeedFactor>0.25</ResearchSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_Unlocker_GenII</defName>
+        <label>Cosmic Analyzer</label>
+        <description>An advanced device that draws trace amounts of high-purity Cosmic Matter, allowing for direct experimentation with Cosmic Matter.\n\nStats: Requires 25K Watts\n\n Provides 75% research speed boost to nearby research benches. Maximum connections per research bench: 2.\nEnables researching the [Cosmic Theory] technology and later Generation 2 'Cosmic' technologies.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Research/Linkable_Unlocker_Gen2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>2.7</drawSize>
+        </graphicData>
+        <size>(2,2)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_II_bridge</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.4</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>950</MaxHitPoints>
+            <WorkToBuild>75000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_Unobtainium>125</SNS_Unobtainium>
+            <ComponentSpacer>40</ComponentSpacer>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>25000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <ResearchSpeedFactor>0.75</ResearchSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>2</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_Unlocker_GenIII</defName>
+        <label>The Call of the Cosmos</label>
+        <description>The culmination of all ambition, dreams and desire, the Call of the Cosmos manifests highly volatile Cosmic Matter passively. While the manifested Cosmic Matter is too unstable for practical use, its volatile nature allows for a wholly new outlook towards Cosmic-Matter-based technology.\n\nSecondarily, there are various files loaded onto the Call of the Cosmos which may open a whole new generation of arcane technologies.\n\nStats: Requires 100K Watts\n\n Provides 250% research speed boost to nearby research benches. Maximum connections per research bench: 2.\nEnables researching the [The Great Unknown] technology.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Research/Linkable_Unlocker_Gen3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>3</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_V</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>2200</MaxHitPoints>
+            <WorkToBuild>125000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>250</SNS_CosmicAlloy>
+            <SNS_CosmicCall_Component_I>1</SNS_CosmicCall_Component_I>
+            <SNS_CosmicCall_Component_II>1</SNS_CosmicCall_Component_II>
+            <SNS_CosmicCall_Component_III>1</SNS_CosmicCall_Component_III>
+            <SNS_CosmicCall_Component_IV>1</SNS_CosmicCall_Component_IV>
+            <SNS_CosmicCall_Component_V>1</SNS_CosmicCall_Component_V>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>100000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <ResearchSpeedFactor>2.5</ResearchSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>2</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_Unlocker_POC</defName>
+        <label>Pattern De-Abstraction Device</label>
+        <description>An arcane super-computer that uses the very fabric of reality as its processing unit. The amount of data it is able to process is unimaginagble. Just its very creation opens the gateway to countless breakthroughs.\n\nStats: Requires 1.5M Watts\n\nProvides 1000% research speed boost to nearby research benches. Does not stack with other Pattern De-Abstraction Devices.\nUnlocks the [Pinnacle of Creation] technology.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Research/Linkable_Unlocker_Gen4</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>7</drawSize>
+        </graphicData>
+        <size>(3,3)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_VI_final</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>300000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>1500</SNS_CosmicAlloy>
+            <SNS_Eternium>75</SNS_Eternium> <!-- 150 eternium if combined with component costs -->
+            <SNS_Component_GenIII>15</SNS_Component_GenIII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>1500000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <ResearchSpeedFactor>10</ResearchSpeedFactor>
+                </statOffsets>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+        <constructionSkillPrerequisite>19</constructionSkillPrerequisite>
+    </ThingDef>
+
+</Defs>

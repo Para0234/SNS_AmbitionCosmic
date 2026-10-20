@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!--
+	
+	Planned turrets (concepts):
+	
+	(GEN1) Light Stellar Turret: A portable turret that shoots like a stellar Rifle. It has a short cooldown period and requires refurbishment.
+	(GEN1) Perdition Light Stellar Turret: A portable turret that shoots slower than a stellar Rifle, but doesn't have a cooldown period. It requires refurbishment.
+	
+	(GEN2) Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle combined with a Minigun. It has a short cooldown period and requires occasional refurbishment. 
+	(GEN2) Perdition Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle. Slower than the Cosmic Turret but no cooldown period and requires occasional refurbishment.
+	(GEN2.5) Eternal Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle combined with a Minigun. It has a short cooldown period. It does NOT require refurbishment.
+	(GEN2.5) Eternal Perdition Cosmic Turret: A non-portable 2x2 turret that shoots like a Cosmic Rifle. Slower than the Cosmic Turret but no cooldown period. It does NOT require refurbishment.
+	
+	(GEN1) Catalyst Turret: A non-portable 2x2 turret that shoots Cosmic Sniper rounds at a good rate. It shoots 1 bullet and then has a short cooldown. It does NOT require refurbishment.
+	(GEN2) Overdrive Catalyst Turret: A non-portable 2x2 turret that rapidly shoots Cosmic Sniper rounds. It shoots 1 bullet at a time. It requires constant Cosmic Catalyst Cell refueling. (1 Cat. Cell per shot)
+	
+	(GEN2) Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds. It has a (relatively) long cooldown and only shoots 1 bullet at a time. It requires Cosmic Catalyst Cells (5 eaten per shot) to work.
+	(GEN2) Deep Storage Automated Lance: An Automated Lance with 500 CC Cell capacity.
+	(GEN2) Perdition Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds relatively quickly. It shoots 1 bullet at a time. It requires Cosmic Catalyst Cells (5 eaten per shot) and Cosmic Matter (50 eaten per shot) as coolant. //This gets expensive real quick, but will probably be absurdly powerful against pretty much everything.
+	(GEN2) Deep Storage Perdition Automated Lance: A Perdition Automated Lance with 500 CC cell capacity and 5000 CM capacity.
+	(GEN2.5) Eternal Automated Lance: A non-portable 3x3 turret that shoots Cosmic Lance rounds. It does NOT require fuel.
+	
+	(GEN2.9) Engimatic Lance: A non-portable 3x3 Eternium-fueled 4x4 turret that shoots EXARCH rounds quickly. It requires Eternium (1:1) as fuel.
+	
+	(GEN3) Automated EXARCH: A non-portable 3x3 turret that shoots EXARCH rounds. It shoots quickly and shoots 1 bullet at a time. It requires Eternium (1 per 5 shots) as fuel.
+	(GEN3.5) Eternal Automated EXARCH: A non-portable 3x3 turret that shoots EXARCH rounds. It does not require any fuel.
+	
+	(GEN4) Bastion of Stability: A non-portable 3x3 turret that shoots EXARCH rounds like a minigun, said rounds also explode. It does not have any specific cooldown period.
+	
+	-->
+
+	<ThingDef ParentName="SNS_Projectile_EXARCHBullet">
+		<defName>SNS_Gun_Turret_Bullet_EXARCH</defName>
+		<label>EXARCH Projectile</label>
+	</ThingDef>
+
+
+	<!-- EXARCH Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_EXARCH</defName>
+		<label>automated EXARCH</label>
+		<description>The gun of an automated EXARCH.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretEterniumLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_EXARCH</defaultProjectile>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<warmupTime>0</warmupTime>
+				<range>250</range>
+				<minRange>7</minRange>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<consumeFuelPerShot>1</consumeFuelPerShot>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_EXARCH</defName>
+		<label>Automated EXARCH</label>
+		<description>A turret powered by the ultimate weapon, the Automated EXARCH is a rapidly firing superweapon able to bring down entire colonies by itself.\n\nIt is smart to keep it away from the front lines and allow it to bombard the enemy from afar due to its tendency to absolutely obliterate whatever is caught in its explosion.\n\nAlso be aware that it is fully capable of obliterating itself if too many enemies get too close too many times, and even if it doesn't hit itself it will probably obliterate the general area where an enemy is at.\n\nThis turret still needs to be occasionally fueled by Eternium to continue running. One unit of Eternium gives the weapon five shots of fuel.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHighStorage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+
+			<damageData>
+				<rect>(1.5,1.5,1.5,1.5)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.5,1.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_15ExarchTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+		<drawerType>MapMeshAndRealTime</drawerType>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>25000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>15000</WorkToBuild>
+			<Beauty>150</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelLabel>Eternium left in storage</fuelLabel>
+				<fuelGizmoLabel>Eternium Storage</fuelGizmoLabel>
+				<outOfFuelMessage>Cannot shoot: Needs Eternium fuel</outOfFuelMessage>
+				<fuelFilter>
+					<thingDefs>
+						<li>SNS_Eternium</li>
+					</thingDefs>
+				</fuelFilter>
+				<fuelCapacity>100</fuelCapacity> <!-- 100 shots -->
+				<fuelMultiplier>5</fuelMultiplier> <!-- Fuel efficiency. Higher values means that you spend less to get more full, and vice versa. 0.2 Eternium per shot. (5 shots per Eternium used) -->
+				<initialFuelPercent>0</initialFuelPercent>
+				<autoRefuelPercent>0.5</autoRefuelPercent>
+				<showFuelGizmo>true</showFuelGizmo>
+				<minimumFueledThreshold>1</minimumFueledThreshold>
+				<factorByDifficulty>true</factorByDifficulty>
+				<consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+				<fuelIconPath>Things/Item/Resource/SNS/Eternium/Eternium</fuelIconPath>
+			</li>
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_CosmicAlloy>450</SNS_CosmicAlloy>
+			<SNS_EterniumLance>1</SNS_EterniumLance>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1000000</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_EXARCH</turretGunDef>
+			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_VI_weaponry</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+
+	<!-- Eternal EXARCH Turret -->
+
+
+	<ThingDef ParentName="BaseWeaponTurret">
+		<defName>SNS_Gun_Turret_EternalEXARCH</defName>
+		<label>eternal automated EXARCH gun</label>
+		<description>The gun of an automated EXARCH.</description>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/turrets/SNSGunTurretEternalEterniumLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.95</AccuracyTouch>
+			<AccuracyShort>0.90</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.95</AccuracyLong>
+			<RangedWeapon_Cooldown>0.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>1.5</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>SNS_Gun_Turret_Bullet_EXARCH</defaultProjectile>
+				<forcedMissRadius>0.1</forcedMissRadius>
+				<warmupTime>0</warmupTime>
+				<range>250</range>
+				<minRange>7</minRange>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>ChargeLance_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+	</ThingDef>
+
+	<ThingDef ParentName="SNS_BaseTurretBuilding">
+		<defName>SNS_Turret_EternalEXARCH</defName>
+		<label>Eternal Automated EXARCH</label>
+		<description>A turret powered by the ultimate weapon, the Automated EXARCH is a rapidly firing superweapon able to bring down entire colonies by itself.\n\nIt is smart to keep it away from the front lines and allow it to bombard the enemy from afar due to its tendency to absolutely obliterate whatever is caught in its explosion.\n\nAlso be aware that it is fully capable of obliterating itself if too many enemies get too close too many times, and even if it doesn't hit itself it will probably obliterate the general area where an enemy is at.\n\nThis turret will never break down or need to be refueled. Ever.</description>
+		<thingClass>Building_TurretGun</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Security/SNS/bases/SNSTurretBaseHighStorage</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.5,1.5)</drawSize>
+
+			<damageData>
+				<rect>(1.5,1.5,1.5,1.5)</rect>
+			</damageData>
+
+			<shadowData>
+				<volume>(1.5,1.5,1.5)</volume>
+				<offset>(0,0,0)</offset>
+			</shadowData>
+		</graphicData>
+
+		<uiIconPath>Things/Building/Security/SNS/icons/SNSBuildingIcon_16EternalExarchTurret</uiIconPath>
+		<uiIconScale>0.90</uiIconScale>
+		<altitudeLayer>Building</altitudeLayer>
+		<stealable>false</stealable>
+		<rotatable>false</rotatable>
+
+		<size>(2,2)</size>
+		<statBases>
+			<MaxHitPoints>25000</MaxHitPoints>
+			<Flammability>0</Flammability>
+			<WorkToBuild>15000</WorkToBuild>
+			<Beauty>150</Beauty>
+			<ShootingAccuracyTurret>0.96</ShootingAccuracyTurret>
+		</statBases>
+
+		<tickerType>Normal</tickerType>
+
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>1000000</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Flickable" />
+		</comps>
+
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<fillPercent>0.4</fillPercent>
+		<hasTooltip>true</hasTooltip>
+
+		<costList>
+			<SNS_CosmicAlloy>450</SNS_CosmicAlloy>
+			<SNS_Component_GenIII>15</SNS_Component_GenIII>
+			<SNS_EterniumLance>1</SNS_EterniumLance>
+		</costList>
+
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Security</designationCategory>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+
+		<building>
+			<combatPower>1000000</combatPower>
+			<ai_combatDangerous>false</ai_combatDangerous>
+			<turretGunDef>SNS_Gun_Turret_EternalEXARCH</turretGunDef>
+			<turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+		</building>
+
+		<placeWorkers>
+			<li>PlaceWorker_TurretTop</li>
+			<li>PlaceWorker_ShowTurretRadius</li>
+		</placeWorkers>
+
+		<researchPrerequisites>
+			<li>SNS_Research_VI_final</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

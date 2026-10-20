@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>SNS_Medicine_GenI</defName>
+    <label>Stellar medicine</label>
+    <description>A kit of industrial-era medical supplies, improved with Starsteel and better preparation methods, including highly sterile equipment beyond that of even some lower-grade Glitterworld medicine.\n\nIt is on-par with Glitterworld medicine in almost every way except for cost.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SNS/MedicineGen1/MedicineGen1</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Ultra</techLevel>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(247,232,14,0)</glowColor>
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>350</MarketValue>
+      <MaxHitPoints>120</MaxHitPoints>
+      <Mass>0.20</Mass>
+      <Flammability>0</Flammability>
+      <MedicalPotency>1.60</MedicalPotency>
+      <MedicalQualityMax>1.30</MedicalQualityMax>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>SNS_Medicine_GenII</defName>
+    <label>Cosmic medicine</label>
+    <description>A kit made from either Glitterworld-grade medicine or Stellar medicine, improved further with Cosmic Alloy and Cosmic Matter. It contains generalist Cosmic-Matter-powered medical nanites able to do many tasks including causing anesthesia alongside having extremely sharp, precise, and sterile multi-use tools, including Cosmic-Matter-based sterilisation tools.\n\nIt is superior to Glitterworld and Stellar medicine in every way, excluding cost.\n\nIf not produced here, then it is highly likely that it was manufactured on a distant hyper-advanced Advanced Glitterworld.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SNS/MedicineGen2/MedicineGen2</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>2</glowRadius>
+        <glowColor>(253,249,38,0)</glowColor>
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>4000</MarketValue>
+      <MaxHitPoints>350</MaxHitPoints>
+      <Mass>0.15</Mass>
+      <Flammability>0</Flammability>
+      <MedicalPotency>3.0</MedicalPotency>
+      <MedicalQualityMax>2.4</MedicalQualityMax>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>SNS_Medicine_GenIII</defName>
+    <label>enigmatic medicine</label>
+    <description>A kit of extremely advanced medical supplies, originally created by a hyperadvanced now-long-dead-precursor civilisation an untold amount of time ago. It contains extremely advanced generalist medical nanites able to do almost any task (including causing the effects of many highly specific drugs) and a collection of equally advanced multitools that can change their own properties and shape at will, said tools are also incredibly precise and sharp, beyond that of anything else seen. It is truly the ultimate medicine.\n\nIf not produced here, then this medicine likely originates directly from the original civilisation who discovered Cosmic Matter and then spread across galaxy, somehow finding itself in your posession.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/SNS/MedicineGen3/MedicineGen3</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Archotech</techLevel>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>1</glowRadius>
+        <glowColor>(247,191,255,0)</glowColor>
+      </li>
+    </comps>
+    <statBases>
+      <MarketValue>8000</MarketValue>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Mass>0.10</Mass>
+      <Flammability>0</Flammability>
+      <MedicalPotency>10.0</MedicalPotency>
+      <MedicalQualityMax>8.5</MedicalQualityMax>
+      <DeteriorationRate>0</DeteriorationRate>
+    </statBases>
+    <tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+    <thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+  </ThingDef>
+
+</Defs>

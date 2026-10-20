@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>4</gestationCycles>
+    <displayPriority>300</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>SNS_Bull</defName>
+    <label>Gestate bull</label>
+    <description>Gestate a bull mechanoid.</description>
+    <researchPrerequisite>SNS_Research_II_Mechanoid</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Bull>1</SNS_Bull>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Bull</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>SNS_Maul</defName>
+    <label>Gestate maul</label>
+    <description>Gestate a maul mechanoid.</description>
+    <researchPrerequisite>SNS_Research_II_Mechanoid</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Maul>1</SNS_Maul>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Maul</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>SNS_Seneschal</defName>
+    <label>Gestate Seneschal</label>
+    <description>Gestate a Seneschal mechanoid.</description>
+    <researchPrerequisite>SNS_Research_II_Mechanoid</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>300</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium_Fiber</li>
+          </thingDefs>
+        </filter>
+        <count>100</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>50</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Seneschal>1</SNS_Seneschal>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Seneschal</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+  
+  
+
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>SNS_Sentinel_Sniper</defName>
+    <label>Gestate Sniper Sentinel</label>
+    <description>Gestate a Sniper Sentinel mechanoid.</description>
+    <researchPrerequisite>SNS_Research_II_Mechanoid</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Sentinel_Sniper>1</SNS_Sentinel_Sniper>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Sentinel_Sniper</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+
+  <RecipeDef ParentName="MediumMechanoidRecipe">
+    <defName>SNS_Sentinel_Rifleman</defName>
+    <label>Gestate Rifleman sentinel</label>
+    <description>Gestate a Rifleman sentinel mechanoid.</description>
+    <researchPrerequisite>SNS_Research_II_Mechanoid</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>200</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreHigh</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Sentinel_Rifleman>1</SNS_Sentinel_Rifleman>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Sentinel_Rifleman</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+</Defs>

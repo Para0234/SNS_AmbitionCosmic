@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_Unobtainer_I</defName>
+        <label>Secondary Cosmic Forge Mixer</label>
+        <description>A module to the Cosmic Forge that allows the preparation of a later stage of Starsteel production reducing required prep-work, or the rapid conversion of Starsteel Wool with a secondary weaver.\n\nStats: When directly adjacent to a Cosmic Forge, +50% workspeed given to said building(s).</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_Unobtainer_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_I_linkable</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>400</MaxHitPoints>
+            <WorkToBuild>7500</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_Unobtainium>50</SNS_Unobtainium>
+            <ComponentSpacer>8</ComponentSpacer>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>5000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicDrawer_I</defName>
+        <label>Dynamic Cosmic Matter Stabilizer</label>
+        <description>A module to the Cosmic Manipulator that automatically stabilizes Cosmic Matter during operation, allowing for both faster drawing of Cosmic Matter and crafting of various items at an increased pace without creating the risk of the Cosmic Matter destabilizing and thus ruining any active operations; people can work faster without risking losing product.\n\nStats: When directly adjacent to a Cosmic Manipulator, +50% workspeed given to said building(s).</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicDrawer_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_III_linkable</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>950</MaxHitPoints>
+            <WorkToBuild>15000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_Unobtainium>50</SNS_Unobtainium>
+            <SNS_CosmicAlloy>15</SNS_CosmicAlloy>
+            <ComponentSpacer>18</ComponentSpacer>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>20000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>0.5</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicDrawer_II</defName>
+        <label>Type-Theta Secondary Cosmic Matter Access Point</label>
+        <description>A module for both the Cosmic Manipulator and Atomic Fabricator that allows for the direct drawing and manipulation of a more stable form of Cosmic Matter, allowing for any connected machines to operate much, much faster than ever before.\n\nStats: When directly adjacent to a Cosmic Manipulator or Atomic Fabricator, +100% workspeed given to said buildings.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicDrawer_2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>1.30</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_IV_linkable</li>
+        </researchPrerequisites>
+        <rotatable>false</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>1500</MaxHitPoints>
+            <WorkToBuild>22500</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>50</SNS_CosmicAlloy>
+            <SNS_Component_GenII>10</SNS_Component_GenII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>50000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>1</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicDrawer_III</defName>
+        <label>Cosmic Matter Drawpoint Expander</label>
+        <description>A module for the Cosmic Manipulator that clears and further opens weakpoints in reality that Cosmic Matter flows through, increasing the density and stability of Cosmic Matter in the Cosmic Manipulator drastically, allowing for blazing-fast operations, especially when combined with other modules.\n\nStats: When directly adjacent to a Cosmic Manipulator, +250% workspeed given to said building(s).</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicDrawer_3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(3,1)</drawSize>
+        </graphicData>
+        <size>(3,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_V</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.5</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>1750</MaxHitPoints>
+            <WorkToBuild>22500</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>200</SNS_CosmicAlloy>
+            <SNS_Component_GenII>20</SNS_Component_GenII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>100000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicCall_I</defName>
+        <label>R.I.F.T. Secondary Latchpoint</label>
+        <description>A module for the R.I.F.T. Fabricator that provides an additional, smaller entrypoint for Cosmic Matter and Eternium drawing and/or manipulation. Up to two modules can be attached to a singular R.I.F.T. Fabricator.\n\nStats: When directly adjacent to a R.I.F.T. Fabricator, +25% workspeed given to said building(s). Can link up to 2 at a time for a +50% total workspeed bonus.</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicCall_1</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,1)</drawSize>
+        </graphicData>
+        <size>(1,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_VI_linkable_I</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.65</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>1200</MaxHitPoints>
+            <WorkToBuild>25000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>50</SNS_CosmicAlloy>
+            <SNS_Eternium>5</SNS_Eternium>
+            <SNS_Component_GenII>15</SNS_Component_GenII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>150000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>0.25</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>2</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicCall_II</defName>
+        <label>R.I.F.T. Beta-Injection System</label>
+        <description>A highly complicated module for the R.I.F.T. Fabricator that injects extremely unstable and common Type-Beta Cosmic Matter passively accumilated from passive drawing to agitate and allow easier collection of more favorable forms of Cosmic Matter and/or Eternium.\n\nStats: When directly adjacent to a R.I.F.T. Fabricator, +75% workspeed given to said building(s).</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicCall_2</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(1,2)</drawSize>
+        </graphicData>
+        <size>(1,2)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_VI_linkable_II</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <WorkToBuild>25000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>75</SNS_CosmicAlloy>
+            <SNS_CosmicMatter>500</SNS_CosmicMatter>
+            <SNS_Component_GenIII>4</SNS_Component_GenIII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>600000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>SNS_Linkable_CosmicCall_III</defName>
+        <label>Type-Omega R.I.F.T. Drawpoint</label>
+        <description>An arcane module for the R.I.F.T. Fabricator that allows for the harvesting of Type-Omega Cosmic Matter, a form of Cosmic Matter that is verging on collapsing into Eternium. While unusable in its super-positioned state, it can be de-energised into a large amount of pure Type-Theta Cosmic Matter, or pushed towards collapsing into easily collectible Eternium, allowing for rapid collection of either.\n\nStats: When directly adjacent to a R.I.F.T. Fabricator, +250% workspeed given to said building(s).</description>
+        <graphicData>
+            <texPath>Things/Building/Misc/SNS/Linkable/Workspeed/Linkable_CosmicCall_3</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(4,1)</drawSize>
+        </graphicData>
+        <size>(4,1)</size>
+        <uiIconScale>0.85</uiIconScale>
+        <researchPrerequisites>
+            <li>SNS_Research_VI_final</li>
+        </researchPrerequisites>
+        <rotatable>true</rotatable>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>PassThroughOnly</passability>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>0.8</fillPercent>
+        <designationCategory>Misc</designationCategory>
+        <canOverlapZones>false</canOverlapZones>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <statBases>
+            <MaxHitPoints>2400</MaxHitPoints>
+            <WorkToBuild>25000</WorkToBuild>
+            <Flammability>0</Flammability>
+        </statBases>
+        <costList>
+            <SNS_CosmicAlloy>400</SNS_CosmicAlloy>
+            <SNS_Component_GenIII>15</SNS_Component_GenIII>
+        </costList>
+        <building>
+            <destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+        </building>
+        <comps>
+            <li Class="CompProperties_Power">
+                <compClass>CompPowerTrader</compClass>
+                <shortCircuitInRain>false</shortCircuitInRain>
+                <basePowerConsumption>1500000</basePowerConsumption>
+            </li>
+            <li Class="CompProperties_Flickable" />
+            <li Class="CompProperties_Facility">
+                <statOffsets>
+                    <WorkTableWorkSpeedFactor>2.5</WorkTableWorkSpeedFactor>
+                </statOffsets>
+                <mustBePlacedAdjacent>true</mustBePlacedAdjacent>
+                <maxSimultaneous>1</maxSimultaneous>
+            </li>
+        </comps>
+        <placeWorkers>
+            <li>PlaceWorker_ShowFacilitiesConnections</li>
+        </placeWorkers>
+    </ThingDef>
+
+</Defs>

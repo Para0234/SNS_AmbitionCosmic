@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef Name="HeavyMechanoidRecipe" ParentName="BaseMechanoidRecipe" Abstract="True">
+    <gestationCycles>4</gestationCycles>
+    <displayPriority>300</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef ParentName="HeavyMechanoidRecipe">
+    <defName>SNS_Bull</defName>
+    <label>Gestate bull</label>
+    <description>Gestate a bull mechanoid.</description>
+    <researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SNS_Unobtainium</li>
+          </thingDefs>
+        </filter>
+        <count>150</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Plasteel</li>
+          </thingDefs>
+        </filter>
+        <count>75</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>2</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SubcoreRegular</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <SNS_Bull>1</SNS_Bull>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>SNS_Bull</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+</Defs>

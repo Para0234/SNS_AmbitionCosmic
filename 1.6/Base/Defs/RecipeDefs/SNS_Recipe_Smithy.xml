@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<RecipeDef>
+		<defName>SNS_Production_Starinfusedplasteel</defName>
+		<label>Make Star-infused plasteel</label>
+		<description>Infuse plasteel with Starsteel, to make the plasteel's properties closer to starsteel.</description>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SNS_Unobtainium</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>10</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>SNS_Unobtainium</li>
+				<li>Plasteel</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<workAmount>300</workAmount>
+		<soundWorking>Recipe_Machining</soundWorking>
+		<unfinishedThingDef>UnfinishedComponent</unfinishedThingDef>
+		<skillRequirements>
+			<Crafting>4</Crafting>
+		</skillRequirements>
+		<jobString>Infusing Star-infused Plasteel</jobString>
+		<recipeUsers>
+			<li>ElectricSmithy</li>
+			<li>FueledSmithy</li>
+		</recipeUsers>
+		<products>
+			<SNS_Starinfusedplasteel>10</SNS_Starinfusedplasteel>
+		</products>
+		<researchPrerequisite>Smithing</researchPrerequisite>
+	</RecipeDef>
+</Defs>

@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Gen1 -->
+  <ThingDef ParentName="MakeableDrugPillBase">
+    <defName>SNS_Stim_I</defName>
+    <label>STIM-IV</label>
+    <description>A synthetic stimulant based off of Wake-Up. STIM-IV reduces the user's need for rest somewhat by causing several chemical processes that are associated with sleep, allowing them to effectively gain rest while working. Unlike Wake-Up, however, there is no risk of addiction or heart-attack.\n\nJust like Wake-Up, STIM-IV is often used by high-achievers seeking to enter highly competitive universities and companies though STIM-IV is much less popular due to its reduced effectiveness compared to Wake-Up, its considerably higher cost to make, and the sheer complexity required to make it. STIM-IV's true popularity comes from military forces, who (if able to afford it) are able to keep soldiers awake nigh-indefinitely with enough STIM-IV.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Stim_I</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Sleep1</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <MarketValue>70</MarketValue>
+      <Mass>0.007</Mass>
+    </statBases>
+    <techLevel>Spacer</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Stim_I</hediffDef>
+          <severity>1</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_II_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Neutroamine>4</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <listOrder>1200</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Stim_I</defName>
+    <label>STIM-IV presence</label>
+    <labelNoun>a STIM-IV presence in blood</labelNoun>
+    <description>STIM-IV in the bloodstream. It fills the need for rest by aiding the brain in many functions related to sleep.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-10</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li/>
+    </stages>
+  </HediffDef>
+
+  <!-- Gen2 -->
+  <ThingDef ParentName="DrugPillBase">
+    <defName>SNS_Stim_II</defName>
+    <label>STIM-VII</label>
+    <description>A nanite stimulant. STIM-VII reduces the user's need for sleep drastically by acting out the processes that cause restfulness in the brain, naturally reducing the need for sleep without risk of a crash. It also artificially generates structured Psyfocus. The effects last for two days. There is no risk of addiction from use of STIM-VII. Up to four doses can be taken at once for a maximum duration of eight days.\n\nSTIM-VII is seen occasionally on Glitterworlds, imported directly from a Cosmic Empire. STIM-VII sees heavy use in various militaries due to it being incredibly effective for reducing soldier sleep times, allowing one to stay awake for highly extended periods of time, and providing a steady supply of Psyfocus.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Stim_II</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Sleep2</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <MarketValue>320</MarketValue>
+      <Mass>0.007</Mass>
+    </statBases>
+    <techLevel>Ultra</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Stim_II</hediffDef>
+          <severity>0.25</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <listOrder>1210</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Stim_II</defName>
+    <label>STIM-VII presence</label>
+    <labelNoun>a STIM-VII presence in blood</labelNoun>
+    <description>STIM-VII in the bloodstream. It fills the need for rest by aiding the brain in many functions related to sleep.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.125</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>0.25</restFallFactor>
+        <statOffsets>
+          <WorkSpeedGlobal>1</WorkSpeedGlobal>
+          <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">1</MeditationFocusGain>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+  <!-- Gen3 -->
+  <ThingDef ParentName="DrugPillBase">
+    <defName>SNS_Stim_III</defName>
+    <label>STIM-X</label>
+    <description>An Eternium-powered nanite stimulant. STIM-X completely removes the need for sleep for an entire day, alongside providing a major boost to working speed and focus. There is no risk of addiction for STIM-X. Multiple units of STIM-X can be taken for its effects to last longer, for up to twenty-five days.\n\nSTIM-X is exclusively used by Cosmic Empires and is almost never exported due to its low supply. Even high-class soldiers are unlikely to even touch STIM-X for their entire lives.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Stim_III</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Sleep3</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>1200</WorkToMake>
+      <MarketValue>500</MarketValue>
+      <Mass>0.007</Mass>
+    </statBases>
+    <techLevel>Archotech</techLevel>
+    <ingestible>
+      <drugCategory>Medical</drugCategory>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Stim_III</hediffDef>
+          <severity>0.05</severity>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>1</offset>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0</addictiveness>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <listOrder>1220</listOrder>
+        <overdoseSeverityOffset>0</overdoseSeverityOffset>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Stim_III</defName>
+    <label>high on STIM-X</label>
+    <labelNoun>a STIM-X high</labelNoun>
+    <description>STIM-X in the bloodstream. It fills the need for rest by assisting the brain in many functions related to sleep, and increases focus, allowing for faster work. It also allows for an increased psyfocus gain from meditation.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.04</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+    <stages>
+      <li>
+        <restFallFactor>0</restFallFactor>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.5</offset>
+          </li>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.25</offset>
+          </li>
+        </capMods>
+        <statOffsets>
+          <WorkSpeedGlobal>1</WorkSpeedGlobal>
+          <MeditationFocusGain MayRequire="Ludeon.RimWorld.Royalty">6</MeditationFocusGain>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+
+
+</Defs>

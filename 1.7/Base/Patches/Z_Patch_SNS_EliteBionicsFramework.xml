@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<Operation Class="PatchOperationFindMod">
+    <mods>
+        <li>Elite Bionics Framework</li>
+    </mods>
+	<match Class="PatchOperationSequence">
+		<operations>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediff_GenI"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>1</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediffImplant_GenI"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>1</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediff_GenII"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>2.5</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediffImplant_GenII"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>2.5</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediff_GenIII"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>6</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+			<li Class="PatchOperationAdd">
+				<xpath>/Defs/HediffDef[defName="SNS_Base_BionicHediffImplant_GenIII"]/comps</xpath>
+				<value>
+                    <li Class="EBF.Hediffs.HediffCompProperties_MaxHPAdjust">
+                        <scaleAdjustment>6</scaleAdjustment>
+                    </li>
+				</value>
+			</li>
+
+		</operations>
+	</match> 
+</Operation>
+
+</Patch>

@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SNS_Hidden</defName>
+		<label>Eternity Cell</label>
+		<description>Behold, the Eternity cell. Its unblinking, undying gaze basks in the bliss of all Eternity itself, its inner workings an uttery mystery to the universe outside. It is a source of endless power and will.\n\nGaze into its eye, and feel the bliss of an eterniy overtake you, or feel your own will regenerate.\n\nStats:You will never have to worry about power again.\nColonists may admire the Eternity Cell for very fast recreation.\n(ROYALTY DLC ONLY): Pawns may meditate to the Eternity Cell to quickly charge their Psyfocus.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Joy/SNS/Hidden</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(4,5)</drawSize>
+		</graphicData>
+		<size>(4,5)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<pathCost>150</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>100000</MaxHitPoints>
+			<WorkToBuild>150000</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>5.0</Mass>
+			<Beauty>1000</Beauty>
+			<JoyGainFactor>10</JoyGainFactor>
+			<MeditationFocusStrength>10</MeditationFocusStrength>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<joyKind>SNS_Hidden</joyKind>
+		</building>
+		<costList>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Art">
+				<canBeEnjoyedAsArt>true</canBeEnjoyedAsArt>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-Infinity</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(120,0,255,0)</glowColor>
+			</li>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>SNS_GeneralMeditation</li>
+				</focusTypes>
+				<offsets>
+					<li Class="FocusStrengthOffset_BuildingDefs">
+						<!--defs><DEFNAME>0.02</DEFNAME></defs-->
+						<radius>10</radius>
+						<maxBuildings>1</maxBuildings>
+					</li>
+				</offsets>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>SNS_Research_VII</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>SNS_tooltip_disclaimer</defName>
+		<label>DISCLAIMER: You can't complete this technology. It'll reset itself.</label>
+		<description>This 'tooltip' is for those who use alternative tech tree mods that don't show tech descriptions. This tech can NEVER be completed. Even if you can somehow 'complete' it, it'll reset itself back to zero.\n\nThis won't give an obtainable item (or shouldn't) via non-cheating methods, and having it won't really do you anything.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Joy/SNS/Hidden_angry</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<altitudeLayer>Building</altitudeLayer>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+			<li>BuildingsPower</li>
+		</thingCategories>
+		<passability>PassThroughOnly</passability>
+		<pathCost>0</pathCost>
+		<blockWind>false</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>Infinity</MaxHitPoints>
+			<WorkToBuild>1</WorkToBuild>
+			<Flammability>0</Flammability>
+			<Mass>0</Mass>
+			<Beauty>0</Beauty>
+			<JoyGainFactor>0</JoyGainFactor>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<!--building><joyKind>Gaming_Cerebral</joyKind></building-->
+		<costList>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(255,0,0,0)</glowColor>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>0</staticSunShadowHeight>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>SNS_Research_infinite</li>
+		</researchPrerequisites>
+	</ThingDef>
+
+</Defs>

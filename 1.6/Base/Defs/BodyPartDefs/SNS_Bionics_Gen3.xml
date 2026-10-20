@@ -711,6 +711,9 @@
 			<ThingDef>SNS_Item_BionicBrain_GenIII</ThingDef>
 		</descriptionHyperlinks>
 		<spawnThingOnRemoved>SNS_Item_BionicBrain_GenIII</spawnThingOnRemoved>
+		<tags>
+			<li>SNS_NeuralEnchanter</li>
+		</tags>
 		<stages>
 			<li>
 				<painFactor>0</painFactor>
@@ -730,7 +733,7 @@
 	<ThingDef ParentName="SNS_BionicBodyPartBase_GenIII">
 		<defName>SNS_Item_BionicBrain_GenIII</defName>
 		<label>enigmatic neural enchanter</label>
-		<description>A highly advanced brain 'implant' that covers the entirety of the brain and replaces some parts not related to personality and emotion, but this means that it cannot be removed without destruction of the brain or replacement devices. It is possible, however, to replace it with other neural enchanters.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
+		<description>A highly advanced brain 'implant' that covers the entirety of the brain.\n\nInstalled Neural Enchanters prevent the development of Alzheimers and Dementia, but cannot cure existing conditions.\n\nBeing made of Cosmic Alloy and Eternium, it is unbelievably durable.</description>
 		<descriptionHyperlinks>
 			<RecipeDef>SNS_InstallBodyPart_BionicBrain_GenIII</RecipeDef>
 		</descriptionHyperlinks>
@@ -743,7 +746,7 @@
 		</statBases>
 	</ThingDef>
 
-	<RecipeDef ParentName="SurgeryInstallBodyPartArtificialBase">
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
 		<defName>SNS_InstallBodyPart_BionicBrain_GenIII</defName>
 		<label>install enigmatic neural enchanter</label>
 		<description>Install a enigmatic neural enchanter.</description>
@@ -752,6 +755,9 @@
 			<HediffDef>SNS_Hediff_BionicBrain_GenIII</HediffDef>
 		</descriptionHyperlinks>
 		<jobString>Installing enigmatic neural enchanter.</jobString>
+		<incompatibleWithHediffTags>
+			<li>SNS_NeuralEnchanter</li>
+		</incompatibleWithHediffTags>
 		<ingredients>
 			<li>
 				<filter>

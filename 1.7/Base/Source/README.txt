@@ -1,0 +1,1 @@
+The code behind the 'SNSAOTC_LethalThresholdFix' folder is made in Visual Studio 2019. You will probably need some version of Visual Studio if you want to be able to modify (and more importantly, build the code) its contents.

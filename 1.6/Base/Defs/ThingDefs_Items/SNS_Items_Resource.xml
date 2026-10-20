@@ -1,5 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Defs>
+<Defs>Starinfusedplasteel
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_Starinfusedplasteel</defName>
+		<label>Star-infused Plasteel</label>
+		<description>For those unable to produce it, starsteel is an extremely rare material, making it unsuited for massive production. However, it is possible to infuse the properties of Starsteel onto important amounts of plasteel.\nWhile the resulting material is nowhere near the efficiency of Starsteel itself, its abilities to be mass produced without any advanced level makes it an interesting replacement.</description>
+		<graphicData>
+			<texPath>Things/Item/Resource/SNS/Starinfusedplasteel/Starinfusedplasteel</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>ResourcesRaw</li>
+			<li>Manufactured</li>
+		</thingCategories>
+		<stackLimit>75</stackLimit>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>true</drawGUIOverlay>
+		<deepCommonality>0</deepCommonality>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>1</glowRadius>
+				<glowColor>(205,190,39,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<Mass>0.175</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<StuffPower_Armor_Sharp>1.1</StuffPower_Armor_Sharp>
+			<StuffPower_Armor_Blunt>1.1</StuffPower_Armor_Blunt>
+			<StuffPower_Armor_Heat>1.1</StuffPower_Armor_Heat>
+			<StuffPower_Insulation_Cold>5</StuffPower_Insulation_Cold>
+			<StuffPower_Insulation_Heat>5</StuffPower_Insulation_Heat>
+			<SharpDamageMultiplier>1.25</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1.25</BluntDamageMultiplier>
+			<Beauty>2</Beauty>
+		</statBases>
+		<stuffProps>
+			<isAirtight>true</isAirtight>
+			<categories>
+				<li>Metallic</li>
+			</categories>
+			<color>(69,100,100)</color>
+			<appearance>Smooth</appearance>
+			<commonality>0.0</commonality>
+			<constructEffect>ConstructMetal</constructEffect>
+			<soundMeleeHitSharp>MeleeHit_Metal_Sharp</soundMeleeHitSharp>
+			<soundMeleeHitBlunt>MeleeHit_Metal_Blunt</soundMeleeHitBlunt>
+			<statOffsets>
+				<Beauty>2</Beauty>
+				<!--<Cleanliness>1</Cleanliness>-->
+			</statOffsets>
+			<statFactors>
+				<MaxHitPoints>3.5</MaxHitPoints>
+				<Flammability>0</Flammability>
+				<WorkToMake>1.5</WorkToMake>
+				<WorkToBuild>1.5</WorkToBuild>
+				<WorkTableWorkSpeedFactor>1.25</WorkTableWorkSpeedFactor>
+				<MeleeWeapon_CooldownMultiplier>0.95</MeleeWeapon_CooldownMultiplier>
+				<Comfort>1.1</Comfort>
+				<BedRestEffectiveness>1.1</BedRestEffectiveness>
+				<ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+				<ResearchSpeedFactor>1.25</ResearchSpeedFactor>
+				<DoorOpenSpeed>1.25</DoorOpenSpeed>
+				<ArmorRating_Blunt>1.1</ArmorRating_Blunt>
+				<ArmorRating_Sharp>1.1</ArmorRating_Sharp>
+				<ArmorRating_Heat>1.1</ArmorRating_Heat>
+				<StuffEffectMultiplierInsulation_Cold>1.1</StuffEffectMultiplierInsulation_Cold>
+				<StuffEffectMultiplierInsulation_Heat>1.1</StuffEffectMultiplierInsulation_Heat>
+				<DeteriorationRate>-1.0</DeteriorationRate>
+				<Beauty>1.5</Beauty>
+			</statFactors>
+		</stuffProps>
+		<tradeTags>
+			<li>ExoticMisc</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardMidFreq</li>
+		</thingSetMakerTags>
+	</ThingDef>
 
 	<ThingDef ParentName="ResourceBase">
 		<thingClass>ThingWithComps</thingClass>

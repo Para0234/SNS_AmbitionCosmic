@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<!-- All SNS Bionics. -->
+	<ThingCategoryDef>
+		<defName>SNS_ThingCategory_Bionics_GenI</defName>
+		<label>stellar bionic</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>SNS_ThingCategory_Bionics_GenII</defName>
+		<label>cosmic bionic</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>SNS_ThingCategory_Bionics_GenIII</defName>
+		<label>enigmatic bionic</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>SNS_ThingCategory_Bionics_GenIV</defName>
+		<label>zenith bionic</label>
+		<parent>BodyParts</parent>
+	</ThingCategoryDef>
+
+</Defs>

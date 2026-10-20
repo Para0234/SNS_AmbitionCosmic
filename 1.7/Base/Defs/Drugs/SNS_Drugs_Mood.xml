@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Gen1 -->
+  <ThingDef ParentName="DrugBase">
+    <defName>SNS_Lux</defName>
+    <label>Lux</label>
+    <description>An amborisa-flavored beverage. Lux provides an initially powerful euphoria that lasts a few minutes, before fading to a moderate euphoria that lasts a few short hours before rapidly fading to a very mild form of euphoria that lasts approximately eighteen hours.\nUnlike anything it is derived from or similar to, it does not have a risk of addiction from consuming it or the risk of long-term damage from excessive use.\n\nIt is one of the most highly favored drinks of the Glitterworld middle-class, and an extremely common beverage for citizens of Cosmic Empires, being commonly enjoyed by even the lowest of classes. Many midworlds also enjoy lux, but almost always exlusively by the upper-class.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Lux</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Lux</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>40</MarketValue>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Lux</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Ultra</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_II_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>ElectricStove</li>
+        <li>FueledStove</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Ambrosia>1</Ambrosia>
+      <Neutroamine>3</Neutroamine>
+      <SNS_Unobtainium>1</SNS_Unobtainium>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0.0</addictiveness>
+        <minToleranceToAddict>1</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1000</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Lux</defName>
+    <label>Lux</label>
+    <description>Various chemicals originating from Lux consumption in the bloodstream, providing varied levels of euphoria.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-1</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>everglow</label>
+          <painFactor>0.95</painFactor>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <postFactor>0.95</postFactor>
+              </li>
+            </capMods>
+        </li>
+        <li>
+          <minSeverity>0.75</minSeverity>
+          <label>fading</label>
+          <painFactor>0.90</painFactor>
+            <capMods>
+              <li>
+                <capacity>Consciousness</capacity>
+                <postFactor>0.85</postFactor>
+              </li>
+            </capMods>
+        </li>
+        <li>
+          <minSeverity>0.8</minSeverity>
+          <label>high</label>
+          <painFactor>0.80</painFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <postFactor>0.75</postFactor>
+            </li>
+          </capMods>
+        </li>
+        <li>
+          <minSeverity>0.95</minSeverity>
+          <label>initial/very high</label>
+          <painFactor>0.60</painFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <postFactor>0.60</postFactor>
+            </li>
+          </capMods>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>SNS_Lux</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SNS_Lux</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>lux high (everglow)</label>
+        <description>I'm feeling a bit better than usual, like there's something keeping me just a bit brighter. I like this feeling.</description>
+        <baseMoodEffect>15</baseMoodEffect>
+      </li>
+      <li>
+        <label>lux high (fading)</label>
+        <description>I feel really good, but that feeling is starting to fade. I might want to get another Lux, soon.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <li>
+        <label>lux high (strong)</label>
+        <description>I feel really good, like everything is okay and we're all going to be just fine. I like this feeling.</description>
+        <baseMoodEffect>25</baseMoodEffect>
+      </li>
+      <li>
+        <label>lux high (initial)</label>
+        <description>I feel amazing. Everything is amazing. Am I glowing?</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+
+
+  <!-- Gen3 -->
+  <ThingDef ParentName="DrugBase">
+    <defName>SNS_Hedonia</defName>
+    <label>Hedonia</label>
+    <description>A wonderful-tasting beverage filled with Eternium-powered nanites. Hedonia provides a long-lasting and powerful euphoria that lasts for days, while not inhibiting thought or movement. There is no risk of addiction, tolerance, or damage from consuming the product.\n\nHedonia is rarely seen outside of Cosmic Empires, only seen occasionally in the hands of their middle-class and upper-class, for it cannot be produced anywhere; it is only attinable from scavenging on the fallen worlds of the Cosmic Precursors, and although there are countless amounts of it on those worlds, still-active security systems make extraction incredibly risky.</description>
+    <descriptionHyperlinks>
+      <HediffDef>SNS_Hedonia</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/SNS/Hedonia</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <stackLimit>25</stackLimit>
+    <statBases>
+      <MarketValue>150</MarketValue>
+      <DeteriorationRate>0</DeteriorationRate>
+      <Mass>0.3</Mass>
+      <Flammability>0</Flammability>
+      <Nutrition>0</Nutrition>
+    </statBases>
+    <ingestible>
+      <foodType>Fluid, Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.17</joy>
+      <nurseable>true</nurseable>
+      <drugCategory>Social</drugCategory>
+      <ingestSound>Ingest_Drink</ingestSound>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.18,0,0)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestCommandString>Drink {0}</ingestCommandString>
+      <ingestReportString>Drinking {0}.</ingestReportString>
+      <chairSearchRadius>25</chairSearchRadius>
+      <canAutoSelectAsFoodForCaravan>false</canAutoSelectAsFoodForCaravan>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>SNS_Hedonia</hediffDef>
+          <severity>1</severity>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <techLevel>Archotech</techLevel>
+    <recipeMaker>
+      <researchPrerequisite>SNS_Research_VI_drugs</researchPrerequisite>
+      <recipeUsers>
+        <li>Table_SNS_CosmicDrawer</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <Ambrosia>1</Ambrosia>
+      <Neutroamine>3</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <addictiveness>0.0</addictiveness>
+        <minToleranceToAddict>1</minToleranceToAddict>
+        <existingAddictionSeverityOffset>0</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>1010</listOrder>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <HediffDef>
+    <defName>SNS_Hedonia</defName>
+    <label>Hedonia</label>
+    <description>Nanites in the bloodstream and brain, providing a clean, powerful euphoria.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.33</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <label>fading</label>
+        </li>
+        <li>
+          <minSeverity>0.05</minSeverity>
+          <label>weakening high</label>
+        </li>
+        <li>
+          <minSeverity>0.33</minSeverity>
+          <label>high</label>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>SNS_Hedonia</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>SNS_Hedonia</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>hedonia high (fading)</label>
+        <description>I feel pretty good, but that feeling is quickly fading.</description>
+        <baseMoodEffect>10</baseMoodEffect>
+      </li>
+      <li>
+        <label>hedonia high (weakening)</label>
+        <description>I feel really good, but that feeling is starting to fade away.</description>
+        <baseMoodEffect>20</baseMoodEffect>
+      </li>
+      <li>
+        <label>hedonia high (strong)</label>
+        <description>I feel absolutely amazing. Existence is bliss.</description>
+        <baseMoodEffect>40</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>

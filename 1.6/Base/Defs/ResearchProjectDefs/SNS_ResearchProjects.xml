@@ -102,7 +102,7 @@
 			<li>SNS_Research_I</li>
 		</prerequisites>
 		<researchViewX>24</researchViewX>
-		<researchViewY>5.45</researchViewY>
+		<researchViewY>6.0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
@@ -180,7 +180,7 @@
 			<li>SNS_Research_I</li>
 		</prerequisites>
 		<researchViewX>24</researchViewX>
-		<researchViewY>3.7</researchViewY>
+		<researchViewY>3.9</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
@@ -193,7 +193,7 @@
 			<li>SNS_Research_I</li>
 		</prerequisites>
 		<researchViewX>24</researchViewX>
-		<researchViewY>4.35</researchViewY>
+		<researchViewY>4.6</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenI">
@@ -206,7 +206,7 @@
 			<li>SNS_Research_I</li>
 		</prerequisites>
 		<researchViewX>24</researchViewX>
-		<researchViewY>4.95</researchViewY>
+		<researchViewY>5.3</researchViewY>
 	</ResearchProjectDef>
 
 	<!-- Generation 1.5 -->
@@ -544,7 +544,7 @@
 			<li>SNS_Research_VI_base</li>
 		</prerequisites>
 		<researchViewX>32</researchViewX>
-		<researchViewY>5.45</researchViewY>
+		<researchViewY>5.65</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef ParentName="SNS_Research_Base_GenIII">

@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_CosmicCall_Component_I</defName>
+		<label>Fracture of Greatness (Cosmic Component #1/5)</label>
+		<description>A mysterious glass-like shard composed of unknown make with a glowing blue material infused within, flowing with immense energy within.\n\nIt seems to react to an electric current, growing more bright as energy is pumped through it.\n\n...Though it seems that it can consume quite a bit of power in the end.\n\nOn one side of the crystal the following is engraved in an unknown language: "We were shattered after an eternity of unity, yes, but we are still here. The Ambition of the Cosmic and the Eternals still lie amongst us, for We remain."</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/SNS/Component1_DiluteEterniumShard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<!-- <deepCommonality>0</deepCommonality> -->
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(0,230,255,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>25000</MarketValue>
+			<Mass>0.5</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_CosmicCall_Component_II</defName>
+		<label>Forbidden Knowledge (Cosmic Component #2/5)</label>
+		<description>A mysterious floppy-disk-like device made purely of Cosmic Alloy, with traces of something else within.\n\nIt's almost definitely meant to store some kind of data, but exactly what is as of yet unknown.\n\nOn the back of the drive the following is written in an unknown language: "We held the truth; that we were the true masters of all reality. We could forge matter out of pure nothingness, something even greater than Baryonic, something greater than Cosmic.\n\nIt was Eternium."</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/SNS/Component2_DataDrive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<deepCommonality>0</deepCommonality>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>35000</MarketValue>
+			<Mass>0.1</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<Beauty>15</Beauty>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_CosmicCall_Component_III</defName>
+		<label>Beckoning of Desire (Cosmic Component #3/5)</label>
+		<description>A curious little motor-like device made mostly out of Cosmic Alloy, with some Cosmic Matter sloshing about within.\n\nWhen powered, it seems to tug psychic phenomina along with it, creating a very brief confusing perspective for the psychically sensitive and gifted, though others get adjusted too quickly to weaponize.\n\nIt seems to be trying to tug on something else, too, but there isn't enough of whatever it's trying to influence.\n\nOn the side of the motor the following is written in another language: "The Stars beckon, and we follow. The Voidholder beckons, and the Stars follow."</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/SNS/Component3_EterniumMotor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<deepCommonality>0</deepCommonality>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>25000</MarketValue>
+			<Mass>0.4</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<Beauty>35</Beauty>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_CosmicCall_Component_IV</defName>
+		<label>Astral Refuter (Cosmic Component #4/5)</label>
+		<description>A strange circuit-board-like device made of Cosmic Matter and what appears to be solidified Cosmic Matter, said Cosmic Matter acting as the wiring for the device.\n\nIgnoring the fact that Cosmic Matter should not be stable enough to be a solid for more than a brief moment, and that Cosmic Matter should be a terrible conductor, it's truly a work of wonders.\n\nIt seems to be soldered in a way that its components can't be removed, except for one slot that looks like a data port of some kind. It's too tough to remove anything, either.\n\nOn the bottom of the board the following is engraved in an unknown language: "Programmed into our minds is the truth that the Voidholder is absolute. His and only His reign can be accepted by the populace, for He acts in the name of the First, the one who united our kin and let us escape our fate of infighting, who showed us unity true and fast.\n\nLong be the Voidholder, and may He reign long."</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/SNS/Component4_CircuitBoard</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<deepCommonality>0</deepCommonality>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(255,240,89,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>35000</MarketValue>
+			<Mass>0.075</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<Beauty>50</Beauty>
+		</statBases>
+	</ThingDef>
+
+	<ThingDef ParentName="ResourceBase">
+		<thingClass>ThingWithComps</thingClass>
+		<defName>SNS_CosmicCall_Component_V</defName>
+		<label>Amplifier of Ambition (Cosmic Component #5/5)</label>
+		<description>A strange device unlike any other, that energises whatever can pass through it. It instantly vaporises water, makes Cosmic Matter instantly dissolve into nothingness, and make Cosmic Alloy inert, making it nothing more than an expensive, dilute Plasteel.\n\nIts slot seems to be shaped very specifically, set to fit a prism-shaped object.\n\nEngraved on a non-important part of the object the following is written in an unknown language: "The Embers of Eternity still glow hot, when all the pieces are put together, when the People are there to keep them lit."</description>
+		<graphicData>
+			<texPath>Things/Item/Misc/SNS/Component5_EterniumAmplifier</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<resourceReadoutAlwaysShow>true</resourceReadoutAlwaysShow>
+		<resourceReadoutPriority>First</resourceReadoutPriority>
+		<soundInteract>Metal_Drop</soundInteract>
+		<soundDrop>Standard_Drop</soundDrop>
+		<useHitPoints>false</useHitPoints>
+		<thingCategories>
+			<li>Artifacts</li>
+		</thingCategories>
+		<tradeTags>
+			<li>Artifact</li>
+		</tradeTags>
+		<thingSetMakerTags>
+			<li>RewardStandardLowFreq</li>
+		</thingSetMakerTags>
+		<stackLimit>1</stackLimit>
+		<tradeNeverStack>true</tradeNeverStack>
+		<smallVolume>false</smallVolume>
+		<drawGUIOverlay>false</drawGUIOverlay>
+		<deepCommonality>0</deepCommonality>
+		<tickerType>Rare</tickerType>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(0,230,255,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<MarketValue>40000</MarketValue>
+			<Mass>3.5</Mass>
+			<Flammability>0.0</Flammability>
+			<DeteriorationRate>0.0</DeteriorationRate>
+			<Beauty>75</Beauty>
+		</statBases>
+	</ThingDef>
+
+</Defs>
