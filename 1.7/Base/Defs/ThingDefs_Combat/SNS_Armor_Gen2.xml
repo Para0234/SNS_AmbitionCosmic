@@ -44,7 +44,9 @@
     </costList>
     <equippedStatOffsets>
       <ToxicResistance>1</ToxicResistance>
-	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
+	  <HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+	  <DecompressionResistance MayRequire="kentington.saveourship2">0.25</DecompressionResistance>
     </equippedStatOffsets>
     <apparel>
       <bodyPartGroups>
@@ -108,7 +110,9 @@
       <MoveSpeed>1</MoveSpeed>
       <!-- <CarryingCapacity>30</CarryingCapacity> --> <!-- Doesn't work at the moment. I'll try something else maybe later. -->
       <ToxicResistance>1</ToxicResistance>
-	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.33</VacuumResistance>
+	  <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.67</VacuumResistance>
+	  <DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+	  <VacuumSpeedMultiplier MayRequire="kentington.saveourship2">4</VacuumSpeedMultiplier>
     </equippedStatOffsets>
     <thingCategories>
       <li>ApparelArmor</li>
